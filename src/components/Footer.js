@@ -67,8 +67,8 @@ function Footer() {
             </section>
           </div>
     
-          <div className='text-center p-1' style={{ backgroundColor: '#1F211F' }}>
-          All Copyrights Reserved by Dolape Villa Ella - © 2022
+          <div className=' ' style={{ backgroundColor: '#1F211F'}}>
+         <p> All Copyrights Reserved by Dolape Villa Ella - © 2022</p>
             <a className='text-white' href='https://mdbootstrap.com/'>
               MDBootstrap.com
             </a>
