@@ -69,8 +69,8 @@ function Footer() {
           </div>
     
           <div style={{ backgroundColor: '#1F211F',display:"flex",justifyContent:'space-between'}}>
-         <p className='leftLine'> All Copyrights Reserved by Dolape Villa Ella - © 2022</p>
-           <p className="rightLine">Website Designed & Developed by D&SDeveloer</p>
+            <p className='footerText' > All Copyrights Reserved by Dolape Villa Ella - © 2022</p>
+              <p className="footerText" >Website Designed & Developed by D&SDeveloer</p>
           </div>
         </MDBFooter>
       );
