@@ -68,11 +68,9 @@ function Footer() {
             </section>
           </div>
     
-          <div style={{ backgroundColor: '#1F211F'}}>
+          <div style={{ backgroundColor: '#1F211F',display:"flex",justifyContent:'space-between'}}>
          <p className='leftLine'> All Copyrights Reserved by Dolape Villa Ella - © 2022</p>
-            <a className='text-white' href='https://mdbootstrap.com/'>
-              MDBootstrap.com
-            </a>
+           <p className="rightLine">Website Designed & Developed by D&SDeveloer</p>
           </div>
         </MDBFooter>
       );
