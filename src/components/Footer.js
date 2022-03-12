@@ -1,4 +1,5 @@
 import React from "react";
+import '../App.css';
 import {
     MDBFooter,
     MDBContainer,
@@ -67,8 +68,8 @@ function Footer() {
             </section>
           </div>
     
-          <div className=' ' style={{ backgroundColor: '#1F211F'}}>
-         <p> All Copyrights Reserved by Dolape Villa Ella - © 2022</p>
+          <div style={{ backgroundColor: '#1F211F'}}>
+         <p className='leftLine'> All Copyrights Reserved by Dolape Villa Ella - © 2022</p>
             <a className='text-white' href='https://mdbootstrap.com/'>
               MDBootstrap.com
             </a>
