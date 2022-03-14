@@ -4,12 +4,6 @@
   display: inline;
   margin-left: 8%;
   margin-right: 8%;
-}
-
-#marginLeft {
-  
-}
-
-#marginRight {
-  
+  position: relative;
+  top:50%
 }

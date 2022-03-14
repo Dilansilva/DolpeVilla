@@ -68,8 +68,8 @@ function Footer() {
             </section>
           </div>
     
-          <div style={{ backgroundColor: '#1F211F',display:"flex",justifyContent:'space-between'}}>
-            <p className='footerText' > All Copyrights Reserved by Dolape Villa Ella - © 2022</p>
+          <div style={{ backgroundColor: '#1F211F',display:"flex",justifyContent:'space-between',  position: 'relative'}}>
+            <p className='footerText'> All Copyrights Reserved by Dolape Villa Ella - © 2022</p>
               <p className="footerText" >Website Designed & Developed by D&SDeveloer</p>
           </div>
         </MDBFooter>
