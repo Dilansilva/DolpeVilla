@@ -10,7 +10,7 @@ import {
 
 function Footer() {
     return (
-        <MDBFooter className='bg-light text-center text-white'>
+        <MDBFooter className='text-center text-white addressDiv'>
           <div className='container p-4 pb-0'>
             <section className='mb-4'>
               <a
@@ -69,8 +69,8 @@ function Footer() {
           </div>
     
           <div style={{ backgroundColor: '#1F211F',display:"flex",justifyContent:'space-between',  position: 'relative'}}>
-            <p className='footerText'> All Copyrights Reserved by Dolape Villa Ella - © 2022</p>
-              <p className="footerText" >Website Designed & Developed by D&SDeveloer</p>
+            <p className="footerText footerTextMobile"> All Copyrights Reserved by Dolape Villa Ella - © 2022</p>
+              <p className="footerText footerTextMobile" >Website Designed & Developed by D&SDeveloer</p>
           </div>
         </MDBFooter>
       );
