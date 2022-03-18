@@ -1,12 +1,6 @@
 import React from "react";
 import '../App.css';
-import {
-    MDBFooter,
-    MDBContainer,
-    MDBCol,
-    MDBRow,
-    MDBIcon
-  } from 'mdb-react-ui-kit';
+import {MDBFooter} from 'mdb-react-ui-kit';
 
 function Footer() {
     return (
@@ -63,12 +57,14 @@ function Footer() {
                 href='#!'
                 role='button'
               >
-                <MDBIcon fab icon='github' />
+                
               </a>
             </section>
           </div>
     
-          <div style={{ backgroundColor: '#1F211F',display:"flex",justifyContent:'space-between',  position: 'relative'}}>
+          <div style={{ backgroundColor: '#1F211F',display:"flex",justifyContent:'space-between',  position: 'relative'}}
+               className="footerDiv"
+          >
             <p className="footerText footerTextMobile"> All Copyrights Reserved by Dolape Villa Ella - © 2022</p>
               <p className="footerText footerTextMobile" >Website Designed & Developed by D&SDeveloer</p>
           </div>

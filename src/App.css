@@ -12,6 +12,9 @@
  .footerTextMobile{
     position:static;
   }
+  .footerDiv{
+    background-color: #6C716C; 
+  }
 }
 
 .addressDiv {
