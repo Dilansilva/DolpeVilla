@@ -1,3 +1,13 @@
+/*Header component css*/
+.upperDiv {
+  background-color: #1F211F;
+  height: 100%;
+}
+
+.blackFont{
+  color: #1F211F;
+}
+
 /*Footer Component css*/
 .footerText {
   font-size: 8px;
@@ -20,3 +30,4 @@
 .addressDiv {
   background-color: #6C716C;
 }
+
