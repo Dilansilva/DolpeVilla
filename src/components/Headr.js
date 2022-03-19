@@ -4,7 +4,7 @@ function Header(){
  return(
      <div>
         {/*upper division*/}
-        <div className="upperDiv">
+        <div className="upperDiv hiddenUpperDiv">
         <p className='blackFont'>&nbsp</p>
         </div>
         {/*lower division*/}

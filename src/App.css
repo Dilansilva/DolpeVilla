@@ -25,6 +25,9 @@
   .footerDiv{
     background-color: #6C716C; 
   }
+  .hiddenUpperDiv {
+    visibility: hidden;
+  }
 }
 
 .addressDiv {
