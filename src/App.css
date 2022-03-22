@@ -1,7 +1,6 @@
 /*Header component css*/
 .upperDiv {
   background-color: #1F211F;
-  height: 100%;
 }
 
 .blackFont{
@@ -34,3 +33,7 @@
   background-color: #6C716C;
 }
 
+/*navigation bar*/
+.navBar {
+  background-color: #124017;
+} 
