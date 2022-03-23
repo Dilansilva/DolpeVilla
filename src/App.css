@@ -8,6 +8,10 @@
   background-color: #124017;
 }
 
+.gardientBtn{
+  background-color:linear-gradient(180deg, rgba(3, 15, 81, 0.6) 0%, rgba(104, 104, 125, 0) 100%);
+}
+
 /*Footer Component css*/
 .footerText {
   font-size: 8px;

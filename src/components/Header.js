@@ -27,17 +27,6 @@ function Header(){
 
   const {height,width} = useWindowDimensions();
 
-  /*header button */
-  const [checked, setChecked] = useState(false);
-  const [radioValue, setRadioValue] = useState('1');
-
-  const radios = [
-    { name: 'Active', value: '1' },
-    { name: 'Radio', value: '2' },
-    { name: 'Radio', value: '3' },
-    { name: 'Radio', value: '4' },
-  ];
-
  return(
   <>
      {width > 480 ? <Navbar className='upperDiv hiddenUpperDiv' expand="lg"></Navbar> : null}
@@ -51,22 +40,10 @@ function Header(){
         style={{ maxHeight: '100px' }}
         navbarScroll
       >
-         <ButtonGroup className="mb-2">
-        {radios.map((radio, idx) => (
-          <ToggleButton
-            key={idx}
-            id={`radio-${idx}`}
-            type="radio"
-            variant="secondary"
-            name="radio"
-            value={radio.value}
-            checked={radioValue === radio.value}
-            onChange={(e) => setRadioValue(e.currentTarget.value)}
-          >
-            {radio.name}
-          </ToggleButton>
-        ))}
-      </ButtonGroup>
+        <ToggleButton className="gardientBtn"><b>Primary</b></ToggleButton>
+        <ToggleButton className="gardientBtn">Primary</ToggleButton>
+        <ToggleButton className="gardientBtn">Primary</ToggleButton>
+        <ToggleButton className="gardientBtn">Primary</ToggleButton>
       </Nav>
       
     </Navbar.Collapse>
