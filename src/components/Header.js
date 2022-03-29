@@ -1,12 +1,11 @@
 import {useState,useEffect} from 'react';
 import '../App.css';
-import {Container,Navbar,Nav,NavDropdown,Form,Button,FormControl,ButtonGroup,ToggleButton} from 'react-bootstrap';
+import {Container,Navbar,ToggleButton} from 'react-bootstrap';
 
 function getWindowDimensions() {
-  const { innerWidth: width, innerHeight: height } = window;
+  const { innerWidth: width } = window;
   return {
-    width,
-    height
+    width
   };
 }
 
