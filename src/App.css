@@ -1,3 +1,17 @@
+/*Header component css*/
+.upperDiv {
+  background-color: #1F211F;
+}
+
+.taransParent{
+  opacity: 0.4;
+  background-color: #124017;
+}
+
+.gardientBtn{
+  background: linear-gradient(180deg, rgba(3, 15, 81, 0.4) 0%, rgba(92, 88, 107, 0) 100%);
+}
+
 /*Footer Component css*/
 .footerText {
   font-size: 8px;
@@ -15,8 +29,16 @@
   .footerDiv{
     background-color: #6C716C; 
   }
+  .hiddenUpperDiv {
+    visibility: hidden;
+  }
 }
 
 .addressDiv {
   background-color: #6C716C;
 }
+
+/*navigation bar*/
+.navBar {
+  background-color: #124017;
+} 
