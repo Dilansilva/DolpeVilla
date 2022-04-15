@@ -28,10 +28,11 @@ function Header(){
 
  return(
   <>
-     {width > 480 ? <Navbar className='upperDiv hiddenUpperDiv' expand="lg"></Navbar> : null}
+     {width > 480 ? <Navbar className='upperDiv hiddenUpperDiv' expand="lg"></Navbar> : null }
+     {width > 480 ? <>
       <Navbar className="taransParent">
         <Container className="taransParent">
-          <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
+          <Navbar.Brand href="#home">#</Navbar.Brand>
           <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
               <ToggleButton className="gardientBtn"><b>COVID-19 UPDATES</b></ToggleButton>
@@ -41,8 +42,13 @@ function Header(){
             </Navbar.Collapse>
         </Container>
       </Navbar>
+     </> : null
+     }
+     
 
-      <Navbar className="taransParent">
+      {
+        width > 480 ? <>
+        <Navbar className="taransParent">
         <Container className="taransParent">
           <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
@@ -54,7 +60,9 @@ function Header(){
               <ToggleButton className="gardientBtn">THINGS TO DO</ToggleButton>              
             </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </Navbar>  
+        </> : null
+      }
   </>
  
  );   
