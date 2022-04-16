@@ -1,6 +1,7 @@
 import {useState,useEffect} from 'react';
 import '../App.css';
 import {Container,Navbar,ToggleButton,Nav,NavDropdown} from 'react-bootstrap';
+import MobilePopUp from './MobilePopUp';
 
 function getWindowDimensions() {
   const { innerWidth: width } = window;
@@ -28,6 +29,7 @@ function Header(){
 
  return(
   <>
+    <MobilePopUp/>
      {width > 480 ? <Navbar className='upperDiv hiddenUpperDiv' expand="lg"></Navbar> : null }
      {width > 480 ? <> {/*Computer navigation bar */}
       <Navbar className="taransParent">
