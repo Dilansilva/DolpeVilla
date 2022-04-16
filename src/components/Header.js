@@ -29,7 +29,7 @@ function Header(){
  return(
   <>
      {width > 480 ? <Navbar className='upperDiv hiddenUpperDiv' expand="lg"></Navbar> : null }
-     {width > 480 ? <>
+     {width > 480 ? <> {/*Computer navigation bar */}
       <Navbar className="taransParent">
         <Container className="taransParent">
           <Navbar.Brand href="#home">#</Navbar.Brand>
@@ -45,9 +45,8 @@ function Header(){
      </> : null
      }
      
-
       {
-        width > 480 ? <>
+        width > 480 ? <> {/*Computer navigation bar */}
         <Navbar className="taransParent">
         <Container className="taransParent">
           <Navbar.Toggle />
@@ -62,7 +61,7 @@ function Header(){
         </Container>
       </Navbar>  
         </> : 
-        <>
+        <> {/*mobile view navigation bar */}
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
       <Navbar.Brand href="#home">
         Dice Roller
