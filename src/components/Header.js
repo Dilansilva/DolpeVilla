@@ -1,6 +1,6 @@
 import {useState,useEffect} from 'react';
 import '../App.css';
-import {Container,Navbar,ToggleButton} from 'react-bootstrap';
+import {Container,Navbar,ToggleButton,Nav,NavDropdown} from 'react-bootstrap';
 
 function getWindowDimensions() {
   const { innerWidth: width } = window;
@@ -28,10 +28,11 @@ function Header(){
 
  return(
   <>
-     {width > 480 ? <Navbar className='upperDiv hiddenUpperDiv' expand="lg"></Navbar> : null}
+     {width > 480 ? <Navbar className='upperDiv hiddenUpperDiv' expand="lg"></Navbar> : null }
+     {width > 480 ? <> {/*Computer navigation bar */}
       <Navbar className="taransParent">
         <Container className="taransParent">
-          <Navbar.Brand href="#home">Navbar with text</Navbar.Brand>
+          <Navbar.Brand href="#home">#</Navbar.Brand>
           <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
               <ToggleButton className="gardientBtn"><b>COVID-19 UPDATES</b></ToggleButton>
@@ -41,8 +42,12 @@ function Header(){
             </Navbar.Collapse>
         </Container>
       </Navbar>
-
-      <Navbar className="taransParent">
+     </> : null
+     }
+     
+      {
+        width > 480 ? <> {/*Computer navigation bar */}
+        <Navbar className="taransParent">
         <Container className="taransParent">
           <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
@@ -54,7 +59,32 @@ function Header(){
               <ToggleButton className="gardientBtn">THINGS TO DO</ToggleButton>              
             </Navbar.Collapse>
         </Container>
-      </Navbar>
+      </Navbar>  
+        </> : 
+        <> {/*mobile view navigation bar */}
+        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Navbar.Brand href="#home">
+        Dice Roller
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+      <Navbar.Collapse id="responsive-navbar-nav">
+        <Nav className="mr-auto">
+          <Nav.Link href="#features">COVID-19 UPDATES</Nav.Link>
+          <Nav.Link href="#pricing">GALLERY</Nav.Link>
+          <Nav.Link href="#features">CONTACT US</Nav.Link>
+          <Nav.Link href="#pricing">PROMOTIONS</Nav.Link>
+          <Nav.Link href="#features">HOME</Nav.Link>
+          <Nav.Link href="#pricing">LOCATION</Nav.Link>
+          <Nav.Link href="#features">ACCOMMODATION</Nav.Link>
+          <Nav.Link href="#pricing">FACILITIES</Nav.Link>
+          <Nav.Link href="#features">DINNING</Nav.Link>
+          <Nav.Link href="#pricing">THINGS TO DO</Nav.Link>
+        </Nav>
+        
+      </Navbar.Collapse>
+    </Navbar>
+        </>
+      }
   </>
  
  );   
