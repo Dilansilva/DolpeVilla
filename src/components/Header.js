@@ -29,7 +29,7 @@ function Header(){
 
  return(
   <>
-    <MobilePopUp/>
+         {width < 480 ? <MobilePopUp/> : null }
      {width > 480 ? <Navbar className='upperDiv hiddenUpperDiv' expand="lg"></Navbar> : null }
      {width > 480 ? <> {/*Computer navigation bar */}
       <Navbar className="taransParent">
