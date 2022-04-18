@@ -14,7 +14,7 @@ const MobilePopUp = () => {
           onHide={handleClose}
           backdrop="static"
           keyboard={false}
-          className="taransParent"
+          className="taransParentMobile"
         >
           <Modal.Header closeButton>
           </Modal.Header>

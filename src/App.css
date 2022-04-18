@@ -43,6 +43,13 @@
   background-color: #124017;
 } 
 
+/*Mobile pop up*/
 .textAlign {
   text-align: center;
 }
+
+.taransParentMobile{
+  opacity: 0.71;
+  background-color: #124017;
+}
+
