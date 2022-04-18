@@ -49,7 +49,11 @@
 }
 
 .taransParentMobile{
-  opacity: 0.9;
+  opacity: 10;
   background-color: #124017;
 }
 
+.greenColor {
+  background-color: green;
+  border-radius: 10px;
+}
