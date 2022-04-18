@@ -16,16 +16,17 @@ const MobilePopUp = () => {
           keyboard={false}
           className="taransParentMobile"
         >
-          <Modal.Header closeButton>
+          <Modal.Header
+            style={{border:'none'}}
+            closeButton
+          >
           </Modal.Header>
           <Modal.Body className='textAlign'>
             <br/>
            <p>Welcome To Dolpe Villa Ella</p>
           </Modal.Body>
          
-          <Modal.Footer>
-           <br/>
-          </Modal.Footer>
+          
         </Modal>
       </>
     );
