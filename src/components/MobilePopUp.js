@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import {Button,Modal} from 'react-bootstrap';
+import '../App.css';
 
 const MobilePopUp = () => {
     const [show, setShow] = useState(true);
@@ -13,13 +14,13 @@ const MobilePopUp = () => {
           onHide={handleClose}
           backdrop="static"
           keyboard={false}
+          className="taransParent"
         >
           <Modal.Header closeButton>
-            <Modal.Title>Modal title</Modal.Title>
           </Modal.Header>
-          <Modal.Body>
-            I will not close if you click outside me. Don't even try to press
-            escape key.
+          <Modal.Body className='textAlign'>
+            <br/>
+           <p>Welcome To Dolpe Villa Ella</p>
           </Modal.Body>
          
           <Modal.Footer>
