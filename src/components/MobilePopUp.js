@@ -20,13 +20,12 @@ const MobilePopUp = () => {
             style={{border:'none'}}
             closeButton
           >
+           <p>dolpe Villa</p>
           </Modal.Header>
           <Modal.Body className='textAlign'>
-            <br/>
-           <p>Welcome To Dolpe Villa Ella</p>
-          </Modal.Body>
-         
-          
+           <p>Dolpe Villa</p><br/>
+           <p>Welcome <br/>To <br/>Dolpe <br/>Villa Ella</p>
+          </Modal.Body>          
         </Modal>
       </>
     );
