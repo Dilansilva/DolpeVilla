@@ -25,9 +25,10 @@ const MobilePopUp = () => {
           <Modal.Body className='textAlign'>
            <p>Dolpe Villa</p><br/>
           <div className='greenColor'>
-            <p>Welcome <br/>
-            To <br/>Dolpe
-             <br/>Villa Ella</p><br/>
+            <br/>
+            <p>WELCOME<br/>
+            TO <br/>DOLPE
+             <br/>VILLA ELLA</p><br/>
           </div>
           </Modal.Body>          
         </Modal>

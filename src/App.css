@@ -49,11 +49,13 @@
 }
 
 .taransParentMobile{
-  opacity: 10;
- 
+  opacity: 0.999;
 }
 
 .greenColor {
-  background-color: green;
+  background-color: #12401799;
   border-radius: 10px;
+  font-family: 'Sunshiney', cursive;
+  font-size: 180%;
+  color: #61971C;
 }
