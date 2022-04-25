@@ -2,6 +2,7 @@ import {useState} from 'react';
 import {Button,Modal} from 'react-bootstrap';
 import '../App.css';
 import logo from '../assets/68681472_114368466589511_8231771088728621056_n.jpg';
+import background from '../assets/MobilePopUpBackGround.jpg';
 
 const MobilePopUp = () => {
     const [show, setShow] = useState(true);
@@ -21,10 +22,10 @@ const MobilePopUp = () => {
             style={{border:'none'}}
             closeButton
           >
-           <p>dolpe Villa</p>
+           <img src={logo} className="minorLogo"/>
           </Modal.Header>
           <Modal.Body className='textAlign'>
-            <img src={logo} className="logo"/><br/>
+            <img src={logo} className="mainLogo"/><br/>
           <div className='greenColor'>
             <br/>
             <p>WELCOME<br/>
