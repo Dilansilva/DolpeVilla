@@ -48,8 +48,9 @@
   text-align: center;
 }
 
-.taransParentMobile{
-  opacity: 0.999;
+.taransParentMobile .modal-content{
+  opacity: 0.9;
+ 
 }
 
 .greenColor {
