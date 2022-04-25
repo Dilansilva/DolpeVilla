@@ -1,6 +1,7 @@
 import {useState} from 'react';
 import {Button,Modal} from 'react-bootstrap';
 import '../App.css';
+import logo from '../assets/68681472_114368466589511_8231771088728621056_n.jpg';
 
 const MobilePopUp = () => {
     const [show, setShow] = useState(true);
@@ -23,7 +24,7 @@ const MobilePopUp = () => {
            <p>dolpe Villa</p>
           </Modal.Header>
           <Modal.Body className='textAlign'>
-           <p>Dolpe Villa</p><br/>
+            <img src={logo} className="logo"/><br/>
           <div className='greenColor'>
             <br/>
             <p>WELCOME<br/>
