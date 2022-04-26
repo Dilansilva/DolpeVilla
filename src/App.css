@@ -42,3 +42,29 @@
 .navBar {
   background-color: #124017;
 } 
+
+/*Mobile pop up*/
+.textAlign {
+  text-align: center;
+}
+
+.taransParentMobile .modal-content{
+  opacity: 0.5;
+}
+
+.greenColor {
+  background-color: #12401799;
+  border-radius: 10px;
+  font-family: 'Sunshiney', cursive;
+  font-size: 180%;
+  color: #000200;
+  font-weight: 1000;
+}
+
+.mainLogo {
+  width: 80%;
+}
+
+.minorLogo {
+  width: 20%;
+}
