@@ -49,8 +49,7 @@
 }
 
 .taransParentMobile .modal-content{
-  opacity: 0.9;
- 
+  opacity: 0.5;
 }
 
 .greenColor {
@@ -58,7 +57,8 @@
   border-radius: 10px;
   font-family: 'Sunshiney', cursive;
   font-size: 180%;
-  color: #61971C;
+  color: #023803;
+  font-weight: 600;
 }
 
 .mainLogo {
