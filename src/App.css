@@ -50,6 +50,7 @@
 
 .taransParentMobile .modal-content{
   opacity: 0.5;
+  height: 100%;
 }
 
 .greenColor {

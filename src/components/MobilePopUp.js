@@ -54,12 +54,10 @@ const MobilePopUp = () => {
           </Modal.Header>
           <Modal.Body className='textAlign'>
             <img src={logo} className="mainLogo"/><br/>
-          <div className='greenColor'>
-            <br/>
-            <p>WELCOME<br/>
-            TO <br/>DOLPE
-             <br/>VILLA ELLA</p><br/>
+          <div className='greenColor'><br/>
+           <p>WELCOME TO DOLPE VILLA ELLA</p><br/>
           </div>
+          <div><br/></div>
           </Modal.Body>          
         </Modal>
       </>
