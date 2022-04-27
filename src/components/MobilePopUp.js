@@ -1,5 +1,5 @@
 import {useState,useEffect} from 'react';
-import {Button,Modal} from 'react-bootstrap';
+import {Modal} from 'react-bootstrap';
 import '../App.css';
 import logo from '../assets/68681472_114368466589511_8231771088728621056_n.jpg';
 import background from '../assets/MobilePopUpBackGround.jpg';
