@@ -42,7 +42,6 @@ const MobilePopUp = () => {
           className="taransParentMobile"
           style={{
             backgroundImage:`url(${background})`,
-           
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}
