@@ -76,3 +76,8 @@
   background-position: center;
  
 }
+
+/*Middle Bar*/
+.taransParentMiddleBar{
+  opacity: 0.7;
+}
