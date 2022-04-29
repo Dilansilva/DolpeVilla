@@ -1,12 +1,27 @@
 import React from "react";
-import backGround from "../assets/MobilePopUpBackGround";
+import backGround from "../assets/MobilePopUpBackGround.jpg";
+import '../../src/App.css';
 
 function Home() {
     return (
-        <div style={{
+        <div className="homeImage" style={{
              backgroundImage: `url(${backGround})`
         }}>
-            <p>Home</p>
+           <p>nlnlsdddddddddddddddddddddddddddddddddddddddddddddn</p>
+           <p>nlnln</p>
+           <p>nlnln</p>
+           <p>nlnln</p>
+           <p>nlnln</p>
+           <p>nlnln</p>
+           <p>nlnln</p>
+           <p>nlnln</p>
+           <p>nlnln</p>
+           <p>nlnln</p>
+           <p>nlnln</p>
+           <p>nlnln</p>
+           <p>nlnln</p>
+           <p>nlnln</p>
+           <p>nlnln</p>
         </div>
     );
 }

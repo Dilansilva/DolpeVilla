@@ -6,6 +6,7 @@
 .taransParent{
   opacity: 0.4;
   background-color: #124017;
+  
 }
 
 .gardientBtn{
@@ -67,4 +68,11 @@
 
 .minorLogo {
   width: 20%;
+}
+
+/*Home Page*/
+.homeImage {
+  background-size: cover;
+  background-position: center;
+ 
 }
