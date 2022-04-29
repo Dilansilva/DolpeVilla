@@ -2,6 +2,7 @@ import {useState,useEffect} from 'react';
 import '../App.css';
 import {Container,Navbar,ToggleButton,Nav,NavDropdown} from 'react-bootstrap';
 import MobilePopUp from './MobilePopUp';
+import logo from '../assets/68681472_114368466589511_8231771088728621056_n.jpg';
 
 function getWindowDimensions() {
   const { innerWidth: width } = window;
@@ -34,7 +35,9 @@ function Header(){
      {width > 480 ? <> {/*Computer navigation bar */}
       <Navbar className="taransParent">
         <Container className="taransParent">
-          <Navbar.Brand href="#home">#</Navbar.Brand>
+          <Navbar.Brand href="#home">
+          <img src={logo} className="minorLogo"/>
+          </Navbar.Brand>
           <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
               <ToggleButton className="gardientBtn"><b>COVID-19 UPDATES</b></ToggleButton>
