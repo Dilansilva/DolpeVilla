@@ -43,7 +43,7 @@ const MobilePopUp = () => {
           style={{
             backgroundImage:`url(${background})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center'
+            backgroundPosition: 'center',
           }}
         >
           <Modal.Header
