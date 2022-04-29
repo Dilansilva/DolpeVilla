@@ -7,18 +7,6 @@ function Home() {
         <div className="homeImage" style={{
              backgroundImage: `url(${backGround})`
         }}>
-           <p>nlnlsdddddddddddddddddddddddddddddddddddddddddddddn</p>
-           <p>nlnln</p>
-           <p>nlnln</p>
-           <p>nlnln</p>
-           <p>nlnln</p>
-           <p>nlnln</p>
-           <p>nlnln</p>
-           <p>nlnln</p>
-           <p>nlnln</p>
-           <p>nlnln</p>
-           <p>nlnln</p>
-           <p>nlnln</p>
            <p>nlnln</p>
            <p>nlnln</p>
            <p>nlnln</p>
