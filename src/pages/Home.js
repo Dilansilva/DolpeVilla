@@ -3,6 +3,7 @@ import backGround from "../assets/DSC01499.jpg";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
 import Blue from "../assets/_1322204.jpg";
+import { Col, Container, Row, Card, Button } from "react-bootstrap";
 
 function Home() {
     return (
@@ -54,14 +55,50 @@ function Home() {
            {
                //Middle bar
            }
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
+       <Container style={{textAlign:'center'}}>
+       <Row>
+
+            <Col xs={4}>
+                <Card style={{ width: '18rem',background:'none' }}>
+                    <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Button variant="primary">ACCOMODATION</Button>
+                                <Card.Text className="textSizeAndCOlor">
+                                The resort is made up of several beautifully crafted chalets tucked within the leveled landscape of the plantation.
+                                </Card.Text>
+    
+                        </Card.Body>
+                </Card>
+            </Col>
+
+            <Col xs={4}>
+                <Card style={{ width: '18rem',background:'none' }}>
+                    <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Button variant="primary">THINGS TO DO</Button>
+                                <Card.Text className="textSizeAndCOlor">
+                                Ella is probably one of Sri Lanka’s best kept secrets that offers plenty to keep you fascinated during a few nights’ stay. Apart from simply unwinding in cool climes with hypnotic views;                                 </Card.Text>
+    
+                        </Card.Body>
+                </Card>
+            </Col>
+
+            <Col xs={4}>
+                <Card style={{ width: '18rem',background:'none' }}>
+                    <Card.Img variant="top" src="holder.js/100px180" />
+                        <Card.Body>
+                            <Button variant="primary">DINNING</Button>
+                                <Card.Text className="textSizeAndCOlor">
+                                Dining at Dolape Villa Ella is a stimulating experience. A truly unique open area restaurant Ella, the ‘Restaurant Dolape Villa’, built on a hillock that overlooks breathtaking scenery, engulfs the guests in a tantalizing dining experience.
+
+</Card.Text>
+    
+                        </Card.Body>
+                </Card>
+            </Col>
+
+        </Row>
+       </Container>
            
         </div>
     </>

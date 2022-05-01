@@ -101,3 +101,8 @@
   height: auto;
   background-image: linear-gradient(0deg, rgba(3, 15, 81, 0.42), rgba(3, 15, 81, 0.42));
 }
+
+.textSizeAndCOlor {
+  font-size: 10px;
+  color: #ffffff;
+}
