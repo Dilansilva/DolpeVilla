@@ -4,7 +4,7 @@ import {MDBFooter,MDBIcon} from 'mdb-react-ui-kit';
 
 function Footer() {
     return (
-        <MDBFooter className='text-center text-white addressDiv'>
+          <MDBFooter className='text-center text-white addressDiv'>
           <div className='container p-4 pb-0'>
             <section className='mb-4'>
               <a
@@ -69,6 +69,7 @@ function Footer() {
               <p className="footerText footerTextMobile" >Website Designed & Developed by D&SDeveloer</p>
           </div>
         </MDBFooter>
+    
       );
 }
 export default Footer;
