@@ -4,6 +4,7 @@ import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
 import Blue from "../assets/_1322204.jpg";
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
+import FirstImg from "../assets/_1344168.jpg"
 
 function Home() {
     return (
@@ -60,7 +61,7 @@ function Home() {
 
             <Col xs={4}>
                 <Card style={{ width: '18rem',background:'none' }}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
+                    <Card.Img variant="top" src="MiddleBar" />
                         <Card.Body>
                             <Button variant="primary">ACCOMODATION</Button>
                                 <Card.Text className="textSizeAndCOlor">
