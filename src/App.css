@@ -72,10 +72,11 @@
 
 /*Home Page*/
 .homeImage {
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
   display: block;
-  height: auto;
+  height: 100%;
+  width: 100%;
 }
 
 /*Middle Bar*/
@@ -111,4 +112,6 @@
 .blueAreaRow {
   margin-top: 10%;
 }
+
+
 

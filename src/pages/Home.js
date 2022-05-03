@@ -60,7 +60,7 @@ function Home() {
            }
        <Container style={{textAlign:'center'}}>
        <Row className="blueAreaRow">
-            <Col xs={4}>
+            <Col style={{display:'flex',alignItems:'center'}}>
                 <Card style={{ width: '18rem',background:'none' }}>
                     <Card.Img variant="top" src={FirstImg} />
                         <Card.Body>
@@ -73,7 +73,7 @@ function Home() {
                 </Card>
             </Col>
 
-            <Col xs={4}>
+            <Col>
                 <Card style={{ width: '18rem',background:'none' }}>
                     <Card.Img variant="top" src={SecondImg} />
                         <Card.Body>
@@ -85,15 +85,14 @@ function Home() {
                 </Card>
             </Col>
 
-            <Col xs={4}>
+            <Col>
                 <Card style={{ width: '18rem',background:'none' }}>
                     <Card.Img variant="top" src={ThirdImg} />
                         <Card.Body>
                             <Button variant="primary">DINNING</Button>
                                 <Card.Text className="textSizeAndCOlor">
                                 Dining at Dolape Villa Ella is a stimulating experience. A truly unique open area restaurant Ella, the ‘Restaurant Dolape Villa’, built on a hillock that overlooks breathtaking scenery, engulfs the guests in a tantalizing dining experience.
-
-</Card.Text>
+                                </Card.Text>
     
                         </Card.Body>
                 </Card>
