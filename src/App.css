@@ -4,8 +4,8 @@
 }
 
 .taransParent{
-  opacity: 0.4;
-  background-color: #124017;
+  /*opacity: 0.4;*/
+  background-color: #ffffff;
   
 }
 
@@ -67,7 +67,7 @@
 }
 
 .minorLogo {
-  width: 20%;
+  width: 40%;
 }
 
 /*Home Page*/
@@ -92,4 +92,17 @@
   margin-left: 10%;
   margin-right: 10%;
   color: #FFFFFF;
+}
+
+.blueArea{
+  background-size: cover;
+  background-position: center;
+  display: block;
+  height: auto;
+  background-image: linear-gradient(0deg, rgba(3, 15, 81, 0.42), rgba(3, 15, 81, 0.42));
+}
+
+.textSizeAndCOlor {
+  font-size: 10px;
+  color: #ffffff;
 }
