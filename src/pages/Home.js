@@ -4,7 +4,9 @@ import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
 import Blue from "../assets/_1322204.jpg";
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
-import FirstImg from "../assets/_1344168.jpg"
+import FirstImg from "../assets/_1344168.jpg";
+import SecondImg from "../assets/_1322232.jpg";
+import ThirdImg from "../assets/287522687.jpg"
 
 function Home() {
     return (
@@ -57,11 +59,10 @@ function Home() {
                //Middle bar
            }
        <Container style={{textAlign:'center'}}>
-       <Row>
-
+       <Row className="blueAreaRow">
             <Col xs={4}>
                 <Card style={{ width: '18rem',background:'none' }}>
-                    <Card.Img variant="top" src="MiddleBar" />
+                    <Card.Img variant="top" src={FirstImg} />
                         <Card.Body>
                             <Button variant="primary">ACCOMODATION</Button>
                                 <Card.Text className="textSizeAndCOlor">
@@ -74,7 +75,7 @@ function Home() {
 
             <Col xs={4}>
                 <Card style={{ width: '18rem',background:'none' }}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
+                    <Card.Img variant="top" src={SecondImg} />
                         <Card.Body>
                             <Button variant="primary">THINGS TO DO</Button>
                                 <Card.Text className="textSizeAndCOlor">
@@ -86,7 +87,7 @@ function Home() {
 
             <Col xs={4}>
                 <Card style={{ width: '18rem',background:'none' }}>
-                    <Card.Img variant="top" src="holder.js/100px180" />
+                    <Card.Img variant="top" src={ThirdImg} />
                         <Card.Body>
                             <Button variant="primary">DINNING</Button>
                                 <Card.Text className="textSizeAndCOlor">
