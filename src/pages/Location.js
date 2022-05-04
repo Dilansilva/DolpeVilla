@@ -2,7 +2,7 @@ import React from "react";
 import backGround from "../assets/_1344105.jpg";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
-import Blue from "../assets/_1322204.jpg";
+import Blue from "../assets/OG12.jpg";
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
 import FirstImg from "../assets/_1344168.jpg";
 import SecondImg from "../assets/_1322232.jpg";
@@ -28,7 +28,9 @@ function Location() {
            <MiddleBar/>
         </div>
         {/*Dolpe Villa Ella, Sri lanka */}
-        <div style={{backgroundColor:'#1F211F'}}>
+        <div  className="homeImage" style={{
+             backgroundImage: `url(${Blue})`
+        }}>
         <div className="secondDiv">
            <br/><br/><br/>
            <h4 className="dolpeText">Dolpe Villa Ella, Sri lanka</h4>
