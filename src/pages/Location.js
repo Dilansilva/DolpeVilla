@@ -34,7 +34,11 @@ function Location() {
         }}>
         <div className="secondDiv">
            <br/><br/><br/>
-           <h4 className="dolpeText">Dolpe Villa Ella, Sri lanka</h4>
+            <Container>
+                <Row>
+                    <Col sm={4}>sm=8</Col>
+                    <Col sm={8}>
+                    <h4 className="dolpeText">Dolpe Villa Ella, Sri lanka</h4>
            <br/><br/>
            <p>Located 8 km from Demodara Nine Arch Bridge, 
            Dolape Villa has accommodations with a restaurant, 
@@ -52,6 +56,10 @@ function Location() {
            <p>A water park is available on site and cycling can 
            be enjoyed within close proximity of the accommodation.</p>
            <br/><br/><br/>
+                    </Col>
+                </Row>
+            </Container>
+           
         </div>
         </div>
         {/*Blue Area */}
