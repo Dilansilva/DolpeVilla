@@ -5,9 +5,9 @@ import MiddleBar from "../components/MiddleBar";
 import Blue from "../assets/OG12.jpg";
 import LastSec from "../assets/MobilePopUpBackGround.jpg";
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
-import FirstImg from "../assets/_1344168.jpg";
-import SecondImg from "../assets/_1322232.jpg";
-import ThirdImg from "../assets/287522687.jpg"
+import FirstImg from "../assets/_1322209.jpg";
+import SecondImg from "../assets/_1344104.jpg";
+import ThirdImg from "../assets/_1322202.jpg"
 
 function Location() {
     return (
