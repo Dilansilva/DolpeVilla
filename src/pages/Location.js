@@ -3,6 +3,7 @@ import backGround from "../assets/_1344105.jpg";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
 import Blue from "../assets/OG12.jpg";
+import LastSec from "../assets/MobilePopUpBackGround.jpg";
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
 import FirstImg from "../assets/_1344168.jpg";
 import SecondImg from "../assets/_1322232.jpg";
@@ -55,7 +56,7 @@ function Location() {
         </div>
         {/*Blue Area */}
         <div className="blueArea" style={{
-             backgroundImage: `url(${Blue})`
+             backgroundImage: `url(${LastSec})`
         }}>
            {
                //Middle bar
