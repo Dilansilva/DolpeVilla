@@ -59,8 +59,9 @@ function Home() {
                //Middle bar
            }
        <Container style={{textAlign:'center'}}>
+           <br/>
        <Row className="blueAreaRow">
-            <Col style={{display:'flex',alignItems:'center'}}>
+            <Col>
                 <Card style={{ width: '18rem',background:'none' }}>
                     <Card.Img variant="top" src={FirstImg} />
                         <Card.Body>
