@@ -59,7 +59,7 @@ function Home() {
                //Middle bar
            }
        <Container style={{textAlign:'center'}}>
-           <br/>
+        <br/>
        <Row className="blueAreaRow">
             <Col>
                 <Card style={{ width: '18rem',background:'none' }}>
