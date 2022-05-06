@@ -36,7 +36,14 @@ function Location() {
            <br/><br/><br/>
             <Container>
                 <Row>
-                    <Col sm={4}>sm=8</Col>
+                    <Col sm={4}>
+                        <div className="d-grid gap-2">
+                            <a className="button">Link Button</a>
+                            <a className="button">Link Button</a>
+                            <a className="button">Link Button</a>
+                            <a className="button">Link Button</a>
+                        </div>
+                    </Col>
                     <Col sm={8}>
                     <h4 className="dolpeText">Dolpe Villa Ella, Sri lanka</h4>
            <br/><br/>
