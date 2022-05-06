@@ -8,6 +8,7 @@ import { Col, Container, Row, Card, Button } from "react-bootstrap";
 import FirstImg from "../assets/_1322209.jpg";
 import SecondImg from "../assets/_1344104.jpg";
 import ThirdImg from "../assets/_1322202.jpg"
+import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
 
 function Location() {
     return (
@@ -30,38 +31,34 @@ function Location() {
         </div>
         {/*Dolpe Villa Ella, Sri lanka */}
         <div  className="homeImage" style={{
-             backgroundImage: `url(${Blue})`
+             backgroundImage: `url(${Blue})`,
         }}>
         <div className="secondDiv">
            <br/><br/><br/>
             <Container>
                 <Row>
-                    <Col sm={4}>
+                    <Col sm={4}> 
                         <div className="d-grid gap-2">
-                            <a className="button">Link Button</a>
-                            <a className="button">Link Button</a>
-                            <a className="button">Link Button</a>
-                            <a className="button">Link Button</a>
+                            <a className="button">LOCATION</a>
+                            <a className="button">TRANSPORT</a>
+                            <a className="button">WEATHER</a>
+                            <a className="button">EXCURSIONS</a>
                         </div>
                     </Col>
                     <Col sm={8}>
-                    <h4 className="dolpeText">Dolpe Villa Ella, Sri lanka</h4>
-           <br/><br/>
-           <p>Located 8 km from Demodara Nine Arch Bridge, 
-           Dolape Villa has accommodations with a restaurant, 
-           a garden and a 24-hour front desk for your convenience. 
-           Complimentary WiFi is offered throughout the property.</p>
+                    <h4 className="dolpeText locationText">Dolape Villa standing on exquisite beauty in Ella, Sri Lanka.</h4>
+           <p className="smallLocationText">Ella is a small village located among the peaks of Sri Lanka’s 
+           central highlands. This sleepy village is nestled in a valley peering
+           straight through the Ella Gap to the plain nearly 1000m below and across 
+           to the coastline. Apart from the mesmerizing natural views, Ella is 
+           surrounded by hilly countryside perfect for walks; through tea 
+           plantations, waterfalls, ancient temples and artefacts. With a handful 
+           of shops, hotels and guesthouses, Ella still remains a remote hamlet. 
+           This hidden sanctuary with the perfect climate is probably one of the 
+           best-kept secrets of the country and is easily accessible from the 
+           comfort of our Ella resort in Sri Lanka.</p>
 
-           <p>Some of the units have satellite flat-screen TV, 
-           a fully equipped kitchenette with a minibar, 
-           and a private bathroom with a hot tub and bathrobes.</p>
-
-           <p>The lodge offers a continental or à la carte breakfast.</p>
-
-           <p>Dolape Villa has a playground</p>
-
-           <p>A water park is available on site and cycling can 
-           be enjoyed within close proximity of the accommodation.</p>
+          
            <br/><br/><br/>
                     </Col>
                 </Row>
