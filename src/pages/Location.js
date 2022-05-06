@@ -93,8 +93,19 @@ function Location() {
                         //     The weather pattern in the locality of the resort is recognised
                         //      as being the most comfortable in the entire country.
                         // </p>
-                      
                  }
+                 
+                      <h4 className="dolpeText locationText">Excursion</h4>
+                        <p className="smallLocationText">
+                        Ella has plenty to offer that could keep you fascinated and occupied 
+                        during a few nights’ stay. Apart from the mesmerizing views of mountains 
+                        and tea estates, the region provides shelter to many precious flora and 
+                        fauna. In addition to simply unwinding in the cool climes you could set 
+                        out on a trekking adventure or safari to a nearby wildlife sanctuary as
+                        part of excursions in Ella to discover and experience some of these 
+                        delicate wonders of nature up- close.
+                        </p>
+                 
                 
            <br/><br/><br/>
                     </Col>
