@@ -58,29 +58,44 @@ function Location() {
                         // This hidden sanctuary with the perfect climate is probably one of the 
                         // best-kept secrets of the country and is easily accessible from the 
                         // comfort of our Ella resort in Sri Lanka.</p>
-                   }
+                   
 
-                   <h4 className="dolpeText locationText">Transport</h4>
-                   <p className="smallLocationText">
-                   Featuring among Ella resorts, Dolape Villa is easy to locate right across 
-                   and facing ‘Little Adams Peak’. The resort is easily reached from any location
-                     below:
-                   <br/><br/>
-                    10 km from Ella junction/railway station (5 mins)<br/>
-                    17 km from Bandarawela (30 mins)<br/>
-                    63.5 km from Nuwara Eliya (1.30 hours)<br/>
-                    140 km wild life sanctuary Yala (2 hours)<br/>
-                    239 km from Bandaranayake International Airport (5 to 6 hours)<br/>
-                    202 km from Colombo (5 to 6 hours)<br/>
-                    145 km from Kandy (3 to 4 hours)<br/><br/>
-
-                    Please CONTACT US FOR directions / transport arrangements or to arrange a pick up from any location below.<br/>
-                    Bandaranayake International Airport<br/>
-                    Weerawila Mahinda Rajapakshe International Airport<br/>
-                    Colombo<br/>
-                    Nearest City / Town<br/>
-                    Railway / Bus Station<br/>
-                   </p>
+                
+                    //    <h4 className="dolpeText locationText">Transport</h4>
+                    //    <p className="smallLocationText">
+                    //    Featuring among Ella resorts, Dolape Villa is easy to locate right across 
+                    //    and facing ‘Little Adams Peak’. The resort is easily reached from any location
+                    //      below:
+                    //    <br/><br/>
+                    //     10 km from Ella junction/railway station (5 mins)<br/>
+                    //     17 km from Bandarawela (30 mins)<br/>
+                    //     63.5 km from Nuwara Eliya (1.30 hours)<br/>
+                    //     140 km wild life sanctuary Yala (2 hours)<br/>
+                    //     239 km from Bandaranayake International Airport (5 to 6 hours)<br/>
+                    //     202 km from Colombo (5 to 6 hours)<br/>
+                    //     145 km from Kandy (3 to 4 hours)<br/><br/>
+    
+                    //     Please CONTACT US FOR directions / transport arrangements or to arrange a pick up from any location below.<br/>
+                    //     Bandaranayake International Airport<br/>
+                    //     Weerawila Mahinda Rajapakshe International Airport<br/>
+                    //     Colombo<br/>
+                    //     Nearest City / Town<br/>
+                    //     Railway / Bus Station<br/>
+                    //    </p>
+                }
+                
+                 {
+                        // <h4 className="dolpeText locationText">Weather</h4>
+                        // <p className="smallLocationText">
+                        //     The climate at Dolape Villa Ella remains a comfortable 20-28 degrees 
+                        //     Celsius throughout the year, thereby giving the weather in Ella a ‘not
+                        //     too cold, not too hot’ comfort factor.<br/><br/>
+                        //     The weather pattern in the locality of the resort is recognised
+                        //      as being the most comfortable in the entire country.
+                        // </p>
+                      
+                 }
+                
            <br/><br/><br/>
                     </Col>
                 </Row>
