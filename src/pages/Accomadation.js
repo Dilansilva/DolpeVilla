@@ -2,6 +2,8 @@ import React,{useState} from "react";
 
 import '../../src/App.css';
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
 
 import MiddleBar from "../components/MiddleBar";
 
@@ -202,28 +204,37 @@ const Accomadation = () => {
     
             </Row> 
             );
-        } else if(text == 'atticRoom'){
+        } else if(text == 'aticRoom'){
             return(
-                <Row className="blueAreaRow">
-                <Col>
-                    <Card style={{ width: '10rem',background:'none'}}>
-                        <Card.Img variant="top" src={FirstImgAttic}/>
-                    </Card>
-                </Col>
+                
+                    <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+                        <ImageListItem>
+                            <img
+                                src={FirstImgAttic}
+                                loading="lazy"
+                            />
+                        </ImageListItem>
+                        <ImageListItem>
+                            <img
+                                src={FirstImgAttic}
+                                loading="lazy"
+                            />
+                        </ImageListItem>
+                        <ImageListItem>
+                            <img
+                                src={FirstImgAttic}
+                                loading="lazy"
+                            />
+                        </ImageListItem>
+                        <ImageListItem>
+                            <img
+                                src={FirstImgAttic}
+                                loading="lazy"
+                            />
+                        </ImageListItem>
+                    </ImageList>
     
-                <Col>
-                    <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={SecondImgTrans} />
-                    </Card>
-                </Col>
-    
-                <Col>
-                    <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={ThirdImgTrans} />
-                    </Card>
-                </Col>
-    
-            </Row> 
+           
             );
         } else if(text == 'deluxeRoom'){
             return(
