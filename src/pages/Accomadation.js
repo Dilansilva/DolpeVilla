@@ -8,6 +8,14 @@ import MiddleBar from "../components/MiddleBar";
 import Blue from "../assets/107211990_297877908238565_7498320495348409177_n.jpg";
 import backGround from "../assets/_1322226.jpg";
 
+import FirstImg from "../assets/_1322209.jpg";
+import SecondImg from "../assets/_1344104.jpg";
+import ThirdImg from "../assets/_1322202.jpg";
+
+import FirstImgTrans from "../assets/f682b054e7868718f4167b9243ab3f9c.jpg";
+import SecondImgTrans from "../assets/The_Common_Wanderer_-3.jpg";
+import ThirdImgTrans from "../assets/a12d3250b32491bd47f7773b57dabfe3.jpg";
+
 const Accomadation = () => {
     const [text,setText] = useState('location');
     const middleSHow = () =>{
@@ -161,6 +169,110 @@ const Accomadation = () => {
             );
         }
     }
+
+    const showPictures = () => {
+        if(text == 'location'){
+            return(
+                <Row className="blueAreaRow">
+                <Col>
+                    <Card className="text-center" style={{ width: '15rem',background:'none' }}>
+                        <Card.Img variant="top" src={FirstImg} />
+                        <Card.Text>Card Title</Card.Text>
+                    </Card>
+                </Col>
+    
+                <Col>
+                    <Card style={{width: '15rem',background:'none' }}>
+                        <Card.Img variant="top" src={SecondImg} />
+                    </Card>
+                </Col>
+    
+                <Col>
+                    <Card style={{width: '15rem',background:'none' }}>
+                        <Card.Img variant="top" src={ThirdImg} />
+                    </Card>
+                </Col>
+
+                <Col>
+                    <Card style={{ width: '15rem',background:'none' }}>
+                        <Card.Img variant="top" src={ThirdImg} />
+                    </Card>
+                </Col>
+    
+            </Row> 
+            );
+        } else if(text == 'transport'){
+            return(
+                <Row className="blueAreaRow">
+                <Col>
+                    <Card style={{ width: '18rem',background:'none'}}>
+                        <Card.Img variant="top" src={FirstImgTrans}/>
+                    </Card>
+                </Col>
+    
+                <Col>
+                    <Card style={{ width: '18rem',background:'none' }}>
+                        <Card.Img variant="top" src={SecondImgTrans} />
+                    </Card>
+                </Col>
+    
+                <Col>
+                    <Card style={{ width: '18rem',background:'none' }}>
+                        <Card.Img variant="top" src={ThirdImgTrans} />
+                    </Card>
+                </Col>
+    
+            </Row> 
+            );
+        } else if(text == 'weather'){
+            return(
+                <Row className="blueAreaRow">
+                <Col>
+                    <Card style={{ width: '18rem',background:'none' }}>
+                        <Card.Img variant="top" src={FirstImg} />
+                    </Card>
+                </Col>
+    
+                <Col>
+                    <Card style={{ width: '18rem',background:'none' }}>
+                        <Card.Img variant="top" src={SecondImg} />
+                    </Card>
+                </Col>
+    
+                <Col>
+                    <Card style={{ width: '18rem',background:'none' }}>
+                        <Card.Img variant="top" src={ThirdImg} />
+                    </Card>
+                </Col>
+    
+            </Row> 
+            );
+        } else {
+            return(
+                <Row className="blueAreaRow">
+                <Col>
+                    <Card style={{ width: '18rem',background:'none'}}>
+                        <Card.Img variant="top" src={FirstImgTrans}/>
+                    </Card>
+                </Col>
+    
+                <Col>
+                    <Card style={{ width: '18rem',background:'none' }}>
+                        <Card.Img variant="top" src={SecondImgTrans} />
+                    </Card>
+                </Col>
+    
+                <Col>
+                    <Card style={{ width: '18rem',background:'none' }}>
+                        <Card.Img variant="top" src={ThirdImgTrans} />
+                    </Card>
+                </Col>
+    
+            </Row> 
+            );
+        }
+    }
+
     return (
         <>
              <div className="homeImage" style={{
@@ -187,6 +299,7 @@ const Accomadation = () => {
            <br/><br/><br/>
            {middleSHow()}
            <br/><br/><br/>
+           {showPictures()}
         </div>
         </div>
         </>
