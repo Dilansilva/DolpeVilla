@@ -13,9 +13,9 @@ import SecondImg from "../assets/_1322200.jpg";
 import ThirdImg from "../assets/_1322864.jpg";
 import FourthImg from "../assets/_1344124.jpg"
 
-import FirstImgTrans from "../assets/f682b054e7868718f4167b9243ab3f9c.jpg";
-import SecondImgTrans from "../assets/The_Common_Wanderer_-3.jpg";
-import ThirdImgTrans from "../assets/a12d3250b32491bd47f7773b57dabfe3.jpg";
+import FirstImgAttic from "../assets/_1344166.jpg";
+import SecondImgTrans from "../assets/_1344171.jpg";
+import ThirdImgTrans from "../assets/_1344169.jpg";
 
 const Accomadation = () => {
     const [text,setText] = useState('location');
@@ -206,8 +206,8 @@ const Accomadation = () => {
             return(
                 <Row className="blueAreaRow">
                 <Col>
-                    <Card style={{ width: '18rem',background:'none'}}>
-                        <Card.Img variant="top" src={FirstImgTrans}/>
+                    <Card style={{ width: '10rem',background:'none'}}>
+                        <Card.Img variant="top" src={FirstImgAttic}/>
                     </Card>
                 </Col>
     
@@ -253,7 +253,7 @@ const Accomadation = () => {
                 <Row className="blueAreaRow">
                 <Col>
                     <Card style={{ width: '18rem',background:'none'}}>
-                        <Card.Img variant="top" src={FirstImgTrans}/>
+                        <Card.Img variant="top" src={FirstImgAttic}/>
                     </Card>
                 </Col>
     
