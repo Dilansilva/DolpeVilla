@@ -114,7 +114,7 @@
 }
 
 .button {
-  
+
   color: white;
   padding: 15px 32px;
   text-align: center;
@@ -139,4 +139,9 @@
 .smallLocationText{
   font-size: 15px;
  line-height: 1;
+}
+
+.imageSTyles{
+  height: 5%;
+  width: 10%;
 }
