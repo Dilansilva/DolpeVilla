@@ -58,11 +58,10 @@ function Location() {
                          best-kept secrets of the country and is easily accessible from the 
                          comfort of our Ella resort in Sri Lanka.</p>
                    
-                        <br/><br/><br/>
                     </Col>
                 </Row>
             </Container>
-           
+            <br/><br/><br/>
         </div>
         </div>
         {/*Blue Area */}
