@@ -8,9 +8,10 @@ import MiddleBar from "../components/MiddleBar";
 import Blue from "../assets/107211990_297877908238565_7498320495348409177_n.jpg";
 import backGround from "../assets/_1322226.jpg";
 
-import FirstImg from "../assets/_1322209.jpg";
-import SecondImg from "../assets/_1344104.jpg";
-import ThirdImg from "../assets/_1322202.jpg";
+import FirstImg from "../assets/_1344168.jpg";
+import SecondImg from "../assets/_1322200.jpg";
+import ThirdImg from "../assets/_1322864.jpg";
+import FourthImg from "../assets/_1344124.jpg"
 
 import FirstImgTrans from "../assets/f682b054e7868718f4167b9243ab3f9c.jpg";
 import SecondImgTrans from "../assets/The_Common_Wanderer_-3.jpg";
@@ -60,26 +61,23 @@ const Accomadation = () => {
                         </div>
                     </Col>
                     <Col sm={8}>
-                    <h4 className="dolpeText locationText">Transport</h4>
+                    <h4 className="dolpeText locationText">Attic Suite room</h4>
                         <p className="smallLocationText">
-                        Featuring among Ella resorts, Dolape Villa is easy to locate right across 
-                        and facing ‘Little Adams Peak’. The resort is easily reached from any location
-                          below:
-                        <br/><br/>
-                         10 km from Ella junction/railway station (5 mins)<br/>
-                       17 km from Bandarawela (30 mins)<br/>
-                         63.5 km from Nuwara Eliya (1.30 hours)<br/>
-                         140 km wild life sanctuary Yala (2 hours)<br/>
-                         239 km from Bandaranayake International Airport (5 to 6 hours)<br/>
-                         202 km from Colombo (5 to 6 hours)<br/>
-                         145 km from Kandy (3 to 4 hours)<br/><br/>
-    
-                         Please CONTACT US FOR directions / transport arrangements or to arrange a pick up from any location below.<br/>
-                         Bandaranayake International Airport<br/>
-                         Weerawila Mahinda Rajapakshe International Airport<br/>
-                         Colombo<br/>
-                        Nearest City / Town<br/>
-                        Railway / Bus Station<br/>
+                        This elegant and spacious suite comes with a living and 
+                        balcony area which opens out to the stunning views of the 
+                        Ella Gap & the Ravana Ella Waterfall. The room is equipped 
+                        with a large ensuite bathroom.<br/><br/>
+
+                        The suite also comes with a kitchenette equipped with electric 
+                        kettle, cutlery, glassware, crockery and includes a butler service 
+                        to enhance the holiday experience.<br/><br/>
+
+                        The rooms have a luxury carpet floor and elegant furnitures.Walk 
+                        barefoot and feel the soothing comfort of the floors!<br/><br/>
+
+                        The bathrooms are finished in titanium cement, completed with a 
+                        shower cubicle with hot and cold water and a wash basin to 
+                        complement the luxurious interior.
                         </p>
                     </Col>
                 </Row>
@@ -197,7 +195,7 @@ const Accomadation = () => {
 
                 <Col>
                 <Card className="text-center" style={{ width: '15rem',background:'none' }}>
-                        <Card.Img variant="top" src={ThirdImg} />
+                        <Card.Img variant="top" src={FourthImg} />
                         <Card.Text>Budget Villa</Card.Text>
                     </Card>
                 </Col>
