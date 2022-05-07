@@ -170,7 +170,7 @@ function Location() {
            }
        <Container style={{textAlign:'center'}}>
         <br/>
-       <Row className="blueAreaRow">
+        <Row className="blueAreaRow">
             <Col>
                 <Card style={{ width: '18rem',background:'none' }}>
                     <Card.Img variant="top" src={FirstImg} />
@@ -189,7 +189,8 @@ function Location() {
                 </Card>
             </Col>
 
-        </Row> <br/><br/><br/>
+        </Row> 
+        <br/>
        </Container>
            
         </div>
