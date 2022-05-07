@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import backGround from "../assets/_1344105.jpg";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
@@ -11,6 +11,38 @@ import ThirdImg from "../assets/_1322202.jpg"
 import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
 
 function Location() {
+    const [text,setText] = useState('location');
+    const middleSHow = () =>{
+        if(text == 'location'){
+            return(
+                <Container>
+                <Row>
+                    <Col sm={4}> 
+                        <div className="d-grid gap-2">
+                            <a className="button">LOCATION</a>
+                            <a className="button">TRANSPORT</a>
+                            <a className="button">WEATHER</a>
+                            <a className="button">EXCURSIONS</a>
+                        </div>
+                    </Col>
+                    <Col sm={8}>
+                    <h4 className="dolpeText locationText">Dolape Villa standing on exquisite beauty in Ella, Sri Lanka.</h4>
+                     <p className="smallLocationText">Ella is a small village located among the peaks of Sri Lanka’s 
+                         central highlands. This sleepy village is nestled in a valley peering
+                         straight through the Ella Gap to the plain nearly 1000m below and across 
+                         to the coastline. Apart from the mesmerizing natural views, Ella is 
+                         surrounded by hilly countryside perfect for walks; through tea 
+                         plantations, waterfalls, ancient temples and artefacts. With a handful 
+                         of shops, hotels and guesthouses, Ella still remains a remote hamlet. 
+                         This hidden sanctuary with the perfect climate is probably one of the 
+                         best-kept secrets of the country and is easily accessible from the 
+                         comfort of our Ella resort in Sri Lanka.</p>
+                    </Col>
+                </Row>
+            </Container>
+            );
+        }
+    }
     return (
     <>
         <div className="homeImage" style={{
@@ -35,33 +67,8 @@ function Location() {
         }}>
         <div className="secondDiv">
            <br/><br/><br/>
-            <Container>
-                <Row>
-                    <Col sm={4}> 
-                        <div className="d-grid gap-2">
-                            <a className="button">LOCATION</a>
-                            <a className="button">TRANSPORT</a>
-                            <a className="button">WEATHER</a>
-                            <a className="button">EXCURSIONS</a>
-                        </div>
-                    </Col>
-                    <Col sm={8}>
-                    <h4 className="dolpeText locationText">Dolape Villa standing on exquisite beauty in Ella, Sri Lanka.</h4>
-                     <p className="smallLocationText">Ella is a small village located among the peaks of Sri Lanka’s 
-                         central highlands. This sleepy village is nestled in a valley peering
-                         straight through the Ella Gap to the plain nearly 1000m below and across 
-                         to the coastline. Apart from the mesmerizing natural views, Ella is 
-                         surrounded by hilly countryside perfect for walks; through tea 
-                         plantations, waterfalls, ancient temples and artefacts. With a handful 
-                         of shops, hotels and guesthouses, Ella still remains a remote hamlet. 
-                         This hidden sanctuary with the perfect climate is probably one of the 
-                         best-kept secrets of the country and is easily accessible from the 
-                         comfort of our Ella resort in Sri Lanka.</p>
-                   
-                    </Col>
-                </Row>
-            </Container>
-            <br/><br/><br/>
+            {middleSHow()}
+           <br/><br/><br/>
         </div>
         </div>
         {/*Blue Area */}
