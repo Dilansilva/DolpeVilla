@@ -11,16 +11,17 @@ import backGround from "../assets/_1322226.jpg";
 const Accomadation = () => {
     const [text,setText] = useState('location');
     const middleSHow = () =>{
-        if(text == 'location'){
+        if(text == 'accomadation'){
             return(
                 <Container>
                 <Row>
                     <Col sm={4}> 
-                        <div className="d-grid gap-2">
-                            <a className="button" onClick={() => {setText('location')}}>LOCATION</a>
-                            <a className="button" onClick={() => {setText('transport')}}>TRANSPORT</a>
-                            <a className="button" onClick={() => {setText('weather')}}>WEATHER</a>
-                            <a className="button" onClick={() => {setText('excursions')}}>EXCURSIONS</a>
+                    <div className="d-grid gap-2">
+                            <a className="button" onClick={() => {setText('accomadation')}}>ACCOMMODATION</a>
+                            <a className="button" onClick={() => {setText('aticRoom')}}>ATTIC SUITE ROOM</a>
+                            <a className="button" onClick={() => {setText('deluxeRoom')}}>DELUXE ROOM</a>
+                            <a className="button" onClick={() => {setText('standardRoom')}}>STANDARD ROOM</a>
+                            <a className="button" onClick={() => {setText('budget')}}>BUDGET VILLAS</a>
                         </div>
                     </Col>
                     <Col sm={8}>
@@ -39,16 +40,17 @@ const Accomadation = () => {
                 </Row>
             </Container>
             );
-        } else if(text == 'transport'){
+        } else if(text == 'aticRoom'){
             return(
                 <Container>
                 <Row>
                 <Col sm={4}> 
                         <div className="d-grid gap-2">
-                            <a className="button" onClick={() => {setText('location')}}>LOCATION</a>
-                            <a className="button" onClick={() => {setText('transport')}}>TRANSPORT</a>
-                            <a className="button" onClick={() => {setText('weather')}}>WEATHER</a>
-                            <a className="button" onClick={() => {setText('excursions')}}>EXCURSIONS</a>
+                            <a className="button" onClick={() => {setText('accomadation')}}>ACCOMMODATION</a>
+                            <a className="button" onClick={() => {setText('aticRoom')}}>ATTIC SUITE ROOM</a>
+                            <a className="button" onClick={() => {setText('deluxeRoom')}}>DELUXE ROOM</a>
+                            <a className="button" onClick={() => {setText('standardRoom')}}>STANDARD ROOM</a>
+                            <a className="button" onClick={() => {setText('budget')}}>BUDGET VILLAS</a>
                         </div>
                     </Col>
                     <Col sm={8}>
@@ -77,16 +79,17 @@ const Accomadation = () => {
                 </Row>
             </Container>
             );
-        } else if(text == 'weather'){
+        } else if(text == 'deluxeRoom'){
             return(
                 <Container>
                 <Row>
                 <Col sm={4}> 
-                        <div className="d-grid gap-2">
-                            <a className="button" onClick={() => {setText('location')}}>LOCATION</a>
-                            <a className="button" onClick={() => {setText('transport')}}>TRANSPORT</a>
-                            <a className="button" onClick={() => {setText('weather')}}>WEATHER</a>
-                            <a className="button" onClick={() => {setText('excursions')}}>EXCURSIONS</a>
+                <div className="d-grid gap-2">
+                            <a className="button" onClick={() => {setText('accomadation')}}>ACCOMMODATION</a>
+                            <a className="button" onClick={() => {setText('aticRoom')}}>ATTIC SUITE ROOM</a>
+                            <a className="button" onClick={() => {setText('deluxeRoom')}}>DELUXE ROOM</a>
+                            <a className="button" onClick={() => {setText('standardRoom')}}>STANDARD ROOM</a>
+                            <a className="button" onClick={() => {setText('budget')}}>BUDGET VILLAS</a>
                         </div>
                     </Col>
                     <Col sm={8}>
@@ -102,16 +105,45 @@ const Accomadation = () => {
                 </Row>
             </Container>
             );
+        } else if(text == 'standardRoom'){
+            return(
+                <Container>
+                <Row>
+                    <Col sm={4}> 
+                    <div className="d-grid gap-2">
+                            <a className="button" onClick={() => {setText('accomadation')}}>ACCOMMODATION</a>
+                            <a className="button" onClick={() => {setText('aticRoom')}}>ATTIC SUITE ROOM</a>
+                            <a className="button" onClick={() => {setText('deluxeRoom')}}>DELUXE ROOM</a>
+                            <a className="button" onClick={() => {setText('standardRoom')}}>STANDARD ROOM</a>
+                            <a className="button" onClick={() => {setText('budget')}}>BUDGET VILLAS</a>
+                        </div>
+                    </Col>
+                    <Col sm={8}>
+                    <h4 className="dolpeText locationText">Excursion</h4>
+                        <p className="smallLocationText">
+                        Ella has plenty to offer that could keep you fascinated and occupied 
+                        during a few nights’ stay. Apart from the mesmerizing views of mountains 
+                        and tea estates, the region provides shelter to many precious flora and 
+                        fauna. In addition to simply unwinding in the cool climes you could set 
+                        out on a trekking adventure or safari to a nearby wildlife sanctuary as
+                        part of excursions in Ella to discover and experience some of these 
+                        delicate wonders of nature up- close.
+                        </p>
+                    </Col>
+                </Row>
+            </Container>
+            );
         } else {
             return(
                 <Container>
                 <Row>
                     <Col sm={4}> 
-                        <div className="d-grid gap-2">
-                            <a className="button" onClick={() => {setText('location')}}>LOCATION</a>
-                            <a className="button" onClick={() => {setText('transport')}}>TRANSPORT</a>
-                            <a className="button" onClick={() => {setText('weather')}}>WEATHER</a>
-                            <a className="button" onClick={() => {setText('excursions')}}>EXCURSIONS</a>
+                    <div className="d-grid gap-2">
+                            <a className="button" onClick={() => {setText('accomadation')}}>ACCOMMODATION</a>
+                            <a className="button" onClick={() => {setText('aticRoom')}}>ATTIC SUITE ROOM</a>
+                            <a className="button" onClick={() => {setText('deluxeRoom')}}>DELUXE ROOM</a>
+                            <a className="button" onClick={() => {setText('standardRoom')}}>STANDARD ROOM</a>
+                            <a className="button" onClick={() => {setText('budget')}}>BUDGET VILLAS</a>
                         </div>
                     </Col>
                     <Col sm={8}>
