@@ -25,17 +25,15 @@ const Accomadation = () => {
                         </div>
                     </Col>
                     <Col sm={8}>
-                    <h4 className="dolpeText locationText">Dolape Villa standing on exquisite beauty in Ella, Sri Lanka.</h4>
-                     <p className="smallLocationText">Ella is a small village located among the peaks of Sri Lanka’s 
-                         central highlands. This sleepy village is nestled in a valley peering
-                         straight through the Ella Gap to the plain nearly 1000m below and across 
-                         to the coastline. Apart from the mesmerizing natural views, Ella is 
-                         surrounded by hilly countryside perfect for walks; through tea 
-                         plantations, waterfalls, ancient temples and artefacts. With a handful 
-                         of shops, hotels and guesthouses, Ella still remains a remote hamlet. 
-                         This hidden sanctuary with the perfect climate is probably one of the 
-                         best-kept secrets of the country and is easily accessible from the 
-                         comfort of our Ella resort in Sri Lanka.</p>
+                    <h4 className="dolpeText locationText">Relaxation , Beautiful view and in luxurious comfort</h4>
+                     <p className="smallLocationText">
+                     The Villa is made up of several beautifully suites tucked within the levelled landscape. 
+                     making it one of the most beautiful views in Sri Lanka. There is ample space for parking 
+                     and the suites with the view making it ideal for a quiet holiday of pure relaxation; for 
+                     honeymooners or even for families. Each suites,rooms opens up to scenic views of the misty 
+                     mountains,Ravana ella waterfall and is equipped with all modern amenities that ensure a 
+                     luxurious, comfortable stay.<br/><br/>Guests have the option of booking this Whole Villa for a group to accommodate a maximum number of persons per room.
+                     </p>
                     </Col>
                 </Row>
             </Container>
