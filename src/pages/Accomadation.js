@@ -171,37 +171,40 @@ const Accomadation = () => {
     }
 
     const showPictures = () => {
-        if(text == 'location'){
+        if(text == 'accomadation'){
             return(
                 <Row className="blueAreaRow">
                 <Col>
                     <Card className="text-center" style={{ width: '15rem',background:'none' }}>
                         <Card.Img variant="top" src={FirstImg} />
-                        <Card.Text>Card Title</Card.Text>
+                        <Card.Text>Attic Suite room</Card.Text>
                     </Card>
                 </Col>
     
                 <Col>
-                    <Card style={{width: '15rem',background:'none' }}>
+                <Card className="text-center" style={{ width: '15rem',background:'none' }}>
                         <Card.Img variant="top" src={SecondImg} />
+                        <Card.Text>Deluxe roomh</Card.Text>
                     </Card>
                 </Col>
     
                 <Col>
-                    <Card style={{width: '15rem',background:'none' }}>
+                <Card className="text-center" style={{ width: '15rem',background:'none' }}>
                         <Card.Img variant="top" src={ThirdImg} />
+                        <Card.Text>Standard room</Card.Text>
                     </Card>
                 </Col>
 
                 <Col>
-                    <Card style={{ width: '15rem',background:'none' }}>
+                <Card className="text-center" style={{ width: '15rem',background:'none' }}>
                         <Card.Img variant="top" src={ThirdImg} />
+                        <Card.Text>Budget Villa</Card.Text>
                     </Card>
                 </Col>
     
             </Row> 
             );
-        } else if(text == 'transport'){
+        } else if(text == 'atticRoom'){
             return(
                 <Row className="blueAreaRow">
                 <Col>
@@ -224,7 +227,7 @@ const Accomadation = () => {
     
             </Row> 
             );
-        } else if(text == 'weather'){
+        } else if(text == 'deluxeRoom'){
             return(
                 <Row className="blueAreaRow">
                 <Col>
@@ -300,6 +303,7 @@ const Accomadation = () => {
            {middleSHow()}
            <br/><br/><br/>
            {showPictures()}
+           <br/><br/>
         </div>
         </div>
         </>
