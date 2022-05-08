@@ -418,26 +418,113 @@ const Accomadation = () => {
             );
         } else if(text == 'deluxeRoom'){
             return(
+                <Container>
                 <Row className="blueAreaRow">
-                <Col>
-                    <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={FirstImg} />
-                    </Card>
-                </Col>
-    
-                <Col>
-                    <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={SecondImg} />
-                    </Card>
-                </Col>
-    
-                <Col>
-                    <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={ThirdImg} />
-                    </Card>
-                </Col>
-    
-            </Row> 
+                   <Col sm={6}>
+                   <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+                {itemData.map((item) => (
+                  <ImageListItem key={item.img}>
+                    <img
+                      src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                      srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                      alt={item.title}
+                      loading="lazy"
+                    />
+                  </ImageListItem>
+                ))}
+              </ImageList>
+                   </Col>
+                   <Col sm={6}>
+                        <div>
+                            <div>
+                                <Badge bg="light" text="dark">Size 47 m²</Badge>{" "}
+                                <Badge bg="light" text="dark">Private kitchenette</Badge>{" "}
+                                <Badge bg="light" text="dark">Attached bathroom</Badge>{" "}
+                                <Badge bg="light" text="dark">Garden View</Badge>{" "}<br/>
+
+                                <Badge bg="light" text="dark">Pool View</Badge>{" "}
+                                <Badge bg="light" text="dark">Mountain View</Badge>{" "}
+                                <Badge bg="light" text="dark">Waterfall View</Badge>{" "}<br/>
+
+                                <Badge bg="light" text="dark">Balcony</Badge>{" "}
+                                <Badge bg="light" text="dark">Flat-Screen TV</Badge>{" "}
+                                <Badge bg="light" text="dark">Free WiFi</Badge>{" "}
+                                <Badge bg="light" text="dark">Mini Bar</Badge>{" "}
+                            </div>
+                            <div>
+                                <b>In your private kitchenette: </b>
+                            </div>
+
+                            <div>
+                                <ul>
+                                    <li><a href="#home">Electric kettle</a></li>
+                                    <li><a href="#news">Cleaning Products</a></li>
+                                    <li><a href="#contact">Mini Bar</a></li>
+                                </ul>
+                            </div>
+
+                            <div>
+                                <b>In your private bathroom: </b>
+                            </div>
+
+                            <div>
+                                <ul>
+                                    <li><a href="#home">Free toiletries</a></li>
+                                    <li><a href="#news">Bathrobe</a></li>
+                                    <li><a href="#contact">Bathtub or Shower</a></li>
+                                    <li><a href="#home">towels</a></li>
+                                    <li><a href="#news">Toilet Paper</a></li>
+                                    <li><a href="#contact">Hairdryer</a></li>
+                                </ul>
+                            </div>
+
+                            <div><b>View:</b></div>
+
+                            <div>
+                                <ul>
+                                    <li><a href="#home">Garden View</a></li>
+                                    <li><a href="#news">Pool View</a></li>
+                                    <li><a href="#contact">Mountain View</a></li>
+                                    <li><a href="#home">River View</a></li>
+                                    <li><a href="#news">Waterfall View</a></li>
+                                    <li><a href="#contact">Landmark VIew</a></li>
+                                </ul>
+                            </div>
+
+                            <div><b>Facilities :</b></div>
+
+                            <div>
+                                <ul>
+                                    <li><a href="#home">Entire unit wheelchair accessible</a></li>
+                                    <li><a href="#news">Cleaning products</a></li>
+                                    <li><a href="#contact">Hot tub</a></li>
+                                    <li><a href="#home">Kitchenette</a></li>
+                                    <li><a href="#news">Satellite channels</a></li>
+                                    <li><a href="#contact">Sitting area</a></li>
+                                    <li><a href="#home">Sofa</a></li>
+                                    <li><a href="#news">Flat-screen TV</a></li>
+                                    <li><a href="#contact">Extra long beds (> 6.5 ft)</a></li>
+                                    <li><a href="#home">Minibar</a></li>
+                                    <li><a href="#news">Socket near the bed</a></li>
+                                    <li><a href="#contact">Tea/Coffee maker</a></li>
+                                    <li><a href="#home">TV</a></li>
+                                    <li><a href="#home">Board / card games</a></li>
+                                    <li><a href="#home">Private entrance</a></li>
+                                    <li><a href="#home">Mosquito net</a></li>
+                                    <li><a href="#home">Fold-up bed</a></li>
+                                    <li><a href="#home">Wake-up service/Alarm clock</a></li>
+                                    <li><a href="#home">Books, DVDs music for children</a></li>
+                                    <li><a href="#home">Pay-per-view channels</a></li>
+                                    <li><a href="#home">Linens</a></li>
+                                </ul>
+                            </div>
+
+                            <div><b>Smoking: </b>Smoking Not allowed inside the room</div><br/>
+                            <div><b>Parking: </b>Available</div>
+                        </div>
+                   </Col>
+                </Row>
+                </Container>
             );
         } else {
             return(
