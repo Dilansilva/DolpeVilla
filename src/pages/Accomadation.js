@@ -339,7 +339,6 @@ const Accomadation = () => {
                                     <li><a href="#home">Electric kettle</a></li>
                                     <li><a href="#news">Cleaning Products</a></li>
                                     <li><a href="#contact">Mini Bar</a></li>
-                                    <li><a href="#about">About</a></li>
                                 </ul>
                             </div>
                         </div>
