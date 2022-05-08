@@ -295,7 +295,10 @@ const Accomadation = () => {
             );
         } else if(text == 'aticRoom'){
             return(
-                <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+                <Container>
+                <Row className="blueAreaRow">
+                   <Col sm={6}>
+                   <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
                 {itemData.map((item) => (
                   <ImageListItem key={item.img}>
                     <img
@@ -307,6 +310,12 @@ const Accomadation = () => {
                   </ImageListItem>
                 ))}
               </ImageList>
+                   </Col>
+                   <Col sm={6}>
+                       <p>bjb</p>
+                   </Col>
+                </Row>
+                </Container>
             );
         } else if(text == 'deluxeRoom'){
             return(
