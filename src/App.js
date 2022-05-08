@@ -7,13 +7,21 @@ import Home from "./pages/Home";
 import Location from "./pages/Location";
 import Accomadation from './pages/Accomadation';
 
+import {Route,Routes,BrowserRouter as Router} from "react-router-dom";
+
 function App() {
   return (
-    <div>
-      <Header/>
-      <Accomadation/>
-      <Footer/>
-    </div>
+    <Router>
+      <div>
+        <Header/>
+          <Routes>
+            <Route path='/' element={<Home/>}/>
+            <Route path='/location' element={<Location/>}/>
+            <Route path='/accomadation' element={<Accomadation/>}/>           
+          </Routes>
+        <Footer/>
+      </div>
+    </Router>
   );
 }
 
