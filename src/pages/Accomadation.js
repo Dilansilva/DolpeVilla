@@ -324,7 +324,7 @@ const Accomadation = () => {
                 ))}
               </ImageList>
                    </Col>
-                   <Col sm={6}>
+                   <Col sm={6} >
                         <div>
                             <div>
                                 <Badge bg="light" text="dark">Size 47 m²</Badge>{" "}
@@ -348,10 +348,10 @@ const Accomadation = () => {
                             </div>
 
                             <div>
-                                <ul>
-                                    <li><a href="#home">Electric kettle</a></li>
-                                    <li><a href="#news">Cleaning Products</a></li>
-                                    <li><a href="#contact">Mini Bar</a></li>
+                                <ul className="unOrderdList">
+                                    <li className="list"><a href="#home">Electric kettle</a></li>
+                                    <li className="list"><a href="#news">Cleaning Products</a></li>
+                                    <li className="list"><a href="#contact">Mini Bar</a></li>
                                 </ul>
                             </div>
 
@@ -360,56 +360,56 @@ const Accomadation = () => {
                             </div>
 
                             <div>
-                                <ul>
-                                    <li><a href="#home">Free toiletries</a></li>
-                                    <li><a href="#news">Bathrobe</a></li>
-                                    <li><a href="#contact">Bathtub or Shower</a></li>
-                                    <li><a href="#home">towels</a></li>
-                                    <li><a href="#news">Toilet Paper</a></li>
-                                    <li><a href="#contact">Hairdryer</a></li>
+                                <ul className="unOrderdList">
+                                    <li className="list"><a href="#home">Free toiletries</a></li>
+                                    <li className="list"><a href="#news">Bathrobe</a></li>
+                                    <li className="list"><a href="#contact">Bathtub or Shower</a></li>
+                                    <li className="list"><a href="#home">towels</a></li>
+                                    <li className="list"><a href="#news">Toilet Paper</a></li>
+                                    <li className="list"><a href="#contact">Hairdryer</a></li>
                                 </ul>
                             </div>
 
                             <div><b>View:</b></div>
 
                             <div>
-                                <ul>
-                                    <li><a href="#home">Garden View</a></li>
-                                    <li><a href="#news">Pool View</a></li>
-                                    <li><a href="#contact">Mountain View</a></li>
-                                    <li><a href="#home">River View</a></li>
-                                    <li><a href="#news">Waterfall View</a></li>
-                                    <li><a href="#contact">Landmark VIew</a></li>
+                                <ul className="unOrderdList">
+                                    <li className="list"><a href="#home">Garden View</a></li>
+                                    <li className="list"><a href="#news">Pool View</a></li>
+                                    <li className="list"><a href="#contact">Mountain View</a></li>
+                                    <li className="list"><a href="#home">River View</a></li>
+                                    <li className="list"><a href="#news">Waterfall View</a></li>
+                                    <li className="list"><a href="#contact">Landmark VIew</a></li>
                                 </ul>
                             </div>
 
                             <div><b>Facilities :</b></div>
 
                             <div>
-                                <ul>
-                                    <li><a href="#home">Entire unit wheelchair accessible</a></li>
-                                    <li><a href="#news">Cleaning products</a></li>
-                                    <li><a href="#contact">Hot tub</a></li>
-                                    <li><a href="#home">Kitchenette</a></li>
-                                    <li><a href="#news">Satellite channels</a></li>
-                                    <li><a href="#contact">Sitting area</a></li>
-                                    <li><a href="#home">Sofa</a></li>
-                                    <li><a href="#news">Flat-screen TV</a></li>
-                                    <li><a href="#contact">Extra long beds (> 6.5 ft)</a></li>
-                                    <li><a href="#home">Minibar</a></li>
-                                    <li><a href="#news">Socket near the bed</a></li>
-                                    <li><a href="#contact">Tea/Coffee maker</a></li>
-                                    <li><a href="#home">TV</a></li>
-                                    <li><a href="#home">Board / card games</a></li>
-                                    <li><a href="#home">Private entrance</a></li>
-                                    <li><a href="#home">Mosquito net</a></li>
-                                    <li><a href="#home">Fold-up bed</a></li>
-                                    <li><a href="#home">Wake-up service/Alarm clock</a></li>
-                                    <li><a href="#home">Books, DVDs music for children</a></li>
-                                    <li><a href="#home">Pay-per-view channels</a></li>
-                                    <li><a href="#home">Linens</a></li>
-                                    <li><a href="#home">Air Condition</a></li>
-                                    <li><a href="#home">Shoe Rack</a></li>
+                                <ul className="unOrderdList">
+                                    <li className="list"><a href="#home">Entire unit wheelchair accessible</a></li>
+                                    <li className="list"><a href="#news">Cleaning products</a></li>
+                                    <li className="list"><a href="#contact">Hot tub</a></li>
+                                    <li className="list"><a href="#home">Kitchenette</a></li>
+                                    <li className="list"><a href="#news">Satellite channels</a></li>
+                                    <li className="list"><a href="#contact">Sitting area</a></li>
+                                    <li className="list"><a href="#home">Sofa</a></li>
+                                    <li className="list"><a href="#news">Flat-screen TV</a></li>
+                                    <li className="list"><a href="#contact">Extra long beds (> 6.5 ft)</a></li>
+                                    <li className="list"><a href="#home">Minibar</a></li>
+                                    <li className="list"><a href="#news">Socket near the bed</a></li>
+                                    <li className="list"><a href="#contact">Tea/Coffee maker</a></li>
+                                    <li className="list"><a href="#home">TV</a></li>
+                                    <li className="list"><a href="#home">Board / card games</a></li>
+                                    <li className="list"><a href="#home">Private entrance</a></li>
+                                    <li className="list"><a href="#home">Mosquito net</a></li>
+                                    <li className="list"><a href="#home">Fold-up bed</a></li>
+                                    <li className="list"><a href="#home">Wake-up service/Alarm clock</a></li>
+                                    <li className="list"><a href="#home">Books, DVDs music for children</a></li>
+                                    <li className="list"><a href="#home">Pay-per-view channels</a></li>
+                                    <li className="list"><a href="#home">Linens</a></li>
+                                    <li className="list"><a href="#home">Air Condition</a></li>
+                                    <li className="list"><a href="#home">Shoe Rack</a></li>
                                 </ul>
                             </div>
 
@@ -460,10 +460,10 @@ const Accomadation = () => {
                             </div>
 
                             <div>
-                                <ul>
-                                    <li><a href="#home">Electric kettle</a></li>
-                                    <li><a href="#news">Cleaning Products</a></li>
-                                    <li><a href="#contact">Mini Bar</a></li>
+                                <ul className="unOrderdList">
+                                    <li className="list"><a href="#home">Electric kettle</a></li>
+                                    <li className="list"><a href="#news">Cleaning Products</a></li>
+                                    <li className="list"><a href="#contact">Mini Bar</a></li>
                                 </ul>
                             </div>
 
@@ -472,54 +472,54 @@ const Accomadation = () => {
                             </div>
 
                             <div>
-                                <ul>
-                                    <li><a href="#home">Free toiletries</a></li>
-                                    <li><a href="#news">Bathrobe</a></li>
-                                    <li><a href="#contact">Bathtub or Shower</a></li>
-                                    <li><a href="#home">towels</a></li>
-                                    <li><a href="#news">Toilet Paper</a></li>
-                                    <li><a href="#contact">Hairdryer</a></li>
+                                <ul className="unOrderdList">
+                                    <li className="list"><a href="#home">Free toiletries</a></li>
+                                    <li className="list"><a href="#news">Bathrobe</a></li>
+                                    <li className="list"><a href="#contact">Bathtub or Shower</a></li>
+                                    <li className="list"><a href="#home">towels</a></li>
+                                    <li className="list"><a href="#news">Toilet Paper</a></li>
+                                    <li className="list"><a href="#contact">Hairdryer</a></li>
                                 </ul>
                             </div>
 
                             <div><b>View:</b></div>
 
                             <div>
-                                <ul>
-                                    <li><a href="#home">Garden View</a></li>
-                                    <li><a href="#news">Pool View</a></li>
-                                    <li><a href="#contact">Mountain View</a></li>
-                                    <li><a href="#home">River View</a></li>
-                                    <li><a href="#news">Waterfall View</a></li>
-                                    <li><a href="#contact">Landmark VIew</a></li>
+                                <ul className="unOrderdList">
+                                    <li className="list"><a href="#home">Garden View</a></li>
+                                    <li className="list"><a href="#news">Pool View</a></li>
+                                    <li className="list"><a href="#contact">Mountain View</a></li>
+                                    <li className="list"><a href="#home">River View</a></li>
+                                    <li className="list"><a href="#news">Waterfall View</a></li>
+                                    <li className="list"><a href="#contact">Landmark VIew</a></li>
                                 </ul>
                             </div>
 
                             <div><b>Facilities :</b></div>
 
                             <div>
-                                <ul>
-                                    <li><a href="#home">Entire unit wheelchair accessible</a></li>
-                                    <li><a href="#news">Cleaning products</a></li>
-                                    <li><a href="#contact">Hot tub</a></li>
-                                    <li><a href="#home">Kitchenette</a></li>
-                                    <li><a href="#news">Satellite channels</a></li>
-                                    <li><a href="#contact">Sitting area</a></li>
-                                    <li><a href="#home">Sofa</a></li>
-                                    <li><a href="#news">Flat-screen TV</a></li>
-                                    <li><a href="#contact">Extra long beds (> 6.5 ft)</a></li>
-                                    <li><a href="#home">Minibar</a></li>
-                                    <li><a href="#news">Socket near the bed</a></li>
-                                    <li><a href="#contact">Tea/Coffee maker</a></li>
-                                    <li><a href="#home">TV</a></li>
-                                    <li><a href="#home">Board / card games</a></li>
-                                    <li><a href="#home">Private entrance</a></li>
-                                    <li><a href="#home">Mosquito net</a></li>
-                                    <li><a href="#home">Fold-up bed</a></li>
-                                    <li><a href="#home">Wake-up service/Alarm clock</a></li>
-                                    <li><a href="#home">Books, DVDs music for children</a></li>
-                                    <li><a href="#home">Pay-per-view channels</a></li>
-                                    <li><a href="#home">Linens</a></li>
+                                <ul className="unOrderdList">
+                                    <li className="list"><a href="#home">Entire unit wheelchair accessible</a></li>
+                                    <li className="list"><a href="#news">Cleaning products</a></li>
+                                    <li className="list"><a href="#contact">Hot tub</a></li>
+                                    <li className="list"><a href="#home">Kitchenette</a></li>
+                                    <li className="list"><a href="#news">Satellite channels</a></li>
+                                    <li className="list"><a href="#contact">Sitting area</a></li>
+                                    <li className="list"><a href="#home">Sofa</a></li>
+                                    <li className="list"><a href="#news">Flat-screen TV</a></li>
+                                    <li className="list"><a href="#contact">Extra long beds (> 6.5 ft)</a></li>
+                                    <li className="list"><a href="#home">Minibar</a></li>
+                                    <li className="list"><a href="#news">Socket near the bed</a></li>
+                                    <li className="list"><a href="#contact">Tea/Coffee maker</a></li>
+                                    <li className="list"><a href="#home">TV</a></li>
+                                    <li className="list"><a href="#home">Board / card games</a></li>
+                                    <li className="list"><a href="#home">Private entrance</a></li>
+                                    <li className="list"><a href="#home">Mosquito net</a></li>
+                                    <li className="list"><a href="#home">Fold-up bed</a></li>
+                                    <li className="list"><a href="#home">Wake-up service/Alarm clock</a></li>
+                                    <li className="list"><a href="#home">Books, DVDs music for children</a></li>
+                                    <li className="list"><a href="#home">Pay-per-view channels</a></li>
+                                    <li className="list"><a href="#home">Linens</a></li>
                                 </ul>
                             </div>
 
@@ -572,53 +572,53 @@ const Accomadation = () => {
                         </div>
 
                         <div>
-                            <ul>
-                                <li><a href="#home">Free toiletries</a></li>
-                                <li><a href="#news">Bathrobe</a></li>
-                                <li><a href="#contact">Bathtub or Shower</a></li>
-                                <li><a href="#home">towels</a></li>
-                                <li><a href="#news">Toilet Paper</a></li>
-                                <li><a href="#contact">Hairdryer</a></li>
+                            <ul className="unOrderdList">
+                                <li className="list"><a href="#home">Free toiletries</a></li>
+                                <li className="list"><a href="#news">Bathrobe</a></li>
+                                <li className="list"><a href="#contact">Bathtub or Shower</a></li>
+                                <li className="list"><a href="#home">towels</a></li>
+                                <li className="list"><a href="#news">Toilet Paper</a></li>
+                                <li className="list"><a href="#contact">Hairdryer</a></li>
                             </ul>
                         </div>
 
                         <div><b>View:</b></div>
 
                         <div>
-                            <ul>
-                                <li><a href="#home">Garden View</a></li>
-                                <li><a href="#news">Pool View</a></li>
-                                <li><a href="#contact">Mountain View</a></li>
-                                <li><a href="#home">River View</a></li>
-                                <li><a href="#news">Waterfall View</a></li>
-                                <li><a href="#contact">Landmark VIew</a></li>
+                            <ul className="unOrderdList">
+                                <li className="list"><a href="#home">Garden View</a></li>
+                                <li className="list"><a href="#news">Pool View</a></li>
+                                <li className="list"><a href="#contact">Mountain View</a></li>
+                                <li className="list"><a href="#home">River View</a></li>
+                                <li className="list"><a href="#news">Waterfall View</a></li>
+                                <li className="list"><a href="#contact">Landmark VIew</a></li>
                             </ul>
                         </div>
 
                         <div><b>Facilities :</b></div>
 
                         <div>
-                            <ul>
-                                <li><a href="#news">Cleaning products</a></li>
-                                <li><a href="#contact">Hot tub</a></li>
-                                <li><a href="#home">Linens</a></li>
-                                <li><a href="#home">Kitchenette</a></li>
-                                <li><a href="#home">Satellite channels</a></li>                                <li><a href="#news">Satellite channels</a></li>
-                                <li><a href="#contact">Sitting area</a></li>
-                                <li><a href="#home">Fan</a></li>
-                                <li><a href="#news">Flat-screen TV</a></li>
-                                <li><a href="#contact">Pay-per-view channels</a></li>
-                                <li><a href="#home">Minibar</a></li>
-                                <li><a href="#news">Socket near the bed</a></li>
-                                <li><a href="#contact">Tea/Coffee maker</a></li>
-                                <li><a href="#home">TV</a></li>
-                                <li><a href="#home">Board / card games</a></li>
-                                <li><a href="#home">Private entrance</a></li>
-                                <li><a href="#home">Mosquito net</a></li>
-                                <li><a href="#home">Wake-up service/Alarm clock</a></li>
-                                <li><a href="#home">Dining table</a></li>
-                                <li><a href="#home">Books, DVDs music for children</a></li>
-                                <li><a href="#home">Wardrobe or closet</a></li>
+                            <ul className="unOrderdList">
+                                <li className="list"><a href="#news">Cleaning products</a></li>
+                                <li className="list"><a href="#contact">Hot tub</a></li>
+                                <li className="list"><a href="#home">Linens</a></li>
+                                <li className="list"><a href="#home">Kitchenette</a></li>
+                                <li className="list"><a href="#home">Satellite channels</a></li>                                <li><a href="#news">Satellite channels</a></li>
+                                <li className="list"><a href="#contact">Sitting area</a></li>
+                                <li className="list"><a href="#home">Fan</a></li>
+                                <li className="list"><a href="#news">Flat-screen TV</a></li>
+                                <li className="list"><a href="#contact">Pay-per-view channels</a></li>
+                                <li className="list"><a href="#home">Minibar</a></li>
+                                <li className="list"><a href="#news">Socket near the bed</a></li>
+                                <li className="list"><a href="#contact">Tea/Coffee maker</a></li>
+                                <li className="list"><a href="#home">TV</a></li>
+                                <li className="list"><a href="#home">Board / card games</a></li>
+                                <li className="list"><a href="#home">Private entrance</a></li>
+                                <li className="list"><a href="#home">Mosquito net</a></li>
+                                <li className="list"><a href="#home">Wake-up service/Alarm clock</a></li>
+                                <li className="list"><a href="#home">Dining table</a></li>
+                                <li className="list"><a href="#home">Books, DVDs music for children</a></li>
+                                <li className="list"><a href="#home">Wardrobe or closet</a></li>
                                 
                             </ul>
                         </div>
@@ -670,45 +670,45 @@ const Accomadation = () => {
                             </div>
     
                             <div>
-                                <ul>
-                                    <li><a href="#home">Free toiletries</a></li>
-                                    <li><a href="#news">Bathrobe</a></li>
-                                    <li><a href="#contact">Bathtub or Shower</a></li>
-                                    <li><a href="#home">towels</a></li>
-                                    <li><a href="#news">Toilet Paper</a></li>
-                                    <li><a href="#contact">Hairdryer</a></li>
+                                <ul className="unOrderdList">
+                                    <li className="list"><a href="#home">Free toiletries</a></li>
+                                    <li className="list"><a href="#news">Bathrobe</a></li>
+                                    <li className="list"><a href="#contact">Bathtub or Shower</a></li>
+                                    <li className="list"><a href="#home">towels</a></li>
+                                    <li className="list"><a href="#news">Toilet Paper</a></li>
+                                    <li className="list"><a href="#contact">Hairdryer</a></li>
                                 </ul>
                             </div>
     
                             <div><b>View:</b></div>
     
                             <div>
-                                <ul>
-                                    <li><a href="#home">Garden View</a></li>
-                                    <li><a href="#news">Pool View</a></li>
-                                    <li><a href="#contact">Mountain View</a></li>
-                                    <li><a href="#home">River View</a></li>
-                                    <li><a href="#news">Waterfall View</a></li>
-                                    <li><a href="#contact">Landmark VIew</a></li>
+                                <ul className="unOrderdList">
+                                    <li className="list"><a href="#home">Garden View</a></li>
+                                    <li className="list"><a href="#news">Pool View</a></li>
+                                    <li className="list"><a href="#contact">Mountain View</a></li>
+                                    <li className="list"><a href="#home">River View</a></li>
+                                    <li className="list"><a href="#news">Waterfall View</a></li>
+                                    <li className="list"><a href="#contact">Landmark VIew</a></li>
                                 </ul>
                             </div>
     
                             <div><b>Facilities :</b></div>
     
                             <div>
-                                <ul>
-                                    <li><a href="#news">Cleaning products</a></li>
-                                    <li><a href="#contact">Hand Sanitizer</a></li>
-                                    <li><a href="#home">Linens</a></li>
-                                    <li><a href="#home">Socket near the bed</a></li>
-                                    <li><a href="#home">Board / card games</a></li>                                <li><a href="#news">Satellite channels</a></li>
-                                    <li><a href="#contact">Sitting area</a></li>
-                                    <li><a href="#home">Mosquito net</a></li>
-                                    <li><a href="#news">Dining table</a></li>
-                                    <li><a href="#contact">Private entrance</a></li>
-                                    <li><a href="#home">Fan</a></li>
-                                    <li><a href="#news">Patio</a></li>
-                                    <li><a href="#contact">Wake-up service/Alarm clock</a></li>
+                                <ul className="unOrderdList">
+                                    <li className="list"><a href="#news">Cleaning products</a></li>
+                                    <li className="list"><a href="#contact">Hand Sanitizer</a></li>
+                                    <li className="list"><a href="#home">Linens</a></li>
+                                    <li className="list"><a href="#home">Socket near the bed</a></li>
+                                    <li className="list"><a href="#home">Board / card games</a></li>                                <li><a href="#news">Satellite channels</a></li>
+                                    <li className="list"><a href="#contact">Sitting area</a></li>
+                                    <li className="list"><a href="#home">Mosquito net</a></li>
+                                    <li className="list"><a href="#news">Dining table</a></li>
+                                    <li className="list"><a href="#contact">Private entrance</a></li>
+                                    <li className="list"><a href="#home">Fan</a></li>
+                                    <li className="list"><a href="#news">Patio</a></li>
+                                    <li className="list"><a href="#contact">Wake-up service/Alarm clock</a></li>
                                 </ul>
                             </div>
     
