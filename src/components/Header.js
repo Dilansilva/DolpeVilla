@@ -65,7 +65,7 @@ function Header(){
               <ToggleButton className="gardientBtn" onClick={() => {navigate("/")}}><b>HOME</b></ToggleButton>
               <ToggleButton className="gardientBtn" onClick={() => {navigate("/location")}}>LOCATION</ToggleButton>
               <ToggleButton className="gardientBtn" onClick={() => {navigate("/accomadation")}}>ACCOMMODATION</ToggleButton>
-              <ToggleButton className="gardientBtn">FACILITIES</ToggleButton>
+              <ToggleButton className="gardientBtn" onClick={() => {navigate("/facilities")}}>FACILITIES</ToggleButton>
               <ToggleButton className="gardientBtn">DINNING</ToggleButton>
               <ToggleButton className="gardientBtn">THINGS TO DO</ToggleButton>              
             </Navbar.Collapse>
