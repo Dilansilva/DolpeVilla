@@ -41,7 +41,7 @@ function Header(){
      {width > 480 ? <> {/*Computer navigation bar */}
       <Navbar className="taransParent">
         <Container className="taransParent">
-          <Navbar.Brand href="#home">
+          <Navbar.Brand onClick={() => {navigate("/")}}>
           <img src={logo} className="minorLogo"/>
           </Navbar.Brand>
           <Navbar.Toggle />
@@ -63,8 +63,8 @@ function Header(){
           <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
               <ToggleButton className="gardientBtn" onClick={() => {navigate("/")}}><b>HOME</b></ToggleButton>
-              <ToggleButton className="gardientBtn">LOCATION</ToggleButton>
-              <ToggleButton className="gardientBtn">ACCOMMODATION</ToggleButton>
+              <ToggleButton className="gardientBtn" onClick={() => {navigate("/location")}}>LOCATION</ToggleButton>
+              <ToggleButton className="gardientBtn" onClick={() => {navigate("/accomadation")}}>ACCOMMODATION</ToggleButton>
               <ToggleButton className="gardientBtn">FACILITIES</ToggleButton>
               <ToggleButton className="gardientBtn">DINNING</ToggleButton>
               <ToggleButton className="gardientBtn">THINGS TO DO</ToggleButton>              
