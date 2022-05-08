@@ -698,26 +698,17 @@ const Accomadation = () => {
                             <div>
                                 <ul>
                                     <li><a href="#news">Cleaning products</a></li>
-                                    <li><a href="#contact">Hot tub</a></li>
+                                    <li><a href="#contact">Hand Sanitizer</a></li>
                                     <li><a href="#home">Linens</a></li>
-                                    <li><a href="#home">Kitchenette</a></li>
-                                    <li><a href="#home">Satellite channels</a></li>                                <li><a href="#news">Satellite channels</a></li>
+                                    <li><a href="#home">Socket near the bed</a></li>
+                                    <li><a href="#home">Board / card games</a></li>                                <li><a href="#news">Satellite channels</a></li>
                                     <li><a href="#contact">Sitting area</a></li>
-                                    <li><a href="#home">Fan</a></li>
-                                    <li><a href="#news">Flat-screen TV</a></li>
-                                    <li><a href="#contact">Pay-per-view channels</a></li>
-                                    <li><a href="#home">Minibar</a></li>
-                                    <li><a href="#news">Socket near the bed</a></li>
-                                    <li><a href="#contact">Tea/Coffee maker</a></li>
-                                    <li><a href="#home">TV</a></li>
-                                    <li><a href="#home">Board / card games</a></li>
-                                    <li><a href="#home">Private entrance</a></li>
                                     <li><a href="#home">Mosquito net</a></li>
-                                    <li><a href="#home">Wake-up service/Alarm clock</a></li>
-                                    <li><a href="#home">Dining table</a></li>
-                                    <li><a href="#home">Books, DVDs music for children</a></li>
-                                    <li><a href="#home">Wardrobe or closet</a></li>
-                                    
+                                    <li><a href="#news">Dining table</a></li>
+                                    <li><a href="#contact">Private entrance</a></li>
+                                    <li><a href="#home">Fan</a></li>
+                                    <li><a href="#news">Patio</a></li>
+                                    <li><a href="#contact">Wake-up service/Alarm clock</a></li>
                                 </ul>
                             </div>
     
