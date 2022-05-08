@@ -169,5 +169,5 @@ li a {
   text-decoration: none;
   position: relative;
   left: -5px;
-  
+  line-height: 0.1px;
 }

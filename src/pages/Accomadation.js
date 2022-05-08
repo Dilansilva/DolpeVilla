@@ -341,6 +341,21 @@ const Accomadation = () => {
                                     <li><a href="#contact">Mini Bar</a></li>
                                 </ul>
                             </div>
+
+                            <div>
+                                <b>In your private bathroom: </b>
+                            </div>
+
+                            <div>
+                                <ul>
+                                    <li><a href="#home">Free toiletries</a></li>
+                                    <li><a href="#news">Bathrobe</a></li>
+                                    <li><a href="#contact">Bathtub or Shower</a></li>
+                                    <li><a href="#home">towels</a></li>
+                                    <li><a href="#news">Toilet Paper</a></li>
+                                    <li><a href="#contact">Hairdryer</a></li>
+                                </ul>
+                            </div>
                         </div>
                    </Col>
                 </Row>
