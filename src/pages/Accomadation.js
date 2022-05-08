@@ -109,7 +109,7 @@ const itemData = [
   
 
 const Accomadation = () => {
-    const [text,setText] = useState('location');
+    const [text,setText] = useState('accomadation');
     const middleSHow = () =>{
         if(text == 'accomadation'){
             return(
@@ -188,13 +188,22 @@ const Accomadation = () => {
                         </div>
                     </Col>
                     <Col sm={8}>
-                    <h4 className="dolpeText locationText">Weather</h4>
+                    <h4 className="dolpeText locationText">Deluxe room</h4>
                          <p className="smallLocationText">
-                             The climate at Dolape Villa Ella remains a comfortable 20-28 degrees 
-                             Celsius throughout the year, thereby giving the weather in Ella a ‘not
-                             too cold, not too hot’ comfort factor.<br/><br/>
-                             The weather pattern in the locality of the resort is recognised
-                              as being the most comfortable in the entire country.
+                         Super Deluxe rooms have its own private living area and offer breathtaking 
+                         views of the Ella Gap and the Ravana Ella Waterfall that makes Dolape Villa 
+                         Ella one of the most preferred Ella hotels in Sri Lanka to spend your 
+                         precious holiday at.<br/><br/>
+
+                        The veranda is ideal for lingering over breakfast, to watch a sunrise or to 
+                        simply gaze at the magnificent Ella mountain range.<br/><br/>
+
+                        The rooms have beautiful polished titanium cement floors and elegant furnitures.
+                        Walk barefoot and feel the soothing comfort of the floors!<br/><br/>
+
+                        The bathrooms are finished in titanium cement, completed with a bathtub with 
+                        hot and cold water and a wash basin to complement the luxurious interior.
+
                          </p>
                     </Col>
                 </Row>
