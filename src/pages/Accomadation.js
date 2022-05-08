@@ -1,7 +1,7 @@
 import React,{useState} from "react";
 
 import '../../src/App.css';
-import { Col, Container, Row, Card, Button } from "react-bootstrap";
+import { Col, Container, Row, Card, Button, Badge } from "react-bootstrap";
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 
@@ -312,7 +312,37 @@ const Accomadation = () => {
               </ImageList>
                    </Col>
                    <Col sm={6}>
-                       <p>bjb</p>
+                        <div>
+                            <div>
+                                <Badge bg="light" text="dark">Size 47 m²</Badge>{" "}
+                                <Badge bg="light" text="dark">Private kitchenette</Badge>{" "}
+                                <Badge bg="light" text="dark">Attached bathroom</Badge>{" "}
+                                <Badge bg="light" text="dark">Mini Bar</Badge>{" "}<br/>
+
+                                <Badge bg="light" text="dark">Garden View</Badge>{" "}
+                                <Badge bg="light" text="dark">Pool View</Badge>{" "}
+                                <Badge bg="light" text="dark">Mountain View</Badge>{" "}
+                                <Badge bg="light" text="dark">Waterfall View</Badge>{" "}<br/>
+
+                                <Badge bg="light" text="dark">Balcony</Badge>{" "}
+                                <Badge bg="light" text="dark">Flat-Screen TV</Badge>{" "}
+                                <Badge bg="light" text="dark">Free WiFi</Badge>{" "}
+                                <Badge bg="light" text="dark">AirCondition</Badge>{" "}
+                                <Badge bg="light" text="dark">Fan</Badge>{" "}<br/><br/>
+                            </div>
+                            <div>
+                                <b>In your private kitchenette: </b>
+                            </div>
+
+                            <div>
+                                <ul>
+                                    <li><a href="#home">Electric kettle</a></li>
+                                    <li><a href="#news">Cleaning Products</a></li>
+                                    <li><a href="#contact">Mini Bar</a></li>
+                                    <li><a href="#about">About</a></li>
+                                </ul>
+                            </div>
+                        </div>
                    </Col>
                 </Row>
                 </Container>
