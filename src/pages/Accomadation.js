@@ -356,6 +356,19 @@ const Accomadation = () => {
                                     <li><a href="#contact">Hairdryer</a></li>
                                 </ul>
                             </div>
+
+                            <div>View:</div>
+
+                            <div>
+                                <ul>
+                                    <li><a href="#home">Garden View</a></li>
+                                    <li><a href="#news">Pool View</a></li>
+                                    <li><a href="#contact">Mountain View</a></li>
+                                    <li><a href="#home">River View</a></li>
+                                    <li><a href="#news">Waterfall View</a></li>
+                                    <li><a href="#contact">Landmark VIew</a></li>
+                                </ul>
+                            </div>
                         </div>
                    </Col>
                 </Row>
