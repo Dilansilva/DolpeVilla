@@ -223,15 +223,18 @@ const Accomadation = () => {
                         </div>
                     </Col>
                     <Col sm={8}>
-                    <h4 className="dolpeText locationText">Excursion</h4>
+                    <h4 className="dolpeText locationText">Standard room</h4>
                         <p className="smallLocationText">
-                        Ella has plenty to offer that could keep you fascinated and occupied 
-                        during a few nights’ stay. Apart from the mesmerizing views of mountains 
-                        and tea estates, the region provides shelter to many precious flora and 
-                        fauna. In addition to simply unwinding in the cool climes you could set 
-                        out on a trekking adventure or safari to a nearby wildlife sanctuary as
-                        part of excursions in Ella to discover and experience some of these 
-                        delicate wonders of nature up- close.
+                        Deluxe rooms at Dolape Villa Ella are bright and cheery, offering 
+                        excellent views of the Ella Gap and Ravana Ella Waterfall and designed 
+                        with modern amenities that set it apart from the rest of the hotels Ella 
+                        has to offer for a reasonable cost.<br/><br/>
+
+                        Spend more time over breakfast in the spacious garden and enjoy the views 
+                        of the Ella mountain range.<br/><br/>
+
+                        The bathrooms are finished in titanium cement and include a rain shower 
+                        with hot and cold water.<br/><br/>
                         </p>
                     </Col>
                 </Row>
@@ -526,6 +529,106 @@ const Accomadation = () => {
                 </Row>
                 </Container>
             );
+        } else if(text == 'standardRoom'){
+           return (
+            <Container>
+            <Row className="blueAreaRow">
+               <Col sm={6}>
+               <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+            {itemData.map((item) => (
+              <ImageListItem key={item.img}>
+                <img
+                  src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                  srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                  alt={item.title}
+                  loading="lazy"
+                />
+              </ImageListItem>
+            ))}
+          </ImageList>
+               </Col>
+               <Col sm={6}>
+                    <div>
+                        <div>
+                            <Badge bg="light" text="dark">Size 47 m²</Badge>{" "}
+                            <Badge bg="light" text="dark">Landmark View</Badge>{" "}
+                            <Badge bg="light" text="dark">Attached bathroom</Badge>{" "}
+                            <Badge bg="light" text="dark">Patio</Badge>{" "}
+                            <Badge bg="light" text="dark">Garden View</Badge>{" "}<br/>
+
+                            <Badge bg="light" text="dark">Pool View</Badge>{" "}
+                            <Badge bg="light" text="dark">Mountain View</Badge>{" "}
+                            <Badge bg="light" text="dark">Waterfall View</Badge>{" "}<br/>
+
+                            <Badge bg="light" text="dark">Terrace</Badge>{" "}
+                            <Badge bg="light" text="dark">Flat-Screen TV</Badge>{" "}
+                            <Badge bg="light" text="dark">Free WiFi</Badge>{" "}
+                            <Badge bg="light" text="dark">Sound Proof</Badge>{" "}
+                        </div>
+
+                        <div>
+                            <b>In your private bathroom: </b>
+                        </div>
+
+                        <div>
+                            <ul>
+                                <li><a href="#home">Free toiletries</a></li>
+                                <li><a href="#news">Bathrobe</a></li>
+                                <li><a href="#contact">Bathtub or Shower</a></li>
+                                <li><a href="#home">towels</a></li>
+                                <li><a href="#news">Toilet Paper</a></li>
+                                <li><a href="#contact">Hairdryer</a></li>
+                            </ul>
+                        </div>
+
+                        <div><b>View:</b></div>
+
+                        <div>
+                            <ul>
+                                <li><a href="#home">Garden View</a></li>
+                                <li><a href="#news">Pool View</a></li>
+                                <li><a href="#contact">Mountain View</a></li>
+                                <li><a href="#home">River View</a></li>
+                                <li><a href="#news">Waterfall View</a></li>
+                                <li><a href="#contact">Landmark VIew</a></li>
+                            </ul>
+                        </div>
+
+                        <div><b>Facilities :</b></div>
+
+                        <div>
+                            <ul>
+                                <li><a href="#news">Cleaning products</a></li>
+                                <li><a href="#contact">Hot tub</a></li>
+                                <li><a href="#home">Linens</a></li>
+                                <li><a href="#home">Kitchenette</a></li>
+                                <li><a href="#home">Satellite channels</a></li>                                <li><a href="#news">Satellite channels</a></li>
+                                <li><a href="#contact">Sitting area</a></li>
+                                <li><a href="#home">Fan</a></li>
+                                <li><a href="#news">Flat-screen TV</a></li>
+                                <li><a href="#contact">Pay-per-view channels</a></li>
+                                <li><a href="#home">Minibar</a></li>
+                                <li><a href="#news">Socket near the bed</a></li>
+                                <li><a href="#contact">Tea/Coffee maker</a></li>
+                                <li><a href="#home">TV</a></li>
+                                <li><a href="#home">Board / card games</a></li>
+                                <li><a href="#home">Private entrance</a></li>
+                                <li><a href="#home">Mosquito net</a></li>
+                                <li><a href="#home">Wake-up service/Alarm clock</a></li>
+                                <li><a href="#home">Dining table</a></li>
+                                <li><a href="#home">Books, DVDs music for children</a></li>
+                                <li><a href="#home">Wardrobe or closet</a></li>
+                                
+                            </ul>
+                        </div>
+
+                        <div><b>Smoking: </b>Smoking Not allowed inside the room</div><br/>
+                        <div><b>Parking: </b>Available</div>
+                    </div>
+               </Col>
+            </Row>
+            </Container>
+           );
         } else {
             return(
                 <Row className="blueAreaRow">
