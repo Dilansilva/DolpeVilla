@@ -357,7 +357,7 @@ const Accomadation = () => {
                                 </ul>
                             </div>
 
-                            <div>View:</div>
+                            <div><b>View:</b></div>
 
                             <div>
                                 <ul>
@@ -369,6 +369,39 @@ const Accomadation = () => {
                                     <li><a href="#contact">Landmark VIew</a></li>
                                 </ul>
                             </div>
+
+                            <div><b>Facilities :</b></div>
+
+                            <div>
+                                <ul>
+                                    <li><a href="#home">Entire unit wheelchair accessible</a></li>
+                                    <li><a href="#news">Cleaning products</a></li>
+                                    <li><a href="#contact">Hot tub</a></li>
+                                    <li><a href="#home">Kitchenette</a></li>
+                                    <li><a href="#news">Satellite channels</a></li>
+                                    <li><a href="#contact">Sitting area</a></li>
+                                    <li><a href="#home">Sofa</a></li>
+                                    <li><a href="#news">Flat-screen TV</a></li>
+                                    <li><a href="#contact">Extra long beds (> 6.5 ft)</a></li>
+                                    <li><a href="#home">Minibar</a></li>
+                                    <li><a href="#news">Socket near the bed</a></li>
+                                    <li><a href="#contact">Tea/Coffee maker</a></li>
+                                    <li><a href="#home">TV</a></li>
+                                    <li><a href="#home">Board / card games</a></li>
+                                    <li><a href="#home">Private entrance</a></li>
+                                    <li><a href="#home">Mosquito net</a></li>
+                                    <li><a href="#home">Fold-up bed</a></li>
+                                    <li><a href="#home">Wake-up service/Alarm clock</a></li>
+                                    <li><a href="#home">Books, DVDs music for children</a></li>
+                                    <li><a href="#home">Pay-per-view channels</a></li>
+                                    <li><a href="#home">Linens</a></li>
+                                    <li><a href="#home">Air Condition</a></li>
+                                    <li><a href="#home">Shoe Rack</a></li>
+                                </ul>
+                            </div>
+
+                            <div><b>Smoking: </b>Smoking Not allowed inside the room</div><br/>
+                            <div><b>Parking: </b>Available</div>
                         </div>
                    </Col>
                 </Row>
