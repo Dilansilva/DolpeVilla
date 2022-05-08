@@ -45,30 +45,60 @@ const Facilities = () => {
                }
             <Container>
                 <Row className="blueAreaRow">
-                   <Col sm={6}>
+                   <Col sm={6} className="facilList">
                    <div>
                             <div>
                                 <b>Health & Wellness Facilities</b>
                             </div>
     
                             <div>
-                                <ol>
-                                    <li><span href="#home">Free toiletries</span></li>
-                                    <li><span href="#news">Bathrobe</span></li>
-                                    <li><span href="#contact">Bathtub or Shower</span></li>
-                                    <li><span href="#home">towels</span></li>
-                                    <li><span href="#news">Toilet Paper</span></li>
-                                    <li><span href="#contact">Hairdryer</span></li>
-                                </ol>
+                                <ul className="facilOrdList">
+                                    <li className="facilBeforeList"><span href="#home"> Yoga classes </span></li>
+                                    <li className="facilBeforeList"><span href="#news">Full-body massage (Additional charge)</span></li>
+                                    <li className="facilBeforeList"><span href="#contact">Hand massage (Additional charge) </span></li>
+                                    <li className="facilBeforeList"><span href="#home">Head massage (Additional charge) </span></li>
+                                    <li className="facilBeforeList"><span href="#news">Foot massage (Additional charge) </span></li>
+                                    <li className="facilBeforeList"><span href="#contact">Neck massage (Additional charge) </span></li>
+                                    <li className="facilBeforeList"><span href="#home">Back massage (Additional charge) </span></li>
+                                    <li className="facilBeforeList"><span href="#news">Spa/Wellness packages   (Additional charge)</span></li>
+                                    <li className="facilBeforeList"><span href="#contact">Spa lounge/Relaxation area</span></li>
+                                    <li className="facilBeforeList"><span href="#home">Light therapy</span></li>
+                                    <li className="facilBeforeList"><span href="#news">Hairstyling</span></li>
+                                    <li className="facilBeforeList"><span href="#contact">Haircut</span></li>
+                                    <li className="facilBeforeList"><span href="#home">Pedicure</span></li>
+                                    <li className="facilBeforeList"><span href="#news">Manicure</span></li>
+                                    <li className="facilBeforeList"><span href="#contact">Makeup services</span></li>
+                                    <li className="facilBeforeList"><span href="#home">Waxing services</span></li>
+                                    <li className="facilBeforeList"><span href="#news">Facial treatments</span></li>
+                                    <li className="facilBeforeList"><span href="#contact">Beauty services</span></li>
+                                    <li className="facilBeforeList"><span href="#contact">Beach umbrellas</span></li>
+                                    <li className="facilBeforeList"><span href="#contact">Beach chairs/Loungers Additional charge</span></li>
+                                    <li className="facilBeforeList"><span href="#contact">Hot tub/Jacuzzi (temporarily closed) Additional charge</span></li>
+                                    <li className="facilBeforeList"><span href="#contact">Massage Additional charge</span></li>
+                                    <li className="facilBeforeList"><span href="#contact">Solarium</span></li>
+                                </ul>
                             </div>
     
                             <div><b>Safety & security:</b></div>
+                                <ul className="facilOrdList">
+                                    <li className="facilBeforeList"><span href="#contact">Fire extinguishers</span></li>
+                                    <li className="facilBeforeList"><span href="#contact">CCTV outside property</span></li>
+                                    <li className="facilBeforeList"><span href="#contact">24-hour security</span></li>
+                                    <li className="facilBeforeList"><span href="#contact">Safe</span></li>
+                                </ul>
 
                             <div><b>Language Spoken</b></div>
+                                <ul className="facilOrdList">
+                                    <li className="facilBeforeList"><span href="#contact">English</span></li>
+                                    <li className="facilBeforeList"><span href="#contact">Japanese</span></li>
+                                    <li className="facilBeforeList"><span href="#contact">Tamil</span></li>
+                                    <li className="facilBeforeList"><span href="#contact">Sinhala</span></li>
+                                </ul>
+
     
                     </div>
                    </Col>
-                   <Col sm={6}>
+                   <Col sm={6} className="facilList">
                    </Col>
                 </Row>
                 </Container>

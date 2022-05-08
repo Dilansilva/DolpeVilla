@@ -169,3 +169,22 @@ li a {
   left: -15px;
   line-height: 0.1px;
 }
+
+/*Facilities*/
+.facilList{
+  padding-top: 3%;
+  color: #ffffff;
+}
+
+.facilOrdList{
+  list-style: none;
+}
+
+.facilBeforeList::before{
+  content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: rgb(0, 255, 64); /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
