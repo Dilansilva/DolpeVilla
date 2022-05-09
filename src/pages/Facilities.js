@@ -99,6 +99,56 @@ const Facilities = () => {
                     </div>
                    </Col>
                    <Col sm={6} className="facilList">
+                       <div><b>General</b></div>
+
+                       <div>
+                           <ul className="facilOrdList">
+                                <li className="facilBeforeList"><span href="#contact">Grocery deliveries (Additional charge)</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Convenience store on site</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Airport shuttle (Additional charge)</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Shuttle service (Additional charge)</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Shuttle service (Free)</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Smoke-free property</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Wake-up service</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Private entrance</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Car rental</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Packed lunches</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Chapel/Shrine</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Fan</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Family rooms</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Hair/Beauty salon</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Facilities for disabled guests</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Non-smoking rooms</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Wake-up service/Alarm clock</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Room service</span></li>
+                           </ul>
+                       </div>
+
+                       <div><b>Front Desk Services</b></div>
+
+                       <div>
+                       <ul className="facilOrdList">
+                                <li className="facilBeforeList"><span href="#contact">Invoice provided</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Private check-in/out</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Concierge</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Baggage storage</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Tour desk</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Currency exchange</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Express check-in/out</span></li>
+                                <li className="facilBeforeList"><span href="#contact">24-hour front desk</span></li>
+                           </ul>
+                       </div>
+
+                       <div><b>Cleaning Services</b></div>
+
+                       <div>
+                       <ul className="facilOrdList">
+                                <li className="facilBeforeList"><span href="#contact">Daily housekeeping Additional charge</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Suit press Additional charge</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Ironing service Additional charge</span></li>
+                                <li className="facilBeforeList"><span href="#contact">Laundry Additional charge</span></li>
+                           </ul>
+                       </div>
                    </Col>
                 </Row>
                 </Container>
