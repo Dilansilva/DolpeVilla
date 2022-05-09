@@ -188,3 +188,8 @@ li a {
   width: 1em; /* Also needed for space (tweak if needed) */
   margin-left: -1em; /* Also needed for space (tweak if needed) */
 }
+
+/*Dinning*/
+.dinningBtnSec{
+  margin-top: 5%;
+}
