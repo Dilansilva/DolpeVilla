@@ -29,12 +29,17 @@ const Dinnning = () => {
                     <Col sm={8}>
                     <h4 className="dolpeText locationText">Dinning</h4>
                     <div className="secondDiv">
-                        <p className="smallLocationText">lorem ipsum datad</p>
+                        <p className="smallLocationText">
+                            Dining at Dolape Villa Ella is a stimulating experience. 
+                            A truly unique open area restaurant Ella, the ‘Restaurant Dolape Villa’, 
+                            built on a hillock that overlooks breathtaking scenery, engulfs 
+                            the guests in a tantalizing dining experience
+                        </p>
                             <div>
                                 <ul className="facilOrdList">
-                                    <li className="facilBeforeList"><span href="#home"><b>sds:</b><span>nkn</span></span></li>
-                                    <li className="facilBeforeList"><span href="#home"> Yoga classes </span></li>
-                                    <li className="facilBeforeList"><span href="#home"> Yoga classes </span></li>
+                                    <li className="facilBeforeList"><span href="#home"><b>Food: </b><span>Chinese, Indian, Italian, Middle Eastern, Seafood, International, Grill/BBQ</span></span></li>
+                                    <li className="facilBeforeList"><span href="#home"><b>Open for: </b><span>Breakfast, Brunch, Lunch, Dinner, High tea</span></span></li>
+                                    <li className="facilBeforeList"><span href="#home"><b>Menu: </b><span>Buffet & À La Carte </span></span></li>
                                 </ul>
                             </div>
                     </div>
@@ -228,8 +233,11 @@ const Dinnning = () => {
         <div className="blueArea" style={{
              backgroundImage: `url(${Blue})`
         }}>
-           <br/><br/><br/><br/>
-               {middleSHow()}
+           <Container>
+        <br/>
+           {middleSHow()}
+        <br/>
+       </Container>
        <Container style={{textAlign:'center'}}>
         <br/>
        <Row className="blueAreaRow">
