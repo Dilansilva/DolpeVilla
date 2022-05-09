@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import backGround from "../assets/_1333445.jpg";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
-import Blue from "../assets/_1322204.jpg";
+import Blue from "../assets/_1344152.jpg";
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
 
 import FirstImgTrans from "../assets/f682b054e7868718f4167b9243ab3f9c.jpg";
@@ -216,7 +216,7 @@ const Dinnning = () => {
         </div>
         {/*Dolpe Villa Ella, Sri lanka */}
         <div style={{backgroundColor:'#1F211F'}}>
-           <p>nkn</p>
+          
         </div>
         {/*Blue Area */}
         <div className="blueArea" style={{
