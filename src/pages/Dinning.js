@@ -75,23 +75,24 @@ const Dinnning = () => {
         } else{
             return(
                 <Container>
-                <Row>
-                <Col sm={4}> 
-                <div className="d-grid gap-2">
-                    <a className="button" onClick={() => {setText('dinning')}}>DINNING</a>
+                <Row className="blueAreaRow">
+                    <Col sm={4} className="facilList"> 
+                        <div className="d-grid gap-2">
+                            <a className="button" onClick={() => {setText('dinning')}}>DINNING</a>
                             <a className="button" onClick={() => {setText('restaurant')}}>DOLPE RILL RESTAURANT</a>
                             <a className="button" onClick={() => {setText('garden')}}>GARDEN DINNING</a>
                         </div>
                     </Col>
                     <Col sm={8}>
-                    <h4 className="dolpeText locationText">Weather</h4>
-                         <p className="smallLocationText">
-                             The climate at Dolape Villa Ella remains a comfortable 20-28 degrees 
-                             Celsius throughout the year, thereby giving the weather in Ella a ‘not
-                             too cold, not too hot’ comfort factor.<br/><br/>
-                             The weather pattern in the locality of the resort is recognised
-                              as being the most comfortable in the entire country.
-                         </p>
+                    <h4 className="dolpeText locationText">Garden Dinning </h4>
+                    <div className="secondDiv">
+                        <p className="smallLocationText">
+                            Dining at Dolape Villa Ella is a stimulating experience. 
+                            A truly unique open area restaurant Ella, the ‘Restaurant 
+                            Dolape Villa’, built on a hillock that overlooks breathtaking 
+                            scenery, engulfs the guests in a tantalizing dining experience.
+                        </p>
+                    </div>
                     </Col>
                 </Row>
             </Container>
