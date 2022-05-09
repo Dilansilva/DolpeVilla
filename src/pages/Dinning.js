@@ -22,9 +22,8 @@ const Dinnning = () => {
                     <Col sm={4}> 
                         <div className="d-grid gap-2">
                             <a className="button" onClick={() => {setText('location')}}>DINNING</a>
-                            <a className="button" onClick={() => {setText('transport')}}>TRANSPORT</a>
-                            <a className="button" onClick={() => {setText('weather')}}>WEATHER</a>
-                            <a className="button" onClick={() => {setText('excursions')}}>EXCURSIONS</a>
+                            <a className="button" onClick={() => {setText('transport')}}>DOLPE RILL RESTAURANT</a>
+                            <a className="button" onClick={() => {setText('weather')}}>GARDEN DINNING</a>
                         </div>
                     </Col>
                     <Col sm={8}>
@@ -48,11 +47,10 @@ const Dinnning = () => {
                 <Container>
                 <Row>
                 <Col sm={4}> 
-                        <div className="d-grid gap-2">
-                            <a className="button" onClick={() => {setText('location')}}>LOCATION</a>
-                            <a className="button" onClick={() => {setText('transport')}}>TRANSPORT</a>
-                            <a className="button" onClick={() => {setText('weather')}}>WEATHER</a>
-                            <a className="button" onClick={() => {setText('excursions')}}>EXCURSIONS</a>
+                <div className="d-grid gap-2">
+                            <a className="button" onClick={() => {setText('location')}}>DINNING</a>
+                            <a className="button" onClick={() => {setText('transport')}}>DOLPE RILL RESTAURANT</a>
+                            <a className="button" onClick={() => {setText('weather')}}>GARDEN DINNING</a>
                         </div>
                     </Col>
                     <Col sm={8}>
@@ -86,11 +84,10 @@ const Dinnning = () => {
                 <Container>
                 <Row>
                 <Col sm={4}> 
-                        <div className="d-grid gap-2">
-                            <a className="button" onClick={() => {setText('location')}}>LOCATION</a>
-                            <a className="button" onClick={() => {setText('transport')}}>TRANSPORT</a>
-                            <a className="button" onClick={() => {setText('weather')}}>WEATHER</a>
-                            <a className="button" onClick={() => {setText('excursions')}}>EXCURSIONS</a>
+                <div className="d-grid gap-2">
+                            <a className="button" onClick={() => {setText('location')}}>DINNING</a>
+                            <a className="button" onClick={() => {setText('transport')}}>DOLPE RILL RESTAURANT</a>
+                            <a className="button" onClick={() => {setText('weather')}}>GARDEN DINNING</a>
                         </div>
                     </Col>
                     <Col sm={8}>
@@ -112,10 +109,9 @@ const Dinnning = () => {
                 <Row>
                     <Col sm={4}> 
                         <div className="d-grid gap-2">
-                            <a className="button" onClick={() => {setText('location')}}>LOCATION</a>
-                            <a className="button" onClick={() => {setText('transport')}}>TRANSPORT</a>
-                            <a className="button" onClick={() => {setText('weather')}}>WEATHER</a>
-                            <a className="button" onClick={() => {setText('excursions')}}>EXCURSIONS</a>
+                            <a className="button" onClick={() => {setText('location')}}>DINNING</a>
+                            <a className="button" onClick={() => {setText('transport')}}>DOLPE RILL RESTAURANT</a>
+                            <a className="button" onClick={() => {setText('weather')}}>GARDEN DINNING</a>
                         </div>
                     </Col>
                     <Col sm={8}>
