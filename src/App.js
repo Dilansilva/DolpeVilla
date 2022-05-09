@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import Location from "./pages/Location";
 import Accomadation from './pages/Accomadation';
 import Facilities from './pages/Facilities';
+import Dinnning from './pages/Dinning';
 
 import {Route,Routes,BrowserRouter as Router} from "react-router-dom";
 
@@ -19,7 +20,8 @@ function App() {
             <Route path='/' element={<Home/>}/>
             <Route path='location' element={<Location/>}/>
             <Route path='accomadation' element={<Accomadation/>}/> 
-            <Route path='facilities' element={<Facilities/>}/>          
+            <Route path='facilities' element={<Facilities/>}/> 
+            <Route path='dinning' element={<Dinnning/>}/>         
           </Routes>
         <Footer/>
       </div>
