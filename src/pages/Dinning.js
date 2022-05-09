@@ -50,36 +50,24 @@ const Dinnning = () => {
         } else if(text == 'restaurant'){
             return(
                 <Container>
-                <Row>
-                <Col sm={4}> 
-                <div className="d-grid gap-2">
-                <a className="button" onClick={() => {setText('dinning')}}>DINNING</a>
+                <Row className="blueAreaRow">
+                    <Col sm={4} className="facilList"> 
+                        <div className="d-grid gap-2">
+                            <a className="button" onClick={() => {setText('dinning')}}>DINNING</a>
                             <a className="button" onClick={() => {setText('restaurant')}}>DOLPE RILL RESTAURANT</a>
                             <a className="button" onClick={() => {setText('garden')}}>GARDEN DINNING</a>
                         </div>
                     </Col>
                     <Col sm={8}>
-                    <h4 className="dolpeText locationText">Transport</h4>
+                    <h4 className="dolpeText locationText">Dolape Rill Restautant</h4>
+                    <div className="secondDiv">
                         <p className="smallLocationText">
-                        Featuring among Ella resorts, Dolape Villa is easy to locate right across 
-                        and facing ‘Little Adams Peak’. The resort is easily reached from any location
-                          below:
-                        <br/><br/>
-                         10 km from Ella junction/railway station (5 mins)<br/>
-                       17 km from Bandarawela (30 mins)<br/>
-                         63.5 km from Nuwara Eliya (1.30 hours)<br/>
-                         140 km wild life sanctuary Yala (2 hours)<br/>
-                         239 km from Bandaranayake International Airport (5 to 6 hours)<br/>
-                         202 km from Colombo (5 to 6 hours)<br/>
-                         145 km from Kandy (3 to 4 hours)<br/><br/>
-    
-                         Please CONTACT US FOR directions / transport arrangements or to arrange a pick up from any location below.<br/>
-                         Bandaranayake International Airport<br/>
-                         Weerawila Mahinda Rajapakshe International Airport<br/>
-                         Colombo<br/>
-                        Nearest City / Town<br/>
-                        Railway / Bus Station<br/>
+                        Dining at Dolape Villa Ella is a stimulating experience. A truly unique 
+                        open area restaurant Ella, the ‘Dolape Rill Restaurant’, built on a 
+                        hillock that overlooks breathtaking scenery, engulfs the guests 
+                        in a tantalizing dining experience.
                         </p>
+                    </div>
                     </Col>
                 </Row>
             </Container>
