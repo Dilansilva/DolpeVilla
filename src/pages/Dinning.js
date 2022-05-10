@@ -176,7 +176,7 @@ const Dinnning = () => {
                 <Row className="blueAreaRow">
                     <Col sm={6}>
                     <div><b style={{color:'white'}}>DOLAPE RILL RESTAURANT</b></div><br/>
-                        <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+                        <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
                         {itemData.map((item) => (
                             <ImageListItem key={item.img}>
                                 <img
