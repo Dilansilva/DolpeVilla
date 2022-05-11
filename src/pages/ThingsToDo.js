@@ -1,6 +1,9 @@
 import React,{useState} from "react";
 import backGround from "../assets/_1344104.jpg";
 import '../../src/App.css';
+
+import { ImageList,ImageListItem } from "@mui/material";
+
 import MiddleBar from "../components/MiddleBar";
 import Blue from "../assets/DSC01496.jpg";
 import LastSec from "../assets/MobilePopUpBackGround.jpg";
@@ -13,6 +16,93 @@ import FirstImgTrans from "../assets/f682b054e7868718f4167b9243ab3f9c.jpg";
 import SecondImgTrans from "../assets/The_Common_Wanderer_-3.jpg";
 import ThirdImgTrans from "../assets/a12d3250b32491bd47f7773b57dabfe3.jpg";
 
+const itemData = [
+    {
+      img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+      title: 'Breakfast',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+      title: 'Burger',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+      title: 'Camera',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+      title: 'Coffee',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+      title: 'Hats',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+      title: 'Honey',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
+      title: 'Basketball',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
+      title: 'Fern',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
+      title: 'Mushrooms',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
+      title: 'Tomato basil',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
+      title: 'Sea star',
+    },
+    {
+      img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
+      title: 'Bike',
+    },
+    {
+        img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
+        title: 'Bike',
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
+        title: 'Bike',
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
+        title: 'Mushrooms',
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
+        title: 'Tomato basil',
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
+        title: 'Sea star',
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
+        title: 'Bike',
+      },
+      {
+          img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
+          title: 'Bike',
+        },
+        {
+          img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
+          title: 'Bike',
+        },
+        {
+            img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
+            title: 'Mushrooms',
+          },
+          
+  ];
 
 const ThingsToDo = () => {
     const [text,setText] = useState('things');
@@ -73,27 +163,31 @@ const ThingsToDo = () => {
                         </div>
                     </Col>
                     <Col sm={8}>
-                    <h4 className="dolpeText locationText">Transport</h4>
+                    <h4 className="dolpeText locationText">Natural Pool With Rill</h4>
                         <p className="smallLocationText">
-                        Featuring among Ella resorts, Dolape Villa is easy to locate right across 
-                        and facing ‘Little Adams Peak’. The resort is easily reached from any location
-                          below:
-                        <br/><br/>
-                         10 km from Ella junction/railway station (5 mins)<br/>
-                       17 km from Bandarawela (30 mins)<br/>
-                         63.5 km from Nuwara Eliya (1.30 hours)<br/>
-                         140 km wild life sanctuary Yala (2 hours)<br/>
-                         239 km from Bandaranayake International Airport (5 to 6 hours)<br/>
-                         202 km from Colombo (5 to 6 hours)<br/>
-                         145 km from Kandy (3 to 4 hours)<br/><br/>
-    
-                         Please CONTACT US FOR directions / transport arrangements or to arrange a pick up from any location below.<br/>
-                         Bandaranayake International Airport<br/>
-                         Weerawila Mahinda Rajapakshe International Airport<br/>
-                         Colombo<br/>
-                        Nearest City / Town<br/>
-                        Railway / Bus Station<br/>
+                        Ella is probably famous for natural waterfalls, rivers 
+                        and natural water resources.The famous and beautiful Dolape 
+                        Villa Natural Pool created in the natural landscape by 
+                        collecting tha water flowing through the natural water sources 
+                        located on the top of the hill through a naturally created 
+                        Kithul Track.We invite you to experience the splendor of this 
+                        rare and beautiful setting located within the Ella, Sri Lanka.
                         </p>
+
+                        <div>
+                            <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+                            {itemData.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </div>
                     </Col>
                 </Row>
             </Container>
@@ -166,26 +260,23 @@ const ThingsToDo = () => {
     }
 
     const showPictures = () => {
-        if(text == 'location'){
+        if(text == 'natural'){
             return(
                 <Row className="blueAreaRow">
-                <Col>
-                    <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={FirstImg} />
-                    </Card>
-                </Col>
-    
-                <Col>
-                    <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={SecondImg} />
-                    </Card>
-                </Col>
-    
-                <Col>
-                    <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={ThirdImg} />
-                    </Card>
-                </Col>
+                   <Col >
+                   <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+                {itemData.map((item) => (
+                  <ImageListItem key={item.img}>
+                    <img
+                      src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                      srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                      alt={item.title}
+                      loading="lazy"
+                    />
+                  </ImageListItem>
+                ))}
+              </ImageList>
+                   </Col>
     
             </Row> 
             );
@@ -288,21 +379,11 @@ const ThingsToDo = () => {
             {middleSHow()}
            <br/><br/><br/>
         </div>
+
+       
         </div>
         {/*Blue Area */}
-        <div className="blueArea" style={{
-             backgroundImage: `url(${LastSec})`
-        }}>
-           {
-               //Middle bar
-           }
-       <Container style={{textAlign:'center'}}>
-        <br/>
-           {showPictures()}
-        <br/>
-       </Container>
-           
-        </div>
+      
     </>
     );
 }
