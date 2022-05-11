@@ -279,6 +279,57 @@ const ThingsToDo = () => {
                         <p> <a href="#animal">&lt;&lt;Click Here&gt;&gt;</a>  to learn more about Endemic Birds of Sri Lanka</p>
                         <p> <a href="#animal">&lt;&lt;Click Here&gt;&gt;</a>  to learn more about Endemic Animals of Sri Lanka</p>
 
+                         <div>
+                            <ImageList sx={{ width: '100%', height: 450 }} cols={4} rowHeight={164}>
+                            {itemData.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+            );
+        }else if(text == 'cycle') {
+            return(
+                <Container>
+                <Row>
+                    <Col sm={4}> 
+                    <div className="d-grid">
+                            <a className="button" onClick={() => {setText('things')}}>THINGS TO DO</a>
+                            <a className="button" onClick={() => {setText('natural')}}>NATURAL POOL WITH RILL</a>
+                            <a className="button" onClick={() => {setText('airRifle')}}>AIR RIFLE  & ARCHERY</a>
+                            <a className="button" onClick={() => {setText('birdAnimal')}}>BIRD & ANIMAL WATCHING</a>
+                            <a className="button" onClick={() => {setText('cycle')}}>CYCLING & SAFARI</a>
+                            <a className="button" onClick={() => {setText('learnAbout')}}>LEARN ABOUT THE CULTURE</a>
+                            <a className="button" onClick={() => {setText('culturalEvents')}}>CULTURAL EVENTS</a>
+                            <a className="button" onClick={() => {setText('farmingCooking')}}>FARMING & COOKING</a>
+                            <a className="button" onClick={() => {setText('hiking')}}>HIKING & TREKKING</a>
+                            <a className="button" onClick={() => {setText('around')}}>AROUND THE SRI LANKA</a>
+                        </div>
+                    </Col>
+                    <Col sm={8}>
+                    <h4 className="dolpeText locationText">Bird & Animal Watching</h4>
+                        <p className="smallLocationText">
+                        Bird lovers and wildlife enthusiasts will be delighted to observe
+                        that the Dolape Villa Ella provides sanctuary for 27% or 63 species
+                        of the resident birds of Sri Lanka, including 6 precious species 
+                        endemic to the country. Out of those 63 bird species, birds such
+                        as Woodpeckers, Babblers, Barbets, Flycatchers, Minivit, and 
+                        Chestnut headed Bee-eaters and Hill Mynas are the types of 
+                        birds commonly seen in this location. Also there are Monkeys, 
+                        Snakes, Grizzled giant squirrel and etc.
+                        </p>
+                        <p> <a href="#animal">&lt;&lt;Click Here&gt;&gt;</a>  to learn more about Endemic Birds of Sri Lanka</p>
+                        <p> <a href="#animal">&lt;&lt;Click Here&gt;&gt;</a>  to learn more about Endemic Animals of Sri Lanka</p>
+
                         <div>
                                 <ul >
                                     <li ><span href="#home">No practice or past experience necessary</span></li>
