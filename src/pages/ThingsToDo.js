@@ -503,6 +503,63 @@ const ThingsToDo = () => {
                 </Row>
             </Container>
             );
+        }else if(text == 'farmingCooking'){
+            return(
+                <Container>
+                <Row>
+                <Col sm={4}> 
+                <div className="d-grid">
+                            <a className="button" onClick={() => {setText('things')}}>THINGS TO DO</a>
+                            <a className="button" onClick={() => {setText('natural')}}>NATURAL POOL WITH RILL</a>
+                            <a className="button" onClick={() => {setText('airRifle')}}>AIR RIFLE  & ARCHERY</a>
+                            <a className="button" onClick={() => {setText('birdAnimal')}}>BIRD & ANIMAL WATCHING</a>
+                            <a className="button" onClick={() => {setText('cycle')}}>CYCLING & SAFARI</a>
+                            <a className="button" onClick={() => {setText('learnAbout')}}>LEARN ABOUT THE CULTURE</a>
+                            <a className="button" onClick={() => {setText('culturalEvents')}}>CULTURAL EVENTS</a>
+                            <a className="button" onClick={() => {setText('farmingCooking')}}>FARMING & COOKING</a>
+                            <a className="button" onClick={() => {setText('hiking')}}>HIKING & TREKKING</a>
+                            <a className="button" onClick={() => {setText('around')}}>AROUND THE SRI LANKA</a>
+                        </div>
+                    </Col>
+                    <Col sm={8}>
+                    <h4 className="dolpeText locationText">Farming & Cooking</h4>
+                    <p style={{color:'#7CA844'}}>FARMING WITH RESORT GARDNERS :</p>
+                        <p className="smallLocationText">
+                        Method of booking: In-person or email requesting to dolapevilla.lbh@gmail.com<br/><br/>
+                        Time of class:  Around 8.00 - 10.00 morning<br/><br/>
+                        Normal duration: Time is depend on the section that you are joining<br/><br/>
+                        </p>
+                        <ul>
+                            <li>Practical  of Dolape Villa Ella.</li>
+                            <li>Conducted by villa gardeners.</li>
+                            <li>Experience how a villa's gardening instruments are using</li>
+                            <li>Introduction to Sri Lankan farming and traditional techniques.</li>
+                            <li>Step by step instructions.</li>
+                            <li>Learn to prepare soil and land before farming.</li>
+                        </ul>
+
+                    <p style={{color:'#7CA844'}}>COOKING CLASS WITH RESORT CHEF : </p>
+                        <p className="smallLocationText">
+                        Max 05 people inside the kitchen at once. Group classes will be conducted in the open area of the villa.<br/><br/>
+                        Method of booking: In-person or email requesting to dolapevilla.lbh@gmail.com<br/><br/>
+                        Time of class: Lunch/dinner<br/><br/>
+                        Normal duration: Negotiable once you meet the chef and discuss or communicate via email.<br/><br/>
+                        </p>
+                        <ul>
+                            <li>Private class in the main kitchen of Dolape Villa Ella.</li>
+                            <li>Conducted by villa chef.</li>
+                            <li>Experience how a villa's fine dining kitchen operates during your course.</li>
+                            <li>Introduction to Sri Lankan farming and traditional techniques.</li>
+                            <li>Step by step instructions.</li>
+                            <li>Learn to prepare soil and land before farming.</li>
+                            <li>Discuss, interact and ask questions directly from the chef.</li>
+                            <li>Have the option to have the lunch/Dinner you cooked yourself in the Dolape Rill Restaurant.</li>
+                            <li>Guests simultaneously learn to cook as well as cover one meal during the program.</li>
+                        </ul>
+                    </Col>
+                </Row>
+            </Container>
+            );
         }
     }
 
