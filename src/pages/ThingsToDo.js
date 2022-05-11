@@ -15,7 +15,7 @@ import ThirdImgTrans from "../assets/a12d3250b32491bd47f7773b57dabfe3.jpg";
 
 
 const ThingsToDo = () => {
-    const [text,setText] = useState('location');
+    const [text,setText] = useState('things');
     const middleSHow = () =>{
         if(text == 'location'){
             return(
@@ -23,16 +23,16 @@ const ThingsToDo = () => {
                 <Row>
                     <Col sm={4}> 
                         <div className="d-grid">
-                            <a className="button" onClick={() => {setText('location')}}>THINGS TO DO</a>
-                            <a className="button" onClick={() => {setText('transport')}}>NATURAL POOL WITH RILL</a>
-                            <a className="button" onClick={() => {setText('weather')}}>AIR RIFLE  & ARCHERY</a>
-                            <a className="button" onClick={() => {setText('excursions')}}>BIRD & ANIMAL WATCHING</a>
-                            <a className="button" onClick={() => {setText('location')}}>CYCLING & SAFARI</a>
-                            <a className="button" onClick={() => {setText('transport')}}>LEARN ABOUT THE CULTURE</a>
-                            <a className="button" onClick={() => {setText('weather')}}>CULTURAL EVENTS</a>
-                            <a className="button" onClick={() => {setText('excursions')}}>FARMING & COOKING</a>
-                            <a className="button" onClick={() => {setText('weather')}}>HIKING & TREKKING</a>
-                            <a className="button" onClick={() => {setText('excursions')}}>AROUND THE SRI LANKA</a>
+                            <a className="button" onClick={() => {setText('things')}}>THINGS TO DO</a>
+                            <a className="button" onClick={() => {setText('natural')}}>NATURAL POOL WITH RILL</a>
+                            <a className="button" onClick={() => {setText('airRifle')}}>AIR RIFLE  & ARCHERY</a>
+                            <a className="button" onClick={() => {setText('birdAnimal')}}>BIRD & ANIMAL WATCHING</a>
+                            <a className="button" onClick={() => {setText('cycle')}}>CYCLING & SAFARI</a>
+                            <a className="button" onClick={() => {setText('learnAbout')}}>LEARN ABOUT THE CULTURE</a>
+                            <a className="button" onClick={() => {setText('culturalEvents')}}>CULTURAL EVENTS</a>
+                            <a className="button" onClick={() => {setText('farmingCooking')}}>FARMING & COOKING</a>
+                            <a className="button" onClick={() => {setText('hiking')}}>HIKING & TREKKING</a>
+                            <a className="button" onClick={() => {setText('around')}}>AROUND THE SRI LANKA</a>
                         </div>
                     </Col>
                     <Col sm={8}>
@@ -56,11 +56,17 @@ const ThingsToDo = () => {
                 <Container>
                 <Row>
                 <Col sm={4}> 
-                        <div className="d-grid gap-2">
-                            <a className="button" onClick={() => {setText('location')}}>LOCATION</a>
-                            <a className="button" onClick={() => {setText('transport')}}>TRANSPORT</a>
-                            <a className="button" onClick={() => {setText('weather')}}>WEATHER</a>
-                            <a className="button" onClick={() => {setText('excursions')}}>EXCURSIONS</a>
+                <div className="d-grid">
+                            <a className="button" onClick={() => {setText('things')}}>THINGS TO DO</a>
+                            <a className="button" onClick={() => {setText('natural')}}>NATURAL POOL WITH RILL</a>
+                            <a className="button" onClick={() => {setText('airRifle')}}>AIR RIFLE  & ARCHERY</a>
+                            <a className="button" onClick={() => {setText('birdAnimal')}}>BIRD & ANIMAL WATCHING</a>
+                            <a className="button" onClick={() => {setText('cycle')}}>CYCLING & SAFARI</a>
+                            <a className="button" onClick={() => {setText('learnAbout')}}>LEARN ABOUT THE CULTURE</a>
+                            <a className="button" onClick={() => {setText('culturalEvents')}}>CULTURAL EVENTS</a>
+                            <a className="button" onClick={() => {setText('farmingCooking')}}>FARMING & COOKING</a>
+                            <a className="button" onClick={() => {setText('hiking')}}>HIKING & TREKKING</a>
+                            <a className="button" onClick={() => {setText('around')}}>AROUND THE SRI LANKA</a>
                         </div>
                     </Col>
                     <Col sm={8}>
@@ -94,11 +100,17 @@ const ThingsToDo = () => {
                 <Container>
                 <Row>
                 <Col sm={4}> 
-                        <div className="d-grid gap-2">
-                            <a className="button" onClick={() => {setText('location')}}>LOCATION</a>
-                            <a className="button" onClick={() => {setText('transport')}}>TRANSPORT</a>
-                            <a className="button" onClick={() => {setText('weather')}}>WEATHER</a>
-                            <a className="button" onClick={() => {setText('excursions')}}>EXCURSIONS</a>
+                <div className="d-grid">
+                            <a className="button" onClick={() => {setText('things')}}>THINGS TO DO</a>
+                            <a className="button" onClick={() => {setText('natural')}}>NATURAL POOL WITH RILL</a>
+                            <a className="button" onClick={() => {setText('airRifle')}}>AIR RIFLE  & ARCHERY</a>
+                            <a className="button" onClick={() => {setText('birdAnimal')}}>BIRD & ANIMAL WATCHING</a>
+                            <a className="button" onClick={() => {setText('cycle')}}>CYCLING & SAFARI</a>
+                            <a className="button" onClick={() => {setText('learnAbout')}}>LEARN ABOUT THE CULTURE</a>
+                            <a className="button" onClick={() => {setText('culturalEvents')}}>CULTURAL EVENTS</a>
+                            <a className="button" onClick={() => {setText('farmingCooking')}}>FARMING & COOKING</a>
+                            <a className="button" onClick={() => {setText('hiking')}}>HIKING & TREKKING</a>
+                            <a className="button" onClick={() => {setText('around')}}>AROUND THE SRI LANKA</a>
                         </div>
                     </Col>
                     <Col sm={8}>
@@ -119,11 +131,17 @@ const ThingsToDo = () => {
                 <Container>
                 <Row>
                     <Col sm={4}> 
-                        <div className="d-grid gap-2">
-                            <a className="button" onClick={() => {setText('location')}}>LOCATION</a>
-                            <a className="button" onClick={() => {setText('transport')}}>TRANSPORT</a>
-                            <a className="button" onClick={() => {setText('weather')}}>WEATHER</a>
-                            <a className="button" onClick={() => {setText('excursions')}}>EXCURSIONS</a>
+                    <div className="d-grid">
+                            <a className="button" onClick={() => {setText('things')}}>THINGS TO DO</a>
+                            <a className="button" onClick={() => {setText('natural')}}>NATURAL POOL WITH RILL</a>
+                            <a className="button" onClick={() => {setText('airRifle')}}>AIR RIFLE  & ARCHERY</a>
+                            <a className="button" onClick={() => {setText('birdAnimal')}}>BIRD & ANIMAL WATCHING</a>
+                            <a className="button" onClick={() => {setText('cycle')}}>CYCLING & SAFARI</a>
+                            <a className="button" onClick={() => {setText('learnAbout')}}>LEARN ABOUT THE CULTURE</a>
+                            <a className="button" onClick={() => {setText('culturalEvents')}}>CULTURAL EVENTS</a>
+                            <a className="button" onClick={() => {setText('farmingCooking')}}>FARMING & COOKING</a>
+                            <a className="button" onClick={() => {setText('hiking')}}>HIKING & TREKKING</a>
+                            <a className="button" onClick={() => {setText('around')}}>AROUND THE SRI LANKA</a>
                         </div>
                     </Col>
                     <Col sm={8}>
