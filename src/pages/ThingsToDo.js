@@ -365,6 +365,92 @@ const ThingsToDo = () => {
                 </Row>
             </Container>
             );
+        }else if(text == 'learnAbout') {
+            return(
+                <Container>
+                <Row>
+                    <Col sm={4}> 
+                    <div className="d-grid">
+                            <a className="button" onClick={() => {setText('things')}}>THINGS TO DO</a>
+                            <a className="button" onClick={() => {setText('natural')}}>NATURAL POOL WITH RILL</a>
+                            <a className="button" onClick={() => {setText('airRifle')}}>AIR RIFLE  & ARCHERY</a>
+                            <a className="button" onClick={() => {setText('birdAnimal')}}>BIRD & ANIMAL WATCHING</a>
+                            <a className="button" onClick={() => {setText('cycle')}}>CYCLING & SAFARI</a>
+                            <a className="button" onClick={() => {setText('learnAbout')}}>LEARN ABOUT THE CULTURE</a>
+                            <a className="button" onClick={() => {setText('culturalEvents')}}>CULTURAL EVENTS</a>
+                            <a className="button" onClick={() => {setText('farmingCooking')}}>FARMING & COOKING</a>
+                            <a className="button" onClick={() => {setText('hiking')}}>HIKING & TREKKING</a>
+                            <a className="button" onClick={() => {setText('around')}}>AROUND THE SRI LANKA</a>
+                        </div>
+                    </Col>
+                    <Col sm={8}>
+                    <h4 className="dolpeText locationText">Learn About The Culture</h4>
+                        <b>Introducation</b><br/><br/>
+                        <p className="smallLocationText">
+                        The culture of Sri Lanka has been influenced by many factors but has
+                        managed to retain much of its ancient aspects. Mostly it has 
+                        been influenced by its long history and its Buddhist heritage. 
+                        The country has a rich artistic tradition, embracing the fine 
+                        arts, including music, dance, and visual arts. Sri Lankan 
+                        lifestyle is reflected in the cuisine, festivals, and sports. 
+                        South Indian influences are visible in many aspects. There 
+                        are some influences from colonisation by the Portuguese, the 
+                        Dutch, and the British. Sri Lankan culture is best known 
+                        abroad for its cricket, food, holistic medicine, religious 
+                        icons like the Buddhist flag, and cultural exports such as tea,
+                        cinnamon and gems. Sri Lankan culture is diverse, as it varies 
+                        from region to region.<br/><br/>
+
+                        Sri Lanka has had ties with Indian subcontinent from ancient times.
+                        Demographics: Sinhalese 74.8%, Sri Lankan Moors 9.23%, Indian
+                        Tamil 4.16%, Sri Lankan Tamil 11.21%, Other 0.6%.<br/><br/>
+
+                        Sri Lanka boasts of a documented history of over 2000 years 
+                        mainly due to ancient historic scriptures like Mahawansa. 
+                        Several centuries of intermittent foreign influence, has 
+                        transformed Sri Lankan culture to the present outlook. 
+                        Nevertheless ancient traditions and festivals are 
+                        celebrated by mostly conservative Sinhalese people 
+                        of the island, together with other minorities that make up the 
+                        Sri Lankan identity.<br/><br/>
+
+                        <b>Architecture </b><br/><br/>
+                        The architecture of Sri Lanka displays a rich variety of architectural forms and
+                        styles. Buddhism had a significant influence on Sri Lankan architecture. 
+                        However techniques and styles developed in Europe and Asia have also played 
+                        a major role in the architecture of Sri Lanka.<br/><br/>
+
+                        <b>Arts and Crafts </b><br/><br/>
+                        Many forms of Sri Lankan arts and crafts take inspiration from the 
+                        Island&#39;s long and lasting Buddhist culture which in turn has 
+                        absorbed and adopted countless regional and local traditions. 
+                        In most instances Sri Lankan art originates from religious beliefs, 
+                        and are represented in many forms such as painting, sculpture, and architecture. 
+                        One of the most notable aspects of Sri Lankan art are caves and temple paintings, 
+                        such as the frescoes found in Sigiriya and religious paintings found in temples 
+                        in Dambulla and Temple of the Tooth Relic in Kandy. Other popular forms of art 
+                        have been influenced by both natives as well as outside settlers. For example, 
+                        traditional wooden handicrafts and clay pottery are found around the hill country
+                         while Portuguese-inspired lacework and Indonesian-inspired Batik have become
+                          notable. <br/><br/>
+
+                        <b>Music</b><br/><br/>
+                        The two single biggest influences on Sri Lankan music are from Buddhism and 
+                        Portuguese colonizers. Buddhism arrived in Sri Lanka after the Buddha&#39;s
+                        visit in 300 BC, while the Portuguese arrived in the 15th century, bringing 
+                        with them cantiga ballads, the ukulele, and guitars, along with African slaves, 
+                        who further diversified the musical roots of the island. These slaves were called
+                         kaffrinha, and their dance music was called baila. Traditional Sri Lankan music
+                          includes the hypnotic Kandyan drums – drumming was and is very much a part and
+                           parcel of music in both Buddhist and Hindu temples in Sri Lanka. Most western
+                            parts of Sri Lanka follow western dancing and music.<br/>
+
+                        </p>
+
+                    </Col>
+                </Row>
+            </Container>
+            );
         }
     }
 
