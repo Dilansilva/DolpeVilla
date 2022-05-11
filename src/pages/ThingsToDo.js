@@ -192,7 +192,7 @@ const ThingsToDo = () => {
                 </Row>
             </Container>
             );
-        } else if(text == 'weather'){
+        } else if(text == 'airRifle'){
             return(
                 <Container>
                 <Row>
@@ -211,14 +211,28 @@ const ThingsToDo = () => {
                         </div>
                     </Col>
                     <Col sm={8}>
-                    <h4 className="dolpeText locationText">Weather</h4>
+                    <h4 className="dolpeText locationText">Air Rifle & Archery</h4>
                          <p className="smallLocationText">
-                             The climate at Dolape Villa Ella remains a comfortable 20-28 degrees 
-                             Celsius throughout the year, thereby giving the weather in Ella a ‘not
-                             too cold, not too hot’ comfort factor.<br/><br/>
-                             The weather pattern in the locality of the resort is recognised
-                              as being the most comfortable in the entire country.
+                         A site exclusively designed for adventure enthusiasts and adrenaline junkies who prefer a not so ordinary hillside experience. Want to experience Archery in Sri Lanka like the way hunters did?
+                        Join Dolape Villa Ella, and try out the field Archery session!
+                        feel the wind, aim.....
+                        bring the huntsman inside you !!
                          </p>
+
+                         <div>
+                            <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+                            {itemData.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </div>
                     </Col>
                 </Row>
             </Container>
