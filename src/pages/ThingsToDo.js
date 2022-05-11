@@ -17,7 +17,7 @@ import ThirdImgTrans from "../assets/a12d3250b32491bd47f7773b57dabfe3.jpg";
 const ThingsToDo = () => {
     const [text,setText] = useState('things');
     const middleSHow = () =>{
-        if(text == 'location'){
+        if(text == 'things'){
             return(
                 <Container>
                 <Row>
@@ -36,22 +36,25 @@ const ThingsToDo = () => {
                         </div>
                     </Col>
                     <Col sm={8}>
-                    <h4 className="dolpeText locationText">Dolape Villa standing on exquisite beauty in Ella, Sri Lanka.</h4>
-                     <p className="smallLocationText">Ella is a small village located among the peaks of Sri Lanka’s 
-                         central highlands. This sleepy village is nestled in a valley peering
-                         straight through the Ella Gap to the plain nearly 1000m below and across 
-                         to the coastline. Apart from the mesmerizing natural views, Ella is 
-                         surrounded by hilly countryside perfect for walks; through tea 
-                         plantations, waterfalls, ancient temples and artefacts. With a handful 
-                         of shops, hotels and guesthouses, Ella still remains a remote hamlet. 
-                         This hidden sanctuary with the perfect climate is probably one of the 
-                         best-kept secrets of the country and is easily accessible from the 
-                         comfort of our Ella resort in Sri Lanka.</p>
+                    <h4 className="dolpeText locationText">Things to do</h4>
+                     <p className="smallLocationText">
+                     Ella is probably one of Sri Lanka’s best kept secrets that 
+                     offers plenty to keep you fascinated during a few nights’ stay.
+                     Apart from simply unwinding in cool climes with hypnotic views;
+                     you may even set out on a hiking adventure to explore some of 
+                     nature’s wonders; such as the famed Little Adam’s Peak. Ella, 
+                     being a remote hamlet located among the peaks of country’s 
+                     central highlands is surrounded by countryside perfect for 
+                     walks or a cycling adventure.- Amongst the numerous things 
+                     to do in Ella, one could also explore tea gardens & factories, 
+                     nine arch bridge, waterfalls, ancient temples and historic 
+                     artefacts.
+                     </p>
                     </Col>
                 </Row>
             </Container>
             );
-        } else if(text == 'transport'){
+        } else if(text == 'natural'){
             return(
                 <Container>
                 <Row>
