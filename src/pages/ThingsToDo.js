@@ -2,7 +2,7 @@ import React,{useState} from "react";
 import backGround from "../assets/_1344104.jpg";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
-import Blue from "../assets/OG12.jpg";
+import Blue from "../assets/DSC01496.jpg";
 import LastSec from "../assets/MobilePopUpBackGround.jpg";
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
 import FirstImg from "../assets/_1322209.jpg";
@@ -22,7 +22,7 @@ const ThingsToDo = () => {
                 <Container>
                 <Row>
                     <Col sm={4}> 
-                        <div className="d-grid gap-2">
+                        <div className="d-grid">
                             <a className="button" onClick={() => {setText('location')}}>LOCATION</a>
                             <a className="button" onClick={() => {setText('transport')}}>TRANSPORT</a>
                             <a className="button" onClick={() => {setText('weather')}}>WEATHER</a>
