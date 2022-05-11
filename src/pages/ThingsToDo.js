@@ -219,6 +219,15 @@ const ThingsToDo = () => {
                         bring the huntsman inside you !!
                          </p>
 
+                            <div>
+                                <ul >
+                                    <li ><span href="#home">No practice or past experience necessary</span></li>
+                                    <li ><span href="#home">Includes training and equipment by our in-house archery specialist.</span></li>
+                                    <li ><span href="#home">One session – 2 hours</span></li>
+                                    <li ><span href="#home">Number of pilots for air rifle (around 15-25)</span></li>
+                                </ul>
+                            </div>
+
                          <div>
                             <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
                             {itemData.map((item) => (
@@ -237,7 +246,7 @@ const ThingsToDo = () => {
                 </Row>
             </Container>
             );
-        } else {
+        } else if(text == 'birdAnimal') {
             return(
                 <Container>
                 <Row>
@@ -256,16 +265,43 @@ const ThingsToDo = () => {
                         </div>
                     </Col>
                     <Col sm={8}>
-                    <h4 className="dolpeText locationText">Excursion</h4>
+                    <h4 className="dolpeText locationText">Bird & Animal Watching</h4>
                         <p className="smallLocationText">
-                        Ella has plenty to offer that could keep you fascinated and occupied 
-                        during a few nights’ stay. Apart from the mesmerizing views of mountains 
-                        and tea estates, the region provides shelter to many precious flora and 
-                        fauna. In addition to simply unwinding in the cool climes you could set 
-                        out on a trekking adventure or safari to a nearby wildlife sanctuary as
-                        part of excursions in Ella to discover and experience some of these 
-                        delicate wonders of nature up- close.
+                        Bird lovers and wildlife enthusiasts will be delighted to observe
+                        that the Dolape Villa Ella provides sanctuary for 27% or 63 species
+                        of the resident birds of Sri Lanka, including 6 precious species 
+                        endemic to the country. Out of those 63 bird species, birds such
+                        as Woodpeckers, Babblers, Barbets, Flycatchers, Minivit, and 
+                        Chestnut headed Bee-eaters and Hill Mynas are the types of 
+                        birds commonly seen in this location. Also there are Monkeys, 
+                        Snakes, Grizzled giant squirrel and etc.
                         </p>
+                        <p> <a href="#animal">&lt;&lt;Click Here&gt;&gt;</a>  to learn more about Endemic Birds of Sri Lanka</p>
+                        <p> <a href="#animal">&lt;&lt;Click Here&gt;&gt;</a>  to learn more about Endemic Animals of Sri Lanka</p>
+
+                        <div>
+                                <ul >
+                                    <li ><span href="#home">No practice or past experience necessary</span></li>
+                                    <li ><span href="#home">Includes training and equipment by our in-house archery specialist.</span></li>
+                                    <li ><span href="#home">One session – 2 hours</span></li>
+                                    <li ><span href="#home">Number of pilots for air rifle (around 15-25)</span></li>
+                                </ul>
+                            </div>
+
+                         <div>
+                            <ImageList sx={{ width: '100%', height: 450 }} cols={4} rowHeight={164}>
+                            {itemData.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </div>
                     </Col>
                 </Row>
             </Container>
