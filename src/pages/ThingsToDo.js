@@ -316,31 +316,39 @@ const ThingsToDo = () => {
                         </div>
                     </Col>
                     <Col sm={8}>
-                    <h4 className="dolpeText locationText">Bird & Animal Watching</h4>
+                    <h4 className="dolpeText locationText">Cycling & Safari</h4>
                         <p className="smallLocationText">
-                        Bird lovers and wildlife enthusiasts will be delighted to observe
-                        that the Dolape Villa Ella provides sanctuary for 27% or 63 species
-                        of the resident birds of Sri Lanka, including 6 precious species 
-                        endemic to the country. Out of those 63 bird species, birds such
-                        as Woodpeckers, Babblers, Barbets, Flycatchers, Minivit, and 
-                        Chestnut headed Bee-eaters and Hill Mynas are the types of 
-                        birds commonly seen in this location. Also there are Monkeys, 
-                        Snakes, Grizzled giant squirrel and etc.
-                        </p>
-                        <p> <a href="#animal">&lt;&lt;Click Here&gt;&gt;</a>  to learn more about Endemic Birds of Sri Lanka</p>
-                        <p> <a href="#animal">&lt;&lt;Click Here&gt;&gt;</a>  to learn more about Endemic Animals of Sri Lanka</p>
+                        Cycling in Ella is one of the most frequent activity done 
+                        by most of the tourists. This cycling tour covers some of 
+                        the most important tourist attractions in Ella. You will 
+                        start cycling to the famous Rawana Waterfalls. Ravana Falls
+                        is another must visit in Ella. Hill country of Sri Lanka is
+                        quite popular for beautiful waterfalls and Ravana Falls
+                        is right at the top.It currently ranks as one of the
+                        widest falls in the country. This waterfall measures 
+                        approximately 25 m (82 ft) in high and cascade from an
+                        oval-shaped concave rock outcrop. During the local wet
+                        season, the waterfall turns into what is said to resemble
+                        an areca flower with withering petals. But this is not
+                        the case in the dry season, where the flow of water
+                        reduces dramatically.<br/><br/>
 
-                        <div>
-                                <ul >
-                                    <li ><span href="#home">No practice or past experience necessary</span></li>
-                                    <li ><span href="#home">Includes training and equipment by our in-house archery specialist.</span></li>
-                                    <li ><span href="#home">One session – 2 hours</span></li>
-                                    <li ><span href="#home">Number of pilots for air rifle (around 15-25)</span></li>
-                                </ul>
-                            </div>
+                        And, this ride will be approximately 30 minutes. On arrival
+                        at Rawana waterfalls, you will do a small trekking to witness
+                        the Rawana Cave where Rawana hid a lovely Indian Princess Sita
+                        after abducting her.The Ravana Cave is located about 2 km from
+                        the Ella town and 11 km (7 mi) away from Bandarawela. It is
+                        quite a small cave, measuring about 50ft wide, 150ft long
+                        and 60ft high.  Recently a 20,000-year-old skull was
+                        discovered in the cave. Then you will do a short cycling
+                        ride to enjoy the sceneries at Ella gap. This incredible 
+                        gap is one of the most picturesque locations in the country 
+                        that allows plenty of photographic opportunities. At the 
+                        end of this visit, you will cycle back to Ella.<br/><br/>
+                        </p>
 
                          <div>
-                            <ImageList sx={{ width: '100%', height: 450 }} cols={4} rowHeight={164}>
+                            <ImageList sx={{ width: 450, height: 450 }} cols={3} rowHeight={164}>
                             {itemData.map((item) => (
                                 <ImageListItem key={item.img}>
                                     <img
