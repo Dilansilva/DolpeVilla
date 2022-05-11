@@ -23,16 +23,16 @@ const ThingsToDo = () => {
                 <Row>
                     <Col sm={4}> 
                         <div className="d-grid">
-                            <a className="button" onClick={() => {setText('location')}}>LOCATION</a>
-                            <a className="button" onClick={() => {setText('transport')}}>TRANSPORT</a>
-                            <a className="button" onClick={() => {setText('weather')}}>WEATHER</a>
-                            <a className="button" onClick={() => {setText('excursions')}}>EXCURSIONS</a>
-                            <a className="button" onClick={() => {setText('location')}}>LOCATION</a>
-                            <a className="button" onClick={() => {setText('transport')}}>TRANSPORT</a>
-                            <a className="button" onClick={() => {setText('weather')}}>WEATHER</a>
-                            <a className="button" onClick={() => {setText('excursions')}}>EXCURSIONS</a>
-                            <a className="button" onClick={() => {setText('weather')}}>WEATHER</a>
-                            <a className="button" onClick={() => {setText('excursions')}}>EXCURSIONS</a>
+                            <a className="button" onClick={() => {setText('location')}}>THINGS TO DO</a>
+                            <a className="button" onClick={() => {setText('transport')}}>NATURAL POOL WITH RILL</a>
+                            <a className="button" onClick={() => {setText('weather')}}>AIR RIFLE  & ARCHERY</a>
+                            <a className="button" onClick={() => {setText('excursions')}}>BIRD & ANIMAL WATCHING</a>
+                            <a className="button" onClick={() => {setText('location')}}>CYCLING & SAFARI</a>
+                            <a className="button" onClick={() => {setText('transport')}}>LEARN ABOUT THE CULTURE</a>
+                            <a className="button" onClick={() => {setText('weather')}}>CULTURAL EVENTS</a>
+                            <a className="button" onClick={() => {setText('excursions')}}>FARMING & COOKING</a>
+                            <a className="button" onClick={() => {setText('weather')}}>HIKING & TREKKING</a>
+                            <a className="button" onClick={() => {setText('excursions')}}>AROUND THE SRI LANKA</a>
                         </div>
                     </Col>
                     <Col sm={8}>
