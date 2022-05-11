@@ -451,6 +451,58 @@ const ThingsToDo = () => {
                 </Row>
             </Container>
             );
+        } else if(text == 'culturalEvents') {
+            return(
+                <Container>
+                <Row>
+                    <Col sm={4}> 
+                    <div className="d-grid">
+                            <a className="button" onClick={() => {setText('things')}}>THINGS TO DO</a>
+                            <a className="button" onClick={() => {setText('natural')}}>NATURAL POOL WITH RILL</a>
+                            <a className="button" onClick={() => {setText('airRifle')}}>AIR RIFLE  & ARCHERY</a>
+                            <a className="button" onClick={() => {setText('birdAnimal')}}>BIRD & ANIMAL WATCHING</a>
+                            <a className="button" onClick={() => {setText('cycle')}}>CYCLING & SAFARI</a>
+                            <a className="button" onClick={() => {setText('learnAbout')}}>LEARN ABOUT THE CULTURE</a>
+                            <a className="button" onClick={() => {setText('culturalEvents')}}>CULTURAL EVENTS</a>
+                            <a className="button" onClick={() => {setText('farmingCooking')}}>FARMING & COOKING</a>
+                            <a className="button" onClick={() => {setText('hiking')}}>HIKING & TREKKING</a>
+                            <a className="button" onClick={() => {setText('around')}}>AROUND THE SRI LANKA</a>
+                        </div>
+                    </Col>
+                    <Col sm={8}>
+                    <h4 className="dolpeText locationText">Cultural Events</h4>
+                        <p className="smallLocationText">
+                        Take part in the many religious and social local events in Ella during
+                        your stay at this scenic and tranquil location among the hills.
+                        </p>
+                        <ul>
+                            <li> Every Wednesday - Weekly Wednesday Fair in Ella</li>
+                            <li>May - Dova Temple Perahera</li>
+                            <li>June - Kumbal Perehara in Ella</li>
+                            <li>April 12th-16th - Sinhala and Tamil New Year Festival</li>
+                            <li> August - Halpewatte Estate Kovil Ceremony</li>
+                            <li>May - Vesak Poya Day (Festival of Lights)</li>
+                            <li>July - Kandy Esala Perahara</li>
+                        </ul>
+
+                        <div>
+                            <ImageList sx={{ width: 450, height: 450 }} cols={3} rowHeight={164}>
+                            {itemData.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+            );
         }
     }
 
