@@ -34,6 +34,10 @@ function Header(){
 
   const {height,width} = useWindowDimensions();
 
+  const covidPage = () => {
+    window.open("https://www.hpb.health.gov.lk/en");
+  }
+
  return(
   <>
          {width < 480 ? <MobilePopUp/> : null }
@@ -46,7 +50,7 @@ function Header(){
           </Navbar.Brand>
           <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
-              <ToggleButton className="gardientBtn"><b>COVID-19 UPDATES</b></ToggleButton>
+              <ToggleButton className="gardientBtn" onClick={covidPage}><b>COVID-19 UPDATES</b></ToggleButton>
               <ToggleButton className="gardientBtn">GALLERY</ToggleButton>
               <ToggleButton className="gardientBtn">CONTACT US</ToggleButton>
               <ToggleButton className="gardientBtn">PROMOTIONS</ToggleButton>
