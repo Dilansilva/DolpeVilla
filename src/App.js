@@ -9,6 +9,7 @@ import Accomadation from './pages/Accomadation';
 import Facilities from './pages/Facilities';
 import Dinnning from './pages/Dinning';
 import ThingsToDo from './pages/ThingsToDo';
+import ContactUs from './pages/ContactUs';
 
 import {Route,Routes,BrowserRouter as Router} from "react-router-dom";
 
@@ -23,7 +24,8 @@ function App() {
             <Route path='accomadation' element={<Accomadation/>}/> 
             <Route path='facilities' element={<Facilities/>}/> 
             <Route path='dinning' element={<Dinnning/>}/>     
-            <Route path='things' element={<ThingsToDo/>}/>    
+            <Route path='things' element={<ThingsToDo/>}/>  
+            <Route path='contact' element={<ContactUs/>}/>    
           </Routes>
         <Footer/>
       </div>

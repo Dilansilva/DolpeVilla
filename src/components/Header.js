@@ -52,7 +52,7 @@ function Header(){
             <Navbar.Collapse className="justify-content-end">
               <ToggleButton className="gardientBtn" onClick={covidPage}><b>COVID-19 UPDATES</b></ToggleButton>
               <ToggleButton className="gardientBtn">GALLERY</ToggleButton>
-              <ToggleButton className="gardientBtn">CONTACT US</ToggleButton>
+              <ToggleButton className="gardientBtn" onClick={() => {navigate("/contact")}}>CONTACT US</ToggleButton>
               <ToggleButton className="gardientBtn">PROMOTIONS</ToggleButton>
             </Navbar.Collapse>
         </Container>
