@@ -12,6 +12,7 @@ import ThingsToDo from './pages/ThingsToDo';
 import ContactUs from './pages/ContactUs';
 import Gallery from './pages/Gallery';
 import Promotions from './pages/Promotions';
+import Bookings from './pages/Bookings';
 
 import {Route,Routes,BrowserRouter as Router} from "react-router-dom";
 
@@ -30,6 +31,7 @@ function App() {
             <Route path='contact' element={<ContactUs/>}/>  
             <Route path='gallery' element={<Gallery/>}/>
             <Route path='promotion' element={<Promotions/>}/>            
+            <Route path='bookings' element={<Bookings/>}/>            
           </Routes>
         <Footer/>
       </div>
