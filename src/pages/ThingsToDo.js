@@ -630,96 +630,24 @@ const ThingsToDo = () => {
     }
 
     const showPictures = () => {
-        if(text == 'natural'){
-            return(
-                <Row className="blueAreaRow">
-                   <Col >
-                   <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                {itemData.map((item) => (
-                  <ImageListItem key={item.img}>
+       if(text == 'hiking'){
+         return (
+            <div><br/>
+            <ImageList sx={{ width:'100%', height: 450 }} cols={6} rowHeight={164}>
+            {itemData.map((item) => (
+                <ImageListItem key={item.img}>
                     <img
-                      src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                      srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                      alt={item.title}
-                      loading="lazy"
+                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                    alt={item.title}
+                    loading="lazy"
                     />
-                  </ImageListItem>
+                </ImageListItem>
                 ))}
-              </ImageList>
-                   </Col>
-    
-            </Row> 
-            );
-        } else if(text == 'transport'){
-            return(
-                <Row className="blueAreaRow">
-                <Col>
-                    <Card style={{ width: '18rem',background:'none'}}>
-                        <Card.Img variant="top" src={FirstImgTrans}/>
-                    </Card>
-                </Col>
-    
-                <Col>
-                    <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={SecondImgTrans} />
-                    </Card>
-                </Col>
-    
-                <Col>
-                    <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={ThirdImgTrans} />
-                    </Card>
-                </Col>
-    
-            </Row> 
-            );
-        } else if(text == 'weather'){
-            return(
-                <Row className="blueAreaRow">
-                <Col>
-                    <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={FirstImg} />
-                    </Card>
-                </Col>
-    
-                <Col>
-                    <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={SecondImg} />
-                    </Card>
-                </Col>
-    
-                <Col>
-                    <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={ThirdImg} />
-                    </Card>
-                </Col>
-    
-            </Row> 
-            );
-        } else {
-            return(
-                <Row className="blueAreaRow">
-                <Col>
-                    <Card style={{ width: '18rem',background:'none'}}>
-                        <Card.Img variant="top" src={FirstImgTrans}/>
-                    </Card>
-                </Col>
-    
-                <Col>
-                    <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={SecondImgTrans} />
-                    </Card>
-                </Col>
-    
-                <Col>
-                    <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={ThirdImgTrans} />
-                    </Card>
-                </Col>
-    
-            </Row> 
-            );
-        }
+            </ImageList><br/>
+        </div>
+         )
+       }
     }
 
     return (
@@ -753,7 +681,17 @@ const ThingsToDo = () => {
        
         </div>
         {/*Blue Area */}
-      
+        <div  className="homeImage" style={{
+             backgroundImage: `url(${Blue})`,
+        }}>
+        <div className="secondDiv">
+          
+            {showPictures()}
+          
+        </div>
+
+       
+        </div>
     </>
     );
 }
