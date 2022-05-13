@@ -10,6 +10,7 @@ import Facilities from './pages/Facilities';
 import Dinnning from './pages/Dinning';
 import ThingsToDo from './pages/ThingsToDo';
 import ContactUs from './pages/ContactUs';
+import Gallery from './pages/Gallery';
 
 import {Route,Routes,BrowserRouter as Router} from "react-router-dom";
 
@@ -25,7 +26,8 @@ function App() {
             <Route path='facilities' element={<Facilities/>}/> 
             <Route path='dinning' element={<Dinnning/>}/>     
             <Route path='things' element={<ThingsToDo/>}/>  
-            <Route path='contact' element={<ContactUs/>}/>    
+            <Route path='contact' element={<ContactUs/>}/>  
+            <Route path='gallery' element={<Gallery/>}/>      
           </Routes>
         <Footer/>
       </div>
