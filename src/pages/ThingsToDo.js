@@ -626,6 +626,73 @@ const ThingsToDo = () => {
                 </Row>
             </Container>
             );
+        }else if(text == 'around'){
+            return(
+                <Container>
+                <Row>
+                <Col sm={4}> 
+                <div className="d-grid">
+                            <a className="button" onClick={() => {setText('things')}}>THINGS TO DO</a>
+                            <a className="button" onClick={() => {setText('natural')}}>NATURAL POOL WITH RILL</a>
+                            <a className="button" onClick={() => {setText('airRifle')}}>AIR RIFLE  & ARCHERY</a>
+                            <a className="button" onClick={() => {setText('birdAnimal')}}>BIRD & ANIMAL WATCHING</a>
+                            <a className="button" onClick={() => {setText('cycle')}}>CYCLING & SAFARI</a>
+                            <a className="button" onClick={() => {setText('learnAbout')}}>LEARN ABOUT THE CULTURE</a>
+                            <a className="button" onClick={() => {setText('culturalEvents')}}>CULTURAL EVENTS</a>
+                            <a className="button" onClick={() => {setText('farmingCooking')}}>FARMING & COOKING</a>
+                            <a className="button" onClick={() => {setText('hiking')}}>HIKING & TREKKING</a>
+                            <a className="button" onClick={() => {setText('around')}}>AROUND THE SRI LANKA</a>
+                        </div>
+                    </Col>
+                    <Col sm={8}>
+                    <h4 className="dolpeText locationText">Around The Sri Lanka</h4>
+                        <p className="smallLocationText">
+                        Sri Lanka is an amazing travel destination offering a wide range of places
+                        to visit. This island, located in the Indian Ocean off the coast of India, 
+                        presents visitors with an incredible array of environments and tourist 
+                        attractions to enjoy and experience.
+                        </p>
+                        
+                        <p className="smallLocationText">
+                        Travelers can trace the island's fascinating history, from ancient times through
+                        the colonial period to the present, in cities like Colombo and Kandy. This
+                        relatively compact island boasts eight UNESCO World Heritage Sites where that
+                        history is preserved.
+                        </p>
+                     
+                        <p className="smallLocationText">
+                        Incredible outdoor landscapes and safari experiences can be found in the 
+                        country's large elephant- and leopard-filled national parks, like Yala, 
+                        Minneriya, and Udawalawe. Sri Lanka is also a beach-lover's paradise, 
+                        ringed by some of the world's most beautiful beaches, and perfect to 
+                        number of water sports.
+                        </p>
+
+                        <p className="smallLocationText">
+                        When planning a Sri Lankan adventure, keep in mind that the country 
+                        experiences various type of weather conditions,climate changes with 
+                        in 4 to 5 hours travel.Plan your travel itinerary with our list of the
+                         best places to visit in Sri Lanka.
+                        </p>
+                        <br/>
+                        <div>
+                            <ImageList sx={{ width: 450, height: 450 }} cols={3} rowHeight={164}>
+                            {itemData.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </div>
+                    </Col>
+                </Row>
+            </Container>
+            );
         }
     }
 
