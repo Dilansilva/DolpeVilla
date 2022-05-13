@@ -35,7 +35,7 @@ const ContactUs = () => {
         <br/>
        <Row className="blueAreaRow">
             <Col sm={3}>
-                <Card style={{ width: '18rem',background:'none' }}>
+                <Card bg="primary" style={{ width: '18rem',background:'none' }}>
                         <Card.Body>
                         <Card.Title>ADDRESS</Card.Title>
                                 <Card.Text className="textSizeAndCOlor">
@@ -48,11 +48,11 @@ const ContactUs = () => {
             </Col>
 
             <Col sm={3}>
-                <Card style={{ width: '18rem',background:'none' }}>
+                <Card bg="primary" style={{ width: '18rem',background:'none' }}>
                         <Card.Body>
                             <Card.Title>TELEPHONES</Card.Title>
                                 <Card.Text className="textSizeAndCOlor">
-                                +94 (0) 777 1735 28
+                                +94 (0) 777 1735 28<br/>
                                 +94 (0) 771 8852 86
                                 </Card.Text>
                         </Card.Body>
@@ -60,22 +60,22 @@ const ContactUs = () => {
             </Col>
 
             <Col sm={3}>
-                <Card style={{ width: '18rem',background:'none' }}>
+                <Card bg="primary" style={{ width: '18rem',background:'none' }}>
                         <Card.Body>
                             <Card.Title>EMAIL</Card.Title>
                                 <Card.Text className="textSizeAndCOlor">
-                                dolapevilla.lbh@gmail.com
+                                dolapevilla.lbh@gmail.com<br/><br/>
                                 </Card.Text>
                         </Card.Body>
                 </Card>
             </Col>
 
             <Col sm={3}>
-                <Card style={{ width: '18rem',background:'none' }}>
+                <Card bg="primary" style={{ width: '18rem',background:'none' }}>
                         <Card.Body>
                             <Card.Title>WHATSAPP</Card.Title>
                                 <Card.Text className="textSizeAndCOlor">
-                                +94 (0) 777 1735 28
+                                +94 (0) 777 1735 28<br/><br/>
                                 </Card.Text>
                         </Card.Body>
                 </Card>
