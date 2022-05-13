@@ -560,6 +560,72 @@ const ThingsToDo = () => {
                 </Row>
             </Container>
             );
+        }else if(text == 'hiking'){
+            return(
+                <Container>
+                <Row>
+                <Col sm={4}> 
+                <div className="d-grid">
+                            <a className="button" onClick={() => {setText('things')}}>THINGS TO DO</a>
+                            <a className="button" onClick={() => {setText('natural')}}>NATURAL POOL WITH RILL</a>
+                            <a className="button" onClick={() => {setText('airRifle')}}>AIR RIFLE  & ARCHERY</a>
+                            <a className="button" onClick={() => {setText('birdAnimal')}}>BIRD & ANIMAL WATCHING</a>
+                            <a className="button" onClick={() => {setText('cycle')}}>CYCLING & SAFARI</a>
+                            <a className="button" onClick={() => {setText('learnAbout')}}>LEARN ABOUT THE CULTURE</a>
+                            <a className="button" onClick={() => {setText('culturalEvents')}}>CULTURAL EVENTS</a>
+                            <a className="button" onClick={() => {setText('farmingCooking')}}>FARMING & COOKING</a>
+                            <a className="button" onClick={() => {setText('hiking')}}>HIKING & TREKKING</a>
+                            <a className="button" onClick={() => {setText('around')}}>AROUND THE SRI LANKA</a>
+                        </div>
+                    </Col>
+                    <Col sm={8}>
+                    <h4 className="dolpeText locationText">Hiking & Trekking</h4>
+                    <p style={{color:'#7CA844'}}>FARMING WITH RESORT GARDNERS :</p>
+                        <p className="smallLocationText">
+                        When staying at our retreat in Ella, things to do for guests would 
+                        include a host of pleasing and enjoyable activities. The vicinity of 
+                        Dolape Villa Ella affords ample opportunity for hiking, trekking and 
+                        biking. Ella is a great location for viewing some of the best natural 
+                        scenery in Sri Lanka. Must visit locations: 
+                        </p>
+                        <p style={{color:'#7CA844'}}>Little Adam’s Peak </p>
+                        <ul>
+                            <li>Little Adam’s peak is Ella’s best known tourist attraction.</li>
+                            <li>Resembles Adam's Peak.</li>
+                            <li>Located five minutes away from the resort</li>
+                            <li>A short half hour climb to the top of the 1141 metre peak</li>
+                            <li>Breathtaking views of an endless valley, tea plantations and waterfalls</li>
+                        </ul>
+
+                        <p style={{color:'#7CA844'}}>Ella Rock </p>
+                        <ul>
+                            <li>Ella Rock is a must climb for those into hiking and trekking.</li>
+                            <li>Ranks as one of the widest falls in Sri Lanka.</li>
+                            <li>The waterfall measures approximately 25 meters (82 ft) in height and cascades from an oval-shaped concave rock outcrop.</li>
+                            <li>The falls form part of the Ravana Ella Wildlife Sanctuary</li>
+                            <li> A ten minute ride or a half hour walk away from the resort</li>
+                            <li>Visit the nearby Ravana cave, which according to history, is famed to have held Seetha captive who was kidnapped from India by Ravana</li>
+                        </ul>
+
+                        <p style={{color:'#7CA844'}}>Ravana Ella Falls</p>
+                        <ul>
+                            <li> The Ravana Ella Falls is a wonderful sightseeing attraction.</li>
+                            <li>A challenging climb and takes about three hours.</li>
+                            <li>See spectacular views of the valley.</li>
+                        </ul>   
+
+                        <p style={{color:'#7CA844'}}>Ravana Ella Falls</p>
+                        <ul>
+                            <li> The Ravana Ella Falls is a wonderful sightseeing attraction.</li>
+                            <li>A challenging climb and takes about three hours.</li>
+                            <li>See spectacular views of the valley.</li>
+                        </ul>  
+
+                     
+                    </Col>
+                </Row>
+            </Container>
+            );
         }
     }
 
