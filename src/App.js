@@ -11,6 +11,7 @@ import Dinnning from './pages/Dinning';
 import ThingsToDo from './pages/ThingsToDo';
 import ContactUs from './pages/ContactUs';
 import Gallery from './pages/Gallery';
+import Promotions from './pages/Promotions';
 
 import {Route,Routes,BrowserRouter as Router} from "react-router-dom";
 
@@ -27,7 +28,8 @@ function App() {
             <Route path='dinning' element={<Dinnning/>}/>     
             <Route path='things' element={<ThingsToDo/>}/>  
             <Route path='contact' element={<ContactUs/>}/>  
-            <Route path='gallery' element={<Gallery/>}/>      
+            <Route path='gallery' element={<Gallery/>}/>
+            <Route path='promotion' element={<Promotions/>}/>            
           </Routes>
         <Footer/>
       </div>
