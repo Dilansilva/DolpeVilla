@@ -6,46 +6,75 @@ import Blue from "../assets/_1322204.jpg";
 import { Col, Container, Row, Card, Button, Breadcrumb, Accordion } from "react-bootstrap";
 import FirstImg from "../assets/_1344168.jpg";
 import SecondImg from "../assets/_1322232.jpg";
-import ThirdImg from "../assets/287522687.jpg"
+import ThirdImg from "../assets/287522687.jpg";
+import ImageList from '@mui/material/ImageList';
+import ImageListItem from '@mui/material/ImageListItem';
 
-const faqs = [
+const itemData = [
     {
-        header: "What are the Check-in and Check-out times at Dolape Villa ?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+      img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+      title: 'Breakfast',
     },
     {
-        header: "How far is Dolape Villa from the center of Ella ?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+      img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+      title: 'Burger',
     },
     {
-        header: "Is Dolape Villa Ella popular with families ?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+      img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+      title: 'Camera',
     },
     {
-        header: "Does Dolape Villa have a restaurant on site ?",
-        body: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod",
+      img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+      title: 'Coffee',
     },
     {
-        header: "What kind of breakfast is served at Dolape Villa ?",
-        body: "Lorem ipsum dolor sit amet"
+      img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+      title: 'Hats',
     },
     {
-        header: "What is there to do at Dolape Villa Ella ?",
-        body: "Lorem ipsum dolor sit amet"
-    },
+        img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+        title: 'Breakfast',
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+        title: 'Burger',
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+        title: 'Camera',
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+        title: 'Coffee',
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+        title: 'Hats',
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+        title: 'Breakfast',
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+        title: 'Burger',
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+        title: 'Camera',
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+        title: 'Coffee',
+      },
+      {
+        img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+        title: 'Hats',
+      },
     {
-        header: "Does Dolape Villa have a hot tub for its guests ?",
-        body: "Lorem ipsum dolor sit amet"
-    },
-    {
-        header: "How much does it cost to say at Dolape Villa Ella ?",
-        body: "Lorem ipsum dolor sit amet"
-    },
-    {
-        header: "What type of room can I book at Dolape Villa Ella ?",
-        body: "Lorem ipsum dolor sit amet"
-    }
-]
+      img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+      title: 'Honey',
+    },]
 
 const Gallery = () => {
     return(
@@ -73,72 +102,163 @@ const Gallery = () => {
                     <hr style={{color:'#7CA844'}}/>
                     <Container style={{textAlign:'center'}}>
         <br/>
-       <Row className="blueAreaRow">
-            <Col sm={3}>
-                <Card bg="primary" style={{ width: '18rem',background:'none' }}>
-                        <Card.Body>
-                        <Card.Title>ADDRESS</Card.Title>
-                                <Card.Text className="textSizeAndCOlor">
-                                Dolape Villa, Kandekumbura Road,
-                                Ballaketuwa, Ella, 90090,
-                                Sri Lanka.
-                                </Card.Text>
-                        </Card.Body>
-                </Card>
-            </Col>
+                <Row className="blueAreaRow">
+                    <Col sm={6}>
+                    <div><h4 className="dolpeText">Attic Suite Room</h4></div><br/>
+                        <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
+                        {itemData.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                alt={item.title}
+                                loading="lazy"
+                                />
+                            </ImageListItem>
+                            ))}
+                        </ImageList>
+                    </Col>
+    
+                    <Col sm={6}>
+                    <div><h4 className="dolpeText">Deluxe Room</h4></div><br/>
+                        <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+                        {itemData.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                alt={item.title}
+                                loading="lazy"
+                                />
+                            </ImageListItem>
+                            ))}
+                        </ImageList>
+                    </Col>
+            </Row> 
 
-            <Col sm={3}>
-                <Card bg="primary" style={{ width: '18rem',background:'none' }}>
-                        <Card.Body>
-                            <Card.Title>TELEPHONES</Card.Title>
-                                <Card.Text className="textSizeAndCOlor">
-                                +94 (0) 777 1735 28<br/>
-                                +94 (0) 771 8852 86
-                                </Card.Text>
-                        </Card.Body>
-                </Card>
-            </Col>
-
-            <Col sm={3}>
-                <Card bg="primary" style={{ width: '18rem',background:'none' }}>
-                        <Card.Body>
-                            <Card.Title>EMAIL</Card.Title>
-                                <Card.Text className="textSizeAndCOlor">
-                                dolapevilla.lbh@gmail.com<br/><br/>
-                                </Card.Text>
-                        </Card.Body>
-                </Card>
-            </Col>
-
-            <Col sm={3}>
-                <Card bg="primary" style={{ width: '18rem',background:'none' }}>
-                        <Card.Body>
-                            <Card.Title>WHATSAPP</Card.Title>
-                                <Card.Text className="textSizeAndCOlor">
-                                +94 (0) 777 1735 28<br/><br/>
-                                </Card.Text>
-                        </Card.Body>
-                </Card>
-            </Col>
-
-        </Row>
-
+            <Row className="blueAreaRow">
+                    <Col sm={6}>
+                    <div><h4 className="dolpeText">Standard Room</h4></div><br/>
+                        <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
+                        {itemData.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                alt={item.title}
+                                loading="lazy"
+                                />
+                            </ImageListItem>
+                            ))}
+                        </ImageList>
+                    </Col>
+    
+                    <Col sm={6}>
+                    <div><h4 className="dolpeText">Budget Room</h4></div><br/>
+                        <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+                        {itemData.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                alt={item.title}
+                                loading="lazy"
+                                />
+                            </ImageListItem>
+                            ))}
+                        </ImageList>
+                    </Col>
+            </Row> 
+            <hr style={{color:'#7CA844'}}/>
+                            <br/><br/>
+            <Row className="blueAreaRow">
+                    <Col sm={6}>
+                    <div><h4 className="dolpeText">Natural Pool</h4></div><br/>
+                        <ImageList sx={{ width: 500, height: 450 }} cols={2} rowHeight={164}>
+                        {itemData.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                alt={item.title}
+                                loading="lazy"
+                                />
+                            </ImageListItem>
+                            ))}
+                        </ImageList>
+                    </Col>
+    
+                    <Col sm={6}>
+                    <div><h4 className="dolpeText">Air Rifle And Archery</h4></div><br/>
+                        <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+                        {itemData.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                alt={item.title}
+                                loading="lazy"
+                                />
+                            </ImageListItem>
+                            ))}
+                        </ImageList>
+                    </Col>
+            </Row>
+            <br/>
+            <Row className="blueAreaRow">
+                    <Col>
+                    <div><h4 className="dolpeText">Bird and Animal Watching</h4></div><br/>
+                        <ImageList sx={{ width: '80%', height: 450 }} cols={4} rowHeight={164}>
+                        {itemData.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                alt={item.title}
+                                loading="lazy"
+                                />
+                            </ImageListItem>
+                            ))}
+                        </ImageList>
+                    </Col>
+            </Row>
+            <br/>
+            <Row className="blueAreaRow">
+                    <Col sm={6}>
+                    <div><h4 className="dolpeText">Cycling and Safari</h4></div><br/>
+                        <ImageList sx={{ width: '100%', height: 450 }} cols={4} rowHeight={164}>
+                        {itemData.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                alt={item.title}
+                                loading="lazy"
+                                />
+                            </ImageListItem>
+                            ))}
+                        </ImageList>
+                    </Col>
+                    <Col sm={6}>
+                    <div><h4 className="dolpeText">Cultural Events</h4></div><br/>
+                        <ImageList sx={{ width: '100%', height: 450 }} cols={4} rowHeight={164}>
+                        {itemData.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                alt={item.title}
+                                loading="lazy"
+                                />
+                            </ImageListItem>
+                            ))}
+                        </ImageList>
+                    </Col>
+            </Row>
+        
         
        </Container><br/>
-            <h4 className="dolpeText">FAQ About Dolape Villa</h4>
-                <hr style={{color:'#7CA844'}}/>
-                {
-                    faqs.map((faq) => (
-                        <Accordion defaultActiveKey="1" flush>
-                        <Accordion.Item eventKey="1">
-                             <Accordion.Header>{faq.header}</Accordion.Header>
-                             <Accordion.Body>
-                             {faq.body}
-                             </Accordion.Body>
-                         </Accordion.Item>
-                        </Accordion>
-                    ))
-                }
+            
                   <br/>
                 </div>
                 </div>
