@@ -129,8 +129,8 @@ const ContactUs = () => {
                 <hr style={{color:'#7CA844'}}/>
                 {
                     faqs.map((faq) => (
-                        <Accordion defaultActiveKey="0" flush>
-                        <Accordion.Item eventKey="0">
+                        <Accordion defaultActiveKey="1" flush>
+                        <Accordion.Item eventKey="1">
                              <Accordion.Header>{faq.header}</Accordion.Header>
                              <Accordion.Body>
                              {faq.body}
