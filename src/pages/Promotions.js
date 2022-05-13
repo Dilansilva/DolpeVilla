@@ -1,5 +1,5 @@
 import React from "react";
-import backGround from "../assets/DSC01499.jpg";
+import backGround from "../assets/118286133_312616393307498_3660786380803978693_n.jpg";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
 import Blue from "../assets/_1322204.jpg";
