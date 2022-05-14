@@ -63,10 +63,28 @@ function Bookings() {
                             {/*Street address line 02 */}
                             <Row></Row>
                             {/*Contact details */}
-                            <Row></Row>
+                            <Row>
+                                <Col sm={6}>
+                                    <Form>
+                                        <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
+                                            <Form.Label><p className="dolpeText">Contact Number</p></Form.Label>
+                                                <Form.Control />
+                                        </Form.Group>
+                                    </Form>
+                                </Col>
+                                <Col sm={6}>
+                                   
+                                <Form>
+                                        <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
+                                            <Form.Label><p className="dolpeText">E-Mail</p></Form.Label>
+                                                <Form.Control />
+                                        </Form.Group>
+                                    </Form>
+                                </Col>
+                            </Row><br/>
                             {/*Dates */}
                             <Row>
-                               <Col>
+                               <Col sm={6}>
                                     <LocalizationProvider dateAdapter={AdapterDateFns}>
                                         <Stack spacing={3}>
                                             <MobileDatePicker
@@ -86,7 +104,7 @@ function Bookings() {
                                         </Stack>
                                     </LocalizationProvider>
                                </Col>
-                               <Col>
+                               <Col sm={6}>
                                     <LocalizationProvider dateAdapter={AdapterDateFns}>
                                         <Stack spacing={3}>
                                             <MobileDatePicker
