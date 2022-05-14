@@ -58,7 +58,8 @@ function Bookings() {
                             <Row></Row>
                             {/*Number of persons */}
                             <Row>
-
+                                <Col></Col>
+                                <Col></Col>
                             </Row>
                             {/*Payment method */}
                             <hr style={{color:'#7CA844'}}/>
@@ -69,21 +70,21 @@ function Bookings() {
                                         <Form.Check
                                             inline
                                             label="Visa Card"
-                                            name="visa"
+                                            name="payment"
                                             type="radio"
                                             className="dolpeText"
                                         /><br/><br/>
                                         <Form.Check
                                             inline
                                             label="Master Card"
-                                            name="master"
+                                            name="payment"
                                             type="radio"
                                             className="dolpeText"
                                         /><br/><br/>
                                         <Form.Check
                                             inline
                                             label="American Card"
-                                            name="american"
+                                            name="payment"
                                             type="radio"
                                             className="dolpeText"
                                         />
