@@ -58,8 +58,23 @@ function Bookings() {
                             <Row></Row>
                             {/*Number of persons */}
                             <Row>
-                                <Col></Col>
-                                <Col></Col>
+                                <Col>
+                                <Form>
+                                        <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
+                                            <Form.Label><p className="dolpeText">Number of Adults(Age Above 6)</p></Form.Label>
+                                                <Form.Control />
+                                        </Form.Group>
+                                    </Form>
+                                </Col>
+                                <Col>
+                                   
+                                <Form>
+                                        <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
+                                            <Form.Label><p className="dolpeText">Number of Kids (Age Under 6)</p></Form.Label>
+                                                <Form.Control />
+                                        </Form.Group>
+                                    </Form>
+                                </Col>
                             </Row>
                             {/*Payment method */}
                             <hr style={{color:'#7CA844'}}/>
