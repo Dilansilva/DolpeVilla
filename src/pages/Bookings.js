@@ -55,6 +55,7 @@ function Bookings() {
                             {/*Dates */}
                             <Row></Row>
                             {/*Select your rooms */}
+                            <hr style={{color:'#7CA844'}}/>
                             <Row>
                                 <Form>
                                     <Form.Label><p className="dolpeText">Select your rooms</p></Form.Label>
