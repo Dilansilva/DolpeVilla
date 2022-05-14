@@ -50,7 +50,7 @@ function Bookings() {
         </div>
         {/*Dolpe Villa Ella, Sri lanka */}
         <div style={{backgroundColor:'#1F211F'}}><br/>
-            <div style={{textAlign:'center'}}><h4 className="dolpeText">Dolpe Villa Ella, Sri lanka</h4></div>
+            <div style={{textAlign:'center'}}><h3 className="dolpeText">Reservation Application</h3></div>
                 <div className="secondDiv">
                     <hr style={{color:'#7CA844'}}/><br/>
                         <Form>
