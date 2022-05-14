@@ -100,15 +100,15 @@ function Bookings() {
                             </Row>
                             {/*Number of persons */}
                             <Row>
-                                <Col>
-                                <Form>
+                                <Col sm={6}>
+                                    <Form>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><p className="dolpeText">Number of Adults(Age Above 6)</p></Form.Label>
                                                 <Form.Control />
                                         </Form.Group>
                                     </Form>
                                 </Col>
-                                <Col>
+                                <Col sm={6}>
                                    
                                 <Form>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
