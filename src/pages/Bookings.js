@@ -18,9 +18,11 @@ import ThirdImg from "../assets/287522687.jpg"
 
 const styles = theme => ({
     multilineColor:{
-        color:'red'
+        color:'#C4C4C4'
     }
 });
+
+const color = "white";
 
 function Bookings() {
     const [value, setValue] = React.useState(new Date('2014-08-18T21:11:54'));
@@ -64,17 +66,46 @@ function Bookings() {
                             <Row></Row>
                             {/*Dates */}
                             <Row>
-                                <LocalizationProvider dateAdapter={AdapterDateFns}>
-                                    <Stack spacing={3}>
-                                        <MobileDatePicker
-                                        label="Date mobile"
-                                        inputFormat="MM/dd/yyyy"
-                                        value={value}
-                                        onChange={handleChange}
-                                        renderInput={(params) => <TextField {...params} />}
-                                        />
-                                    </Stack>
-                                </LocalizationProvider>
+                               <Col>
+                                    <LocalizationProvider dateAdapter={AdapterDateFns}>
+                                        <Stack spacing={3}>
+                                            <MobileDatePicker
+                                            style={{color:'white'}}
+                                            label="Check-In Date"
+                                            inputFormat="MM/dd/yyyy"
+                                            value={value}
+                                            onChange={handleChange}
+                                            renderInput={(params) => <TextField {...params} 
+                                            sx={{
+                                                svg: { color },
+                                                input: { color },
+                                                label: { color }
+                                              }} 
+                                            />}
+                                            />
+                                        </Stack>
+                                    </LocalizationProvider>
+                               </Col>
+                               <Col>
+                                    <LocalizationProvider dateAdapter={AdapterDateFns}>
+                                        <Stack spacing={3}>
+                                            <MobileDatePicker
+                                            label="Check-Out Date"
+                                            inputFormat="MM/dd/yyyy"
+                                            value={value}
+                                            onChange={handleChange}
+                                            renderInput={(params) => 
+                                                <TextField {...params}
+                                                sx={{
+                                                    svg: { color },
+                                                    input: { color },
+                                                    label: { color }
+                                                  }} 
+                                                />}
+                                            />
+                                        </Stack>
+                                    </LocalizationProvider>
+                               </Col>
                             </Row>
                             {/*Select your rooms */}
                             <hr style={{color:'#7CA844'}}/>
