@@ -57,11 +57,14 @@ function Bookings() {
                             {/*Select your rooms */}
                             <Row></Row>
                             {/*Number of persons */}
-                            <Row></Row>
+                            <Row>
+
+                            </Row>
                             {/*Payment method */}
                             <hr style={{color:'#7CA844'}}/>
                             <Row>
                                 <Form>
+                                    <Form.Label><p className="dolpeText">Payment Method</p></Form.Label>
                                         <div className="mb-3">
                                         <Form.Check
                                             inline
