@@ -55,11 +55,32 @@ function Bookings() {
                     <hr style={{color:'#7CA844'}}/>
                         <Form>
                             {/*Full name section */}
-                            <Row></Row>
+                            <Row>
+                                
+                            </Row>
                             {/*Address*/}
-                            <Row></Row>
+                            <Row>
+                                <Col>
+                                    <Form>
+                                        <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
+                                            <Form.Label><h5 className="dolpeText">Address</h5></Form.Label>
+                                                    <Form.Control />
+                                                        <Form.Label><p className="dolpeText">Street Address</p></Form.Label>
+                                        </Form.Group>
+                                    </Form>
+                                </Col>
+                            </Row>
                             {/*Street address*/}
-                            <Row></Row>
+                            <Row>
+                                <Col>
+                                    <Form>
+                                        <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
+                                                <Form.Control />
+                                                    <Form.Label><p className="dolpeText">Street Address Line 02</p></Form.Label>
+                                        </Form.Group>
+                                    </Form>
+                                </Col>
+                            </Row>
                             {/*Street address line 02 */}
                             <Row>
                                 <Col sm={3}>
