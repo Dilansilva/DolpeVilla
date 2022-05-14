@@ -55,7 +55,48 @@ function Bookings() {
                             {/*Dates */}
                             <Row></Row>
                             {/*Select your rooms */}
-                            <Row></Row>
+                            <Row>
+                                <Form>
+                                    <Form.Label><p className="dolpeText">Select your rooms</p></Form.Label>
+                                        <div className="mb-3">
+                                        <Form.Check
+                                            inline
+                                            label="Attic Suite Room ( Maximum upto 3 adults )"
+                                            name="rooms"
+                                            type="checkbox"
+                                            className="dolpeText"
+                                        /><br/><br/>
+                                        <Form.Check
+                                            inline
+                                            label="Deluxe Room ( Maximum upto 4 adults )"
+                                            name="rooms"
+                                            type="checkbox"
+                                            className="dolpeText"
+                                        /><br/><br/>
+                                        <Form.Check
+                                            inline
+                                            label="Standard Room ( Maximum upto 4 adults )"
+                                            name="rooms"
+                                            type="checkbox"
+                                            className="dolpeText"
+                                        /><br/><br/>
+                                        <Form.Check
+                                            inline
+                                            label="Budget Villa 01 ( Maximum upto 3 adults )"
+                                            name="rooms"
+                                            type="checkbox"
+                                            className="dolpeText"
+                                        /><br/><br/>
+                                        <Form.Check
+                                            inline
+                                            label="Budget Villa 02 ( Maximum upto 3 adults )"
+                                            name="rooms"
+                                            type="checkbox"
+                                            className="dolpeText"
+                                        /><br/><br/>
+                                        </div>
+                                </Form> 
+                            </Row>
                             {/*Number of persons */}
                             <Row>
                                 <Col>
