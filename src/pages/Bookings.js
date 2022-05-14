@@ -61,7 +61,40 @@ function Bookings() {
                             {/*Street address*/}
                             <Row></Row>
                             {/*Street address line 02 */}
-                            <Row></Row>
+                            <Row>
+                                <Col sm={3}>
+                                    <Form>
+                                        <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
+                                                <Form.Control />
+                                                    <Form.Label><p className="dolpeText">City</p></Form.Label>
+                                        </Form.Group>
+                                    </Form>
+                                </Col>
+                                <Col sm={3}>
+                                    <Form>
+                                        <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
+                                                <Form.Control />
+                                                    <Form.Label><p className="dolpeText">State / Province</p></Form.Label>
+                                        </Form.Group>
+                                    </Form>
+                                </Col>
+                                <Col sm={3}>
+                                    <Form>
+                                        <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
+                                                <Form.Control />
+                                                    <Form.Label><p className="dolpeText">Postal / Zip Code</p></Form.Label>
+                                        </Form.Group>
+                                    </Form>
+                                </Col>
+                                <Col sm={3}>
+                                    <Form>
+                                        <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
+                                                <Form.Control />
+                                                    <Form.Label><p className="dolpeText">Country</p></Form.Label>
+                                        </Form.Group>
+                                    </Form>
+                                </Col>
+                            </Row>
                             {/*Contact details */}
                             <Row>
                                 <Col sm={6}>
