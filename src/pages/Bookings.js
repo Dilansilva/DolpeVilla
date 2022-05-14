@@ -54,9 +54,30 @@ function Bookings() {
                 <div className="secondDiv">
                     <hr style={{color:'#7CA844'}}/>
                         <Form>
+                            <Row>
+                                <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
+                                        <Form.Label><h5 className="dolpeText">Full Name</h5></Form.Label>
+                                </Form.Group>
+                            </Row>
                             {/*Full name section */}
                             <Row>
-                                
+                                <Col sm={6}>
+                                    <Form>
+                                        <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
+                                                <Form.Control />
+                                                    <Form.Label><p className="dolpeText">First Name</p></Form.Label>
+                                        </Form.Group>
+                                    </Form>
+                                </Col>
+                                <Col sm={6}>
+                                   
+                                <Form>
+                                        <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
+                                                <Form.Control />
+                                                    <Form.Label><p className="dolpeText">Last Name</p></Form.Label>
+                                        </Form.Group>
+                                    </Form>
+                                </Col>
                             </Row>
                             {/*Address*/}
                             <Row>
@@ -290,7 +311,7 @@ function Bookings() {
                                     <MDBBtn color='success'>SUBMIT</MDBBtn>
                                 </Col>
                             </Row>
-                            </Form>
+                            </Form><br/>
                 </div>
         </div>
     </>
