@@ -5,6 +5,8 @@ import MiddleBar from "../components/MiddleBar";
 
 import Blue from "../assets/_1322204.jpg";
 import { Col, Container, Row, Card, Button, Form } from "react-bootstrap";
+import { MDBBtn,MDBTextArea } from 'mdb-react-ui-kit';
+
 import FirstImg from "../assets/_1344168.jpg";
 import SecondImg from "../assets/_1322232.jpg";
 import ThirdImg from "../assets/287522687.jpg"
@@ -57,11 +59,51 @@ function Bookings() {
                             {/*Number of persons */}
                             <Row></Row>
                             {/*Payment method */}
-                            <Row></Row>
+                            <hr style={{color:'#7CA844'}}/>
+                            <Row>
+                                <Form>
+                                        <div className="mb-3">
+                                        <Form.Check
+                                            inline
+                                            label="Visa Card"
+                                            name="visa"
+                                            type="radio"
+                                            className="dolpeText"
+                                        /><br/><br/>
+                                        <Form.Check
+                                            inline
+                                            label="Master Card"
+                                            name="master"
+                                            type="radio"
+                                            className="dolpeText"
+                                        /><br/><br/>
+                                        <Form.Check
+                                            inline
+                                            label="American Card"
+                                            name="american"
+                                            type="radio"
+                                            className="dolpeText"
+                                        />
+                                        </div>
+                                </Form>
+                            </Row>
                             {/*special statements*/}
-                            <Row></Row>
+                            <Row>
+                                <Col>
+                                    <Form>
+                                        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                                            <Form.Label><p className="dolpeText">Do you have any special request? </p></Form.Label>
+                                                <Form.Control as="textarea" rows={3} />
+                                        </Form.Group>
+                                    </Form>
+                                </Col>
+                            </Row>
                             {/*Submit*/}
-                            <Row></Row>
+                            <Row style={{textAlign:'center'}}>
+                                <Col>
+                                    <MDBBtn color='success'>SUBMIT</MDBBtn>
+                                </Col>
+                            </Row>
                             </Form>
                 </div>
         </div>
