@@ -19,92 +19,54 @@ import FirstImgAttic from "../assets/_1344166.jpg";
 import SecondImgTrans from "../assets/_1344171.jpg";
 import ThirdImgTrans from "../assets/_1344169.jpg";
 
+/*Attic rooms */
+import atticFirst from "../assets/_1344166.jpg";
+import atticSecond from "../assets/_1344171.jpg";
+import atticThird from "../assets/_1344169.jpg";
+import atticFourth from "../assets/atticFourth.jpeg";
+import atticFive from "../assets/_1344172.jpg";
+import atticSix from "../assets/_1344173.jpg";
+import atticSeven from "../assets/bookingsBack.jpeg";
+import atticEight from "../assets/_1344168.jpg";
+import atticNine from "../assets/_1344175.jpg";
+
 const itemData = [
     {
-      img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
+      img: "https://i.postimg.cc/3J1x7zkX/1344166.jpg",
       title: 'Breakfast',
     },
     {
-      img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
+      img: "https://drive.google.com/file/d/1ViZo9r6s6bSV8moY6ExNQQYmN9U4rQjH/view?usp=sharing",
       title: 'Burger',
     },
     {
-      img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
+      img: atticThird,
       title: 'Camera',
     },
     {
-      img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
+      img: atticFourth,
       title: 'Coffee',
     },
     {
-      img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
+      img: atticFive,
       title: 'Hats',
     },
     {
-      img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
+      img: atticSix,
       title: 'Honey',
     },
     {
-      img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
+      img: atticSeven,
       title: 'Basketball',
     },
     {
-      img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
+      img: atticEight,
       title: 'Fern',
     },
     {
-      img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
+      img: atticNine,
       title: 'Mushrooms',
     },
-    {
-      img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-      title: 'Tomato basil',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-      title: 'Sea star',
-    },
-    {
-      img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-      title: 'Bike',
-    },
-    {
-        img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-        title: 'Bike',
-      },
-      {
-        img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-        title: 'Bike',
-      },
-      {
-        img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-        title: 'Mushrooms',
-      },
-      {
-        img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-        title: 'Tomato basil',
-      },
-      {
-        img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-        title: 'Sea star',
-      },
-      {
-        img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-        title: 'Bike',
-      },
-      {
-          img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-          title: 'Bike',
-        },
-        {
-          img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-          title: 'Bike',
-        },
-        {
-            img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-            title: 'Mushrooms',
-          },
-          
   ];
   
 
@@ -311,7 +273,7 @@ const Accomadation = () => {
                 <Container>
                 <Row className="blueAreaRow">
                    <Col sm={6}>
-                   <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+                   <ImageList sx={{ width: 500, height: '80%' }} cols={3} rowHeight={164}>
                 {itemData.map((item) => (
                   <ImageListItem key={item.img}>
                     <img
