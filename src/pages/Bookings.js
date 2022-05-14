@@ -6,6 +6,11 @@ import MiddleBar from "../components/MiddleBar";
 import Blue from "../assets/_1322204.jpg";
 import { Col, Container, Row, Card, Button, Form } from "react-bootstrap";
 import { MDBBtn,MDBTextArea } from 'mdb-react-ui-kit';
+import Stack from '@mui/material/Stack';
+import TextField from '@mui/material/TextField';
+import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
 
 import FirstImg from "../assets/_1344168.jpg";
 import SecondImg from "../assets/_1322232.jpg";
@@ -18,6 +23,11 @@ const styles = theme => ({
 });
 
 function Bookings() {
+    const [value, setValue] = React.useState(new Date('2014-08-18T21:11:54'));
+
+    const handleChange = (newValue) => {
+      setValue(newValue);
+    };
     return (
     <>
         <div className="homeImage" style={{
@@ -53,7 +63,19 @@ function Bookings() {
                             {/*Contact details */}
                             <Row></Row>
                             {/*Dates */}
-                            <Row></Row>
+                            <Row>
+                                <LocalizationProvider dateAdapter={AdapterDateFns}>
+                                    <Stack spacing={3}>
+                                        <MobileDatePicker
+                                        label="Date mobile"
+                                        inputFormat="MM/dd/yyyy"
+                                        value={value}
+                                        onChange={handleChange}
+                                        renderInput={(params) => <TextField {...params} />}
+                                        />
+                                    </Stack>
+                                </LocalizationProvider>
+                            </Row>
                             {/*Select your rooms */}
                             <hr style={{color:'#7CA844'}}/>
                             <Row>
