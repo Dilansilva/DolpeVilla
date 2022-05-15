@@ -687,7 +687,7 @@ const Accomadation = () => {
     return (
         <>
              <div className="homeImage" style={{
-             backgroundImage: `url(${backGround})`
+             backgroundImage: `url(${"https://i.postimg.cc/x8Tr4cRw/1322226.jpg"})`
         }}>
              {
                //Middle bar
@@ -704,7 +704,7 @@ const Accomadation = () => {
         </div>
 
         <div  className="homeImage" style={{
-             backgroundImage: `url(${Blue})`,
+             backgroundImage: `url(${"https://i.postimg.cc/N06TMVxs/107211990-297877908238565-7498320495348409177-n.jpg"})`,
         }}>
         <div className="secondDiv">
            <br/><br/><br/>
