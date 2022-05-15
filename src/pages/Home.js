@@ -1,5 +1,4 @@
 import React from "react";
-import backGround from "../assets/DSC01499.jpg";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
 import Blue from "../assets/_1322204.jpg";
@@ -12,7 +11,7 @@ function Home() {
     return (
     <>
         <div className="homeImage" style={{
-             backgroundImage: `url(${backGround})`
+             backgroundImage: `url("https://i.postimg.cc/kMWbwv7t/DSC01499.jpg")`
         }}>
            {
                //Middle bar
