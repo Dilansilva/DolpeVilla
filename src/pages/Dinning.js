@@ -16,6 +16,80 @@ import FirstImg from "../assets/_1344168.jpg";
 import SecondImg from "../assets/_1322232.jpg";
 import ThirdImg from "../assets/287522687.jpg"
 
+const itemDataRill = [
+    {
+        img: "https://i.postimg.cc/cCsFMfx9/266309325_649201563106196_407574773516081162_n.jpg",
+        title: 'never mind'
+    },
+    {
+        img: "https://i.postimg.cc/zXbwgd5t/_1322236.jpg",
+        title: 'never mind'
+    },
+    {
+        img: "https://i.postimg.cc/2yzZXwBW/_1322239.jpg",
+        title: 'never mind'
+    },
+    {
+        img: "https://i.postimg.cc/NFw4Gm2G/_1333392.jpg",
+        title: 'never mind'
+    },
+    {
+        img: "https://i.postimg.cc/cJ9M3PKz/_1333393.jpg",
+        title: 'never mind'
+    },
+    {
+        img: "https://i.postimg.cc/8PcGB6nn/_1333394.jpg",
+        title: 'never mind'
+    },
+    {
+        img: "https://i.postimg.cc/26xw63Q4/_1333436.jpg",
+        title: 'never mind'
+    },
+    {
+        img: "https://i.postimg.cc/fbNTKbdt/_1333437.jpg",
+        title: 'never mind'
+    },
+    {
+        img: "https://i.postimg.cc/c1mYtVVB/_1333442.jpg",
+        title: 'never mind'
+    },
+    {
+        img: "https://i.postimg.cc/SKkYKdDv/_1333448.jpg",
+        title: 'never mind'
+    },
+    {
+        img: "https://i.postimg.cc/RhFcZdVB/_1333449.jpg",
+        title: 'never mind'
+    },
+    {
+        img: "https://i.postimg.cc/sX5LJVpX/_1344181.jpg",
+        title: 'never mind'
+    },
+    {
+        img: "https://i.postimg.cc/W39kCZmf/_1344185.jpg",
+        title: 'never mind'
+    },
+    {
+        img: "https://i.postimg.cc/D0FMjtgc/_1344186.jpg",
+        title: 'never mind'
+    },
+    {
+        img: "https://i.postimg.cc/Qxvpjc22/_1344189.jpg",
+        title: 'never mind'
+    },
+    {
+        img: "https://i.postimg.cc/d1hQNHZC/sdfdfsdf.jpg",
+        title: 'never mind'
+    },
+];
+
+const itemDataGarden = [
+    {
+        img: FirstImg,
+        title: 'title'
+    }
+]
+
 const itemData = [
     {
       img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
@@ -177,7 +251,7 @@ const Dinnning = () => {
                     <Col sm={6}>
                     <div><b style={{color:'white'}}>DOLAPE RILL RESTAURANT</b></div><br/>
                         <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
-                        {itemData.map((item) => (
+                        {itemDataRill.map((item) => (
                             <ImageListItem key={item.img}>
                                 <img
                                 src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -193,7 +267,7 @@ const Dinnning = () => {
                     <Col sm={6}>
                     <div><b style={{color:'white'}}>GARDEN DINNING</b></div><br/>
                         <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                        {itemData.map((item) => (
+                        {itemDataGarden.map((item) => (
                             <ImageListItem key={item.img}>
                                 <img
                                 src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -247,7 +321,7 @@ const Dinnning = () => {
     return(
         <>
         <div className="homeImage" style={{
-             backgroundImage: `url(${backGround})`
+             backgroundImage: `url("https://i.postimg.cc/kXVJzBVL/1333445.jpg")`
         }}>
            {
                //Middle bar
@@ -268,7 +342,7 @@ const Dinnning = () => {
         </div>
         {/*Blue Area */}
         <div className="blueArea" style={{
-             backgroundImage: `url(${Blue})`
+             backgroundImage: `url("https://i.postimg.cc/FK7mGQ6X/5-17-2022-5-56-19-PM.jpg")`
         }}>
            <Container>
         <br/>
