@@ -16,6 +16,24 @@ import FirstImgTrans from "../assets/f682b054e7868718f4167b9243ab3f9c.jpg";
 import SecondImgTrans from "../assets/The_Common_Wanderer_-3.jpg";
 import ThirdImgTrans from "../assets/a12d3250b32491bd47f7773b57dabfe3.jpg";
 
+const itemDataPool = [
+    {
+        img:"https://i.postimg.cc/k4kWQXzp/DSC01492.jpg",
+        title:'Title'
+    },
+    {
+        img:"https://i.postimg.cc/25tWYSkS/DSC01494.jpg",
+        title:'Title'
+    },
+    {
+        img:"https://i.postimg.cc/ZqnNXdhQ/DSC01496.jpg",
+        title:'Title'
+    },
+    {
+        img:"https://i.postimg.cc/L43sB8cg/1344012.jpg",
+        title:'Title'
+    }
+]
 const itemData = [
     {
       img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
@@ -176,7 +194,7 @@ const ThingsToDo = () => {
 
                         <div>
                             <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                            {itemData.map((item) => (
+                            {itemDataPool.map((item) => (
                                 <ImageListItem key={item.img}>
                                     <img
                                     src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -720,7 +738,7 @@ const ThingsToDo = () => {
     return (
     <>
         <div className="homeImage" style={{
-             backgroundImage: `url(${backGround})`
+             backgroundImage: `url("https://i.postimg.cc/8c9MVchw/1344104.jpg")`
         }}>
            {
                //Middle bar
@@ -737,7 +755,7 @@ const ThingsToDo = () => {
         </div>
         {/*Dolpe Villa Ella, Sri lanka */}
         <div  className="homeImage" style={{
-             backgroundImage: `url(${Blue})`,
+             backgroundImage: `url("https://i.postimg.cc/x1rT9SQP/5-17-2022-6-59-20-PM.jpg")`,
         }}>
         <div className="secondDiv">
            <br/><br/><br/>
