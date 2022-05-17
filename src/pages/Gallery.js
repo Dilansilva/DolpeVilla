@@ -9,6 +9,46 @@ import SecondImg from "../assets/_1322232.jpg";
 import ThirdImg from "../assets/287522687.jpg";
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import { First } from "react-bootstrap/esm/PageItem";
+
+const itemDataStandard = [
+  {
+    img: "https://i.postimg.cc/xdh4rxGB/1322864-3ee46b7fd4122724c899.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/JhB24vL3/239340734.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/mgpvr7F4/287522383.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/QdzzDsRx/287522386.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/x1KS6XkV/1322865.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/BQpTHggr/1322866.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/DzPnwSFP/1322867.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/YCNJ1TVp/1322868.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/BZYZFPFh/1322869.jpg",
+    title: 'Title'
+  },
+]
 
 const itemDataDeluxe = [
   {
@@ -210,7 +250,7 @@ const Gallery = () => {
                     <Col sm={6}>
                     <div><h4 className="dolpeText">Standard Room</h4></div><br/>
                         <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
-                        {itemData.map((item) => (
+                        {itemDataStandard.map((item) => (
                             <ImageListItem key={item.img}>
                                 <img
                                 src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
