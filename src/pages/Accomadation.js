@@ -60,6 +60,45 @@ const itemDataAttic = [
         title: 'Basketball',
       },
 ];
+
+const itemDataDeluxe= [
+    {
+        img: "https://i.postimg.cc/QMLrBDyf/1322202-b6fc28e9bcde277789e1.jpg",
+        title: 'Breakfast',
+      },
+      {
+        img: "https://i.postimg.cc/sg8c1BBh/1322200-98b63ba80899e748f22b.jpg",
+        title: 'Burger',
+      },
+      {
+        img: "https://i.postimg.cc/QMVY6qJz/237430245.jpg",
+        title: 'Camera',
+      },
+      {
+        img: "https://i.postimg.cc/D01MryPy/237430324.jpg",
+        title: 'Coffee',
+      },
+      {
+        img: "https://i.postimg.cc/L6M7HLmq/285441365.jpg",
+        title: 'Hats',
+      },
+      {
+        img: "https://i.postimg.cc/tgfS8Vr4/69235788-115221059837585-7834650883462791168-n.jpg",
+        title: 'Honey',
+      },
+      {
+        img: "https://i.postimg.cc/Prz7NJqS/1322198.jpg",
+        title: 'Basketball',
+      },
+      {
+        img: "https://i.postimg.cc/wxs8x9Jr/1322204.jpg",
+        title: 'Basketball',
+      },
+      {
+        img: "https://i.postimg.cc/3R46wZyG/1322230.jpg",
+        title: 'Basketball',
+      },
+]
 const itemData = [
     {
       img: "https://i.postimg.cc/3J1x7zkX/1344166.jpg",
@@ -418,7 +457,7 @@ const Accomadation = () => {
                 <Row className="blueAreaRow">
                    <Col sm={6}>
                    <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                {itemData.map((item) => (
+                {itemDataDeluxe.map((item) => (
                   <ImageListItem key={item.img}>
                     <img
                       src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
