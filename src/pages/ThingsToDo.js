@@ -1,21 +1,11 @@
 import React,{useState} from "react";
-import backGround from "../assets/_1344104.jpg";
 import '../../src/App.css';
 
 import { ImageList,ImageListItem } from "@mui/material";
 
 import MiddleBar from "../components/MiddleBar";
 import Blue from "../assets/DSC01496.jpg";
-import LastSec from "../assets/MobilePopUpBackGround.jpg";
-import { Col, Container, Row, Card, Button } from "react-bootstrap";
-import FirstImg from "../assets/_1322209.jpg";
-import SecondImg from "../assets/_1344104.jpg";
-import ThirdImg from "../assets/_1322202.jpg";
-
-import FirstImgTrans from "../assets/f682b054e7868718f4167b9243ab3f9c.jpg";
-import SecondImgTrans from "../assets/The_Common_Wanderer_-3.jpg";
-import ThirdImgTrans from "../assets/a12d3250b32491bd47f7773b57dabfe3.jpg";
-import { First } from "react-bootstrap/esm/PageItem";
+import { Col, Container, Row } from "react-bootstrap";
 
 const itemDataAround = [
     {
