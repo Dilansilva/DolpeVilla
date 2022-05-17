@@ -138,6 +138,45 @@ const itemDatastandard = [
         title: 'Mushrooms',
       },
 ]
+
+const itemDataBudget = [
+    {
+        img: "https://i.postimg.cc/ZRzxF1xY/1344124-518796593e48071df6c2.jpg",
+        title: 'Breakfast',
+      },
+      {
+        img: "https://i.postimg.cc/52VF7k47/268589856-653726802653672-2667501053886997262-n.jpg",
+        title: 'Burger',
+      },
+      {
+        img: "https://i.postimg.cc/RCJ6Mzqp/1344111.jpg",
+        title: 'Camera',
+      },
+      {
+        img: "https://i.postimg.cc/Z54CFBHX/1344114.jpg",
+        title: 'Coffee',
+      },
+      {
+        img: "https://i.postimg.cc/YS2LkGmQ/1344125.jpg",
+        title: 'Hats',
+      },
+      {
+        img: "https://i.postimg.cc/4NCKyF9f/1344214.jpg",
+        title: 'Honey',
+      },
+      {
+        img: "https://i.postimg.cc/j2nstKXH/1344215.jpg",
+        title: 'Basketball',
+      },
+      {
+        img: "https://i.postimg.cc/rph0pVS3/1344216.jpg",
+        title: 'Fern',
+      },
+      {
+        img: "https://i.postimg.cc/BtWJvyYd/1344217.jpg",
+        title: 'Mushrooms',
+      },
+]
 const itemData = [
     {
       img: "https://i.postimg.cc/3J1x7zkX/1344166.jpg",
@@ -706,7 +745,7 @@ const Accomadation = () => {
                 <Row className="blueAreaRow">
                    <Col sm={6}>
                    <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                {itemData.map((item) => (
+                {itemDataBudget.map((item) => (
                   <ImageListItem key={item.img}>
                     <img
                       src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
