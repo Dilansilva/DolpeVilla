@@ -1,34 +1,11 @@
 import React,{useState} from "react";
 
 import '../../src/App.css';
-import { Col, Container, Row, Card, Button, Badge } from "react-bootstrap";
+import { Col, Container, Row, Card,  Badge } from "react-bootstrap";
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 
 import MiddleBar from "../components/MiddleBar";
-
-import Blue from "../assets/107211990_297877908238565_7498320495348409177_n.jpg";
-import backGround from "../assets/_1322226.jpg";
-
-import FirstImg from "../assets/_1344168.jpg";
-import SecondImg from "../assets/_1322200.jpg";
-import ThirdImg from "../assets/_1322864.jpg";
-import FourthImg from "../assets/_1344124.jpg"
-
-import FirstImgAttic from "../assets/_1344166.jpg";
-import SecondImgTrans from "../assets/_1344171.jpg";
-import ThirdImgTrans from "../assets/_1344169.jpg";
-
-/*Attic rooms */
-import atticFirst from "../assets/_1344166.jpg";
-import atticSecond from "../assets/_1344171.jpg";
-import atticThird from "../assets/_1344169.jpg";
-import atticFourth from "../assets/atticFourth.jpeg";
-import atticFive from "../assets/_1344172.jpg";
-import atticSix from "../assets/_1344173.jpg";
-import atticSeven from "../assets/bookingsBack.jpeg";
-import atticEight from "../assets/_1344168.jpg";
-import atticNine from "../assets/_1344175.jpg";
 
 const itemDataAttic = [
     {
@@ -177,44 +154,6 @@ const itemDataBudget = [
         title: 'Mushrooms',
       },
 ]
-const itemData = [
-    {
-      img: "https://i.postimg.cc/3J1x7zkX/1344166.jpg",
-      title: 'Breakfast',
-    },
-    {
-      img: "https://drive.google.com/file/d/1ViZo9r6s6bSV8moY6ExNQQYmN9U4rQjH/view?usp=sharing",
-      title: 'Burger',
-    },
-    {
-      img: atticThird,
-      title: 'Camera',
-    },
-    {
-      img: atticFourth,
-      title: 'Coffee',
-    },
-    {
-      img: atticFive,
-      title: 'Hats',
-    },
-    {
-      img: atticSix,
-      title: 'Honey',
-    },
-    {
-      img: atticSeven,
-      title: 'Basketball',
-    },
-    {
-      img: atticEight,
-      title: 'Fern',
-    },
-    {
-      img: atticNine,
-      title: 'Mushrooms',
-    },
-  ];
   
 
 const Accomadation = () => {
