@@ -51,7 +51,7 @@ const ContactUs = () => {
     return(
             <>
                 <div className="homeImage" style={{
-                     backgroundImage: `url(${backGround})`
+                     backgroundImage: `url("https://i.postimg.cc/nzH8fYZV/ella-rock.jpg")`
                 }}>
                    {
                        //Middle bar
