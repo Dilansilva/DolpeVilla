@@ -11,6 +11,45 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { First } from "react-bootstrap/esm/PageItem";
 
+const itemDataCulture = [
+  {
+      img: "https://i.postimg.cc/k4fQh6w1/1492428417-Kandy-Final-Kumbal-Perahera-03.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/Y006crsp/7718425268-1ffa7617fc-k.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/d0RmrSCK/837254-1594117789-Public-not-allowed-to-visit-Kataragama-during-Esala-Perahera-festival-B.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/T1srfzzn/esala-perahera.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/50x53q5Q/image.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/vH1r3mnh/market-body.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/jjY4WrLX/og-picture-for-sri-lanka-festivities.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/VsZ9qtJ5/Sinhala-and-Tamil-New-Year-Celebrations-in-Sri-Lanka.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/0yYJBKyY/Snapseed-1.jpg",
+      title: 'Title'
+  },
+]
+
 const itemDataCycle = [
   {
       img: "https://i.postimg.cc/gjL2p5Tv/1344105.jpg",
@@ -764,7 +803,7 @@ const Gallery = () => {
                     <Col sm={6}>
                     <div><h4 className="dolpeText">Cultural Events</h4></div><br/>
                         <ImageList sx={{ width: '100%', height: 450 }} cols={4} rowHeight={164}>
-                        {itemData.map((item) => (
+                        {itemDataCulture.map((item) => (
                             <ImageListItem key={item.img}>
                                 <img
                                 src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
