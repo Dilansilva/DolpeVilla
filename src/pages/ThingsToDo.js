@@ -4,7 +4,6 @@ import '../../src/App.css';
 import { ImageList,ImageListItem } from "@mui/material";
 
 import MiddleBar from "../components/MiddleBar";
-import Blue from "../assets/DSC01496.jpg";
 import { Col, Container, Row } from "react-bootstrap";
 
 const itemDataAround = [
@@ -1032,7 +1031,7 @@ const ThingsToDo = () => {
         </div>
         {/*Blue Area */}
         <div  className="homeImage" style={{
-             backgroundImage: `url(${Blue})`,
+             backgroundImage: `url("https://i.postimg.cc/d0np2mpL/DSC01496.jpg")`,
         }}>
         <div className="secondDiv">
           
