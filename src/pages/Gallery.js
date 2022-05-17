@@ -11,6 +11,144 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { First } from "react-bootstrap/esm/PageItem";
 
+const itemDataBird = [
+  {
+      img: "https://i.postimg.cc/ncby3Kt3/0987.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/8c4LrQQF/1-buse94ay-OYNV5x46-BTZ4-Sw.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/FsFyXR30/1-MPplvw-IKYup-Cy-BGEETw-Xh-A.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/sgKbftGL/1233434234.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/d1gbPrZt/145.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/13PZ3GC8/1483958673-sparrow-sns.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/02h0YZRN/3037225610-3ec0eb406a-c.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/XYp9Xz2J/542-5179461483.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/qBswdSYH/bird-watching-slider1.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/dVpt6HJL/Black-Capped-Kingfisher.webp",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/dtXLNtBs/common-cobra-e1504181364653.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/VNJ4Q6yK/df9ce790fb204284a565706fb32a51a4.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/jj2PwkZ2/elulu-the-goat.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/3wRVkngx/fdgdkjiojlkmk-opo.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/W3MHC3rQ/Funambulus-palmarum-Bengaluru.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/Hx52nhk5/index.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/zD2mTLzf/kobeyya2.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/vHGz8XFg/kobyya1.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/BbSK3YLJ/lizard-4723975-480.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/8k4v4S9c/LK75090100-01-E-1280-720-1280x.webp",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/BQ8vFfGd/Loten-s-Sunbird-M.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/yxHTZyDG/monkey-sri-lanka1.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/FFLtbWwf/poiioolk.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/xjvJC2ng/Sri-Lanka-king-fisher-yala-national-park.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/fb1CwNDD/sri-lankan-junglefowl-sri-lanka-945x630.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/nhF9Qw07/The-Ceylon-krait-or-Sri-Lankan-krait-Bungarus-ceylonicus-is-a-species-of-venomous-snake-endemic-to.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/RFQHj50P/zebu-385682-1280.jpg",
+      title: 'Title'
+  },
+]
+
+const itemDataRifle = [
+  {
+      img: "https://i.postimg.cc/PJvs7K6q/1518461565-img-1684.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/Ls4sWKj6/274185217-5289184551115501-806109289725916924-n.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/G27dV4dX/MAD096https://i.postimg.cc/MGw6Qk9m/product-jpeg-500x500.jpg2-800-450.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/nrG5g54p/MVIMG-20200222-131858.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/MGw6Qk9m/product-jpeg-500x500.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/ydY7Lm4J/ZLMAT-2.jpg",
+      title: 'Title'
+  },
+]
+
 const itemDataPool = [
   {
       img:"https://i.postimg.cc/k4kWQXzp/DSC01492.jpg",
@@ -516,7 +654,7 @@ const Gallery = () => {
                     <Col sm={6}>
                     <div><h4 className="dolpeText">Air Rifle And Archery</h4></div><br/>
                         <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                        {itemData.map((item) => (
+                        {itemDataRifle.map((item) => (
                             <ImageListItem key={item.img}>
                                 <img
                                 src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -534,7 +672,7 @@ const Gallery = () => {
                     <Col>
                     <div><h4 className="dolpeText">Bird and Animal Watching</h4></div><br/>
                         <ImageList sx={{ width: '80%', height: 450 }} cols={4} rowHeight={164}>
-                        {itemData.map((item) => (
+                        {itemDataBird.map((item) => (
                             <ImageListItem key={item.img}>
                                 <img
                                 src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
