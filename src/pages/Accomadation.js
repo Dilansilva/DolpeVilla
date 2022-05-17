@@ -99,6 +99,45 @@ const itemDataDeluxe= [
         title: 'Basketball',
       },
 ]
+
+const itemDatastandard = [
+    {
+        img: "https://i.postimg.cc/xdh4rxGB/1322864-3ee46b7fd4122724c899.jpg",
+        title: 'Breakfast',
+      },
+      {
+        img: "https://i.postimg.cc/JhB24vL3/239340734.jpg",
+        title: 'Burger',
+      },
+      {
+        img: "https://i.postimg.cc/mgpvr7F4/287522383.jpg",
+        title: 'Camera',
+      },
+      {
+        img: "https://i.postimg.cc/QdzzDsRx/287522386.jpg",
+        title: 'Coffee',
+      },
+      {
+        img: "https://i.postimg.cc/x1KS6XkV/1322865.jpg",
+        title: 'Hats',
+      },
+      {
+        img: "https://i.postimg.cc/BQpTHggr/1322866.jpg",
+        title: 'Honey',
+      },
+      {
+        img: "https://i.postimg.cc/DzPnwSFP/1322867.jpg",
+        title: 'Basketball',
+      },
+      {
+        img: "https://i.postimg.cc/YCNJ1TVp/1322868.jpg",
+        title: 'Fern',
+      },
+      {
+        img: "https://i.postimg.cc/BZYZFPFh/1322869.jpg",
+        title: 'Mushrooms',
+      },
+]
 const itemData = [
     {
       img: "https://i.postimg.cc/3J1x7zkX/1344166.jpg",
@@ -567,7 +606,7 @@ const Accomadation = () => {
             <Row className="blueAreaRow">
                <Col sm={6}>
                <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-            {itemData.map((item) => (
+            {itemDatastandard.map((item) => (
               <ImageListItem key={item.img}>
                 <img
                   src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
