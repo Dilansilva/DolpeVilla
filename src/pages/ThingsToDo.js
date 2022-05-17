@@ -17,6 +17,77 @@ import SecondImgTrans from "../assets/The_Common_Wanderer_-3.jpg";
 import ThirdImgTrans from "../assets/a12d3250b32491bd47f7773b57dabfe3.jpg";
 import { First } from "react-bootstrap/esm/PageItem";
 
+const itemDataAround = [
+    {
+        img: "https://i.postimg.cc/2jwFVvx1/48800644637-e09e7ecc6b-b.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/Y006crsp/7718425268-1ffa7617fc-k.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/T1srfzzn/esala-perahera.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/QdBgtdmw/01.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/5tLwBKZm/1491555548-Hikkaduwa-Discover-Scuba-Diving-for-adults-03.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/PqjLjXRm/5e7a3ee81de2791e72d27361-nine-arch-bridge-ella.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/C5z5NzRV/75168-orig.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/WbNX2VQc/7c.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/05WJwqzs/a2c148fa-80c8-4dd3-b18f-f99bc8be6eee.webp",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/tgxzr4VW/Anuradhapura-city.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/KzbtJrbh/ayubowan-sri-lanka.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/WzHFL0B3/best-places-to-visit-in-Sri-Lanka.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/Wb5SzKvF/Depositphotos-457865098-XL-1024x683-jpg.webp",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/zvXK1z3d/ezgif-com-gif-maker-4.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/gJyHWts0/Jaffna.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/Dywd9gX2/photo2jpg.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/fRFKj9kM/Polonnaruwa-header.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/654T44sr/Polonnaruwa-02.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/FHjRDtH1/sigiriya-459197-1920.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/QN0cJTnv/Sri-Lanka-Map-Tourist-Attractions-Tours-Maps-com.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/pTMJ3MD7/whale3-1024x683.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/FF8HvFf7/yaala.jpg",
+        title: 'Title'
+    }
+]
+
 const itemDataHiking = [
     {
         img: "https://i.postimg.cc/2jwFVvx1/48800644637-e09e7ecc6b-b.jpg",
@@ -986,7 +1057,7 @@ const ThingsToDo = () => {
                         <br/>
                         <div>
                             <ImageList sx={{ width: 450, height: 450 }} cols={3} rowHeight={164}>
-                            {itemData.map((item) => (
+                            {itemDataAround.map((item) => (
                                 <ImageListItem key={item.img}>
                                     <img
                                     src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
