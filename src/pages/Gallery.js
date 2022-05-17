@@ -11,6 +11,25 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { First } from "react-bootstrap/esm/PageItem";
 
+const itemDataPool = [
+  {
+      img:"https://i.postimg.cc/k4kWQXzp/DSC01492.jpg",
+      title:'Title'
+  },
+  {
+      img:"https://i.postimg.cc/25tWYSkS/DSC01494.jpg",
+      title:'Title'
+  },
+  {
+      img:"https://i.postimg.cc/ZqnNXdhQ/DSC01496.jpg",
+      title:'Title'
+  },
+  {
+      img:"https://i.postimg.cc/L43sB8cg/1344012.jpg",
+      title:'Title'
+  }
+]
+
 const itemDataRill = [
   {
       img: "https://i.postimg.cc/cCsFMfx9/266309325_649201563106196_407574773516081162_n.jpg",
@@ -481,7 +500,7 @@ const Gallery = () => {
                     <Col sm={6}>
                     <div><h4 className="dolpeText">Natural Pool</h4></div><br/>
                         <ImageList sx={{ width: 500, height: 450 }} cols={2} rowHeight={164}>
-                        {itemData.map((item) => (
+                        {itemDataPool.map((item) => (
                             <ImageListItem key={item.img}>
                                 <img
                                 src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
