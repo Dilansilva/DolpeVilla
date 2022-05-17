@@ -217,19 +217,19 @@ function Location() {
                 <Row className="blueAreaRow">
                 <Col>
                     <Card style={{ width: '18rem',background:'none'}}>
-                        <Card.Img variant="top" src={FirstImgTrans}/>
+                        <Card.Img variant="top" src="https://i.postimg.cc/DzBGqv1Q/DSC01503.jpg" />
                     </Card>
                 </Col>
     
                 <Col>
                     <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={SecondImgTrans} />
+                        <Card.Img variant="top" src="https://i.postimg.cc/bvzbDDSN/1344226.jpg" />
                     </Card>
                 </Col>
     
                 <Col>
                     <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={ThirdImgTrans} />
+                        <Card.Img variant="top" src="https://i.postimg.cc/DzBGqv1Q/DSC01503.jpg" />
                     </Card>
                 </Col>
     
