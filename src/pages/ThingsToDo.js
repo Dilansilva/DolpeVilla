@@ -17,6 +17,61 @@ import SecondImgTrans from "../assets/The_Common_Wanderer_-3.jpg";
 import ThirdImgTrans from "../assets/a12d3250b32491bd47f7773b57dabfe3.jpg";
 import { First } from "react-bootstrap/esm/PageItem";
 
+const itemDataHiking = [
+    {
+        img: "https://i.postimg.cc/2jwFVvx1/48800644637-e09e7ecc6b-b.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/4dRbhQM9/caption.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/zXxjPWLs/DSC-0458-1.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/WbN8nS4m/little-adams-peak-ella-1024x683.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/NjXm1PXj/342656083.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/d3WmxkQQ/d70508bc-f149-4c06-a8df-41c52d8c7c97.webp",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/RFLTwpjH/DSC-0040.webp",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/9ft9kRJ3/ezgif-com-gif-maker.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/KjsB56QR/ezgif-com-gif-maker-1.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/9XxdV9VC/ezgif-com-gif-maker-2.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/wxFVvP5K/ezgif-com-gif-maker-3.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/6q6fcLX1/Ravanas-Cave-41.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/wBdJFc5c/The-Common-Wanderer-Diyaluma-falls-guide-6.jpg",
+        title: 'Title'
+    }
+]
+
 const itemDataCulture = [
     {
         img: "https://i.postimg.cc/k4fQh6w1/1492428417-Kandy-Final-Kumbal-Perahera-03.jpg",
@@ -955,7 +1010,7 @@ const ThingsToDo = () => {
          return (
             <div><br/>
             <ImageList sx={{ width:'100%', height: 450 }} cols={6} rowHeight={164}>
-            {itemData.map((item) => (
+            {itemDataHiking.map((item) => (
                 <ImageListItem key={item.img}>
                     <img
                     src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
