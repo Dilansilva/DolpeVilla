@@ -1,20 +1,10 @@
 import React,{useState} from "react";
-import backGround from "../assets/_1333445.jpg";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
-import Blue from "../assets/_1344152.jpg";
 
-import { Col, Container, Row, Card, Button } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
-import LastSec from "../assets/MobilePopUpBackGround.jpg";
-
-import FirstImgTrans from "../assets/f682b054e7868718f4167b9243ab3f9c.jpg";
-import SecondImgTrans from "../assets/The_Common_Wanderer_-3.jpg";
-import ThirdImgTrans from "../assets/a12d3250b32491bd47f7773b57dabfe3.jpg";
-import FirstImg from "../assets/_1344168.jpg";
-import SecondImg from "../assets/_1322232.jpg";
-import ThirdImg from "../assets/287522687.jpg"
 
 const itemDataRill = [
     {
@@ -144,73 +134,6 @@ const itemDataGarden = [
         img: "https://i.postimg.cc/dtMdhpm5/1344187.jpg",
         title: 'title'
     }
-]
-
-const itemDataRes = [
-    {
-        img: FirstImg,
-        titile: 'Title'
-    },
-    {
-        img: FirstImg,
-        titile: 'Title'
-    },
-    {
-        img: FirstImg,
-        titile: 'Title'
-    },
-    {
-        img: FirstImg,
-        titile: 'Title'
-    },
-    {
-        img: FirstImg,
-        titile: 'Title'
-    },
-    {
-        img: FirstImg,
-        titile: 'Title'
-    },
-    {
-        img: FirstImg,
-        titile: 'Title'
-    },
-    {
-        img: FirstImg,
-        titile: 'Title'
-    },
-    {
-        img: FirstImg,
-        titile: 'Title'
-    },
-    {
-        img: FirstImg,
-        titile: 'Title'
-    },
-    {
-        img: FirstImg,
-        titile: 'Title'
-    },
-    {
-        img: FirstImg,
-        titile: 'Title'
-    },
-    {
-        img: FirstImg,
-        titile: 'Title'
-    },
-    {
-        img: FirstImg,
-        titile: 'Title'
-    },
-    {
-        img: FirstImg,
-        titile: 'Title'
-    },
-    {
-        img: FirstImg,
-        titile: 'Title'
-    },
 ]
 
 const itemData = [
