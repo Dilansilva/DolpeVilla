@@ -52,7 +52,7 @@ function Home() {
         </div>
         {/*Blue Area */}
         <div className="blueArea" style={{
-             backgroundImage: `url(${Blue})`
+             backgroundImage: `url("https://i.postimg.cc/59SQrmgR/5-17-2022-11-30-13-AM.jpg")`
         }}>
            {
                //Middle bar
@@ -62,7 +62,7 @@ function Home() {
        <Row className="blueAreaRow">
             <Col>
                 <Card style={{ width: '18rem',background:'none' }}>
-                    <Card.Img variant="top" src={FirstImg} />
+                    <Card.Img variant="top" src="https://i.postimg.cc/nrbwmrvW/1344168.jpg" />
                         <Card.Body>
                             <Button variant="primary">ACCOMODATION</Button>
                                 <Card.Text className="textSizeAndCOlor">
