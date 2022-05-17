@@ -30,6 +30,36 @@ import atticSeven from "../assets/bookingsBack.jpeg";
 import atticEight from "../assets/_1344168.jpg";
 import atticNine from "../assets/_1344175.jpg";
 
+const itemDataAttic = [
+    {
+        img: "https://i.postimg.cc/nrbwmrvW/1344168.jpg",
+        title: 'Breakfast',
+      },
+      {
+        img: "https://i.postimg.cc/cJvw5jy3/Whats-App-Image-2022-03-19-at-23-24-11.jpg",
+        title: 'Burger',
+      },
+      {
+        img: "https://i.postimg.cc/KYGBxwy4/Whats-App-Image-2022-03-19-at-23-27-04.jpg",
+        title: 'Camera',
+      },
+      {
+        img: "https://i.postimg.cc/QVGgZqDb/1344166.jpg",
+        title: 'Coffee',
+      },
+      {
+        img: "https://i.postimg.cc/nh1WTXK5/1344169.jpg",
+        title: 'Hats',
+      },
+      {
+        img: "https://i.postimg.cc/VNGVQ2VW/1344171.jpg",
+        title: 'Honey',
+      },
+      {
+        img: "https://i.postimg.cc/tJRVHmnp/1344173.jpg",
+        title: 'Basketball',
+      },
+];
 const itemData = [
     {
       img: "https://i.postimg.cc/3J1x7zkX/1344166.jpg",
@@ -240,28 +270,28 @@ const Accomadation = () => {
                 <Row className="blueAreaRow">
                 <Col>
                     <Card className="text-center" style={{ width: '15rem',background:'none' }}>
-                        <Card.Img variant="top" src={FirstImg} />
+                        <Card.Img variant="top" src="https://i.postimg.cc/nrbwmrvW/1344168.jpg" />
                         <Card.Text>Attic Suite room</Card.Text>
                     </Card>
                 </Col>
     
                 <Col>
                 <Card className="text-center" style={{ width: '15rem',background:'none' }}>
-                        <Card.Img variant="top" src={SecondImg} />
+                        <Card.Img variant="top" src="https://i.postimg.cc/sg8c1BBh/1322200-98b63ba80899e748f22b.jpg" />
                         <Card.Text>Deluxe roomh</Card.Text>
                     </Card>
                 </Col>
     
                 <Col>
                 <Card className="text-center" style={{ width: '15rem',background:'none' }}>
-                        <Card.Img variant="top" src={ThirdImg} />
+                        <Card.Img variant="top" src="https://i.postimg.cc/xdh4rxGB/1322864-3ee46b7fd4122724c899.jpg" />
                         <Card.Text>Standard room</Card.Text>
                     </Card>
                 </Col>
 
                 <Col>
                 <Card className="text-center" style={{ width: '15rem',background:'none' }}>
-                        <Card.Img variant="top" src={FourthImg} />
+                        <Card.Img variant="top" src="https://i.postimg.cc/ZRzxF1xY/1344124-518796593e48071df6c2.jpg" />
                         <Card.Text>Budget Villa</Card.Text>
                     </Card>
                 </Col>
@@ -274,7 +304,7 @@ const Accomadation = () => {
                 <Row className="blueAreaRow">
                    <Col sm={6}>
                    <ImageList sx={{ width: 500, height: '80%' }} cols={3} rowHeight={164}>
-                {itemData.map((item) => (
+                {itemDataAttic.map((item) => (
                   <ImageListItem key={item.img}>
                     <img
                       src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
