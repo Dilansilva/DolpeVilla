@@ -16,6 +16,32 @@ import FirstImgTrans from "../assets/f682b054e7868718f4167b9243ab3f9c.jpg";
 import SecondImgTrans from "../assets/The_Common_Wanderer_-3.jpg";
 import ThirdImgTrans from "../assets/a12d3250b32491bd47f7773b57dabfe3.jpg";
 
+const itemDataRifle = [
+    {
+        img: "https://i.postimg.cc/PJvs7K6q/1518461565-img-1684.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/Ls4sWKj6/274185217-5289184551115501-806109289725916924-n.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/G27dV4dX/MAD096https://i.postimg.cc/MGw6Qk9m/product-jpeg-500x500.jpg2-800-450.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/nrG5g54p/MVIMG-20200222-131858.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/MGw6Qk9m/product-jpeg-500x500.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/ydY7Lm4J/ZLMAT-2.jpg",
+        title: 'Title'
+    },
+]
 const itemDataPool = [
     {
         img:"https://i.postimg.cc/k4kWQXzp/DSC01492.jpg",
@@ -248,7 +274,7 @@ const ThingsToDo = () => {
 
                          <div>
                             <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                            {itemData.map((item) => (
+                            {itemDataRifle.map((item) => (
                                 <ImageListItem key={item.img}>
                                     <img
                                     src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
