@@ -10,6 +10,76 @@ import ThirdImg from "../assets/287522687.jpg";
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 
+const itemDataDeluxe = [
+  {
+    img: "https://i.postimg.cc/QMLrBDyf/1322202-b6fc28e9bcde277789e1.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/sg8c1BBh/1322200-98b63ba80899e748f22b.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/QMVY6qJz/237430245.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/D01MryPy/237430324.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/L6M7HLmq/285441365.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/tgfS8Vr4/69235788-115221059837585-7834650883462791168-n.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/Prz7NJqS/1322198.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/wxs8x9Jr/1322204.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/3R46wZyG/1322230.jpg",
+    title: 'Title'
+  },
+]
+
+const itemDataAttic = [
+  {
+    img: "https://i.postimg.cc/nrbwmrvW/1344168.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/cJvw5jy3/Whats-App-Image-2022-03-19-at-23-24-11.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/KYGBxwy4/Whats-App-Image-2022-03-19-at-23-27-04.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/QVGgZqDb/1344166.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/nh1WTXK5/1344169.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/VNGVQ2VW/1344171.jpg",
+    title: 'Title'
+  },
+  {
+    img: "https://i.postimg.cc/tJRVHmnp/1344173.jpg",
+    title: 'Title'
+  },
+];
+
 const itemData = [
     {
       img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
@@ -106,7 +176,7 @@ const Gallery = () => {
                     <Col sm={6}>
                     <div><h4 className="dolpeText">Attic Suite Room</h4></div><br/>
                         <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
-                        {itemData.map((item) => (
+                        {itemDataAttic.map((item) => (
                             <ImageListItem key={item.img}>
                                 <img
                                 src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -122,7 +192,7 @@ const Gallery = () => {
                     <Col sm={6}>
                     <div><h4 className="dolpeText">Deluxe Room</h4></div><br/>
                         <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                        {itemData.map((item) => (
+                        {itemDataDeluxe.map((item) => (
                             <ImageListItem key={item.img}>
                                 <img
                                 src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
