@@ -1,26 +1,14 @@
 import React from "react";
-import backGround from "../assets/bookingsBack.jpeg";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
 
-import Blue from "../assets/_1322204.jpg";
-import { Col, Container, Row, Card, Button, Form } from "react-bootstrap";
-import { MDBBtn,MDBTextArea } from 'mdb-react-ui-kit';
+import { Col,Row, Form } from "react-bootstrap";
+import { MDBBtn } from 'mdb-react-ui-kit';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
-
-import FirstImg from "../assets/_1344168.jpg";
-import SecondImg from "../assets/_1322232.jpg";
-import ThirdImg from "../assets/287522687.jpg"
-
-const styles = theme => ({
-    multilineColor:{
-        color:'#C4C4C4'
-    }
-});
 
 const color = "white";
 
@@ -33,7 +21,7 @@ function Bookings() {
     return (
     <>
         <div className="homeImage" style={{
-             backgroundImage: `url(${backGround})`
+             backgroundImage: `url("https://i.postimg.cc/J05cnNnQ/bookings-Back.jpg")`
         }}>
            {
                //Middle bar

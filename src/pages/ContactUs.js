@@ -1,12 +1,8 @@
 import React from "react";
-import backGround from "../assets/ella-rock.jpg";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
-import Blue from "../assets/_1322204.jpg";
-import { Col, Container, Row, Card, Button, Breadcrumb, Accordion } from "react-bootstrap";
-import FirstImg from "../assets/_1344168.jpg";
-import SecondImg from "../assets/_1322232.jpg";
-import ThirdImg from "../assets/287522687.jpg"
+import { Col, Container, Row, Card, Accordion } from "react-bootstrap";
+
 
 const faqs = [
     {
@@ -51,7 +47,7 @@ const ContactUs = () => {
     return(
             <>
                 <div className="homeImage" style={{
-                     backgroundImage: `url(${backGround})`
+                     backgroundImage: `url("https://i.postimg.cc/nzH8fYZV/ella-rock.jpg")`
                 }}>
                    {
                        //Middle bar
@@ -129,7 +125,7 @@ const ContactUs = () => {
                 <hr style={{color:'#7CA844'}}/>
                 {
                     faqs.map((faq) => (
-                        <Accordion defaultActiveKey="1" flush>
+                        <Accordion defaultActiveKey="0" flush>
                         <Accordion.Item eventKey="1">
                              <Accordion.Header>{faq.header}</Accordion.Header>
                              <Accordion.Body>

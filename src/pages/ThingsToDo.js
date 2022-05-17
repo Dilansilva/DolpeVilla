@@ -1,108 +1,391 @@
 import React,{useState} from "react";
-import backGround from "../assets/_1344104.jpg";
 import '../../src/App.css';
 
 import { ImageList,ImageListItem } from "@mui/material";
 
 import MiddleBar from "../components/MiddleBar";
 import Blue from "../assets/DSC01496.jpg";
-import LastSec from "../assets/MobilePopUpBackGround.jpg";
-import { Col, Container, Row, Card, Button } from "react-bootstrap";
-import FirstImg from "../assets/_1322209.jpg";
-import SecondImg from "../assets/_1344104.jpg";
-import ThirdImg from "../assets/_1322202.jpg";
+import { Col, Container, Row } from "react-bootstrap";
 
-import FirstImgTrans from "../assets/f682b054e7868718f4167b9243ab3f9c.jpg";
-import SecondImgTrans from "../assets/The_Common_Wanderer_-3.jpg";
-import ThirdImgTrans from "../assets/a12d3250b32491bd47f7773b57dabfe3.jpg";
+const itemDataAround = [
+    {
+        img: "https://i.postimg.cc/2jwFVvx1/48800644637-e09e7ecc6b-b.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/Y006crsp/7718425268-1ffa7617fc-k.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/T1srfzzn/esala-perahera.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/QdBgtdmw/01.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/5tLwBKZm/1491555548-Hikkaduwa-Discover-Scuba-Diving-for-adults-03.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/PqjLjXRm/5e7a3ee81de2791e72d27361-nine-arch-bridge-ella.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/C5z5NzRV/75168-orig.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/WbNX2VQc/7c.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/05WJwqzs/a2c148fa-80c8-4dd3-b18f-f99bc8be6eee.webp",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/tgxzr4VW/Anuradhapura-city.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/KzbtJrbh/ayubowan-sri-lanka.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/WzHFL0B3/best-places-to-visit-in-Sri-Lanka.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/Wb5SzKvF/Depositphotos-457865098-XL-1024x683-jpg.webp",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/zvXK1z3d/ezgif-com-gif-maker-4.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/gJyHWts0/Jaffna.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/Dywd9gX2/photo2jpg.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/fRFKj9kM/Polonnaruwa-header.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/654T44sr/Polonnaruwa-02.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/FHjRDtH1/sigiriya-459197-1920.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/QN0cJTnv/Sri-Lanka-Map-Tourist-Attractions-Tours-Maps-com.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/pTMJ3MD7/whale3-1024x683.jpg",
+        title: 'Title'
+    }, {
+        img: "https://i.postimg.cc/FF8HvFf7/yaala.jpg",
+        title: 'Title'
+    }
+]
 
-const itemData = [
+const itemDataHiking = [
     {
-      img: 'https://images.unsplash.com/photo-1551963831-b3b1ca40c98e',
-      title: 'Breakfast',
+        img: "https://i.postimg.cc/2jwFVvx1/48800644637-e09e7ecc6b-b.jpg",
+        title: 'Title'
     },
     {
-      img: 'https://images.unsplash.com/photo-1551782450-a2132b4ba21d',
-      title: 'Burger',
+        img: "https://i.postimg.cc/4dRbhQM9/caption.jpg",
+        title: 'Title'
     },
     {
-      img: 'https://images.unsplash.com/photo-1522770179533-24471fcdba45',
-      title: 'Camera',
+        img: "https://i.postimg.cc/zXxjPWLs/DSC-0458-1.jpg",
+        title: 'Title'
     },
     {
-      img: 'https://images.unsplash.com/photo-1444418776041-9c7e33cc5a9c',
-      title: 'Coffee',
+        img: "https://i.postimg.cc/WbN8nS4m/little-adams-peak-ella-1024x683.jpg",
+        title: 'Title'
     },
     {
-      img: 'https://images.unsplash.com/photo-1533827432537-70133748f5c8',
-      title: 'Hats',
+        img: "https://i.postimg.cc/NjXm1PXj/342656083.jpg",
+        title: 'Title'
     },
     {
-      img: 'https://images.unsplash.com/photo-1558642452-9d2a7deb7f62',
-      title: 'Honey',
+        img: "https://i.postimg.cc/d3WmxkQQ/d70508bc-f149-4c06-a8df-41c52d8c7c97.webp",
+        title: 'Title'
     },
     {
-      img: 'https://images.unsplash.com/photo-1516802273409-68526ee1bdd6',
-      title: 'Basketball',
+        img: "https://i.postimg.cc/RFLTwpjH/DSC-0040.webp",
+        title: 'Title'
     },
     {
-      img: 'https://images.unsplash.com/photo-1518756131217-31eb79b20e8f',
-      title: 'Fern',
+        img: "https://i.postimg.cc/9ft9kRJ3/ezgif-com-gif-maker.jpg",
+        title: 'Title'
     },
     {
-      img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-      title: 'Mushrooms',
+        img: "https://i.postimg.cc/KjsB56QR/ezgif-com-gif-maker-1.jpg",
+        title: 'Title'
     },
     {
-      img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-      title: 'Tomato basil',
+        img: "https://i.postimg.cc/9XxdV9VC/ezgif-com-gif-maker-2.jpg",
+        title: 'Title'
     },
     {
-      img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-      title: 'Sea star',
+        img: "https://i.postimg.cc/wxFVvP5K/ezgif-com-gif-maker-3.jpg",
+        title: 'Title'
     },
     {
-      img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-      title: 'Bike',
+        img: "https://i.postimg.cc/6q6fcLX1/Ravanas-Cave-41.jpg",
+        title: 'Title'
     },
     {
-        img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-        title: 'Bike',
-      },
-      {
-        img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-        title: 'Bike',
-      },
-      {
-        img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-        title: 'Mushrooms',
-      },
-      {
-        img: 'https://images.unsplash.com/photo-1567306301408-9b74779a11af',
-        title: 'Tomato basil',
-      },
-      {
-        img: 'https://images.unsplash.com/photo-1471357674240-e1a485acb3e1',
-        title: 'Sea star',
-      },
-      {
-        img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-        title: 'Bike',
-      },
-      {
-          img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-          title: 'Bike',
-        },
-        {
-          img: 'https://images.unsplash.com/photo-1589118949245-7d38baf380d6',
-          title: 'Bike',
-        },
-        {
-            img: 'https://images.unsplash.com/photo-1597645587822-e99fa5d45d25',
-            title: 'Mushrooms',
-          },
-          
-  ];
+        img: "https://i.postimg.cc/wBdJFc5c/The-Common-Wanderer-Diyaluma-falls-guide-6.jpg",
+        title: 'Title'
+    }
+]
+
+const itemDataCulture = [
+    {
+        img: "https://i.postimg.cc/k4fQh6w1/1492428417-Kandy-Final-Kumbal-Perahera-03.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/Y006crsp/7718425268-1ffa7617fc-k.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/d0RmrSCK/837254-1594117789-Public-not-allowed-to-visit-Kataragama-during-Esala-Perahera-festival-B.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/T1srfzzn/esala-perahera.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/50x53q5Q/image.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/vH1r3mnh/market-body.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/jjY4WrLX/og-picture-for-sri-lanka-festivities.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/VsZ9qtJ5/Sinhala-and-Tamil-New-Year-Celebrations-in-Sri-Lanka.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/0yYJBKyY/Snapseed-1.jpg",
+        title: 'Title'
+    },
+]
+
+const itemDataCycle = [
+    {
+        img: "https://i.postimg.cc/gjL2p5Tv/1344105.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/kGnQTX7M/098ghj.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/jS9hRb4v/342656051.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/2jwFVvx1/48800644637-e09e7ecc6b-b.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/4dRbhQM9/caption.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/zXxjPWLs/DSC-0458-1.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/6pT0s3ny/ella-rock-16.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/XYT9Tgnz/img10-min.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/WbN8nS4m/little-adams-peak-ella-1024x683.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/BZcNHRJQ/P1250043.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/k5bv4pjC/ravana-cave-ella-1.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/SsLLLzFt/ravana-s-cave.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/xdwg32kq/sunset-on-the-way-back.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/gk1wJk1w/1344109.jpg",
+        title: 'Title'
+    },
+]
+
+const itemDataBird = [
+    {
+        img: "https://i.postimg.cc/ncby3Kt3/0987.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/8c4LrQQF/1-buse94ay-OYNV5x46-BTZ4-Sw.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/FsFyXR30/1-MPplvw-IKYup-Cy-BGEETw-Xh-A.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/sgKbftGL/1233434234.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/d1gbPrZt/145.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/13PZ3GC8/1483958673-sparrow-sns.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/02h0YZRN/3037225610-3ec0eb406a-c.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/XYp9Xz2J/542-5179461483.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/qBswdSYH/bird-watching-slider1.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/dVpt6HJL/Black-Capped-Kingfisher.webp",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/dtXLNtBs/common-cobra-e1504181364653.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/VNJ4Q6yK/df9ce790fb204284a565706fb32a51a4.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/jj2PwkZ2/elulu-the-goat.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/3wRVkngx/fdgdkjiojlkmk-opo.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/W3MHC3rQ/Funambulus-palmarum-Bengaluru.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/Hx52nhk5/index.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/zD2mTLzf/kobeyya2.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/vHGz8XFg/kobyya1.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/BbSK3YLJ/lizard-4723975-480.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/8k4v4S9c/LK75090100-01-E-1280-720-1280x.webp",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/BQ8vFfGd/Loten-s-Sunbird-M.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/yxHTZyDG/monkey-sri-lanka1.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/FFLtbWwf/poiioolk.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/xjvJC2ng/Sri-Lanka-king-fisher-yala-national-park.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/fb1CwNDD/sri-lankan-junglefowl-sri-lanka-945x630.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/nhF9Qw07/The-Ceylon-krait-or-Sri-Lankan-krait-Bungarus-ceylonicus-is-a-species-of-venomous-snake-endemic-to.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/RFQHj50P/zebu-385682-1280.jpg",
+        title: 'Title'
+    },
+]
+
+const itemDataRifle = [
+    {
+        img: "https://i.postimg.cc/PJvs7K6q/1518461565-img-1684.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/Ls4sWKj6/274185217-5289184551115501-806109289725916924-n.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/G27dV4dX/MAD096https://i.postimg.cc/MGw6Qk9m/product-jpeg-500x500.jpg2-800-450.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/nrG5g54p/MVIMG-20200222-131858.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/MGw6Qk9m/product-jpeg-500x500.jpg",
+        title: 'Title'
+    },
+    {
+        img: "https://i.postimg.cc/ydY7Lm4J/ZLMAT-2.jpg",
+        title: 'Title'
+    },
+]
+const itemDataPool = [
+    {
+        img:"https://i.postimg.cc/k4kWQXzp/DSC01492.jpg",
+        title:'Title'
+    },
+    {
+        img:"https://i.postimg.cc/25tWYSkS/DSC01494.jpg",
+        title:'Title'
+    },
+    {
+        img:"https://i.postimg.cc/ZqnNXdhQ/DSC01496.jpg",
+        title:'Title'
+    },
+    {
+        img:"https://i.postimg.cc/L43sB8cg/1344012.jpg",
+        title:'Title'
+    }
+]
 
 const ThingsToDo = () => {
     const [text,setText] = useState('things');
@@ -176,7 +459,7 @@ const ThingsToDo = () => {
 
                         <div>
                             <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                            {itemData.map((item) => (
+                            {itemDataPool.map((item) => (
                                 <ImageListItem key={item.img}>
                                     <img
                                     src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -230,7 +513,7 @@ const ThingsToDo = () => {
 
                          <div>
                             <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                            {itemData.map((item) => (
+                            {itemDataRifle.map((item) => (
                                 <ImageListItem key={item.img}>
                                     <img
                                     src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -281,7 +564,7 @@ const ThingsToDo = () => {
 
                          <div>
                             <ImageList sx={{ width: '100%', height: 450 }} cols={4} rowHeight={164}>
-                            {itemData.map((item) => (
+                            {itemDataBird.map((item) => (
                                 <ImageListItem key={item.img}>
                                     <img
                                     src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -349,7 +632,7 @@ const ThingsToDo = () => {
 
                          <div>
                             <ImageList sx={{ width: 450, height: 450 }} cols={3} rowHeight={164}>
-                            {itemData.map((item) => (
+                            {itemDataCycle.map((item) => (
                                 <ImageListItem key={item.img}>
                                     <img
                                     src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -487,7 +770,7 @@ const ThingsToDo = () => {
 
                         <div>
                             <ImageList sx={{ width: 450, height: 450 }} cols={3} rowHeight={164}>
-                            {itemData.map((item) => (
+                            {itemDataCulture.map((item) => (
                                 <ImageListItem key={item.img}>
                                     <img
                                     src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -677,7 +960,7 @@ const ThingsToDo = () => {
                         <br/>
                         <div>
                             <ImageList sx={{ width: 450, height: 450 }} cols={3} rowHeight={164}>
-                            {itemData.map((item) => (
+                            {itemDataAround.map((item) => (
                                 <ImageListItem key={item.img}>
                                     <img
                                     src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -701,7 +984,7 @@ const ThingsToDo = () => {
          return (
             <div><br/>
             <ImageList sx={{ width:'100%', height: 450 }} cols={6} rowHeight={164}>
-            {itemData.map((item) => (
+            {itemDataHiking.map((item) => (
                 <ImageListItem key={item.img}>
                     <img
                     src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -720,7 +1003,7 @@ const ThingsToDo = () => {
     return (
     <>
         <div className="homeImage" style={{
-             backgroundImage: `url(${backGround})`
+             backgroundImage: `url("https://i.postimg.cc/8c9MVchw/1344104.jpg")`
         }}>
            {
                //Middle bar
@@ -737,7 +1020,7 @@ const ThingsToDo = () => {
         </div>
         {/*Dolpe Villa Ella, Sri lanka */}
         <div  className="homeImage" style={{
-             backgroundImage: `url(${Blue})`,
+             backgroundImage: `url("https://i.postimg.cc/x1rT9SQP/5-17-2022-6-59-20-PM.jpg")`,
         }}>
         <div className="secondDiv">
            <br/><br/><br/>

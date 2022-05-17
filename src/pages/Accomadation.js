@@ -1,73 +1,159 @@
 import React,{useState} from "react";
 
 import '../../src/App.css';
-import { Col, Container, Row, Card, Button, Badge } from "react-bootstrap";
+import { Col, Container, Row, Card,  Badge } from "react-bootstrap";
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 
 import MiddleBar from "../components/MiddleBar";
 
-import Blue from "../assets/107211990_297877908238565_7498320495348409177_n.jpg";
-import backGround from "../assets/_1322226.jpg";
+const itemDataAttic = [
+    {
+        img: "https://i.postimg.cc/nrbwmrvW/1344168.jpg",
+        title: 'Breakfast',
+      },
+      {
+        img: "https://i.postimg.cc/cJvw5jy3/Whats-App-Image-2022-03-19-at-23-24-11.jpg",
+        title: 'Burger',
+      },
+      {
+        img: "https://i.postimg.cc/KYGBxwy4/Whats-App-Image-2022-03-19-at-23-27-04.jpg",
+        title: 'Camera',
+      },
+      {
+        img: "https://i.postimg.cc/QVGgZqDb/1344166.jpg",
+        title: 'Coffee',
+      },
+      {
+        img: "https://i.postimg.cc/nh1WTXK5/1344169.jpg",
+        title: 'Hats',
+      },
+      {
+        img: "https://i.postimg.cc/VNGVQ2VW/1344171.jpg",
+        title: 'Honey',
+      },
+      {
+        img: "https://i.postimg.cc/tJRVHmnp/1344173.jpg",
+        title: 'Basketball',
+      },
+];
 
-import FirstImg from "../assets/_1344168.jpg";
-import SecondImg from "../assets/_1322200.jpg";
-import ThirdImg from "../assets/_1322864.jpg";
-import FourthImg from "../assets/_1344124.jpg"
+const itemDataDeluxe= [
+    {
+        img: "https://i.postimg.cc/QMLrBDyf/1322202-b6fc28e9bcde277789e1.jpg",
+        title: 'Breakfast',
+      },
+      {
+        img: "https://i.postimg.cc/sg8c1BBh/1322200-98b63ba80899e748f22b.jpg",
+        title: 'Burger',
+      },
+      {
+        img: "https://i.postimg.cc/QMVY6qJz/237430245.jpg",
+        title: 'Camera',
+      },
+      {
+        img: "https://i.postimg.cc/D01MryPy/237430324.jpg",
+        title: 'Coffee',
+      },
+      {
+        img: "https://i.postimg.cc/L6M7HLmq/285441365.jpg",
+        title: 'Hats',
+      },
+      {
+        img: "https://i.postimg.cc/tgfS8Vr4/69235788-115221059837585-7834650883462791168-n.jpg",
+        title: 'Honey',
+      },
+      {
+        img: "https://i.postimg.cc/Prz7NJqS/1322198.jpg",
+        title: 'Basketball',
+      },
+      {
+        img: "https://i.postimg.cc/wxs8x9Jr/1322204.jpg",
+        title: 'Basketball',
+      },
+      {
+        img: "https://i.postimg.cc/3R46wZyG/1322230.jpg",
+        title: 'Basketball',
+      },
+]
 
-import FirstImgAttic from "../assets/_1344166.jpg";
-import SecondImgTrans from "../assets/_1344171.jpg";
-import ThirdImgTrans from "../assets/_1344169.jpg";
+const itemDatastandard = [
+    {
+        img: "https://i.postimg.cc/xdh4rxGB/1322864-3ee46b7fd4122724c899.jpg",
+        title: 'Breakfast',
+      },
+      {
+        img: "https://i.postimg.cc/JhB24vL3/239340734.jpg",
+        title: 'Burger',
+      },
+      {
+        img: "https://i.postimg.cc/mgpvr7F4/287522383.jpg",
+        title: 'Camera',
+      },
+      {
+        img: "https://i.postimg.cc/QdzzDsRx/287522386.jpg",
+        title: 'Coffee',
+      },
+      {
+        img: "https://i.postimg.cc/x1KS6XkV/1322865.jpg",
+        title: 'Hats',
+      },
+      {
+        img: "https://i.postimg.cc/BQpTHggr/1322866.jpg",
+        title: 'Honey',
+      },
+      {
+        img: "https://i.postimg.cc/DzPnwSFP/1322867.jpg",
+        title: 'Basketball',
+      },
+      {
+        img: "https://i.postimg.cc/YCNJ1TVp/1322868.jpg",
+        title: 'Fern',
+      },
+      {
+        img: "https://i.postimg.cc/BZYZFPFh/1322869.jpg",
+        title: 'Mushrooms',
+      },
+]
 
-/*Attic rooms */
-import atticFirst from "../assets/_1344166.jpg";
-import atticSecond from "../assets/_1344171.jpg";
-import atticThird from "../assets/_1344169.jpg";
-import atticFourth from "../assets/atticFourth.jpeg";
-import atticFive from "../assets/_1344172.jpg";
-import atticSix from "../assets/_1344173.jpg";
-import atticSeven from "../assets/bookingsBack.jpeg";
-import atticEight from "../assets/_1344168.jpg";
-import atticNine from "../assets/_1344175.jpg";
-
-const itemData = [
+const itemDataBudget = [
     {
-      img: "https://i.postimg.cc/3J1x7zkX/1344166.jpg",
-      title: 'Breakfast',
-    },
-    {
-      img: "https://drive.google.com/file/d/1ViZo9r6s6bSV8moY6ExNQQYmN9U4rQjH/view?usp=sharing",
-      title: 'Burger',
-    },
-    {
-      img: atticThird,
-      title: 'Camera',
-    },
-    {
-      img: atticFourth,
-      title: 'Coffee',
-    },
-    {
-      img: atticFive,
-      title: 'Hats',
-    },
-    {
-      img: atticSix,
-      title: 'Honey',
-    },
-    {
-      img: atticSeven,
-      title: 'Basketball',
-    },
-    {
-      img: atticEight,
-      title: 'Fern',
-    },
-    {
-      img: atticNine,
-      title: 'Mushrooms',
-    },
-  ];
+        img: "https://i.postimg.cc/ZRzxF1xY/1344124-518796593e48071df6c2.jpg",
+        title: 'Breakfast',
+      },
+      {
+        img: "https://i.postimg.cc/52VF7k47/268589856-653726802653672-2667501053886997262-n.jpg",
+        title: 'Burger',
+      },
+      {
+        img: "https://i.postimg.cc/RCJ6Mzqp/1344111.jpg",
+        title: 'Camera',
+      },
+      {
+        img: "https://i.postimg.cc/Z54CFBHX/1344114.jpg",
+        title: 'Coffee',
+      },
+      {
+        img: "https://i.postimg.cc/YS2LkGmQ/1344125.jpg",
+        title: 'Hats',
+      },
+      {
+        img: "https://i.postimg.cc/4NCKyF9f/1344214.jpg",
+        title: 'Honey',
+      },
+      {
+        img: "https://i.postimg.cc/j2nstKXH/1344215.jpg",
+        title: 'Basketball',
+      },
+      {
+        img: "https://i.postimg.cc/rph0pVS3/1344216.jpg",
+        title: 'Fern',
+      },
+      {
+        img: "https://i.postimg.cc/BtWJvyYd/1344217.jpg",
+        title: 'Mushrooms',
+      },
+]
   
 
 const Accomadation = () => {
@@ -240,28 +326,28 @@ const Accomadation = () => {
                 <Row className="blueAreaRow">
                 <Col>
                     <Card className="text-center" style={{ width: '15rem',background:'none' }}>
-                        <Card.Img variant="top" src={FirstImg} />
+                        <Card.Img variant="top" src="https://i.postimg.cc/nrbwmrvW/1344168.jpg" />
                         <Card.Text>Attic Suite room</Card.Text>
                     </Card>
                 </Col>
     
                 <Col>
                 <Card className="text-center" style={{ width: '15rem',background:'none' }}>
-                        <Card.Img variant="top" src={SecondImg} />
+                        <Card.Img variant="top" src="https://i.postimg.cc/sg8c1BBh/1322200-98b63ba80899e748f22b.jpg" />
                         <Card.Text>Deluxe roomh</Card.Text>
                     </Card>
                 </Col>
     
                 <Col>
                 <Card className="text-center" style={{ width: '15rem',background:'none' }}>
-                        <Card.Img variant="top" src={ThirdImg} />
+                        <Card.Img variant="top" src="https://i.postimg.cc/xdh4rxGB/1322864-3ee46b7fd4122724c899.jpg" />
                         <Card.Text>Standard room</Card.Text>
                     </Card>
                 </Col>
 
                 <Col>
                 <Card className="text-center" style={{ width: '15rem',background:'none' }}>
-                        <Card.Img variant="top" src={FourthImg} />
+                        <Card.Img variant="top" src="https://i.postimg.cc/ZRzxF1xY/1344124-518796593e48071df6c2.jpg" />
                         <Card.Text>Budget Villa</Card.Text>
                     </Card>
                 </Col>
@@ -274,7 +360,7 @@ const Accomadation = () => {
                 <Row className="blueAreaRow">
                    <Col sm={6}>
                    <ImageList sx={{ width: 500, height: '80%' }} cols={3} rowHeight={164}>
-                {itemData.map((item) => (
+                {itemDataAttic.map((item) => (
                   <ImageListItem key={item.img}>
                     <img
                       src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -388,7 +474,7 @@ const Accomadation = () => {
                 <Row className="blueAreaRow">
                    <Col sm={6}>
                    <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                {itemData.map((item) => (
+                {itemDataDeluxe.map((item) => (
                   <ImageListItem key={item.img}>
                     <img
                       src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -498,7 +584,7 @@ const Accomadation = () => {
             <Row className="blueAreaRow">
                <Col sm={6}>
                <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-            {itemData.map((item) => (
+            {itemDatastandard.map((item) => (
               <ImageListItem key={item.img}>
                 <img
                   src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -598,7 +684,7 @@ const Accomadation = () => {
                 <Row className="blueAreaRow">
                    <Col sm={6}>
                    <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                {itemData.map((item) => (
+                {itemDataBudget.map((item) => (
                   <ImageListItem key={item.img}>
                     <img
                       src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
@@ -687,7 +773,7 @@ const Accomadation = () => {
     return (
         <>
              <div className="homeImage" style={{
-             backgroundImage: `url(${backGround})`
+             backgroundImage: `url(${"https://i.postimg.cc/x8Tr4cRw/1322226.jpg"})`
         }}>
              {
                //Middle bar
@@ -704,7 +790,7 @@ const Accomadation = () => {
         </div>
 
         <div  className="homeImage" style={{
-             backgroundImage: `url(${Blue})`,
+             backgroundImage: `url(${"https://i.postimg.cc/N06TMVxs/107211990-297877908238565-7498320495348409177-n.jpg"})`,
         }}>
         <div className="secondDiv">
            <br/><br/><br/>

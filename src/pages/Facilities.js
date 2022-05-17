@@ -1,18 +1,13 @@
 import React from "react";
-import backGround from "../assets/_1322201.jpg";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
-import Blue from "../assets/little-adams-peak-ella-1024x683.jpg";
-import { Col, Container, Row, Badge } from "react-bootstrap";
-import FirstImg from "../assets/_1344168.jpg";
-import SecondImg from "../assets/_1322232.jpg";
-import ThirdImg from "../assets/287522687.jpg"
+import { Col, Container, Row } from "react-bootstrap";
 
 const Facilities = () => {
     return (
         <>
             <div className="homeImage" style={{
-                 backgroundImage: `url(${backGround})`
+                 backgroundImage: `url("https://i.postimg.cc/V6HkZn0k/1322201.jpg")`
             }}>
                {
                    //Middle bar
@@ -38,7 +33,7 @@ const Facilities = () => {
             </div>
             {/*Blue Area */}
             <div className="blueArea" style={{
-                 backgroundImage: `url(${Blue})`
+                 backgroundImage: `url("https://i.postimg.cc/QdLByYb9/5-17-2022-5-43-41-PM.jpg")`
             }}>
                {
                    //Middle bar

@@ -1,11 +1,8 @@
 import React from "react";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
-import Blue from "../assets/_1322204.jpg";
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
-import FirstImg from "../assets/_1344168.jpg";
-import SecondImg from "../assets/_1322232.jpg";
-import ThirdImg from "../assets/287522687.jpg"
+
 
 function Home() {
     return (
@@ -52,7 +49,7 @@ function Home() {
         </div>
         {/*Blue Area */}
         <div className="blueArea" style={{
-             backgroundImage: `url(${Blue})`
+             backgroundImage: `url("https://i.postimg.cc/RZbNxSW3/DSC01499.jpg")`
         }}>
            {
                //Middle bar
@@ -62,7 +59,7 @@ function Home() {
        <Row className="blueAreaRow">
             <Col>
                 <Card style={{ width: '18rem',background:'none' }}>
-                    <Card.Img variant="top" src={FirstImg} />
+                    <Card.Img variant="top" src="https://i.postimg.cc/nrbwmrvW/1344168.jpg" />
                         <Card.Body>
                             <Button variant="primary">ACCOMODATION</Button>
                                 <Card.Text className="textSizeAndCOlor">
@@ -75,7 +72,7 @@ function Home() {
 
             <Col>
                 <Card style={{ width: '18rem',background:'none' }}>
-                    <Card.Img variant="top" src={SecondImg} />
+                    <Card.Img variant="top" src="https://i.postimg.cc/cLBgyb9t/1322232.jpg" />
                         <Card.Body>
                             <Button variant="primary">THINGS TO DO</Button>
                                 <Card.Text className="textSizeAndCOlor">
@@ -87,7 +84,7 @@ function Home() {
 
             <Col>
                 <Card style={{ width: '18rem',background:'none' }}>
-                    <Card.Img variant="top" src={ThirdImg} />
+                    <Card.Img variant="top" src="https://i.postimg.cc/d1hQNHZC/sdfdfsdf.jpg" />
                         <Card.Body>
                             <Button variant="primary">DINNING</Button>
                                 <Card.Text className="textSizeAndCOlor">
