@@ -11,6 +11,38 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { First } from "react-bootstrap/esm/PageItem";
 
+const itemDataBudget = [
+  {
+    img: "https://i.postimg.cc/ZRzxF1xY/1344124-518796593e48071df6c2.jpg",
+    title: 'Title'
+  },{
+    img: "https://i.postimg.cc/52VF7k47/268589856-653726802653672-2667501053886997262-n.jpg",
+    title: 'Title'
+  },{
+    img: "https://i.postimg.cc/RCJ6Mzqp/1344111.jpg",
+    title: 'Title'
+  },{
+    img: "https://i.postimg.cc/Z54CFBHX/1344114.jpg",
+    title: 'Title'
+  },{
+    img: "https://i.postimg.cc/YS2LkGmQ/1344125.jpg",
+    title: 'Title'
+  },{
+    img: "https://i.postimg.cc/4NCKyF9f/1344214.jpg",
+    title: 'Title'
+  },{
+    img: "https://i.postimg.cc/j2nstKXH/1344215.jpg",
+    title: 'Title'
+  },{
+    img: "https://i.postimg.cc/rph0pVS3/1344216.jpg",
+    title: 'Title'
+  },{
+    img: "https://i.postimg.cc/BtWJvyYd/1344217.jpg",
+    title: 'Title'
+  },
+  
+]
+
 const itemDataStandard = [
   {
     img: "https://i.postimg.cc/xdh4rxGB/1322864-3ee46b7fd4122724c899.jpg",
@@ -266,7 +298,41 @@ const Gallery = () => {
                     <Col sm={6}>
                     <div><h4 className="dolpeText">Budget Room</h4></div><br/>
                         <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                        {itemData.map((item) => (
+                        {itemDataBudget.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                alt={item.title}
+                                loading="lazy"
+                                />
+                            </ImageListItem>
+                            ))}
+                        </ImageList>
+                    </Col>
+            </Row> 
+            <hr style={{color:'#7CA844'}}/>
+            <Row className="blueAreaRow">
+                    <Col sm={6}>
+                    <div><h4 className="dolpeText">Dolape Rill Restaurant</h4></div><br/>
+                        <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
+                        {itemDataStandard.map((item) => (
+                            <ImageListItem key={item.img}>
+                                <img
+                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                alt={item.title}
+                                loading="lazy"
+                                />
+                            </ImageListItem>
+                            ))}
+                        </ImageList>
+                    </Col>
+    
+                    <Col sm={6}>
+                    <div><h4 className="dolpeText">Garden Dinning</h4></div><br/>
+                        <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+                        {itemDataBudget.map((item) => (
                             <ImageListItem key={item.img}>
                                 <img
                                 src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
