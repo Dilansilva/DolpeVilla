@@ -11,6 +11,65 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import { First } from "react-bootstrap/esm/PageItem";
 
+const itemDataCycle = [
+  {
+      img: "https://i.postimg.cc/gjL2p5Tv/1344105.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/kGnQTX7M/098ghj.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/jS9hRb4v/342656051.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/2jwFVvx1/48800644637-e09e7ecc6b-b.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/4dRbhQM9/caption.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/zXxjPWLs/DSC-0458-1.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/6pT0s3ny/ella-rock-16.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/XYT9Tgnz/img10-min.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/WbN8nS4m/little-adams-peak-ella-1024x683.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/BZcNHRJQ/P1250043.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/k5bv4pjC/ravana-cave-ella-1.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/SsLLLzFt/ravana-s-cave.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/xdwg32kq/sunset-on-the-way-back.jpg",
+      title: 'Title'
+  },
+  {
+      img: "https://i.postimg.cc/gk1wJk1w/1344109.jpg",
+      title: 'Title'
+  },
+]
+
 const itemDataBird = [
   {
       img: "https://i.postimg.cc/ncby3Kt3/0987.jpg",
@@ -690,7 +749,7 @@ const Gallery = () => {
                     <Col sm={6}>
                     <div><h4 className="dolpeText">Cycling and Safari</h4></div><br/>
                         <ImageList sx={{ width: '100%', height: 450 }} cols={4} rowHeight={164}>
-                        {itemData.map((item) => (
+                        {itemDataCycle.map((item) => (
                             <ImageListItem key={item.img}>
                                 <img
                                 src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
