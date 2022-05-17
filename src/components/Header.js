@@ -5,7 +5,6 @@ import {Container,Navbar,ToggleButton,Nav,NavDropdown} from 'react-bootstrap';
 import {useNavigate} from "react-router-dom";
 
 import MobilePopUp from './MobilePopUp';
-import logo from '../assets/68681472_114368466589511_8231771088728621056_n.jpg';
 
 function getWindowDimensions() {
   const { innerWidth: width } = window;
@@ -46,7 +45,7 @@ function Header(){
       <Navbar className="taransParent">
         <Container className="taransParent">
           <Navbar.Brand onClick={() => {navigate("/")}}>
-          <img src={logo} className="minorLogo"/>
+          <img src="https://i.postimg.cc/w3YttVFG/68681472-114368466589511-8231771088728621056-n.jpg" className="minorLogo"/>
           </Navbar.Brand>
           <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
