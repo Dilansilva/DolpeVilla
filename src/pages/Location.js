@@ -148,19 +148,19 @@ function Location() {
                 <Row className="blueAreaRow">
                 <Col>
                     <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={FirstImg} />
+                        <Card.Img variant="top" src="https://i.postimg.cc/8c9MVchw/1344104.jpg" />
                     </Card>
                 </Col>
     
                 <Col>
                     <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={SecondImg} />
+                        <Card.Img variant="top" src="https://i.postimg.cc/QMLrBDyf/1322202-b6fc28e9bcde277789e1.jpg" />
                     </Card>
                 </Col>
     
                 <Col>
                     <Card style={{ width: '18rem',background:'none' }}>
-                        <Card.Img variant="top" src={ThirdImg} />
+                        <Card.Img variant="top" src="https://i.postimg.cc/9fGHZS3C/1322209-0ef6bdcb6673ab137539.jpg" />
                     </Card>
                 </Col>
     
@@ -241,7 +241,7 @@ function Location() {
     return (
     <>
         <div className="homeImage" style={{
-             backgroundImage: `url(${backGround})`
+             backgroundImage: `url("https://i.postimg.cc/gjL2p5Tv/1344105.jpg")`
         }}>
            {
                //Middle bar
@@ -258,8 +258,7 @@ function Location() {
         </div>
         {/*Dolpe Villa Ella, Sri lanka */}
         <div  className="homeImage" style={{
-             backgroundImage: `url(${Blue})`,
-        }}>
+             backgroundImage: `url("https://i.postimg.cc/R0702S9z/OG12-31702f1ced68599661aa.jpg")`,}}>
         <div className="secondDiv">
            <br/><br/><br/>
             {middleSHow()}
@@ -268,7 +267,7 @@ function Location() {
         </div>
         {/*Blue Area */}
         <div className="blueArea" style={{
-             backgroundImage: `url(${LastSec})`
+             backgroundImage: `url("https://i.postimg.cc/05FHfn94/mini-adams-peak-1-7.jpg")`
         }}>
            {
                //Middle bar
