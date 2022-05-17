@@ -1,18 +1,15 @@
 import React from "react";
-import backGround from "../assets/118286133_312616393307498_3660786380803978693_n.jpg";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
-import Blue from "../assets/_1322204.jpg";
+
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
-import FirstImg from "../assets/_1344168.jpg";
-import SecondImg from "../assets/_1322232.jpg";
-import ThirdImg from "../assets/287522687.jpg"
+
 
 function Promotions() {
     return (
     <>
         <div className="homeImage" style={{
-             backgroundImage: `url(${backGround})`
+             backgroundImage: `url("https://i.postimg.cc/hPn2yPDg/118286133-312616393307498-3660786380803978693-n.jpg")`
         }}>
            {
                //Middle bar
@@ -53,7 +50,7 @@ function Promotions() {
         </div>
         {/*Blue Area */}
         <div className="blueArea" style={{
-             backgroundImage: `url(${Blue})`
+             backgroundImage: `url("https://i.postimg.cc/59SQrmgR/5-17-2022-11-30-13-AM.jpg")`
         }}>
            {
                //Middle bar
@@ -63,7 +60,7 @@ function Promotions() {
        <Row className="blueAreaRow">
             <Col>
                 <Card style={{ width: '18rem',background:'none' }}>
-                    <Card.Img variant="top" src={FirstImg} />
+                    <Card.Img variant="top" src="https://i.postimg.cc/nrbwmrvW/1344168.jpg" />
                         <Card.Body>
                             <Button variant="primary">ACCOMODATION</Button>
                                 <Card.Text className="textSizeAndCOlor">
@@ -76,7 +73,7 @@ function Promotions() {
 
             <Col>
                 <Card style={{ width: '18rem',background:'none' }}>
-                    <Card.Img variant="top" src={SecondImg} />
+                    <Card.Img variant="top" src="https://i.postimg.cc/cLBgyb9t/1322232.jpg" />
                         <Card.Body>
                             <Button variant="primary">THINGS TO DO</Button>
                                 <Card.Text className="textSizeAndCOlor">
@@ -88,7 +85,7 @@ function Promotions() {
 
             <Col>
                 <Card style={{ width: '18rem',background:'none' }}>
-                    <Card.Img variant="top" src={ThirdImg} />
+                    <Card.Img variant="top" src="https://i.postimg.cc/d1hQNHZC/sdfdfsdf.jpg" />
                         <Card.Body>
                             <Button variant="primary">DINNING</Button>
                                 <Card.Text className="textSizeAndCOlor">
