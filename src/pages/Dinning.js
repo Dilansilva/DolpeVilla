@@ -425,7 +425,7 @@ const Dinnning = () => {
             return(
                 <div style={{display:'flex',alignItems:'center'}}>
                     <ImageList sx={{ width: '100%', height: 450 }} cols={4} rowHeight={164}>
-                    {itemData.map((item) => (
+                    {itemDataGarden.map((item) => (
                         <ImageListItem key={item.img}>
                             <img
                             src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
