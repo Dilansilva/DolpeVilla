@@ -1,22 +1,9 @@
 import React,{useState} from "react";
-import backGround from "../assets/_1344105.jpg";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
-import Blue from "../assets/OG12.jpg";
-import LastSec from "../assets/MobilePopUpBackGround.jpg";
-import { Col, Container, Row, Card, Button } from "react-bootstrap";
-import FirstImg from "../assets/_1322209.jpg";
-import SecondImg from "../assets/_1344104.jpg";
-import ThirdImg from "../assets/_1322202.jpg";
 
-import FirstImgTrans from "../assets/f682b054e7868718f4167b9243ab3f9c.jpg";
-import SecondImgTrans from "../assets/The_Common_Wanderer_-3.jpg";
-import ThirdImgTrans from "../assets/a12d3250b32491bd47f7773b57dabfe3.jpg";
+import { Col, Container, Row, Card } from "react-bootstrap";
 
-import FirstImgExc from "../assets/_1344225.jpg";
-import SecondImgExc from "../assets/DSC01502.jpg";
-
-import { toBePartiallyChecked } from "@testing-library/jest-dom/dist/matchers";
 
 function Location() {
     const [text,setText] = useState('location');
