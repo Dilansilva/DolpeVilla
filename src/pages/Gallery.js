@@ -80,7 +80,7 @@ const Gallery = () => {
     return(
             <>
                 <div className="homeImage" style={{
-                     backgroundImage: `url(${backGround})`
+                     backgroundImage: `url("https://i.postimg.cc/0N7xsywn/1344220.jpg")`
                 }}>
                    {
                        //Middle bar
