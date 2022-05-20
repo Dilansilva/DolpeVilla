@@ -780,7 +780,7 @@ const Accomadation = () => {
     return (
         <>
          {/* backgroundImage: `url(${"https://i.postimg.cc/x8Tr4cRw/1322226.jpg"})` */}
-             <div className="homeImage" style={{backgroundImage: `url(${"https://i.postimg.cc/59C8tXWL/5-19-2022-10-57-41-PM.jpg"})`
+             <div className="homeImage" style={{backgroundImage: `url(${"https://i.postimg.cc/x8Tr4cRw/1322226.jpg"})`
 
            }}>
              {
@@ -798,7 +798,7 @@ const Accomadation = () => {
         </div>
 
         <div  className="homeImage" style={{
-             backgroundImage: `url(${"https://i.postimg.cc/N06TMVxs/107211990-297877908238565-7498320495348409177-n.jpg"})`,
+             backgroundImage: `url(${"https://i.postimg.cc/59C8tXWL/5-19-2022-10-57-41-PM.jpg"})`,
         }}>
         <div className="secondDiv">
            <br/><br/><br/>
