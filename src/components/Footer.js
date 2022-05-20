@@ -35,6 +35,19 @@ function Footer() {
             <div className='col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <p>
+                <i className='fab fa-whatsapp me-3'></i>+94 (0) 777 1735 28
+              </p>
+              <p>
+                <i className='fas fa-phone me-3'></i>
+                  +94 (0) 777 1735 28<br/>
+                  <i className='fas fa-phone me-3'></i>
+                  +94 (0) 771 8852 86
+              </p>
+            </div>
+
+            <div className='col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4'>
+              <br/>
+              <p>
                 <i className='fas fa-home me-3'></i>Dolape Villa,
                                       Kandekumbura Road,
                                       Ballaketuwa,
@@ -45,9 +58,6 @@ function Footer() {
               <p>
                 <i className='fas fa-envelope me-3'></i>
               dolapevilla.lbh@gmail.com
-              </p>
-              <p>
-                <i className='fab fa-whatsapp me-3'></i>+94 (0) 777 1735 28
               </p>
             </div>
           </div>
