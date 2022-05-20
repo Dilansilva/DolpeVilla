@@ -39,6 +39,10 @@
   background-color: #ffffff;
 }
 
+.textBlack {
+  color: black;
+}
+
 /*navigation bar*/
 .navBar {
   background-color: #124017;
