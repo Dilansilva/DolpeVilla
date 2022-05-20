@@ -35,6 +35,13 @@ const itemDataAttic = [
       {
         img: "https://i.postimg.cc/tJRVHmnp/1344173.jpg",
         title: 'Basketball',
+      }, {
+        img: "https://i.postimg.cc/3Rdrw0yG/IMG-2638.jpg",
+        title: 'Basketball',
+      },
+      {
+        img: "https://i.postimg.cc/TP2YZ4fC/IMG-2642.jpg",
+        title: 'Basketball',
       },
 ];
 
