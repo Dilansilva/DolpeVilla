@@ -2,9 +2,12 @@ import React from "react";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
+import {useNavigate} from "react-router-dom";
 
 
 function Home() {
+    const navigate = useNavigate();
+
     return (
     <>
         <div className="homeImage" style={{
@@ -63,7 +66,10 @@ function Home() {
                 <Card style={{ width: '18rem',background:'none' }}>
                     <Card.Img variant="top" src="https://i.postimg.cc/nrbwmrvW/1344168.jpg" />
                         <Card.Body>
-                            <Button variant="primary">ACCOMODATION</Button>
+                            <Button 
+                                variant="primary"
+                                onClick={() => {navigate("/accomadation")}}
+                            >ACCOMODATION</Button>
                                 <Card.Text className="textSizeAndCOlor">
                                 The resort is made up of several beautifully crafted chalets tucked within the leveled landscape of the plantation.
                                 </Card.Text>
