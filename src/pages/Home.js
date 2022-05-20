@@ -1,6 +1,7 @@
 import React from "react";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
+import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 
@@ -24,6 +25,7 @@ function Home() {
            <br/><br/><br/>
            <br/><br/><br/>
            <br/><br/><br/>
+           <MiddleBarPhoneView/>
            <MiddleBar/>
         </div>
         {/*Dolpe Villa Ella, Sri lanka */}
