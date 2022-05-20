@@ -772,9 +772,10 @@ const Accomadation = () => {
 
     return (
         <>
-             <div className="homeImage" style={{
-             backgroundImage: `url(${"https://i.postimg.cc/x8Tr4cRw/1322226.jpg"})`
-        }}>
+         {/* backgroundImage: `url(${"https://i.postimg.cc/x8Tr4cRw/1322226.jpg"})` */}
+             <div className="homeImage" style={{backgroundImage: `url(${"https://i.postimg.cc/59C8tXWL/5-19-2022-10-57-41-PM.jpg"})`
+
+           }}>
              {
                //Middle bar
            }
