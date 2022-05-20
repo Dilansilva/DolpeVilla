@@ -10,7 +10,8 @@
 }
 
 .gardientBtn{
-  background: linear-gradient(180deg, rgba(3, 15, 81, 0.4) 0%, rgba(92, 88, 107, 0) 100%);
+  background: linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%);
+  background-color: transparent;
 }
 
 /*Footer Component css*/

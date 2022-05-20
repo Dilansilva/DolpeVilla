@@ -25,7 +25,7 @@ function Home() {
            <br/><br/><br/>
            <br/><br/><br/>
            <br/><br/><br/>
-           <MiddleBarPhoneView/>
+          
            <MiddleBar/>
         </div>
         {/*Dolpe Villa Ella, Sri lanka */}
