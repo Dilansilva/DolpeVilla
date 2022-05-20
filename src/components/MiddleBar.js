@@ -1,5 +1,5 @@
 import React from "react";
-import {Container,Navbar,ToggleButton} from 'react-bootstrap';
+import {Container,Navbar,ToggleButton,Button} from 'react-bootstrap';
 import {useNavigate} from "react-router-dom";
 
 function MiddleBar() {
@@ -11,11 +11,21 @@ function MiddleBar() {
          
           <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-center">
-              <ToggleButton className="gardientBtn" onClick={() => {navigate("/bookings")}}><b>MAKE A RESERVATION</b></ToggleButton>
-              <ToggleButton className="gardientBtn" onClick={() => {navigate("/bookings")}}>CHECK IN</ToggleButton>
-              <ToggleButton className="gardientBtn" onClick={() => {navigate("/bookings")}}>CHECK OUT</ToggleButton>
-              <ToggleButton className="gardientBtn" onClick={() => {navigate("/bookings")}}>SELECT YOUR COUNTRY</ToggleButton>
-              <ToggleButton className="gardientBtn" onClick={() => {navigate("/bookings")}}>BOOK NOW</ToggleButton>
+              <Button style={{fontWeight:'bold',borderColor:'white',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} onClick={() => {navigate("/bookings")}}>
+                  MAKE A RESERVATION
+              </Button>
+              <Button style={{fontWeight:'bold',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} onClick={() => {navigate("/bookings")}}>
+                  MAKE A RESERVATION
+              </Button>              
+              <Button style={{fontWeight:'bold',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} onClick={() => {navigate("/bookings")}}>
+                  MAKE A RESERVATION
+              </Button>              
+              <Button style={{fontWeight:'bold',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} onClick={() => {navigate("/bookings")}}>
+                  MAKE A RESERVATION
+              </Button>              
+              <Button style={{fontWeight:'bold',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} onClick={() => {navigate("/bookings")}}>
+                  MAKE A RESERVATION
+              </Button>            
             </Navbar.Collapse>
         </Container>
       </Navbar>
