@@ -29,21 +29,23 @@ function Home() {
            <br/><br/><br/>
            <h4 className="dolpeText">Dolpe Villa Ella, Sri lanka</h4>
            <br/><br/>
-           <p>Located 8 km from Demodara Nine Arch Bridge, 
-           Dolape Villa has accommodations with a restaurant, 
-           a garden and a 24-hour front desk for your convenience. 
-           Complimentary WiFi is offered throughout the property.</p>
+           <p>Dolape Villa Ella is a SLTDA registered and well recognized villa
+            located 8 km from Demodara Nine Arch Bridge, Dolape Villa has accommodations
+            with a restaurant, a garden and a 24-hour front desk for your convenience. 
+            Complimentary WiFi is offered throughout the property.</p>
 
-           <p>Some of the units have satellite flat-screen TV, 
-           a fully equipped kitchenette with a minibar, 
-           and a private bathroom with a hot tub and bathrobes.</p>
+           <p>Some of the units have satellite flat-screen TV, a fully equipped 
+            kitchenette with a minibar, and a private bathroom with a hot tub and bathrobes.</p>
 
-           <p>The lodge offers a continental or à la carte breakfast.</p>
+           <p>The lodge offers a continental or à la carte breakfast..</p>
 
-           <p>Dolape Villa has a playground</p>
+           <p>Dolape Villa has a play area with a nice natural pool.</p>
 
-           <p>A water park is available on site and cycling can 
-           be enjoyed within close proximity of the accommodation.</p>
+           <p>A water park is available on site and cycling can be enjoyed
+            within close proximity of the accommodation..</p>
+
+            <p>Register Number : SLTDA/SQA/BUN/00930</p>
+            <p>Licence Number : BUN/2022/0011</p>
            <br/><br/><br/>
         </div>
         </div>
