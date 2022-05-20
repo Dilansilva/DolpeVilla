@@ -18,35 +18,6 @@
   width: 50%;
 }
 
-.footerText {
-  font-size: 8px;
-  display: inline;
-  margin-left: 8%;
-  margin-right: 8%;
-  position: relative;
-  top:60%
-}
-
-@media screen and (max-width: 480px) {
- .footerTextMobile{
-    position:static;
-  }
-  .footerDiv{
-    background-color: #6C716C; 
-  }
-  .hiddenUpperDiv {
-    visibility: hidden;
-  }
-}
-
-.addressDiv {
-  background-color: #ffffff;
-}
-
-.textBlack {
-  color: black;
-}
-
 /*navigation bar*/
 .navBar {
   background-color: #124017;
