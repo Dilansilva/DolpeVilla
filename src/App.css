@@ -178,10 +178,3 @@ li a {
   color: "#7CA844";
 }
 
-/*middle bar phone view*/
-.taransParentButton {
-  background-color: transparent;
-  background: rgba(45, 45, 45, 0.5);
-  border:1px;
-  margin:1%;
-}

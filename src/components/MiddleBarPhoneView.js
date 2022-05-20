@@ -9,19 +9,19 @@ function MiddleBarPhoneView() {
         <div style={{textAlign:"center",marginLeft:'25%',marginRight:'25%'}} className="d-grid gap-2">
             <Button size="lg" style={{margin:'1%',backgroundColor:'transparent',background:'rgba(45, 45, 45, 0.5)'}} onClick={() => {navigate("/bookings")}}>
                 MAKE A RESERVATION
-            </Button><br/>
+            </Button>
             <Button  style={{margin:'1%',backgroundColor:'transparent',border:'1px',background:'rgba(45, 45, 45, 0.5)'}}  size="lg" onClick={() => {navigate("/bookings")}}>
             CHECK IN
-            </Button><br/>
+            </Button>
             <Button  style={{margin:'1%',backgroundColor:'transparent',border:'1px',background:'rgba(45, 45, 45, 0.5)'}} size="lg" onClick={() => {navigate("/bookings")}}>
             CHECK OUT
-            </Button><br/>
+            </Button>
             <Button  style={{margin:'1%',backgroundColor:'transparent',border:'1px',background:'rgba(45, 45, 45, 0.5)'}} size="lg" onClick={() => {navigate("/bookings")}}>
             SELECT YOUR COUNTRY
-            </Button><br/>
+            </Button>
             <Button  style={{margin:'1%',backgroundColor:'transparent',border:'1px',background:'rgba(45, 45, 45, 0.5)'}} size="lg"  onClick={() => {navigate("/bookings")}}>
             BOOK NOW
-            </Button><br/>
+            </Button>
         </div>
     );
 }
