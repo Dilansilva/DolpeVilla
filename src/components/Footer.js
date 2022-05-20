@@ -33,7 +33,7 @@ function Footer() {
               <h6 className='text-uppercase fw-bold mb-4'>
                 <i className='fas fa-gem me-3'></i>Dolpe Villa
               </h6>
-              
+              <img src="https://i.postimg.cc/w3YttVFG/68681472-114368466589511-8231771088728621056-n.jpg" className="footerLogo"/>
             </div>
 
           
@@ -62,7 +62,7 @@ function Footer() {
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2022 Copyright:
-        <a className='text-reset fw-bold' href='https://mdbootstrap.com/'>
+        <a className='text-reset fw-bold' href='https://dilan-silva-my-portfoli.herokuapp.com'>
         Website Designed & Developed by D&SDeveloer
         </a>
       </div>
