@@ -14,14 +14,8 @@ function Footer() {
           <a href='https://www.facebook.com/Dolape-Villa-114357656590592' className='me-4 text-reset'>
             <i className='fab fa-facebook-f'></i>
           </a>
-          <a href='' className='me-4 text-reset'>
-            <i className='fab fa-google'></i>
-          </a>
           <a href='https://www.instagram.com/dolapevilla_ella/?igshid=YmMyMTA2M2Y=' className='me-4 text-reset'>
             <i className='fab fa-instagram'></i>
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <i className='fab fa-whatsapp'></i>
           </a>
         </div>
       </section>
