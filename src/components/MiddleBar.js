@@ -15,16 +15,16 @@ function MiddleBar() {
                   MAKE A RESERVATION
               </Button>
               <Button style={{fontWeight:'bold',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} onClick={() => {navigate("/bookings")}}>
-                  MAKE A RESERVATION
+              CHECK IN
               </Button>              
               <Button style={{fontWeight:'bold',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} onClick={() => {navigate("/bookings")}}>
-                  MAKE A RESERVATION
+              CHECK OUT
               </Button>              
               <Button style={{fontWeight:'bold',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} onClick={() => {navigate("/bookings")}}>
-                  MAKE A RESERVATION
+              SELECT YOUR COUNTRY
               </Button>              
               <Button style={{fontWeight:'bold',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} onClick={() => {navigate("/bookings")}}>
-                  MAKE A RESERVATION
+              BOOK NOW
               </Button>            
             </Navbar.Collapse>
         </Container>
