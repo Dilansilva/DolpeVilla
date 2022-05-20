@@ -82,7 +82,10 @@ function Home() {
                 <Card style={{ width: '18rem',background:'none' }}>
                     <Card.Img variant="top" src="https://i.postimg.cc/cLBgyb9t/1322232.jpg" />
                         <Card.Body>
-                            <Button variant="primary">THINGS TO DO</Button>
+                            <Button 
+                                variant="primary"
+                                onClick={() => {navigate("/things")}}
+                            >THINGS TO DO</Button>
                                 <Card.Text className="textSizeAndCOlor">
                                 Ella is probably one of Sri Lanka’s best kept secrets that offers plenty to keep you fascinated during a few nights’ stay. Apart from simply unwinding in cool climes with hypnotic views;                                 </Card.Text>
     
@@ -94,7 +97,10 @@ function Home() {
                 <Card style={{ width: '18rem',background:'none' }}>
                     <Card.Img variant="top" src="https://i.postimg.cc/d1hQNHZC/sdfdfsdf.jpg" />
                         <Card.Body>
-                            <Button variant="primary">DINNING</Button>
+                            <Button 
+                                variant="primary"
+                                onClick={() => {navigate("/dinning")}}
+                            >DINNING</Button>
                                 <Card.Text className="textSizeAndCOlor">
                                 Dining at Dolape Villa Ella is a stimulating experience. A truly unique open area restaurant Ella, the ‘Restaurant Dolape Villa’, built on a hillock that overlooks breathtaking scenery, engulfs the guests in a tantalizing dining experience.
                                 </Card.Text>
