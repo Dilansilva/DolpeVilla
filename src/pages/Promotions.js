@@ -9,7 +9,7 @@ function Promotions() {
     return (
     <>
         <div className="homeImage" style={{
-             backgroundImage: `url("https://i.postimg.cc/hPn2yPDg/118286133-312616393307498-3660786380803978693-n.jpg")`
+             backgroundImage: `url("https://i.postimg.cc/GmS8cRtH/IMG-20220519-WA0011.jpg")`
         }}>
            {
                //Middle bar
@@ -50,7 +50,7 @@ function Promotions() {
         </div>
         {/*Blue Area */}
         <div className="blueArea" style={{
-             backgroundImage: `url("https://i.postimg.cc/59SQrmgR/5-17-2022-11-30-13-AM.jpg")`
+             backgroundImage: `url("https://i.postimg.cc/hPn2yPDg/118286133-312616393307498-3660786380803978693-n.jpg")`
         }}>
            {
                //Middle bar
