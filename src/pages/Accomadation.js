@@ -35,6 +35,13 @@ const itemDataAttic = [
       {
         img: "https://i.postimg.cc/tJRVHmnp/1344173.jpg",
         title: 'Basketball',
+      }, {
+        img: "https://i.postimg.cc/3Rdrw0yG/IMG-2638.jpg",
+        title: 'Basketball',
+      },
+      {
+        img: "https://i.postimg.cc/TP2YZ4fC/IMG-2642.jpg",
+        title: 'Basketball',
       },
 ];
 
@@ -772,9 +779,10 @@ const Accomadation = () => {
 
     return (
         <>
-             <div className="homeImage" style={{
-             backgroundImage: `url(${"https://i.postimg.cc/x8Tr4cRw/1322226.jpg"})`
-        }}>
+         {/* backgroundImage: `url(${"https://i.postimg.cc/x8Tr4cRw/1322226.jpg"})` */}
+             <div className="homeImage" style={{backgroundImage: `url(${"https://i.postimg.cc/x8Tr4cRw/1322226.jpg"})`
+
+           }}>
              {
                //Middle bar
            }
@@ -790,7 +798,7 @@ const Accomadation = () => {
         </div>
 
         <div  className="homeImage" style={{
-             backgroundImage: `url(${"https://i.postimg.cc/N06TMVxs/107211990-297877908238565-7498320495348409177-n.jpg"})`,
+             backgroundImage: `url(${"https://i.postimg.cc/59C8tXWL/5-19-2022-10-57-41-PM.jpg"})`,
         }}>
         <div className="secondDiv">
            <br/><br/><br/>
