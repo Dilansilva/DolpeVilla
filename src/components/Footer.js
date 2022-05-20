@@ -18,46 +18,11 @@ function Footer() {
     
               <a
                 className='btn btn-primary btn-floating m-1'
-                style={{ backgroundColor: '#55acee' }}
-                href='#!'
-                role='button'
-              >
-                <MDBIcon fab icon='twitter' />
-              </a>
-    
-              <a
-                className='btn btn-primary btn-floating m-1'
-                style={{ backgroundColor: '#dd4b39' }}
-                href='#!'
-                role='button'
-              >
-                <MDBIcon fab icon='google' />
-              </a>
-              <a
-                className='btn btn-primary btn-floating m-1'
                 style={{ backgroundColor: '#ac2bac' }}
-                href='#!'
+                href='https://www.instagram.com/dolapevilla_ella/?igshid=YmMyMTA2M2Y='
                 role='button'
               >
                 <MDBIcon fab icon='instagram' />
-              </a>
-    
-              <a
-                className='btn btn-primary btn-floating m-1'
-                style={{ backgroundColor: '#0082ca' }}
-                href='#!'
-                role='button'
-              >
-                <MDBIcon fab icon='linkedin-in' />
-              </a>
-    
-              <a
-                className='btn btn-primary btn-floating m-1'
-                style={{ backgroundColor: '#333333' }}
-                href='#!'
-                role='button'
-              >
-                
               </a>
             </section>
           </div>
