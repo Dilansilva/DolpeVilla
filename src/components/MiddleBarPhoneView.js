@@ -22,15 +22,16 @@ function MiddleBarPhoneView() {
                 </Navbar.Toggle>
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home">Home</Nav.Link>
-                        <Nav.Link href="#link">Link</Nav.Link>
-                        <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-                        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-                        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-                        <NavDropdown.Divider />
-                        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
-                        </NavDropdown>
+                        <Nav.Link href="#features">COVID-19 UPDATES</Nav.Link>
+                        <Nav.Link href="#pricing">GALLERY</Nav.Link>
+                        <Nav.Link href="#features">CONTACT US</Nav.Link>
+                        <Nav.Link href="#pricing">PROMOTIONS</Nav.Link>
+                        <Nav.Link href="#features">HOME</Nav.Link>
+                        <Nav.Link href="/location">LOCATION</Nav.Link>
+                        <Nav.Link href="#features">ACCOMMODATION</Nav.Link>
+                        <Nav.Link href="#pricing">FACILITIES</Nav.Link>
+                        <Nav.Link href="#features">DINNING</Nav.Link>
+                        <Nav.Link href="#pricing">THINGS TO DO</Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
