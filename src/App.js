@@ -20,7 +20,7 @@ function App() {
   return (
     <Router>
       <div>
-        
+        <Header/>
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='location' element={<Location/>}/>
