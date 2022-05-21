@@ -6,6 +6,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 
 import MiddleBar from "../components/MiddleBar";
+import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 import {useNavigate} from "react-router-dom";
 
 function getWindowDimensions() {
@@ -807,34 +808,123 @@ const {height,width} = useWindowDimensions();
     return (
         <>
          {/* backgroundImage: `url(${"https://i.postimg.cc/x8Tr4cRw/1322226.jpg"})` */}
-             <div className="homeImage" style={{backgroundImage: `url(${"https://i.postimg.cc/x8Tr4cRw/1322226.jpg"})`
+            {
+               width > 480 ? <div className="homeImage" style={{backgroundImage: `url(${"https://i.postimg.cc/x8Tr4cRw/1322226.jpg"})`
 
-           }}>
-             {
-               //Middle bar
-           }
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-            <MiddleBar/>
-        </div>
+              }}>
+                {
+                  //Middle bar
+              }
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+               <MiddleBar/>
+           </div> : <MiddleBarPhoneView/>
+            }
 
-        <div  className="homeImage" style={{
-             backgroundImage: `url(${"https://i.postimg.cc/59C8tXWL/5-19-2022-10-57-41-PM.jpg"})`,
-        }}>
-        <div className="secondDiv">
-           <br/><br/><br/>
-           {middleSHow()}
-           <br/><br/><br/>
-           {showPictures()}
-           <br/><br/>
-        </div>
-        </div>
+    {
+      width > 480 ?
+      <div  className="homeImage" style={{
+        backgroundImage: `url(${"https://i.postimg.cc/59C8tXWL/5-19-2022-10-57-41-PM.jpg"})`,
+      }}>
+      <div className="secondDiv">
+          <br/><br/><br/>
+          {middleSHow()}
+          <br/><br/><br/>
+          {showPictures()}
+          <br/><br/>
+      </div>
+      </div> : 
+       <div>
+       <div style={{textAlign:'start',padding:'10%',background:'#030F51'}}>
+        <h1 className="dolpeText locationText">Relaxation , Beautiful view and in luxurious comfort.</h1>
+            <br/><p style={{color:'white'}}>
+            The Villa is made up of several beautifully suites
+            tucked within the levelled landscape. making it one 
+            of the most beautiful views in Sri Lanka. There is ample 
+            space for parking and the suites with the view making it 
+            ideal for a quiet holiday of pure relaxation; for honeymooners 
+            or even for families. Each suites,rooms opens up to scenic views 
+            of the misty mountains,Ravana ella waterfall and is equipped with 
+            all modern amenities that ensure a luxurious, comfortable stay.<br/><br/>
+            Guests have the option of booking this Whole Villa for a group 
+            to accommodate a maximum number of persons per room.
+            </p>
+       </div>
+
+      <div style={{textAlign:'center',padding:'10%',background:'#030F51'}}>
+            <Card >
+                <Card.Img variant="top" src="https://i.postimg.cc/Y9sZRCVW/285441365.jpg" />
+                <Card.Body>
+                    <Card.Title className="dolpeText locationText"><h1>Attic Suite room</h1></Card.Title>
+                    <Card.Text>
+                    This elegant and spacious suite comes with a living and balcony 
+                    area which opens out to the stunning views of the Ella Gap & 
+                    the Ravana Ella Waterfall. The room is equipped with a large 
+                    ensuite bathroom.<br/><br/>
+
+                    The suite also comes with a kitchenette equipped with electric
+                    kettle, cutlery, glassware, crockery and includes a butler 
+                    service to enhance the holiday experience.<br/><br/>
+
+                    The rooms have a luxury carpet floor and elegant furnitures.
+                    Walk barefoot and feel the soothing comfort of the floors!<br/><br/>
+
+                    The bathrooms are finished in titanium cement, completed with a 
+                    shower cubicle with hot and cold water and a wash basin to 
+                    complement the luxurious interior.
+                    
+
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+            <br/>
+            <Card >
+                <Card.Img variant="top" src="https://i.postimg.cc/ryYbnfZL/Weather-in-Ella.jpg" />
+                <Card.Body>
+                    <Card.Title className="dolpeText locationText"><h1>Deluxe Room</h1></Card.Title>
+                    <Card.Text>
+                    Super Deluxe rooms have its own private living area and offer 
+                    breathtaking views of the Ella Gap and the Ravana Ella Waterfall 
+                    that makes Dolape Villa Ella one of the most preferred Ella hotels in 
+                    Sri Lanka to spend your precious holiday at.<br/><br/>
+
+                    The veranda is ideal for lingering over breakfast, to watch a sunrise or 
+                    to simply gaze at the magnificent Ella mountain range.<br/><br/>
+
+                    The rooms have beautiful polished titanium cement floors and elegant furnitures.
+                    Walk barefoot and feel the soothing comfort of the floors!<br/><br/>
+
+                    The bathrooms are finished in titanium cement, completed with a bathtub with hot
+                    and cold water and a wash basin to complement the luxurious interior.
+
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+            <br/>
+            <Card >
+                <Card.Img variant="top" src="https://i.postimg.cc/gjL2p5Tv/1344105.jpg" />
+                <Card.Body>
+                    <Card.Title className="dolpeText locationText"><h1>Excursion</h1></Card.Title>
+                    <Card.Text>
+                    Ella has plenty to offer that could keep you fascinated and occupied
+                    during a few nights’ stay. Apart from the mesmerizing views of mountains
+                    and tea estates, the region provides shelter to many precious flora and fauna.
+                    In addition to simply unwinding in the cool climes you could set out on a 
+                    trekking adventure or safari to a nearby wildlife sanctuary as part of excursions
+                    in Ella to discover and experience some of these delicate wonders of nature
+                    up- close.
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+      </div>
+   </div> 
+    }
         </>
     );
 }
