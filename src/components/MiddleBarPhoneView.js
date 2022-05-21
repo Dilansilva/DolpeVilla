@@ -8,34 +8,36 @@ function MiddleBarPhoneView() {
     const navigate = useNavigate();
     return(
         <>
-            <Navbar style={{background:'transparent'}} expand="lg">
-                <Container>
-                    <Navbar.Brand href="#home">
-                    <img src="https://i.postimg.cc/w3YttVFG/68681472-114368466589511-8231771088728621056-n.jpg" style={{height:'80px'}}/>
+           {
+            //     <Navbar style={{background:'transparent'}} expand="lg">
+            //     <Container>
+            //         <Navbar.Brand href="#home">
+            //         <img src="https://i.postimg.cc/w3YttVFG/68681472-114368466589511-8231771088728621056-n.jpg" style={{height:'80px'}}/>
 
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav">
-                    <span>
-                    <FiAlignJustify
-                    />
-                    </span>
-                </Navbar.Toggle>
-                    <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
-                        <Nav.Link href="#features">COVID-19 UPDATES</Nav.Link>
-                        <Nav.Link href="#pricing">GALLERY</Nav.Link>
-                        <Nav.Link href="#features">CONTACT US</Nav.Link>
-                        <Nav.Link href="#pricing">PROMOTIONS</Nav.Link>
-                        <Nav.Link href="#features">HOME</Nav.Link>
-                        <Nav.Link href="/location">LOCATION</Nav.Link>
-                        <Nav.Link href="#features">ACCOMMODATION</Nav.Link>
-                        <Nav.Link href="#pricing">FACILITIES</Nav.Link>
-                        <Nav.Link href="#features">DINNING</Nav.Link>
-                        <Nav.Link href="#pricing">THINGS TO DO</Nav.Link>
-                    </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+            //         </Navbar.Brand>
+            //         <Navbar.Toggle aria-controls="basic-navbar-nav">
+            //         <span>
+            //         <FiAlignJustify
+            //         />
+            //         </span>
+            //     </Navbar.Toggle>
+            //         <Navbar.Collapse id="basic-navbar-nav">
+            //         <Nav className="me-auto">
+            //             <Nav.Link href="#features">COVID-19 UPDATES</Nav.Link>
+            //             <Nav.Link href="#pricing">GALLERY</Nav.Link>
+            //             <Nav.Link href="#features">CONTACT US</Nav.Link>
+            //             <Nav.Link href="#pricing">PROMOTIONS</Nav.Link>
+            //             <Nav.Link href="#features">HOME</Nav.Link>
+            //             <Nav.Link href="/location">LOCATION</Nav.Link>
+            //             <Nav.Link href="#features">ACCOMMODATION</Nav.Link>
+            //             <Nav.Link href="#pricing">FACILITIES</Nav.Link>
+            //             <Nav.Link href="#features">DINNING</Nav.Link>
+            //             <Nav.Link href="#pricing">THINGS TO DO</Nav.Link>
+            //         </Nav>
+            //         </Navbar.Collapse>
+            //     </Container>
+            // </Navbar>
+           }
             <div style={{textAlign:"center"
                         ,padding:'15%',
                         backgroundImage:`url("https://i.postimg.cc/gc7DNV6B/48800644637-e09e7ecc6b-b.jpg")`,
