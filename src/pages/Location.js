@@ -330,6 +330,37 @@ function Location() {
                             </Card.Text>
                         </Card.Body>
                     </Card>
+                    <br/>
+                    <Card >
+                        <Card.Img variant="top" src="https://i.postimg.cc/ryYbnfZL/Weather-in-Ella.jpg" />
+                        <Card.Body>
+                            <Card.Title className="dolpeText locationText"><h1>Weather</h1></Card.Title>
+                            <Card.Text>
+                            The climate at Dolape Villa Ella remains a comfortable 
+                            20-28 degrees Celsius throughout the year, thereby giving
+                            the weather in Ella a ‘not too cold, not too hot’ comfort factor.<br/><br/>
+
+                            The weather pattern in the locality of the resort is 
+                            recognised as being the most comfortable in the entire country.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+                    <br/>
+                    <Card >
+                        <Card.Img variant="top" src="https://i.postimg.cc/gjL2p5Tv/1344105.jpg" />
+                        <Card.Body>
+                            <Card.Title className="dolpeText locationText"><h1>Excursion</h1></Card.Title>
+                            <Card.Text>
+                            Ella has plenty to offer that could keep you fascinated and occupied
+                            during a few nights’ stay. Apart from the mesmerizing views of mountains
+                            and tea estates, the region provides shelter to many precious flora and fauna.
+                            In addition to simply unwinding in the cool climes you could set out on a 
+                            trekking adventure or safari to a nearby wildlife sanctuary as part of excursions
+                            in Ella to discover and experience some of these delicate wonders of nature
+                            up- close.
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
               </div>
            </div> 
       }
