@@ -658,7 +658,7 @@ const Accomadation = () => {
                                 <li className="list"><a href="#contact">Hot tub</a></li>
                                 <li className="list"><a href="#home">Linens</a></li>
                                 <li className="list"><a href="#home">Kitchenette</a></li>
-                                <li className="list"><a href="#home">Satellite channels</a></li>                                <li><a href="#news">Satellite channels</a></li>
+                                <li className="list"><a href="#home">Satellite channels</a></li>
                                 <li className="list"><a href="#contact">Sitting area</a></li>
                                 <li className="list"><a href="#home">Fan</a></li>
                                 <li className="list"><a href="#news">Flat-screen TV</a></li>
