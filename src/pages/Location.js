@@ -365,19 +365,21 @@ function Location() {
            </div> 
       }
         {/*Blue Area */}
-        <div className="blueArea" style={{
-             backgroundImage: `url("https://i.postimg.cc/05FHfn94/mini-adams-peak-1-7.jpg")`
-        }}>
-           {
-               //Middle bar
-           }
-       <Container style={{textAlign:'center'}}>
-        <br/>
-           {showPictures()}
-        <br/>
-       </Container>
-           
-        </div>
+     {
+           width > 480 ? <div className="blueArea" style={{
+                backgroundImage: `url("https://i.postimg.cc/05FHfn94/mini-adams-peak-1-7.jpg")`
+           }}>
+              {
+                  //Middle bar
+              }
+          <Container style={{textAlign:'center'}}>
+           <br/>
+              {showPictures()}
+           <br/>
+          </Container>
+              
+           </div> : null
+     }
     </>
     );
 }
