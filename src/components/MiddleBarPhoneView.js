@@ -6,7 +6,7 @@ import {useNavigate} from "react-router-dom";
 function MiddleBarPhoneView() {
     const navigate = useNavigate();
     return(
-        <div style={{textAlign:"center",marginLeft:'25%',marginRight:'25%'}} className="d-grid gap-2">
+        <div style={{textAlign:"center",padding:'15%',backgroundImage:`url("https://i.postimg.cc/gc7DNV6B/48800644637-e09e7ecc6b-b.jpg")`}} className="d-grid gap-2">
             <Button size="lg" style={{margin:'1%',backgroundColor:'transparent',background:'rgba(45, 45, 45, 0.5)'}} onClick={() => {navigate("/bookings")}}>
                 MAKE A RESERVATION
             </Button>
