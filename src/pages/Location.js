@@ -4,6 +4,7 @@ import MiddleBar from "../components/MiddleBar";
 
 import { Col, Container, Row, Card } from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
+import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -254,31 +255,36 @@ function Location() {
 
     return (
     <>
-        <div className="homeImage" style={{
-             backgroundImage: `url("https://i.postimg.cc/gjL2p5Tv/1344105.jpg")`
-        }}>
-           {
-               //Middle bar
-           }
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <MiddleBar/>
-        </div>
+       {
+             width > 480 ?
+            <div className="homeImage" style={{
+                backgroundImage: `url("https://i.postimg.cc/gjL2p5Tv/1344105.jpg")`
+           }}>
+              {
+                  //Middle bar
+              }
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <MiddleBar/>
+           </div> : <MiddleBarPhoneView/>
+       }
         {/*Dolpe Villa Ella, Sri lanka */}
-        <div  className="homeImage" style={{
-             backgroundImage: `url("https://i.postimg.cc/R0702S9z/OG12-31702f1ced68599661aa.jpg")`,}}>
-        <div className="secondDiv">
-           <br/><br/><br/>
-            {middleSHow()}
-           <br/><br/><br/>
-        </div>
-        </div>
+      {
+            width > 480 ? <div  className="homeImage" style={{
+                backgroundImage: `url("https://i.postimg.cc/R0702S9z/OG12-31702f1ced68599661aa.jpg")`,}}>
+           <div className="secondDiv">
+              <br/><br/><br/>
+               {middleSHow()}
+              <br/><br/><br/>
+           </div>
+           </div> : null
+      }
         {/*Blue Area */}
         <div className="blueArea" style={{
              backgroundImage: `url("https://i.postimg.cc/05FHfn94/mini-adams-peak-1-7.jpg")`
