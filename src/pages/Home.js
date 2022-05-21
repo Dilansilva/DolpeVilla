@@ -11,26 +11,33 @@ function Home() {
 
     return (
     <>
-        <div className="homeImage" style={{
-             backgroundImage: `url("https://i.postimg.cc/kMWbwv7t/DSC01499.jpg")`
-        }}>
-           {
-               //Middle bar
-           }
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-          
-           <MiddleBar/>
-        </div>
+       {
+           
+            <div className="homeImage" style={{
+                backgroundImage: `url("https://i.postimg.cc/kMWbwv7t/DSC01499.jpg")`
+           }}>
+              {
+                  //Middle bar
+              }
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+             
+              <MiddleBar/>
+           </div>
+       }
+        
+        {
+            //<MiddleBarPhoneView/> 
+        }            
         {/*Dolpe Villa Ella, Sri lanka */}
         <div style={{backgroundColor:'#1F211F'}}>
-        <div className="secondDiv">
+        <div className="secondDiv secondDivmobile">
            <br/><br/><br/>
            <h4 className="dolpeText">Dolpe Villa Ella, Sri lanka</h4>
            <br/><br/>
@@ -55,7 +62,7 @@ function Home() {
         </div>
         </div>
         {/*Blue Area */}
-        <div className="blueArea" style={{
+        <div className="blueArea " style={{
              backgroundImage: `url("https://i.postimg.cc/RZbNxSW3/DSC01499.jpg")`
         }}>
            {
