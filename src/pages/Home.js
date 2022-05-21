@@ -34,7 +34,7 @@ function Home() {
     return (
     <>
        {
-           width < 480 ?
+           width > 480 ?
             <div className="homeImage" style={{
                 backgroundImage: `url("https://i.postimg.cc/kMWbwv7t/DSC01499.jpg")`
            }}>

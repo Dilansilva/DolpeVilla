@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
 
@@ -9,10 +9,37 @@ import TextField from '@mui/material/TextField';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
+import {useNavigate} from "react-router-dom";
+import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
+
+function getWindowDimensions() {
+    const { innerWidth: width } = window;
+    return {
+      width
+    };
+  }
 
 const color = "white";
 
 function Bookings() {
+    const navigate = useNavigate();
+
+    function useWindowDimensions() {
+        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+  
+    useEffect(() => {
+      function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+      }
+  
+      window.addEventListener('resize', handleResize);
+      return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    return windowDimensions;
+  }
+
+  const {height,width} = useWindowDimensions();
+
     const [value, setValue] = React.useState(new Date('2014-08-18T21:11:54'));
 
     const handleChange = (newValue) => {
@@ -20,22 +47,25 @@ function Bookings() {
     };
     return (
     <>
-        <div className="homeImage" style={{
-             backgroundImage: `url("https://i.postimg.cc/J05cnNnQ/bookings-Back.jpg")`
-        }}>
-           {
-               //Middle bar
-           }
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <MiddleBar/>
-        </div>
+       {
+           width > 480 ? 
+           <div className="homeImage" style={{
+                backgroundImage: `url("https://i.postimg.cc/J05cnNnQ/bookings-Back.jpg")`
+           }}>
+              {
+                  //Middle bar
+              }
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <MiddleBar/>
+           </div> : <MiddleBarPhoneView/>
+       }
         {/*Dolpe Villa Ella, Sri lanka */}
         <div style={{backgroundColor:'#1F211F'}}><br/>
             <div style={{textAlign:'center'}}><h3 className="dolpeText">Reservation Application</h3></div>
