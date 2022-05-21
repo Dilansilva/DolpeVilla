@@ -2,7 +2,7 @@ import React,{useState,useEffect} from "react";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
 
-import { Col, Container, Row, Card } from "react-bootstrap";
+import { Col, Container, Row, Card,Button } from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 
@@ -283,7 +283,55 @@ function Location() {
                {middleSHow()}
               <br/><br/><br/>
            </div>
-           </div> : null
+           </div>
+            :
+           <div>
+               <div style={{textAlign:'start',padding:'10%',background:'#030F51'}}>
+                <h1 className="dolpeText locationText">Dolape Villa standing on exquisite beauty in Ella, Sri Lanka.</h1>
+                    <p style={{color:'white'}}>
+                    Ella is a small village located among the peaks of Sri Lanka’s 
+                    central highlands. This sleepy village is nestled in a valley 
+                    peering straight through the Ella Gap to the plain nearly 
+                    1000m below and across to the coastline. Apart from the 
+                    mesmerizing natural views, Ella is surrounded by hilly 
+                    countryside perfect for walks; through tea plantations, 
+                    waterfalls, ancient temples and artefacts. With a handful 
+                    of shops, hotels and guesthouses, Ella still remains a 
+                    remote hamlet. This hidden sanctuary with the perfect climate
+                    is probably one of the best-kept secrets of the country and 
+                    is easily accessible from the comfort of our Ella resort in Sri Lanka.
+                    </p>
+               </div>
+
+              <div style={{textAlign:'center',padding:'10%',background:'#030F51'}}>
+                    <Card >
+                        <Card.Img variant="top" src="https://i.postimg.cc/3JXZwqt5/ella-s-pretty-train-station-quaint-has-won-best-kept-station-award-built-british-station-one-12262.jpg" />
+                        <Card.Body>
+                            <Card.Title className="dolpeText locationText"><h1>Transport</h1></Card.Title>
+                            <Card.Text>
+                            Featuring among Ella resorts, Dolape Villa is easy to locate 
+                            right across and facing ‘Little Adams Peak’. The resort is easily
+                             reached from any location below:<br/><br/>
+
+                            10 km from Ella junction/railway station (5 mins)
+                            17 km from Bandarawela (30 mins)
+                            63.5 km from Nuwara Eliya (1.30 hours)
+                            140 km wild life sanctuary Yala (2 hours)
+                            239 km from Bandaranayake International Airport (5 to 6 hours)
+                            202 km from Colombo (5 to 6 hours)
+                            145 km from Kandy (3 to 4 hours)<br/><br/>
+
+                            Please CONTACT US FOR directions / transport arrangements or to arrange a pick up from any location below.
+                            Bandaranayake International Airport
+                            Weerawila Mahinda Rajapakshe International Airport
+                            Colombo
+                            Nearest City / Town
+                            Railway / Bus Station
+                            </Card.Text>
+                        </Card.Body>
+                    </Card>
+              </div>
+           </div> 
       }
         {/*Blue Area */}
         <div className="blueArea" style={{
