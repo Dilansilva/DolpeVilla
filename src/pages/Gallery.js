@@ -827,6 +827,10 @@ const Gallery = () => {
                                 <GalleryCarousel
                                     items={itemDataCycle}
                                     title="Cycling and Safari"
+                                /><br/>
+                                <GalleryCarousel
+                                    items={itemDataCulture}
+                                    title="Cultural Events"
                                 />
                             </div>
                     </div>
