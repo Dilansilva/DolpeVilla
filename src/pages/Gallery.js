@@ -1,6 +1,9 @@
 import React,{useState,useEffect} from "react";
 import '../../src/App.css';
+
 import MiddleBar from "../components/MiddleBar";
+import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
+
 import { Col, Container, Row} from "react-bootstrap";
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
@@ -561,22 +564,24 @@ const Gallery = () => {
 
     return(
             <>
-                <div className="homeImage" style={{
-                     backgroundImage: `url("https://i.postimg.cc/0N7xsywn/1344220.jpg")`
-                }}>
-                   {
-                       //Middle bar
-                   }
-                   <br/><br/><br/>
-                   <br/><br/><br/>
-                   <br/><br/><br/>
-                   <br/><br/><br/>
-                   <br/><br/><br/>
-                   <br/><br/><br/>
-                   <br/><br/><br/>
-                   <br/><br/><br/>
-                   <MiddleBar/>
-                </div>
+                {
+                    width > 480 ? <div className="homeImage" style={{
+                        backgroundImage: `url("https://i.postimg.cc/0N7xsywn/1344220.jpg")`
+                   }}>
+                      {
+                          //Middle bar
+                      }
+                      <br/><br/><br/>
+                      <br/><br/><br/>
+                      <br/><br/><br/>
+                      <br/><br/><br/>
+                      <br/><br/><br/>
+                      <br/><br/><br/>
+                      <br/><br/><br/>
+                      <br/><br/><br/>
+                      <MiddleBar/>
+                   </div> : <MiddleBarPhoneView/>
+                }
                 {/*Dolpe Villa Ella, Sri lanka */}
                 <div style={{backgroundColor:'#1F211F'}}>
                 <div className="secondDiv"><br/>
