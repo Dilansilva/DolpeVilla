@@ -4,16 +4,11 @@ import { Modal } from "react-bootstrap";
 const AccModal = (props) => {
     return (
         <>
-            <Modal show={props.show} onHide={props.handleShow}>
+            <Modal show={props.show} onHide={props.handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>{props.title}</Modal.Title>
+                    <Modal.Title>{props.header}</Modal.Title>
                 </Modal.Header>
-                    <Modal.Body><div>{props.body}</div></Modal.Body>
-                <Modal.Footer>
-                    <Button variant="secondary" onClick={handleClose}>
-                        Close
-                    </Button>
-                </Modal.Footer>
+                    <Modal.Body style={{backgroundColor:'black'}}><div>{props.body}</div></Modal.Body>
             </Modal>
         </>
     );
