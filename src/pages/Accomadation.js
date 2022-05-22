@@ -805,6 +805,11 @@ const {height,width} = useWindowDimensions();
         }
     }
 
+    const [showAttic, setShowAttic] = useState(false);
+
+    const handleCloseAttic = () => setShow(false);
+    const handleShowAttic = () => setShow(true);
+
     return (
         <>
          {/* backgroundImage: `url(${"https://i.postimg.cc/x8Tr4cRw/1322226.jpg"})` */}
@@ -864,14 +869,14 @@ const {height,width} = useWindowDimensions();
                   <Card.Title>
                     <Carousel>
                     {itemDataAttic.map((item) => (
-                  <Carousel.Item key={item.img}>
-                    <img
-                     className="d-block w-100"
-                      src={`${item.img}`}
-                      alt={item.title}
-                    />
-                  </Carousel.Item>
-                ))}
+                      <Carousel.Item key={item.img}>
+                        <img
+                        className="d-block w-100"
+                          src={`${item.img}`}
+                          alt={item.title}
+                        />
+                      </Carousel.Item>
+                    ))}
                     </Carousel>
                   </Card.Title>
                     <Card.Title className="dolpeText locationText"><h1>Attic Suite room</h1></Card.Title>
@@ -890,7 +895,7 @@ const {height,width} = useWindowDimensions();
 
                     The bathrooms are finished in titanium cement, completed with a 
                     shower cubicle with hot and cold water and a wash basin to 
-                    complement the luxurious interior.
+                    complement the luxurious interior.<br/><a><span style={{color:'blue'}}>SEE MORE</span></a>
                     
 
                     </Card.Text>
