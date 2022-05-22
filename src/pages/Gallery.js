@@ -815,6 +815,10 @@ const Gallery = () => {
                                 <GalleryCarousel
                                     items={itemDataPool}
                                     title="Natural Pool"
+                                /><br/>
+                                <GalleryCarousel
+                                    items={itemDataRifle}
+                                    title="Air Rifle And Archery"
                                 />
                             </div>
                     </div>
