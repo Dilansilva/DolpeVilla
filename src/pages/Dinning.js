@@ -405,26 +405,12 @@ const Dinnning = () => {
                    ))}
                    </Carousel>
                  </Card.Title>
-                   <Card.Title className="dolpeText locationText"><h1>Attic Suite room</h1></Card.Title>
+                   <Card.Title className="dolpeText locationText"><h1>Dolape Rill Restautant</h1></Card.Title>
                    <Card.Text>
-                   This elegant and spacious suite comes with a living and balcony 
-                   area which opens out to the stunning views of the Ella Gap & 
-                   the Ravana Ella Waterfall. The room is equipped with a large 
-                   ensuite bathroom.<br/><br/>
-
-                   The suite also comes with a kitchenette equipped with electric
-                   kettle, cutlery, glassware, crockery and includes a butler 
-                   service to enhance the holiday experience.<br/><br/>
-
-                   The rooms have a luxury carpet floor and elegant furnitures.
-                   Walk barefoot and feel the soothing comfort of the floors!<br/><br/>
-
-                   The bathrooms are finished in titanium cement, completed with a 
-                   shower cubicle with hot and cold water and a wash basin to 
-                   complement the luxurious interior.
-                   <br/><a onClick={handleShowAttic}><span style={{color:'blue'}}>SEE MORE</span></a>
-                   
-
+                    Dining at Dolape Villa Ella is a stimulating experience. A truly unique open 
+                    area restaurant Ella, the ‘Dolape Rill Restaurant’, built on a hillock that 
+                    overlooks breathtaking scenery, engulfs the guests in a tantalizing dining
+                    experience.
                    </Card.Text>
                </Card.Body>
            </Card>
@@ -445,25 +431,11 @@ const Dinnning = () => {
                     ))}
                     </Carousel>
                   </Card.Title>
-                    <Card.Title className="dolpeText locationText"><h1>Attic Suite room</h1></Card.Title>
+                    <Card.Title className="dolpeText locationText"><h1>Garden Dinning</h1></Card.Title>
                     <Card.Text>
-                    This elegant and spacious suite comes with a living and balcony 
-                    area which opens out to the stunning views of the Ella Gap & 
-                    the Ravana Ella Waterfall. The room is equipped with a large 
-                    ensuite bathroom.<br/><br/>
-
-                    The suite also comes with a kitchenette equipped with electric
-                    kettle, cutlery, glassware, crockery and includes a butler 
-                    service to enhance the holiday experience.<br/><br/>
-
-                    The rooms have a luxury carpet floor and elegant furnitures.
-                    Walk barefoot and feel the soothing comfort of the floors!<br/><br/>
-
-                    The bathrooms are finished in titanium cement, completed with a 
-                    shower cubicle with hot and cold water and a wash basin to 
-                    complement the luxurious interior.<br/><a onClick={handleShowAttic}><span style={{color:'blue'}}>SEE MORE</span></a>
-                    
-
+                    Dining at Dolape Villa Ella is a stimulating experience. A truly unique open area
+                    restaurant Ella, the ‘Restaurant Dolape Villa’, built on a hillock that overlooks
+                    breathtaking scenery, engulfs the guests in a tantalizing dining experience.
                     </Card.Text>
                 </Card.Body>
             </Card>
