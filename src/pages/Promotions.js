@@ -1,29 +1,59 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
+import {useNavigate} from "react-router-dom";
+import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
 
+function getWindowDimensions() {
+    const { innerWidth: width } = window;
+    return {
+      width
+    };
+  }
+
 
 function Promotions() {
+
+    const navigate = useNavigate();
+
+    function useWindowDimensions() {
+        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+    useEffect(() => {
+        function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    return windowDimensions;
+    }
+
+    const {height,width} = useWindowDimensions();
+
     return (
     <>
-        <div className="homeImage" style={{
-             backgroundImage: `url("https://i.postimg.cc/GmS8cRtH/IMG-20220519-WA0011.jpg")`
-        }}>
-           {
-               //Middle bar
-           }
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <MiddleBar/>
-        </div>
+       {
+            width > 480 ? <div className="homeImage" style={{
+                backgroundImage: `url("https://i.postimg.cc/GmS8cRtH/IMG-20220519-WA0011.jpg")`
+           }}>
+              {
+                  //Middle bar
+              }
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <MiddleBar/>
+           </div> : <MiddleBarPhoneView/>
+       }
         {/*Dolpe Villa Ella, Sri lanka */}
         <div style={{backgroundColor:'#1F211F'}}>
         <div className="secondDiv">
