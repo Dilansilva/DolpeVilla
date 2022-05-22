@@ -824,7 +824,10 @@ const Gallery = () => {
                                     items={itemDataBird}
                                     title="Bird and Animal Watching"
                                 /><br/>
-                                
+                                <GalleryCarousel
+                                    items={itemDataCycle}
+                                    title="Cycling and Safari"
+                                />
                             </div>
                     </div>
                 }
