@@ -352,6 +352,73 @@ const standardDetails = <div>
 <div><b>Parking: </b>Available</div>
 </div>
 
+const budgetDetails = <div>
+<div>
+    <Badge bg="light" text="dark">Size 47 m²</Badge>{" "}
+    <Badge bg="light" text="dark">Landmark View</Badge>{" "}
+    <Badge bg="light" text="dark">Attached bathroom</Badge>{" "}
+    <Badge bg="light" text="dark">Patio</Badge>{" "}
+    <Badge bg="light" text="dark">Garden View</Badge>{" "}<br/>
+
+    <Badge bg="light" text="dark">Pool View</Badge>{" "}
+    <Badge bg="light" text="dark">Mountain View</Badge>{" "}
+    <Badge bg="light" text="dark">Waterfall View</Badge>{" "}<br/>
+
+    <Badge bg="light" text="dark">Terrace</Badge>{" "}
+    <Badge bg="light" text="dark">Free WiFi</Badge>{" "}
+</div>
+
+<div>
+    <b>In your private bathroom: </b>
+</div>
+
+<div>
+    <ul className="unOrderdList">
+        <li className="list"><a href="#home">Free toiletries</a></li>
+        <li className="list"><a href="#news">Bathrobe</a></li>
+        <li className="list"><a href="#contact">Bathtub or Shower</a></li>
+        <li className="list"><a href="#home">towels</a></li>
+        <li className="list"><a href="#news">Toilet Paper</a></li>
+        <li className="list"><a href="#contact">Hairdryer</a></li>
+    </ul>
+</div>
+
+<div><b>View:</b></div>
+
+<div>
+    <ul className="unOrderdList">
+        <li className="list"><a href="#home">Garden View</a></li>
+        <li className="list"><a href="#news">Pool View</a></li>
+        <li className="list"><a href="#contact">Mountain View</a></li>
+        <li className="list"><a href="#home">River View</a></li>
+        <li className="list"><a href="#news">Waterfall View</a></li>
+        <li className="list"><a href="#contact">Landmark VIew</a></li>
+    </ul>
+</div>
+
+<div><b>Facilities :</b></div>
+
+<div>
+    <ul className="unOrderdList">
+        <li className="list"><a href="#news">Cleaning products</a></li>
+        <li className="list"><a href="#contact">Hand Sanitizer</a></li>
+        <li className="list"><a href="#home">Linens</a></li>
+        <li className="list"><a href="#home">Socket near the bed</a></li>
+        <li className="list"><a href="#home">Board / card games</a></li>                                <li><a href="#news">Satellite channels</a></li>
+        <li className="list"><a href="#contact">Sitting area</a></li>
+        <li className="list"><a href="#home">Mosquito net</a></li>
+        <li className="list"><a href="#news">Dining table</a></li>
+        <li className="list"><a href="#contact">Private entrance</a></li>
+        <li className="list"><a href="#home">Fan</a></li>
+        <li className="list"><a href="#news">Patio</a></li>
+        <li className="list"><a href="#contact">Wake-up service/Alarm clock</a></li>
+    </ul>
+</div>
+
+<div><b>Smoking: </b>Smoking Not allowed inside the room</div><br/>
+<div><b>Parking: </b>Available</div>
+</div>
+
 const itemDatastandard = [
     {
         img: "https://i.postimg.cc/xdh4rxGB/1322864-3ee46b7fd4122724c899.jpg",
@@ -739,72 +806,7 @@ const {height,width} = useWindowDimensions();
               </ImageList>
                    </Col>
                    <Col sm={6}>
-                        <div>
-                            <div>
-                                <Badge bg="light" text="dark">Size 47 m²</Badge>{" "}
-                                <Badge bg="light" text="dark">Landmark View</Badge>{" "}
-                                <Badge bg="light" text="dark">Attached bathroom</Badge>{" "}
-                                <Badge bg="light" text="dark">Patio</Badge>{" "}
-                                <Badge bg="light" text="dark">Garden View</Badge>{" "}<br/>
-    
-                                <Badge bg="light" text="dark">Pool View</Badge>{" "}
-                                <Badge bg="light" text="dark">Mountain View</Badge>{" "}
-                                <Badge bg="light" text="dark">Waterfall View</Badge>{" "}<br/>
-    
-                                <Badge bg="light" text="dark">Terrace</Badge>{" "}
-                                <Badge bg="light" text="dark">Free WiFi</Badge>{" "}
-                            </div>
-    
-                            <div>
-                                <b>In your private bathroom: </b>
-                            </div>
-    
-                            <div>
-                                <ul className="unOrderdList">
-                                    <li className="list"><a href="#home">Free toiletries</a></li>
-                                    <li className="list"><a href="#news">Bathrobe</a></li>
-                                    <li className="list"><a href="#contact">Bathtub or Shower</a></li>
-                                    <li className="list"><a href="#home">towels</a></li>
-                                    <li className="list"><a href="#news">Toilet Paper</a></li>
-                                    <li className="list"><a href="#contact">Hairdryer</a></li>
-                                </ul>
-                            </div>
-    
-                            <div><b>View:</b></div>
-    
-                            <div>
-                                <ul className="unOrderdList">
-                                    <li className="list"><a href="#home">Garden View</a></li>
-                                    <li className="list"><a href="#news">Pool View</a></li>
-                                    <li className="list"><a href="#contact">Mountain View</a></li>
-                                    <li className="list"><a href="#home">River View</a></li>
-                                    <li className="list"><a href="#news">Waterfall View</a></li>
-                                    <li className="list"><a href="#contact">Landmark VIew</a></li>
-                                </ul>
-                            </div>
-    
-                            <div><b>Facilities :</b></div>
-    
-                            <div>
-                                <ul className="unOrderdList">
-                                    <li className="list"><a href="#news">Cleaning products</a></li>
-                                    <li className="list"><a href="#contact">Hand Sanitizer</a></li>
-                                    <li className="list"><a href="#home">Linens</a></li>
-                                    <li className="list"><a href="#home">Socket near the bed</a></li>
-                                    <li className="list"><a href="#home">Board / card games</a></li>                                <li><a href="#news">Satellite channels</a></li>
-                                    <li className="list"><a href="#contact">Sitting area</a></li>
-                                    <li className="list"><a href="#home">Mosquito net</a></li>
-                                    <li className="list"><a href="#news">Dining table</a></li>
-                                    <li className="list"><a href="#contact">Private entrance</a></li>
-                                    <li className="list"><a href="#home">Fan</a></li>
-                                    <li className="list"><a href="#news">Patio</a></li>
-                                    <li className="list"><a href="#contact">Wake-up service/Alarm clock</a></li>
-                                </ul>
-                            </div>
-    
-                            <div><b>Smoking: </b>Smoking Not allowed inside the room</div><br/>
-                            <div><b>Parking: </b>Available</div>
-                        </div>
+                      {budgetDetails}  
                    </Col>
                 </Row>
                 </Container>
@@ -826,6 +828,11 @@ const {height,width} = useWindowDimensions();
 
     const handleCloseStandard = () => setShowStandard(false);
     const handleShowStandard = () => setShowStandard(true);
+
+    const [showBudget, setShowBudget] = useState(false);
+
+    const handleCloseBudget = () => setShowBudget(false);
+    const handleShowBudget = () => setShowBudget(true);
 
     return (
         <>
@@ -895,6 +902,12 @@ const {height,width} = useWindowDimensions();
               handleClose={handleCloseStandard}
               body={standardDetails}
               header="Standard Room"
+        />
+         <AccModal
+              show={showBudget}
+              handleClose={handleCloseBudget}
+              body={budgetDetails}
+              header="Budget Room"
         />
       <div style={{textAlign:'center',padding:'10%',background:'#030F51'}}>
             <Card >
@@ -1025,8 +1038,8 @@ const {height,width} = useWindowDimensions();
                     with shower, provided with hot & cold water.<br/><br/>  
 
                     Spend more time over breakfast in the spacious Garden with a natural pool view and
-                    enjoy the views of the Ella mountain range.<br/>
-
+                    enjoy the views of the Ella mountain range.
+                    <br/><a onClick={handleShowBudget}><span style={{color:'blue'}}>SEE MORE</span></a>
                     </Card.Text>
                 </Card.Body>
             </Card>
