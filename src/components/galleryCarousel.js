@@ -8,7 +8,7 @@ const galleryCarousel = () => {
                 <Carousel.Item key={item.img}>
                     <img
                     className="d-block w-100"
-                    src={props.src}
+                    src={`${item.img}`}
                     alt={item.title}
                     />
                 </Carousel.Item>
