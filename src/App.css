@@ -98,6 +98,14 @@
   background-image: linear-gradient(0deg, rgba(3, 15, 81, 0.42), rgba(3, 15, 81, 0.42));
 }
 
+
+@media screen and (max-width: 480px) {
+  .textCenter {
+    text-align: center;
+  }
+}
+
+
 .textSizeAndCOlor {
   font-size: 10px;
   margin-top: 5%;

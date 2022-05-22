@@ -63,7 +63,7 @@ const Facilities = () => {
             </div>
             </div>
             {/*Blue Area */}
-            <div className="blueArea" style={{
+            <div className="blueArea textCenter" style={{
                  backgroundImage: `url("https://i.postimg.cc/QdLByYb9/5-17-2022-5-43-41-PM.jpg")`
             }}>
                {
