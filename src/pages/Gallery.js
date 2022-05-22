@@ -791,6 +791,22 @@ const Gallery = () => {
                                 <GalleryCarousel
                                     items={itemDataAttic}
                                     title="Attic Suite Room"
+                                /><br/>
+                                <GalleryCarousel
+                                    items={itemDataDeluxe}
+                                    title="Deluxe Room"
+                                /><br/>
+                                <GalleryCarousel
+                                    items={itemDataStandard}
+                                    title="Standard Room"
+                                /><br/>
+                                <GalleryCarousel
+                                    items={itemDataBudget}
+                                    title="Budget Room"
+                                /><br/>
+                                <GalleryCarousel
+                                    items={itemDataRill}
+                                    title="Dolape Rill Restaurant"
                                 />
                             </div>
                     </div>
