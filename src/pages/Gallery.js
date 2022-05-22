@@ -8,6 +8,7 @@ import { Col, Container, Row} from "react-bootstrap";
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import {useNavigate} from "react-router-dom";
+import GalleryCarousel from "../components/GalleryCarousel";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -583,206 +584,217 @@ const Gallery = () => {
                    </div> : <MiddleBarPhoneView/>
                 }
                 {/*Dolpe Villa Ella, Sri lanka */}
-                <div style={{backgroundColor:'#1F211F'}}>
-                <div className="secondDiv"><br/>
-                    <h4 className="dolpeText">Contact Us</h4>
-                    <hr style={{color:'#7CA844'}}/>
-                    <Container style={{textAlign:'center'}}>
-        <br/>
+                {
+                    width > 480 ? <div style={{backgroundColor:'#1F211F'}}>
+                    <div className="secondDiv"><br/>
+                        <h4 className="dolpeText">Gallery</h4>
+                        <hr style={{color:'#7CA844'}}/>
+                        <Container style={{textAlign:'center'}}>
+            <br/>
+                    <Row className="blueAreaRow">
+                        <Col sm={6}>
+                        <div><h4 className="dolpeText">Attic Suite Room</h4></div><br/>
+                            <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
+                            {itemDataAttic.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </Col>
+        
+                        <Col sm={6}>
+                        <div><h4 className="dolpeText">Deluxe Room</h4></div><br/>
+                            <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+                            {itemDataDeluxe.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </Col>
+                </Row> 
+    
                 <Row className="blueAreaRow">
-                    <Col sm={6}>
-                    <div><h4 className="dolpeText">Attic Suite Room</h4></div><br/>
-                        <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
-                        {itemDataAttic.map((item) => (
-                            <ImageListItem key={item.img}>
-                                <img
-                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                alt={item.title}
-                                loading="lazy"
-                                />
-                            </ImageListItem>
-                            ))}
-                        </ImageList>
-                    </Col>
-    
-                    <Col sm={6}>
-                    <div><h4 className="dolpeText">Deluxe Room</h4></div><br/>
-                        <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                        {itemDataDeluxe.map((item) => (
-                            <ImageListItem key={item.img}>
-                                <img
-                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                alt={item.title}
-                                loading="lazy"
-                                />
-                            </ImageListItem>
-                            ))}
-                        </ImageList>
-                    </Col>
-            </Row> 
-
-            <Row className="blueAreaRow">
-                    <Col sm={6}>
-                    <div><h4 className="dolpeText">Standard Room</h4></div><br/>
-                        <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
-                        {itemDataStandard.map((item) => (
-                            <ImageListItem key={item.img}>
-                                <img
-                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                alt={item.title}
-                                loading="lazy"
-                                />
-                            </ImageListItem>
-                            ))}
-                        </ImageList>
-                    </Col>
-    
-                    <Col sm={6}>
-                    <div><h4 className="dolpeText">Budget Room</h4></div><br/>
-                        <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                        {itemDataBudget.map((item) => (
-                            <ImageListItem key={item.img}>
-                                <img
-                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                alt={item.title}
-                                loading="lazy"
-                                />
-                            </ImageListItem>
-                            ))}
-                        </ImageList>
-                    </Col>
-            </Row> 
-            <hr style={{color:'#7CA844'}}/>
-            <Row className="blueAreaRow">
-                    <Col sm={6}>
-                    <div><h4 className="dolpeText">Dolape Rill Restaurant</h4></div><br/>
-                        <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
-                        {itemDataRill.map((item) => (
-                            <ImageListItem key={item.img}>
-                                <img
-                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                alt={item.title}
-                                loading="lazy"
-                                />
-                            </ImageListItem>
-                            ))}
-                        </ImageList>
-                    </Col>
-    
-                    <Col sm={6}>
-                    <div><h4 className="dolpeText">Garden Dinning</h4></div><br/>
-                        <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                        {itemDataGarden.map((item) => (
-                            <ImageListItem key={item.img}>
-                                <img
-                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                alt={item.title}
-                                loading="lazy"
-                                />
-                            </ImageListItem>
-                            ))}
-                        </ImageList>
-                    </Col>
-            </Row> 
-            <hr style={{color:'#7CA844'}}/>
-                            <br/><br/>
-            <Row className="blueAreaRow">
-                    <Col sm={6}>
-                    <div><h4 className="dolpeText">Natural Pool</h4></div><br/>
-                        <ImageList sx={{ width: 500, height: 450 }} cols={2} rowHeight={164}>
-                        {itemDataPool.map((item) => (
-                            <ImageListItem key={item.img}>
-                                <img
-                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                alt={item.title}
-                                loading="lazy"
-                                />
-                            </ImageListItem>
-                            ))}
-                        </ImageList>
-                    </Col>
-    
-                    <Col sm={6}>
-                    <div><h4 className="dolpeText">Air Rifle And Archery</h4></div><br/>
-                        <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                        {itemDataRifle.map((item) => (
-                            <ImageListItem key={item.img}>
-                                <img
-                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                alt={item.title}
-                                loading="lazy"
-                                />
-                            </ImageListItem>
-                            ))}
-                        </ImageList>
-                    </Col>
-            </Row>
-            <br/>
-            <Row className="blueAreaRow">
-                    <Col>
-                    <div><h4 className="dolpeText">Bird and Animal Watching</h4></div><br/>
-                        <ImageList sx={{ width: '80%', height: 450 }} cols={4} rowHeight={164}>
-                        {itemDataBird.map((item) => (
-                            <ImageListItem key={item.img}>
-                                <img
-                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                alt={item.title}
-                                loading="lazy"
-                                />
-                            </ImageListItem>
-                            ))}
-                        </ImageList>
-                    </Col>
-            </Row>
-            <br/>
-            <Row className="blueAreaRow">
-                    <Col sm={6}>
-                    <div><h4 className="dolpeText">Cycling and Safari</h4></div><br/>
-                        <ImageList sx={{ width: '100%', height: 450 }} cols={4} rowHeight={164}>
-                        {itemDataCycle.map((item) => (
-                            <ImageListItem key={item.img}>
-                                <img
-                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                alt={item.title}
-                                loading="lazy"
-                                />
-                            </ImageListItem>
-                            ))}
-                        </ImageList>
-                    </Col>
-                    <Col sm={6}>
-                    <div><h4 className="dolpeText">Cultural Events</h4></div><br/>
-                        <ImageList sx={{ width: '100%', height: 450 }} cols={4} rowHeight={164}>
-                        {itemDataCulture.map((item) => (
-                            <ImageListItem key={item.img}>
-                                <img
-                                src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                alt={item.title}
-                                loading="lazy"
-                                />
-                            </ImageListItem>
-                            ))}
-                        </ImageList>
-                    </Col>
-            </Row>
+                        <Col sm={6}>
+                        <div><h4 className="dolpeText">Standard Room</h4></div><br/>
+                            <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
+                            {itemDataStandard.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </Col>
         
+                        <Col sm={6}>
+                        <div><h4 className="dolpeText">Budget Room</h4></div><br/>
+                            <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+                            {itemDataBudget.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </Col>
+                </Row> 
+                <hr style={{color:'#7CA844'}}/>
+                <Row className="blueAreaRow">
+                        <Col sm={6}>
+                        <div><h4 className="dolpeText">Dolape Rill Restaurant</h4></div><br/>
+                            <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
+                            {itemDataRill.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </Col>
         
-       </Container><br/>
+                        <Col sm={6}>
+                        <div><h4 className="dolpeText">Garden Dinning</h4></div><br/>
+                            <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+                            {itemDataGarden.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </Col>
+                </Row> 
+                <hr style={{color:'#7CA844'}}/>
+                                <br/><br/>
+                <Row className="blueAreaRow">
+                        <Col sm={6}>
+                        <div><h4 className="dolpeText">Natural Pool</h4></div><br/>
+                            <ImageList sx={{ width: 500, height: 450 }} cols={2} rowHeight={164}>
+                            {itemDataPool.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </Col>
+        
+                        <Col sm={6}>
+                        <div><h4 className="dolpeText">Air Rifle And Archery</h4></div><br/>
+                            <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
+                            {itemDataRifle.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </Col>
+                </Row>
+                <br/>
+                <Row className="blueAreaRow">
+                        <Col>
+                        <div><h4 className="dolpeText">Bird and Animal Watching</h4></div><br/>
+                            <ImageList sx={{ width: '80%', height: 450 }} cols={4} rowHeight={164}>
+                            {itemDataBird.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </Col>
+                </Row>
+                <br/>
+                <Row className="blueAreaRow">
+                        <Col sm={6}>
+                        <div><h4 className="dolpeText">Cycling and Safari</h4></div><br/>
+                            <ImageList sx={{ width: '100%', height: 450 }} cols={4} rowHeight={164}>
+                            {itemDataCycle.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </Col>
+                        <Col sm={6}>
+                        <div><h4 className="dolpeText">Cultural Events</h4></div><br/>
+                            <ImageList sx={{ width: '100%', height: 450 }} cols={4} rowHeight={164}>
+                            {itemDataCulture.map((item) => (
+                                <ImageListItem key={item.img}>
+                                    <img
+                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item.title}
+                                    loading="lazy"
+                                    />
+                                </ImageListItem>
+                                ))}
+                            </ImageList>
+                        </Col>
+                </Row>
             
-                  <br/>
-                </div>
-                </div>
+            
+           </Container><br/>
+                
+                      <br/>
+                    </div>
+                    </div> : 
+                    <div style={{backgroundColor:'#1A2460',textAlign:'center'}}><br/>
+                        <h1 className="dolpeText">Gallery</h1>
+                            <div style={{padding:'5%'}}>
+                                <GalleryCarousel
+                                    items={itemDataAttic}
+                                    title="Attic Suite Room"
+                                />
+                            </div>
+                    </div>
+                }
                 {/*Blue Area */}
               
             </>
