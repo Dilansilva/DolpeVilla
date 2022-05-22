@@ -819,7 +819,12 @@ const Gallery = () => {
                                 <GalleryCarousel
                                     items={itemDataRifle}
                                     title="Air Rifle And Archery"
-                                />
+                                /><br/>
+                                 <GalleryCarousel
+                                    items={itemDataBird}
+                                    title="Bird and Animal Watching"
+                                /><br/>
+                                
                             </div>
                     </div>
                 }
