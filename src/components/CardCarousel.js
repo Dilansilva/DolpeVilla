@@ -23,8 +23,8 @@ const CardCarousel = (props) => {
             <Card.Text>
                 {props.body}
                <br/>
-                <a onClick={props.handleShow}>
-                    <span style={{color:'blue'}}>{props.seeMore}</span></a>
+                {/* <a onClick={props.handleShow}>
+                    <span style={{color:'blue'}}>{props.seeMore}</span></a> */}
             </Card.Text>
         </Card.Body>
     </Card>
