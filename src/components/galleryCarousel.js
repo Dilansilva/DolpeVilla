@@ -1,9 +1,11 @@
 import { Carousel } from "react-bootstrap";
 import React from "react";
+import '../../src/App.css';
 
 const galleryCarousel = () => {
     return(
-        <Carousel>
+        <div>
+            <Carousel>
             {props.items.map((item) => (
                 <Carousel.Item key={item.img}>
                     <img
@@ -13,7 +15,11 @@ const galleryCarousel = () => {
                     />
                 </Carousel.Item>
             ))}
-        </Carousel>
+            </Carousel>
+            <div className="textAlign">
+                <h3>{props.title}</h3>
+            </div>
+        </div>
     );
 }
 
