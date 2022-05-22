@@ -807,6 +807,14 @@ const Gallery = () => {
                                 <GalleryCarousel
                                     items={itemDataRill}
                                     title="Dolape Rill Restaurant"
+                                /><br/>
+                                <GalleryCarousel
+                                    items={itemDataGarden}
+                                    title="Garden Dinning"
+                                /><br/>
+                                <GalleryCarousel
+                                    items={itemDataPool}
+                                    title="Natural Pool"
                                 />
                             </div>
                     </div>
