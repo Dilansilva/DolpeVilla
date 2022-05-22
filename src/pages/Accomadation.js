@@ -885,7 +885,7 @@ const {height,width} = useWindowDimensions();
             </Card>
             <br/>
             <Card >
-                <Card.Img variant="top" src="https://i.postimg.cc/ryYbnfZL/Weather-in-Ella.jpg" />
+                <Card.Img variant="top" src="https://i.postimg.cc/Y9sZRCVW/285441365.jpg" />
                 <Card.Body>
                     <Card.Title className="dolpeText locationText"><h1>Deluxe Room</h1></Card.Title>
                     <Card.Text>
