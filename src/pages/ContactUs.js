@@ -3,6 +3,7 @@ import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
 import { Col, Container, Row, Card, Accordion } from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
+import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -72,22 +73,24 @@ const ContactUs = () => {
 
     return(
             <>
-                <div className="homeImage" style={{
-                     backgroundImage: `url("https://i.postimg.cc/nzH8fYZV/ella-rock.jpg")`
-                }}>
-                   {
-                       //Middle bar
-                   }
-                   <br/><br/><br/>
-                   <br/><br/><br/>
-                   <br/><br/><br/>
-                   <br/><br/><br/>
-                   <br/><br/><br/>
-                   <br/><br/><br/>
-                   <br/><br/><br/>
-                   <br/><br/><br/>
-                   <MiddleBar/>
-                </div>
+             {
+                    width > 480 ? <div className="homeImage" style={{
+                        backgroundImage: `url("https://i.postimg.cc/nzH8fYZV/ella-rock.jpg")`
+                   }}>
+                      {
+                          //Middle bar
+                      }
+                      <br/><br/><br/>
+                      <br/><br/><br/>
+                      <br/><br/><br/>
+                      <br/><br/><br/>
+                      <br/><br/><br/>
+                      <br/><br/><br/>
+                      <br/><br/><br/>
+                      <br/><br/><br/>
+                      <MiddleBar/>
+                   </div> : <MiddleBarPhoneView/>
+             }
                 {/*Dolpe Villa Ella, Sri lanka */}
                 <div style={{backgroundColor:'#1F211F'}}>
                 <div className="secondDiv"><br/>
