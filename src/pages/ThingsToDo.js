@@ -1099,8 +1099,6 @@ const ThingsToDo = () => {
                      the hill through a naturally created Kithul Track.<br/><br/>
                     We invite you to experience the splendor of this rare and beautiful setting located within
                     the Ella, Sri Lanka.</>}
-                    //handleShow={}
-                    //seeMore={}
                 />
                 <br/>
                 <CardCarousel
@@ -1120,8 +1118,40 @@ const ThingsToDo = () => {
                             <li>Number of pilots for air rifle (around 15-25)</li>
                         </ul>
                         </>}
-                    //handleShow={}
-                    //seeMore={}
+                /><br/>
+                <CardCarousel
+                    items={itemDataRifle}
+                    title="Air Rifle & Archery"
+                    body={<>
+                    A site exclusively designed for adventure enthusiasts and adrenaline 
+                    junkies who prefer a not so ordinary hillside experience. Want to experience 
+                    Archery in Sri Lanka like the way hunters did?<br/><br/>
+                    Join Dolape Villa Ella, and try out the field Archery session!<br/>
+                    feel the wind, aim.....<br/>
+                    bring the huntsman inside you !!<br/><br/>
+                        <ul>
+                            <li>No practice or past experience necessary</li>
+                            <li>Includes training and equipment by our in-house archery specialist.</li>
+                            <li>One session – 2 hours</li>
+                            <li>Number of pilots for air rifle (around 15-25)</li>
+                        </ul>
+                        </>}
+                />
+                <br/>
+                <CardCarousel
+                    items={itemDataBird}
+                    title="Air Rifle & Archery"
+                    body={<>
+                        Bird lovers and wildlife enthusiasts will be delighted to observe that the Dolape Villa
+                        Ella provides sanctuary for 27% or 63 species of the resident birds of Sri Lanka, including 
+                        6 precious species endemic to the country. Out of those 63 bird species, birds such as
+                        Woodpeckers, Babblers, Barbets, Flycatchers, Minivit, and Chestnut headed Bee-eaters and 
+                        Hill Mynas are the types of birds commonly seen in this location. Also there are Monkeys, 
+                        Snakes, Grizzled giant squirrel and etc.<br/><br/>
+
+                        <a href="#animal">&lt;&lt;Click Here&gt;&gt;</a>  to learn more about Endemic Birds of Sri Lanka<br/>
+                        <a href="#animal">&lt;&lt;Click Here&gt;&gt;</a>  to learn more about Endemic Animals of Sri Lanka
+                        </>}
                 />
              </div>
             </div>
