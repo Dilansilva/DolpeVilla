@@ -1,9 +1,17 @@
-import React from "react";
+import React,{useState,useEffect} from "react";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
 import { Col, Container, Row} from "react-bootstrap";
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import {useNavigate} from "react-router-dom";
+
+function getWindowDimensions() {
+    const { innerWidth: width } = window;
+    return {
+      width
+    };
+  }
 
 const itemDataCulture = [
   {
@@ -532,6 +540,25 @@ const itemDataAttic = [
 ];
 
 const Gallery = () => {
+
+    const navigate = useNavigate();
+
+    function useWindowDimensions() {
+        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+    useEffect(() => {
+        function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    return windowDimensions;
+    }
+
+    const {height,width} = useWindowDimensions();
+
     return(
             <>
                 <div className="homeImage" style={{
