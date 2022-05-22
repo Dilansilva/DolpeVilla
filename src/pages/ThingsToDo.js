@@ -4,8 +4,10 @@ import '../../src/App.css';
 import { ImageList,ImageListItem } from "@mui/material";
 
 import MiddleBar from "../components/MiddleBar";
+import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 import { Col, Container, Row } from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
+import MobileDesc from "../components/MobileDesc";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -1028,46 +1030,65 @@ const ThingsToDo = () => {
 
     return (
     <>
-        <div className="homeImage" style={{
-             backgroundImage: `url("https://i.postimg.cc/8c9MVchw/1344104.jpg")`
-        }}>
-           {
-               //Middle bar
-           }
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <MiddleBar/>
-        </div>
+      {
+            width > 480 ? <div className="homeImage" style={{
+                backgroundImage: `url("https://i.postimg.cc/8c9MVchw/1344104.jpg")`
+           }}>
+              {
+                  //Middle bar
+              }
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <MiddleBar/>
+           </div> : <MiddleBarPhoneView/>
+      }
         {/*Dolpe Villa Ella, Sri lanka */}
-        <div  className="homeImage" style={{
-             backgroundImage: `url("https://i.postimg.cc/x1rT9SQP/5-17-2022-6-59-20-PM.jpg")`,
-        }}>
-        <div className="secondDiv">
-           <br/><br/><br/>
-            {middleSHow()}
-           <br/><br/><br/>
-        </div>
-
-       
-        </div>
-        {/*Blue Area */}
-        <div  className="homeImage" style={{
-             backgroundImage: `url("https://i.postimg.cc/d0np2mpL/DSC01496.jpg")`,
-        }}>
-        <div className="secondDiv">
+       {
+             width > 480 ? <> <div  className="homeImage" style={{
+                backgroundImage: `url("https://i.postimg.cc/x1rT9SQP/5-17-2022-6-59-20-PM.jpg")`,
+           }}>
+           <div className="secondDiv">
+              <br/><br/><br/>
+               {middleSHow()}
+              <br/><br/><br/>
+           </div>
+   
           
-            {showPictures()}
+           </div>
+           {/*Blue Area */}
+           <div  className="homeImage" style={{
+                backgroundImage: `url("https://i.postimg.cc/d0np2mpL/DSC01496.jpg")`,
+           }}>
+           <div className="secondDiv">
+             
+               {showPictures()}
+             
+           </div>
+   
           
-        </div>
+           </div>
+           </> :
+            <div style={{backgroundColor:'#030F51'}}>
+                <MobileDesc
+                    title="Things to do"
+                    body={<>Ella is probably one of Sri Lanka’s best kept secrets that offers plenty to keep
+                    you fascinated during a few nights’ stay. Apart from simply unwinding in cool climes with 
+                    hypnotic views; you may even set out on a hiking adventure to explore some of nature’s 
+                    wonders; such as the famed Little Adam’s Peak.<br/><br/>
 
-       
-        </div>
+                    Ella, being a remote hamlet located among the peaks of country’s central highlands is 
+                    surrounded by countryside perfect for walks or a cycling adventure.- Amongst the numerous 
+                    things to do in Ella, one could also explore tea gardens & factories, nine arch bridge, 
+                    waterfalls, ancient temples and historic artefacts.</>}
+                />
+            </div>
+       }
     </>
     );
 }
