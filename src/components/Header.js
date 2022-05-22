@@ -91,16 +91,16 @@ function Header(){
                 </Navbar.Toggle>
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#features">COVID-19 UPDATES</Nav.Link>
-                        <Nav.Link href="#pricing">GALLERY</Nav.Link>
-                        <Nav.Link href="#features">CONTACT US</Nav.Link>
-                        <Nav.Link href="#pricing">PROMOTIONS</Nav.Link>
-                        <Nav.Link href="#features">HOME</Nav.Link>
-                        <Nav.Link href="/location">LOCATION</Nav.Link>
-                        <Nav.Link href="#features">ACCOMMODATION</Nav.Link>
-                        <Nav.Link href="#pricing">FACILITIES</Nav.Link>
-                        <Nav.Link href="#features">DINNING</Nav.Link>
-                        <Nav.Link href="#pricing">THINGS TO DO</Nav.Link>
+                        <Nav.Link href="#features" onClick={covidPage}>COVID-19 UPDATES</Nav.Link>
+                        <Nav.Link href="#pricing" onClick={() => {navigate("/gallery")}}>GALLERY</Nav.Link>
+                        <Nav.Link href="#features" onClick={() => {navigate("/contact")}}>CONTACT US</Nav.Link>
+                        <Nav.Link href="#pricing" onClick={() => {navigate("/promotion")}}>PROMOTIONS</Nav.Link>
+                        <Nav.Link href="#features" onClick={() => {navigate("/")}}>HOME</Nav.Link>
+                        <Nav.Link href="/location" onClick={() => {navigate("/location")}}>LOCATION</Nav.Link>
+                        <Nav.Link href="#features" onClick={() => {navigate("/accomadation")}}>ACCOMMODATION</Nav.Link>
+                        <Nav.Link href="#pricing" onClick={() => {navigate("/facilities")}}>FACILITIES</Nav.Link>
+                        <Nav.Link href="#features" onClick={() => {navigate("/dinning")}}>DINNING</Nav.Link>
+                        <Nav.Link href="#pricing" onClick={() => {navigate("/things")}}>THINGS TO DO</Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>
