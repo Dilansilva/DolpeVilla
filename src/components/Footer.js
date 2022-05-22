@@ -66,7 +66,7 @@ function Footer() {
 
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2022 Copyright:
-        <a className='text-reset fw-bold' href='https://dilan-silva-my-portfoli.herokuapp.com'>
+        <a className='text-reset' style={{fontSize:'10px'}} href='https://dilan-silva-my-portfoli.herokuapp.com'>
         Website Designed & Developed by D&SDeveloer
         </a>
       </div>

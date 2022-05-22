@@ -1,10 +1,19 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
 
-import { Col, Container, Row } from "react-bootstrap";
+import { Col, Container, Row,Card,Carousel } from "react-bootstrap";
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
+import {useNavigate} from "react-router-dom";
+import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
+
+function getWindowDimensions() {
+    const { innerWidth: width } = window;
+    return {
+      width
+    };
+  }
 
 const itemDataRill = [
     {
@@ -137,6 +146,25 @@ const itemDataGarden = [
 ]
 
 const Dinnning = () => {
+
+    const navigate = useNavigate();
+
+    function useWindowDimensions() {
+        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+    useEffect(() => {
+        function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    return windowDimensions;
+    }
+
+    const {height,width} = useWindowDimensions();
+
     const [text,setText] = useState('dinning');
     const middleSHow = () =>{
         if(text == 'dinning'){
@@ -300,53 +328,120 @@ const Dinnning = () => {
 
     return(
         <>
-        <div className="homeImage" style={{
-             backgroundImage: `url("https://i.postimg.cc/kXVJzBVL/1333445.jpg")`
-        }}>
-           {
-               //Middle bar
-           }
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <MiddleBar/>
-        </div>
+        {
+            width > 480 ? <div className="homeImage" style={{
+                backgroundImage: `url("https://i.postimg.cc/kXVJzBVL/1333445.jpg")`
+           }}>
+              {
+                  //Middle bar
+              }
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <MiddleBar/>
+           </div> : <MiddleBarPhoneView/>
+        }
         {/*Dolpe Villa Ella, Sri lanka */}
         <div style={{backgroundColor:'#1F211F'}}>
           
         </div>
         {/*Blue Area */}
-        <div className="blueArea" style={{
-             backgroundImage: `url("https://i.postimg.cc/FK7mGQ6X/5-17-2022-5-56-19-PM.jpg")`
-        }}>
-           <Container>
-        <br/>
-           {middleSHow()}
-        <br/>
-       </Container>
-       <div className="blueArea" style={{
-             
-        }}>
-           {
-               //Middle bar
-           }
-       <Container style={{textAlign:'center'}}>
-        <br/>
-            <div>
-                {showPictures()}
-            </div>
-        <br/>
-       </Container>
-           
-        </div>
-           
-           
-        </div>
+       {
+           width > 480 ? <div className="blueArea" style={{
+                backgroundImage: `url("https://i.postimg.cc/FK7mGQ6X/5-17-2022-5-56-19-PM.jpg")`
+           }}>
+              <Container>
+           <br/>
+              {middleSHow()}
+           <br/>
+          </Container>
+          <div className="blueArea" style={{
+                
+           }}>
+              {
+                  //Middle bar
+              }
+          <Container style={{textAlign:'center'}}>
+           <br/>
+               <div>
+                   {showPictures()}
+               </div>
+           <br/>
+          </Container>
+              
+           </div>
+              
+              
+           </div> : 
+           <div>
+                <div style={{textAlign:'start',padding:'10%',background:'#000000'}}>
+                    <h1 className="dolpeText locationText">Dinning</h1>
+                        <br/><p style={{color:'white'}}>
+                        Dining at Dolape Villa Ella is a stimulating experience. A truly 
+                        unique open area restaurant Ella, the ‘Restaurant Dolape Villa’, built
+                        on a hillock that overlooks breathtaking scenery, engulfs the guests in
+                        a tantalizing dining experience.
+                        </p>
+                </div>
+                <div style={{textAlign:'center',padding:'10%',background:'#030F51'}}>
+                <Card >
+               
+               <Card.Body>
+                 <Card.Title>
+                   <Carousel>
+                   {itemDataRill.map((item) => (
+                     <Carousel.Item key={item.img}>
+                       <img
+                       className="d-block w-100"
+                         src={`${item.img}`}
+                         alt={item.title}
+                       />
+                     </Carousel.Item>
+                   ))}
+                   </Carousel>
+                 </Card.Title>
+                   <Card.Title className="dolpeText locationText"><h1>Dolape Rill Restautant</h1></Card.Title>
+                   <Card.Text>
+                    Dining at Dolape Villa Ella is a stimulating experience. A truly unique open 
+                    area restaurant Ella, the ‘Dolape Rill Restaurant’, built on a hillock that 
+                    overlooks breathtaking scenery, engulfs the guests in a tantalizing dining
+                    experience.
+                   </Card.Text>
+               </Card.Body>
+           </Card>
+           <br/>
+           <Card >
+                <Card.Body>
+                  <Card.Title>
+                    <Carousel>
+                    {itemDataGarden.map((item) => (
+                      <Carousel.Item key={item.img}>
+                        <img
+                        className="d-block w-100"
+                          src={`${item.img}`}
+                          alt={item.title}
+                        />
+                      </Carousel.Item>
+                    ))}
+                    </Carousel>
+                  </Card.Title>
+                    <Card.Title className="dolpeText locationText"><h1>Garden Dinning</h1></Card.Title>
+                    <Card.Text>
+                    Dining at Dolape Villa Ella is a stimulating experience. A truly unique open area
+                    restaurant Ella, the ‘Restaurant Dolape Villa’, built on a hillock that overlooks
+                    breathtaking scenery, engulfs the guests in a tantalizing dining experience.
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+            <br/>
+                </div>
+           </div>
+       }
     </>
     );
 }

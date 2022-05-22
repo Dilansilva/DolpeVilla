@@ -3,6 +3,7 @@ import {useState,useEffect} from 'react';
 import '../App.css';
 import {Container,Navbar,ToggleButton,Nav,NavDropdown} from 'react-bootstrap';
 import {useNavigate} from "react-router-dom";
+import {FiAlignJustify} from "react-icons/fi";
 
 import MobilePopUp from './MobilePopUp';
 
@@ -76,27 +77,34 @@ function Header(){
       </Navbar>  
         </> : 
         <> {/*mobile view navigation bar */}
-        <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Navbar.Brand href="/home">
-        Dice Roller
-      </Navbar.Brand>
-      <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-      <Navbar.Collapse id="responsive-navbar-nav">
-        <Nav className="mr-auto">
-          <Nav.Link href="#features">COVID-19 UPDATES</Nav.Link>
-          <Nav.Link href="#pricing">GALLERY</Nav.Link>
-          <Nav.Link href="#features">CONTACT US</Nav.Link>
-          <Nav.Link href="#pricing">PROMOTIONS</Nav.Link>
-          <Nav.Link href="#features">HOME</Nav.Link>
-          <Nav.Link href="/location">LOCATION</Nav.Link>
-          <Nav.Link href="#features">ACCOMMODATION</Nav.Link>
-          <Nav.Link href="#pricing">FACILITIES</Nav.Link>
-          <Nav.Link href="#features">DINNING</Nav.Link>
-          <Nav.Link href="#pricing">THINGS TO DO</Nav.Link>
-        </Nav>
-        
-      </Navbar.Collapse>
-    </Navbar>
+      <Navbar style={{background:'transparent'}} expand="lg">
+                <Container>
+                    <Navbar.Brand href="#home">
+                    <img src="https://i.postimg.cc/w3YttVFG/68681472-114368466589511-8231771088728621056-n.jpg" style={{height:'80px'}}/>
+
+                    </Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav">
+                    <span>
+                    <FiAlignJustify
+                    />
+                    </span>
+                </Navbar.Toggle>
+                    <Navbar.Collapse id="basic-navbar-nav">
+                    <Nav className="me-auto">
+                        <Nav.Link href="#features">COVID-19 UPDATES</Nav.Link>
+                        <Nav.Link href="#pricing">GALLERY</Nav.Link>
+                        <Nav.Link href="#features">CONTACT US</Nav.Link>
+                        <Nav.Link href="#pricing">PROMOTIONS</Nav.Link>
+                        <Nav.Link href="#features">HOME</Nav.Link>
+                        <Nav.Link href="/location">LOCATION</Nav.Link>
+                        <Nav.Link href="#features">ACCOMMODATION</Nav.Link>
+                        <Nav.Link href="#pricing">FACILITIES</Nav.Link>
+                        <Nav.Link href="#features">DINNING</Nav.Link>
+                        <Nav.Link href="#pricing">THINGS TO DO</Nav.Link>
+                    </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
         </>
       }
   </>
