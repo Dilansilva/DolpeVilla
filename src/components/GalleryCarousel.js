@@ -2,7 +2,7 @@ import { Carousel } from "react-bootstrap";
 import React from "react";
 import '../../src/App.css';
 
-const GalleryCarousel = () => {
+const GalleryCarousel = (props) => {
     return(
         <div>
             <Carousel>
@@ -15,9 +15,9 @@ const GalleryCarousel = () => {
                     />
                 </Carousel.Item>
             ))}
-            </Carousel>
-            <div className="textAlign">
-                <h3>{props.title}</h3>
+            </Carousel><br/>
+            <div className="textAlign dolpeText">
+                <h4>{props.title}</h4>
             </div>
         </div>
     );
