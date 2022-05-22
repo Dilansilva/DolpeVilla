@@ -1,10 +1,21 @@
-import React,{useState} from "react";
+import React,{useState,useEffect} from "react";
 import '../../src/App.css';
 
 import { ImageList,ImageListItem } from "@mui/material";
 
 import MiddleBar from "../components/MiddleBar";
+import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 import { Col, Container, Row } from "react-bootstrap";
+import {useNavigate} from "react-router-dom";
+import MobileDesc from "../components/MobileDesc";
+import CardCarousel from "../components/CardCarousel";
+
+function getWindowDimensions() {
+    const { innerWidth: width } = window;
+    return {
+      width
+    };
+  }
 
 const itemDataAround = [
     {
@@ -387,6 +398,25 @@ const itemDataPool = [
 ]
 
 const ThingsToDo = () => {
+
+    const navigate = useNavigate();
+
+    function useWindowDimensions() {
+        const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+
+    useEffect(() => {
+        function handleResize() {
+        setWindowDimensions(getWindowDimensions());
+        }
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+    return windowDimensions;
+    }
+
+    const {height,width} = useWindowDimensions();
+
     const [text,setText] = useState('things');
     const middleSHow = () =>{
         if(text == 'things'){
@@ -1001,46 +1031,161 @@ const ThingsToDo = () => {
 
     return (
     <>
-        <div className="homeImage" style={{
-             backgroundImage: `url("https://i.postimg.cc/8c9MVchw/1344104.jpg")`
-        }}>
-           {
-               //Middle bar
-           }
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <br/><br/><br/>
-           <MiddleBar/>
-        </div>
+      {
+            width > 480 ? <div className="homeImage" style={{
+                backgroundImage: `url("https://i.postimg.cc/8c9MVchw/1344104.jpg")`
+           }}>
+              {
+                  //Middle bar
+              }
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <br/><br/><br/>
+              <MiddleBar/>
+           </div> : <MiddleBarPhoneView/>
+      }
         {/*Dolpe Villa Ella, Sri lanka */}
-        <div  className="homeImage" style={{
-             backgroundImage: `url("https://i.postimg.cc/x1rT9SQP/5-17-2022-6-59-20-PM.jpg")`,
-        }}>
-        <div className="secondDiv">
-           <br/><br/><br/>
-            {middleSHow()}
-           <br/><br/><br/>
-        </div>
-
-       
-        </div>
-        {/*Blue Area */}
-        <div  className="homeImage" style={{
-             backgroundImage: `url("https://i.postimg.cc/d0np2mpL/DSC01496.jpg")`,
-        }}>
-        <div className="secondDiv">
+       {
+             width > 480 ? <> <div  className="homeImage" style={{
+                backgroundImage: `url("https://i.postimg.cc/x1rT9SQP/5-17-2022-6-59-20-PM.jpg")`,
+           }}>
+           <div className="secondDiv">
+              <br/><br/><br/>
+               {middleSHow()}
+              <br/><br/><br/>
+           </div>
+   
           
-            {showPictures()}
+           </div>
+           {/*Blue Area */}
+           <div  className="homeImage" style={{
+                backgroundImage: `url("https://i.postimg.cc/d0np2mpL/DSC01496.jpg")`,
+           }}>
+           <div className="secondDiv">
+             
+               {showPictures()}
+             
+           </div>
+   
           
-        </div>
+           </div>
+           </> :
+            <div style={{backgroundColor:'#030F51'}}>
+                <MobileDesc
+                    title="Things to do"
+                    body={<>Ella is probably one of Sri Lanka’s best kept secrets that offers plenty to keep
+                    you fascinated during a few nights’ stay. Apart from simply unwinding in cool climes with 
+                    hypnotic views; you may even set out on a hiking adventure to explore some of nature’s 
+                    wonders; such as the famed Little Adam’s Peak.<br/><br/>
 
-       
-        </div>
+                    Ella, being a remote hamlet located among the peaks of country’s central highlands is 
+                    surrounded by countryside perfect for walks or a cycling adventure.- Amongst the numerous 
+                    things to do in Ella, one could also explore tea gardens & factories, nine arch bridge, 
+                    waterfalls, ancient temples and historic artefacts.</>}
+                /><br/>
+
+             <div style={{margin:'5%'}}>
+                <CardCarousel
+                    items={itemDataPool}
+                    title="Natural Pool With Rill"
+                    body={<>Ella is probably famous for natural waterfalls, rivers and natural water resources.
+                    The famous and beautiful Dolape Villa Natural Pool created in the natural landscape by 
+                    collecting tha water flowing through the natural water sources located on the top of
+                     the hill through a naturally created Kithul Track.<br/><br/>
+                    We invite you to experience the splendor of this rare and beautiful setting located within
+                    the Ella, Sri Lanka.</>}
+                />
+                <br/>
+                <CardCarousel
+                    items={itemDataRifle}
+                    title="Air Rifle & Archery"
+                    body={<>
+                    A site exclusively designed for adventure enthusiasts and adrenaline 
+                    junkies who prefer a not so ordinary hillside experience. Want to experience 
+                    Archery in Sri Lanka like the way hunters did?<br/><br/>
+                    Join Dolape Villa Ella, and try out the field Archery session!<br/>
+                    feel the wind, aim.....<br/>
+                    bring the huntsman inside you !!<br/><br/>
+                        <ul>
+                            <li>No practice or past experience necessary</li>
+                            <li>Includes training and equipment by our in-house archery specialist.</li>
+                            <li>One session – 2 hours</li>
+                            <li>Number of pilots for air rifle (around 15-25)</li>
+                        </ul>
+                        </>}
+                /><br/>
+                <CardCarousel
+                    items={itemDataBird}
+                    title="Bird & Animal Watching"
+                    body={<>
+                        Bird lovers and wildlife enthusiasts will be delighted to observe that the Dolape Villa
+                        Ella provides sanctuary for 27% or 63 species of the resident birds of Sri Lanka, including 
+                        6 precious species endemic to the country. Out of those 63 bird species, birds such as
+                        Woodpeckers, Babblers, Barbets, Flycatchers, Minivit, and Chestnut headed Bee-eaters and 
+                        Hill Mynas are the types of birds commonly seen in this location. Also there are Monkeys, 
+                        Snakes, Grizzled giant squirrel and etc.<br/><br/>
+
+                        <a href="#animal">&lt;&lt;Click Here&gt;&gt;</a>  to learn more about Endemic Birds of Sri Lanka<br/>
+                        <a href="#animal">&lt;&lt;Click Here&gt;&gt;</a>  to learn more about Endemic Animals of Sri Lanka
+                        </>}
+                /><br/>
+                  <CardCarousel
+                    items={itemDataCycle}
+                    title="Cycling & Safari"
+                    body={<>
+                        Cycling in Ella is one of the most frequent activity done by most of the tourists. This cycling 
+                        tour covers some of the most important tourist attractions in Ella. You will start cycling to 
+                        the famous Rawana Waterfalls. Ravana Falls is another must visit in Ella. Hill country of Sri 
+                        Lanka is quite popular for beautiful waterfalls and Ravana Falls is right at the top.It currently
+                        ranks as one of the widest falls in the country. This waterfall measures approximately 25
+                        m (82 ft) in high and cascade from an oval-shaped concave rock outcrop. During the local
+                        wet season, the waterfall turns into what is said to resemble an areca flower with withering
+                        petals. But this is not the case in the dry season, where the flow of water reduces dramatically.<br/><br/>
+
+                        And, this ride will be approximately 30 minutes. On arrival at Rawana waterfalls, you will do a
+                        small trekking to witness
+                        the Rawana Cave where Rawana hid a lovely Indian Princess Sita after abducting her.The Ravana
+                        Cave is located about 2 km from the Ella town and 11 km (7 mi) away from Bandarawela. It is 
+                        quite a small cave, measuring about 50ft wide, 150ft long and 60ft high.  Recently a 
+                        20,000-year-old skull was discovered in the cave. Then you will do a short cycling ride 
+                        to enjoy the sceneries at Ella gap. This incredible gap is one of the most picturesque 
+                        locations in the country that allows plenty of photographic opportunities. At the end of 
+                        this visit, you will cycle back to Ella.
+                        </>}
+                />
+                <br/>
+                <CardCarousel
+                    items={itemDataCycle}
+                    title="Cycling & Safari"
+                    body={<>
+                        Cycling in Ella is one of the most frequent activity done by most of the tourists. This cycling 
+                        tour covers some of the most important tourist attractions in Ella. You will start cycling to 
+                        the famous Rawana Waterfalls. Ravana Falls is another must visit in Ella. Hill country of Sri 
+                        Lanka is quite popular for beautiful waterfalls and Ravana Falls is right at the top.It currently
+                        ranks as one of the widest falls in the country. This waterfall measures approximately 25
+                        m (82 ft) in high and cascade from an oval-shaped concave rock outcrop. During the local
+                        wet season, the waterfall turns into what is said to resemble an areca flower with withering
+                        petals. But this is not the case in the dry season, where the flow of water reduces dramatically.<br/><br/>
+
+                        And, this ride will be approximately 30 minutes. On arrival at Rawana waterfalls, you will do a
+                        small trekking to witness
+                        the Rawana Cave where Rawana hid a lovely Indian Princess Sita after abducting her.The Ravana
+                        Cave is located about 2 km from the Ella town and 11 km (7 mi) away from Bandarawela. It is 
+                        quite a small cave, measuring about 50ft wide, 150ft long and 60ft high.  Recently a 
+                        20,000-year-old skull was discovered in the cave. Then you will do a short cycling ride 
+                        to enjoy the sceneries at Ella gap. This incredible gap is one of the most picturesque 
+                        locations in the country that allows plenty of photographic opportunities. At the end of 
+                        this visit, you will cycle back to Ella.
+                        </>}
+                />
+             </div>
+            </div>
+       }
     </>
     );
 }
