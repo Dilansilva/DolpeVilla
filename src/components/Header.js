@@ -96,7 +96,7 @@ function Header(){
                         <Nav.Link href="#features" onClick={() => {navigate("/contact")}}>CONTACT US</Nav.Link>
                         <Nav.Link href="#pricing" onClick={() => {navigate("/promotion")}}>PROMOTIONS</Nav.Link>
                         <Nav.Link href="#features" onClick={() => {navigate("/")}}>HOME</Nav.Link>
-                        <Nav.Link href="/location" onClick={() => {navigate("/location")}}>LOCATION</Nav.Link>
+                        <Nav.Link href="#location" onClick={() => {navigate("/location")}}>LOCATION</Nav.Link>
                         <Nav.Link href="#features" onClick={() => {navigate("/accomadation")}}>ACCOMMODATION</Nav.Link>
                         <Nav.Link href="#pricing" onClick={() => {navigate("/facilities")}}>FACILITIES</Nav.Link>
                         <Nav.Link href="#features" onClick={() => {navigate("/dinning")}}>DINNING</Nav.Link>
