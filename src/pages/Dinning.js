@@ -416,7 +416,6 @@ const Dinnning = () => {
            </Card>
            <br/>
            <Card >
-               
                 <Card.Body>
                   <Card.Title>
                     <Carousel>
