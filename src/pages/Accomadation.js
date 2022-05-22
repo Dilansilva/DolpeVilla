@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from "react";
 
 import '../../src/App.css';
-import { Col, Container, Row, Card,  Badge } from "react-bootstrap";
+import { Col, Container, Row, Card,  Badge,Carousel } from "react-bootstrap";
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 
@@ -859,8 +859,21 @@ const {height,width} = useWindowDimensions();
 
       <div style={{textAlign:'center',padding:'10%',background:'#030F51'}}>
             <Card >
-                <Card.Img variant="top" src="https://i.postimg.cc/Y9sZRCVW/285441365.jpg" />
+               
                 <Card.Body>
+                  <Card.Title>
+                    <Carousel>
+                    {itemDataAttic.map((item) => (
+                  <Carousel.Item key={item.img}>
+                    <img
+                     className="d-block w-100"
+                      src={`${item.img}`}
+                      alt={item.title}
+                    />
+                  </Carousel.Item>
+                ))}
+                    </Carousel>
+                  </Card.Title>
                     <Card.Title className="dolpeText locationText"><h1>Attic Suite room</h1></Card.Title>
                     <Card.Text>
                     This elegant and spacious suite comes with a living and balcony 
@@ -885,8 +898,20 @@ const {height,width} = useWindowDimensions();
             </Card>
             <br/>
             <Card >
-                <Card.Img variant="top" src="https://i.postimg.cc/Y9sZRCVW/285441365.jpg" />
                 <Card.Body>
+                <Card.Title>
+                    <Carousel>
+                    {itemDataDeluxe.map((item) => (
+                  <Carousel.Item key={item.img}>
+                    <img
+                     className="d-block w-100"
+                      src={`${item.img}`}
+                      alt={item.title}
+                    />
+                  </Carousel.Item>
+                ))}
+                    </Carousel>
+                  </Card.Title>
                     <Card.Title className="dolpeText locationText"><h1>Deluxe Room</h1></Card.Title>
                     <Card.Text>
                     Super Deluxe rooms have its own private living area and offer 
@@ -908,17 +933,60 @@ const {height,width} = useWindowDimensions();
             </Card>
             <br/>
             <Card >
-                <Card.Img variant="top" src="https://i.postimg.cc/gjL2p5Tv/1344105.jpg" />
                 <Card.Body>
-                    <Card.Title className="dolpeText locationText"><h1>Excursion</h1></Card.Title>
+                <Card.Title>
+                    <Carousel>
+                    {itemDatastandard.map((item) => (
+                  <Carousel.Item key={item.img}>
+                    <img
+                     className="d-block w-100"
+                      src={`${item.img}`}
+                      alt={item.title}
+                    />
+                  </Carousel.Item>
+                ))}
+                    </Carousel>
+                  </Card.Title>
+                    <Card.Title className="dolpeText locationText"><h1>Standard Room</h1></Card.Title>
                     <Card.Text>
-                    Ella has plenty to offer that could keep you fascinated and occupied
-                    during a few nights’ stay. Apart from the mesmerizing views of mountains
-                    and tea estates, the region provides shelter to many precious flora and fauna.
-                    In addition to simply unwinding in the cool climes you could set out on a 
-                    trekking adventure or safari to a nearby wildlife sanctuary as part of excursions
-                    in Ella to discover and experience some of these delicate wonders of nature
-                    up- close.
+                    Standard rooms at Dolape Villa Ella are bright and cheery, offering excellent 
+                    views of the Ella Gap and Ravana Ella Waterfall and designed with modern amenities 
+                    that set it apart from the rest of the hotels Ella has to offer for a reasonable 
+                    cost.<br/><br/>
+
+                    Spend more time over breakfast in the spacious garden and enjoy the views of the 
+                    Ella mountain range.<br/><br/>
+
+                    The bathrooms are finished in titanium cement and include a rain shower with hot
+                    and cold water.<br/><br/>
+                    </Card.Text>
+                </Card.Body>
+            </Card>
+            <br/>
+            <Card >
+                <Card.Body>
+                <Card.Title>
+                    <Carousel>
+                    {itemDataBudget.map((item) => (
+                  <Carousel.Item key={item.img}>
+                    <img
+                     className="d-block w-100"
+                      src={`${item.img}`}
+                      alt={item.title}
+                    />
+                  </Carousel.Item>
+                ))}
+                    </Carousel>
+                  </Card.Title>
+                    <Card.Title className="dolpeText locationText"><h1>Budget Villa</h1></Card.Title>
+                    <Card.Text>
+                    This elegant budget villa comes with outdoor seating overlooking the stunning views
+                    of the Ella Gap & the Ravana Ella Waterfall. The room is equipped with a bathroom
+                    with shower, provided with hot & cold water.<br/><br/>  
+
+                    Spend more time over breakfast in the spacious Garden with a natural pool view and
+                    enjoy the views of the Ella mountain range.<br/>
+
                     </Card.Text>
                 </Card.Body>
             </Card>
