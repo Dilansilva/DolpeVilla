@@ -8,6 +8,7 @@ import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 import { Col, Container, Row } from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 import MobileDesc from "../components/MobileDesc";
+import CardCarousel from "../components/CardCarousel";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -1086,7 +1087,43 @@ const ThingsToDo = () => {
                     surrounded by countryside perfect for walks or a cycling adventure.- Amongst the numerous 
                     things to do in Ella, one could also explore tea gardens & factories, nine arch bridge, 
                     waterfalls, ancient temples and historic artefacts.</>}
+                /><br/>
+
+             <div style={{margin:'5%'}}>
+                <CardCarousel
+                    items={itemDataPool}
+                    title="Natural Pool With Rill"
+                    body={<>Ella is probably famous for natural waterfalls, rivers and natural water resources.
+                    The famous and beautiful Dolape Villa Natural Pool created in the natural landscape by 
+                    collecting tha water flowing through the natural water sources located on the top of
+                     the hill through a naturally created Kithul Track.<br/><br/>
+                    We invite you to experience the splendor of this rare and beautiful setting located within
+                    the Ella, Sri Lanka.</>}
+                    //handleShow={}
+                    //seeMore={}
                 />
+                <br/>
+                <CardCarousel
+                    items={itemDataRifle}
+                    title="Air Rifle & Archery"
+                    body={<>
+                    A site exclusively designed for adventure enthusiasts and adrenaline 
+                    junkies who prefer a not so ordinary hillside experience. Want to experience 
+                    Archery in Sri Lanka like the way hunters did?<br/><br/>
+                    Join Dolape Villa Ella, and try out the field Archery session!<br/>
+                    feel the wind, aim.....<br/>
+                    bring the huntsman inside you !!<br/><br/>
+                        <ul>
+                            <li>No practice or past experience necessary</li>
+                            <li>Includes training and equipment by our in-house archery specialist.</li>
+                            <li>One session – 2 hours</li>
+                            <li>Number of pilots for air rifle (around 15-25)</li>
+                        </ul>
+                        </>}
+                    //handleShow={}
+                    //seeMore={}
+                />
+             </div>
             </div>
        }
     </>
