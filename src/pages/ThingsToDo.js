@@ -1356,6 +1356,40 @@ const ThingsToDo = () => {
 
                         </>}
                 /><br/>
+                  <CardCarousel
+                    items={itemDataAround}
+                    title="Around The Sri Lanka"
+                    body={<>
+                        <p className="smallLocationText">
+                        Sri Lanka is an amazing travel destination offering a wide range of places
+                        to visit. This island, located in the Indian Ocean off the coast of India, 
+                        presents visitors with an incredible array of environments and tourist 
+                        attractions to enjoy and experience.
+                        </p>
+                        
+                        <p className="smallLocationText">
+                        Travelers can trace the island's fascinating history, from ancient times through
+                        the colonial period to the present, in cities like Colombo and Kandy. This
+                        relatively compact island boasts eight UNESCO World Heritage Sites where that
+                        history is preserved.
+                        </p>
+                     
+                        <p className="smallLocationText">
+                        Incredible outdoor landscapes and safari experiences can be found in the 
+                        country's large elephant- and leopard-filled national parks, like Yala, 
+                        Minneriya, and Udawalawe. Sri Lanka is also a beach-lover's paradise, 
+                        ringed by some of the world's most beautiful beaches, and perfect to 
+                        number of water sports.
+                        </p>
+
+                        <p className="smallLocationText">
+                        When planning a Sri Lankan adventure, keep in mind that the country 
+                        experiences various type of weather conditions,climate changes with 
+                        in 4 to 5 hours travel.Plan your travel itinerary with our list of the
+                         best places to visit in Sri Lanka.
+                        </p>
+                        </>}
+                /><br/>
              </div>
             </div>
        }
