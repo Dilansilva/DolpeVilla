@@ -1240,7 +1240,31 @@ const ThingsToDo = () => {
                        </p>
                     </>}
                 /><br/>
-                </div>
+                </div><br/>
+                <CardCarousel
+                    items={itemDataCulture}
+                    title="Cultural Events"
+                    body={<>
+                       Take part in the many religious and social local events in Ella during your stay at this
+                        scenic and tranquil location among the hills.
+
+                            <ul>
+                            <li>Every Wednesday - Weekly Wednesday Fair in Ella</li>
+
+                           <li> May - Dova Temple Perahera</li>
+
+                            <li>June - Kumbal Perehara in Ella</li>
+
+                            <li>April 12th-16th - Sinhala and Tamil New Year Festival</li>
+
+                            <li>August - Halpewatte Estate Kovil Ceremony</li>
+
+                            <li>  May - Vesak Poya Day (Festival of Lights)</li>
+
+                           <li> July - Kandy Esala Perahara</li>
+                            </ul>
+                        </>}
+                /><br/>
              </div>
             </div>
        }
