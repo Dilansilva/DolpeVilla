@@ -1182,7 +1182,214 @@ const ThingsToDo = () => {
                         locations in the country that allows plenty of photographic opportunities. At the end of 
                         this visit, you will cycle back to Ella.
                         </>}
-                />
+                /><br/>
+                <div style={{backgroundColor:"white"}}>
+                <MobileDesc
+                    title="Learn About The Culture"
+                    body={<>
+                    <b>Introduction</b>
+
+                    <p className="blackText">The culture of Sri Lanka has been influenced by many factors but has managed to retain much of
+                      its ancient aspects. Mostly it has been influenced by its long history and its Buddhist heritage.
+                      The country has a rich artistic tradition, embracing the fine arts, including music, dance, and
+                      visual arts. Sri Lankan lifestyle is reflected in the cuisine, festivals, and sports. South 
+                      Indian influences are visible in many aspects. There are some influences from colonisation by 
+                      the Portuguese, the Dutch, and the British. Sri Lankan culture is best known abroad for its 
+                      cricket, food, holistic medicine, religious icons like the Buddhist flag, and cultural exports 
+                      such as tea, cinnamon and gems. Sri Lankan culture is diverse, as it varies from region to 
+                      region.</p>
+
+                    <p className="blackText">Sri Lanka has had ties with Indian subcontinent from ancient times. Demographics: Sinhalese 74.8%, 
+                        Sri Lankan Moors 9.23%, Indian Tamil 4.16%, Sri Lankan Tamil 11.21%, Other 0.6%.</p>
+
+                       <p className="blackText">
+                        Sri Lanka boasts of a documented history of over 2000 years mainly due to ancient historic scriptures 
+                        like Mahawansa. Several centuries of intermittent foreign influence, has transformed Sri Lankan 
+                        culture to the present outlook. Nevertheless ancient traditions and festivals are celebrated by 
+                        mostly conservative Sinhalese people of the island, together with other minorities that make up 
+                        the Sri Lankan identity.<br/><br/>
+
+                        <b>Architecture</b>
+
+                        The architecture of Sri Lanka displays a rich variety of architectural forms and styles. Buddhism had 
+                        a significant influence on Sri Lankan architecture. However techniques and styles developed in 
+                        Europe and Asia have also played a major role in the architecture of Sri Lanka.<br/><br/>
+
+                        <b>Arts and Crafts</b>
+
+                        Many forms of Sri Lankan arts and crafts take inspiration from the Island&#39;s long and lasting 
+                        Buddhist culture which in turn has absorbed and adopted countless regional and local traditions. 
+                        In most instances Sri Lankan art originates from religious beliefs, and are represented in many 
+                        forms such as painting, sculpture, and architecture. One of the most notable aspects of Sri Lankan 
+                        art are caves and temple paintings, such as the frescoes found in Sigiriya and religious paintings
+                        found in temples in Dambulla and Temple of the Tooth Relic in Kandy. Other popular forms of art 
+                        have been influenced by both natives as well as outside settlers. For example, traditional wooden 
+                        handicrafts and clay pottery are found around the hill country while Portuguese-inspired lacework 
+                        and Indonesian-inspired Batik have become notable.<br/><br/>
+
+                        <b>Music</b>
+
+                        The two single biggest influences on Sri Lankan music are from Buddhism and Portuguese colonizers. 
+                        Buddhism arrived in Sri Lanka after the Buddha&#39;s visit in 300 BC, while the Portuguese arrived
+                        in the 15th century, bringing with them cantiga ballads, the ukulele, and guitars, along with 
+                        African slaves, who further diversified the musical roots of the island. These slaves were called 
+                        kaffrinha, and their dance music was called baila. Traditional Sri Lankan music includes the 
+                        hypnotic Kandyan drums – drumming was and is very much a part and  parcel of music in both 
+                        Buddhist and Hindu temples in Sri Lanka. Most western parts of Sri Lanka follow western dancing 
+                        and music.<br/><br/>
+                       </p>
+                    </>}
+                /><br/>
+                </div><br/>
+                <CardCarousel
+                    items={itemDataCulture}
+                    title="Cultural Events"
+                    body={<>
+                       Take part in the many religious and social local events in Ella during your stay at this
+                        scenic and tranquil location among the hills.
+
+                            <ul>
+                            <li>Every Wednesday - Weekly Wednesday Fair in Ella</li>
+
+                           <li> May - Dova Temple Perahera</li>
+
+                            <li>June - Kumbal Perehara in Ella</li>
+
+                            <li>April 12th-16th - Sinhala and Tamil New Year Festival</li>
+
+                            <li>August - Halpewatte Estate Kovil Ceremony</li>
+
+                            <li>  May - Vesak Poya Day (Festival of Lights)</li>
+
+                           <li> July - Kandy Esala Perahara</li>
+                            </ul>
+                        </>}
+                /><br/>
+
+             <div style={{backgroundColor:'white'}}>
+             <MobileDesc
+                    title="Farming & Cooking"
+                    body={<>
+                   <p className="blackText">
+                   <b>FARMING WITH RESORT GARDNERS :  </b><br/>
+
+                    Method of booking: In-person or email requesting to dolapevilla.lbh@gmail.com<br/>
+                    Time of class:  Around 8.00 - 10.00 morning<br/>
+                    Normal duration: Time is depend on the section that you are joining<br/>
+
+                    <ul>
+                    <li>Practical  of Dolape Villa Ella.</li>
+                    <li>Conducted by villa gardeners.</li>
+                    <li>Experience how a villa's gardening instruments are using</li>
+                    <li>Introduction to Sri Lankan farming and traditional techniques.</li>
+                    <li>Step by step instructions.</li>
+                    <li>Learn to prepare soil and land before farming.</li>
+                    </ul>
+                    <b>COOKING CLASS WITH RESORT CHEF : </b>
+
+                    Max 05 people inside the kitchen at once. Group classes will be conducted in the open area 
+                    of the villa.<br/>
+                    Method of booking: In-person or email requesting to dolapevilla.lbh@gmail.com<br/>
+                    Time of class: Lunch/dinner<br/> 
+                    Normal duration: Negotiable once you meet the chef and discuss or communicate
+                    via email.<br/>
+
+                    <ul>
+                    <li>Private class in the main kitchen of Dolape Villa Ella.</li>
+                    <li>Conducted by villa chef.</li>
+                    <li>Experience how a villa's fine dining kitchen operates during your course.</li>
+                    <li>Introduction to Sri Lankan traditional spices and methods of cooking.</li>
+                    <li>Step by step instructions</li>
+                    <li>Learn to prepare Special Sri Lankan Meals</li>
+                    <li>Discuss, interact and ask questions directly from the chef.</li>
+                    <li>Have the option to have the lunch/Dinner you cooked yourself in the Dolape Rill Restaurant.</li>
+                    <li>Guests simultaneously learn to cook as well as cover one meal during the program.</li>
+                    </ul>
+                   </p>
+                        </>}
+                 />
+             </div><br/>
+             <CardCarousel
+                    items={itemDataHiking}
+                    title="Hiking & Trekking"
+                    body={<>
+                    <p style={{color:'#7CA844'}}>FARMING WITH RESORT GARDNERS :</p>
+                        <p className="smallLocationText">
+                        When staying at our retreat in Ella, things to do for guests would 
+                        include a host of pleasing and enjoyable activities. The vicinity of 
+                        Dolape Villa Ella affords ample opportunity for hiking, trekking and 
+                        biking. Ella is a great location for viewing some of the best natural 
+                        scenery in Sri Lanka. Must visit locations: 
+                        </p>
+                        <p style={{color:'#7CA844'}}>Little Adam’s Peak </p>
+                        <ul>
+                            <li>Little Adam’s peak is Ella’s best known tourist attraction.</li>
+                            <li>Resembles Adam's Peak.</li>
+                            <li>Located five minutes away from the resort</li>
+                            <li>A short half hour climb to the top of the 1141 metre peak</li>
+                            <li>Breathtaking views of an endless valley, tea plantations and waterfalls</li>
+                        </ul>
+
+                        <p style={{color:'#7CA844'}}>Ella Rock </p>
+                        <ul>
+                            <li>Ella Rock is a must climb for those into hiking and trekking.</li>
+                            <li>Ranks as one of the widest falls in Sri Lanka.</li>
+                            <li>The waterfall measures approximately 25 meters (82 ft) in height and cascades from an oval-shaped concave rock outcrop.</li>
+                            <li>The falls form part of the Ravana Ella Wildlife Sanctuary</li>
+                            <li> A ten minute ride or a half hour walk away from the resort</li>
+                            <li>Visit the nearby Ravana cave, which according to history, is famed to have held Seetha captive who was kidnapped from India by Ravana</li>
+                        </ul>
+
+                        <p style={{color:'#7CA844'}}>Ravana Ella Falls</p>
+                        <ul>
+                            <li> The Ravana Ella Falls is a wonderful sightseeing attraction.</li>
+                            <li>A challenging climb and takes about three hours.</li>
+                            <li>See spectacular views of the valley.</li>
+                        </ul>   
+
+                        <p style={{color:'#7CA844'}}>Ravana Ella Falls</p>
+                        <ul>
+                            <li> The Ravana Ella Falls is a wonderful sightseeing attraction.</li>
+                            <li>A challenging climb and takes about three hours.</li>
+                            <li>See spectacular views of the valley.</li>
+                        </ul>  
+
+                        </>}
+                /><br/>
+                  <CardCarousel
+                    items={itemDataAround}
+                    title="Around The Sri Lanka"
+                    body={<>
+                        <p className="smallLocationText">
+                        Sri Lanka is an amazing travel destination offering a wide range of places
+                        to visit. This island, located in the Indian Ocean off the coast of India, 
+                        presents visitors with an incredible array of environments and tourist 
+                        attractions to enjoy and experience.
+                        </p>
+                        
+                        <p className="smallLocationText">
+                        Travelers can trace the island's fascinating history, from ancient times through
+                        the colonial period to the present, in cities like Colombo and Kandy. This
+                        relatively compact island boasts eight UNESCO World Heritage Sites where that
+                        history is preserved.
+                        </p>
+                     
+                        <p className="smallLocationText">
+                        Incredible outdoor landscapes and safari experiences can be found in the 
+                        country's large elephant- and leopard-filled national parks, like Yala, 
+                        Minneriya, and Udawalawe. Sri Lanka is also a beach-lover's paradise, 
+                        ringed by some of the world's most beautiful beaches, and perfect to 
+                        number of water sports.
+                        </p>
+
+                        <p className="smallLocationText">
+                        When planning a Sri Lankan adventure, keep in mind that the country 
+                        experiences various type of weather conditions,climate changes with 
+                        in 4 to 5 hours travel.Plan your travel itinerary with our list of the
+                         best places to visit in Sri Lanka.
+                        </p>
+                        </>}
+                /><br/>
              </div>
             </div>
        }
