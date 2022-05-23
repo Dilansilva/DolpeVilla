@@ -1265,6 +1265,50 @@ const ThingsToDo = () => {
                             </ul>
                         </>}
                 /><br/>
+
+             <div style={{backgroundColor:'white'}}>
+             <MobileDesc
+                    title="Farming & Cooking"
+                    body={<>
+                   <p className="blackText">
+                   <b>FARMING WITH RESORT GARDNERS :  </b><br/>
+
+                    Method of booking: In-person or email requesting to dolapevilla.lbh@gmail.com<br/>
+                    Time of class:  Around 8.00 - 10.00 morning<br/>
+                    Normal duration: Time is depend on the section that you are joining<br/>
+
+                    <ul>
+                    <li>Practical  of Dolape Villa Ella.</li>
+                    <li>Conducted by villa gardeners.</li>
+                    <li>Experience how a villa's gardening instruments are using</li>
+                    <li>Introduction to Sri Lankan farming and traditional techniques.</li>
+                    <li>Step by step instructions.</li>
+                    <li>Learn to prepare soil and land before farming.</li>
+                    </ul>
+                    <b>COOKING CLASS WITH RESORT CHEF : </b>
+
+                    Max 05 people inside the kitchen at once. Group classes will be conducted in the open area 
+                    of the villa.<br/>
+                    Method of booking: In-person or email requesting to dolapevilla.lbh@gmail.com<br/>
+                    Time of class: Lunch/dinner<br/> 
+                    Normal duration: Negotiable once you meet the chef and discuss or communicate
+                    via email.<br/>
+
+                    <ul>
+                    <li>Private class in the main kitchen of Dolape Villa Ella.</li>
+                    <li>Conducted by villa chef.</li>
+                    <li>Experience how a villa's fine dining kitchen operates during your course.</li>
+                    <li>Introduction to Sri Lankan traditional spices and methods of cooking.</li>
+                    <li>Step by step instructions</li>
+                    <li>Learn to prepare Special Sri Lankan Meals</li>
+                    <li>Discuss, interact and ask questions directly from the chef.</li>
+                    <li>Have the option to have the lunch/Dinner you cooked yourself in the Dolape Rill Restaurant.</li>
+                    <li>Guests simultaneously learn to cook as well as cover one meal during the program.</li>
+                    </ul>
+                   </p>
+                        </>}
+                 />
+             </div>
              </div>
             </div>
        }
