@@ -12,6 +12,8 @@ import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
 import {useNavigate} from "react-router-dom";
 import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 
+import {widthScreen} from "../constant/Constant";
+
 function getWindowDimensions() {
     const { innerWidth: width } = window;
     return {
@@ -48,7 +50,7 @@ function Bookings() {
     return (
     <>
        {
-           width > 480 ? 
+           width > widthScreen ? 
            <div className="homeImage" style={{
                 backgroundImage: `url("https://i.postimg.cc/J05cnNnQ/bookings-Back.jpg")`
            }}>
