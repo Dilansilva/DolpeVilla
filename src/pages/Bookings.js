@@ -24,6 +24,13 @@ function getWindowDimensions() {
 const color = "white";
 
 function Bookings() {
+
+    const [attic,setAttic] = useState(false);
+    const [deluxe,setDeluxe] = useState(false);
+    const [standard,setStandard] = useState(false);
+    const [budgetOne,setBudgetOne] = useState(false);
+    const [budgetTwo,setBudgetTwo] = useState(false);
+
     const navigate = useNavigate();
 
     function useWindowDimensions() {
@@ -232,6 +239,7 @@ function Bookings() {
                                             name="rooms"
                                             type="checkbox"
                                             className="dolpeText"
+                                            onChange={() => attic ? setAttic(false) : setAttic(true)}
                                         /><br/><br/>
                                         <Form.Check
                                             inline
@@ -239,6 +247,7 @@ function Bookings() {
                                             name="rooms"
                                             type="checkbox"
                                             className="dolpeText"
+                                            onChange={() => deluxe ? setDeluxe(false) : setDeluxe(true)}
                                         /><br/><br/>
                                         <Form.Check
                                             inline
@@ -246,6 +255,7 @@ function Bookings() {
                                             name="rooms"
                                             type="checkbox"
                                             className="dolpeText"
+                                            onChange={() => deluxe ? setStandard(false) : setStandard(true)}
                                         /><br/><br/>
                                         <Form.Check
                                             inline
@@ -253,6 +263,7 @@ function Bookings() {
                                             name="rooms"
                                             type="checkbox"
                                             className="dolpeText"
+                                            onChange={() => deluxe ? setBudgetOne(false) : setBudgetOne(true)}
                                         /><br/><br/>
                                         <Form.Check
                                             inline
@@ -260,6 +271,7 @@ function Bookings() {
                                             name="rooms"
                                             type="checkbox"
                                             className="dolpeText"
+                                            onChange={() => deluxe ? setBudgetTwo(false) : setBudgetTwo(true)}
                                         /><br/><br/>
                                         </div>
                                 </Form> 
