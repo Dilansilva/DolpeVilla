@@ -4,6 +4,7 @@ import MiddleBar from "../components/MiddleBar";
 import { Col, Container, Row } from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
+import {widthScreen} from "../constant/Constant";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -35,7 +36,7 @@ const Facilities = () => {
     return (
         <>
         {
-            width > 480 ?
+            width > widthScreen ?
             <div className="homeImage" style={{
                 backgroundImage: `url("https://i.postimg.cc/V6HkZn0k/1322201.jpg")`
            }}>

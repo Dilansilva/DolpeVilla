@@ -5,6 +5,7 @@ import {useNavigate} from "react-router-dom";
 import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
+import {widthScreen} from "../constant/Constant";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -37,7 +38,7 @@ function Promotions() {
     return (
     <>
        {
-            width > 480 ? <div className="homeImage" style={{
+            width > widthScreen ? <div className="homeImage" style={{
                 backgroundImage: `url("https://i.postimg.cc/GmS8cRtH/IMG-20220519-WA0011.jpg")`
            }}>
               {

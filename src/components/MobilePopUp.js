@@ -1,4 +1,4 @@
-import {useState,useEffect} from 'react';
+import {useState} from 'react';
 import {Modal} from 'react-bootstrap';
 import '../App.css';
 
@@ -11,24 +11,7 @@ function getWindowDimensions() {
 
 const MobilePopUp = () => {
     const [show, setShow] = useState(true);
-
     const handleClose = () => setShow(false);
-
-    function useWindowDimensions() {
-      const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-    
-      useEffect(() => {
-        function handleResize() {
-          setWindowDimensions(getWindowDimensions());
-        }
-    
-        window.addEventListener('resize', handleResize);
-        return () => window.removeEventListener('resize', handleResize);
-      }, []);
-      return windowDimensions;
-    }
-  
-    const {height,width} = useWindowDimensions();
   
     return (
       <>
