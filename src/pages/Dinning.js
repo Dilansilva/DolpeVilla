@@ -7,6 +7,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import {useNavigate} from "react-router-dom";
 import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
+import {widthScreen} from "../constant/Constant";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -329,7 +330,7 @@ const Dinnning = () => {
     return(
         <>
         {
-            width > 480 ? <div className="homeImage" style={{
+            width > widthScreen ? <div className="homeImage" style={{
                 backgroundImage: `url("https://i.postimg.cc/kXVJzBVL/1333445.jpg")`
            }}>
               {
@@ -352,7 +353,7 @@ const Dinnning = () => {
         </div>
         {/*Blue Area */}
        {
-           width > 480 ? <div className="blueArea" style={{
+           width > widthScreen ? <div className="blueArea" style={{
                 backgroundImage: `url("https://i.postimg.cc/FK7mGQ6X/5-17-2022-5-56-19-PM.jpg")`
            }}>
               <Container>
