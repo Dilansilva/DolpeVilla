@@ -6,6 +6,7 @@ import {useNavigate} from "react-router-dom";
 import {FiAlignJustify} from "react-icons/fi";
 
 import MobilePopUp from './MobilePopUp';
+import {widthScreen} from "../constant/Constant"
 
 function getWindowDimensions() {
   const { innerWidth: width } = window;
@@ -20,12 +21,11 @@ function Header(){
 
   function useWindowDimensions() {
     const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
-  
+    
     useEffect(() => {
       function handleResize() {
         setWindowDimensions(getWindowDimensions());
       }
-  
       window.addEventListener('resize', handleResize);
       return () => window.removeEventListener('resize', handleResize);
     }, []);
@@ -40,9 +40,9 @@ function Header(){
 
  return(
   <>
-         {width < 480 ? <MobilePopUp/> : null }
-     {width > 480 ? <Navbar className='upperDiv hiddenUpperDiv' expand="lg"></Navbar> : null }
-     {width > 480 ? <> {/*Computer navigation bar */}
+         {width < widthScreen ? <MobilePopUp/> : null }
+     {width > widthScreen ? <Navbar className='upperDiv hiddenUpperDiv' expand="lg"></Navbar> : null }
+     {width > widthScreen ? <> {/*Computer navigation bar */}
       <Navbar className="taransParent">
         <Container className="taransParent">
           <Navbar.Brand onClick={() => {navigate("/")}}>
@@ -61,7 +61,7 @@ function Header(){
      }
      
       {
-        width > 480 ? <> {/*Computer navigation bar */}
+        width > widthScreen ? <> {/*Computer navigation bar */}
         <Navbar className="taransParent">
         <Container className="taransParent">
           <Navbar.Toggle />
