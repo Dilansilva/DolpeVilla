@@ -9,6 +9,7 @@ import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import {useNavigate} from "react-router-dom";
 import GalleryCarousel from "../components/GalleryCarousel";
+import {widthScreen} from "../constant/Constant";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -566,7 +567,7 @@ const Gallery = () => {
     return(
             <>
                 {
-                    width > 480 ? <div className="homeImage" style={{
+                    width > widthScreen ? <div className="homeImage" style={{
                         backgroundImage: `url("https://i.postimg.cc/0N7xsywn/1344220.jpg")`
                    }}>
                       {
@@ -585,7 +586,7 @@ const Gallery = () => {
                 }
                 {/*Dolpe Villa Ella, Sri lanka */}
                 {
-                    width > 480 ? <div style={{backgroundColor:'#1F211F'}}>
+                    width > widthScreen ? <div style={{backgroundColor:'#1F211F'}}>
                     <div className="secondDiv"><br/>
                         <h4 className="dolpeText">Gallery</h4>
                         <hr style={{color:'#7CA844'}}/>
