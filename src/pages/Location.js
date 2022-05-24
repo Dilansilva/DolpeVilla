@@ -5,6 +5,7 @@ import MiddleBar from "../components/MiddleBar";
 import { Col, Container, Row, Card,Button } from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
+import {widthScreen} from "../constant/Constant";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -256,7 +257,7 @@ function Location() {
     return (
     <>
        {
-             width > 480 ?
+             width > widthScreen ?
             <div className="homeImage" style={{
                 backgroundImage: `url("https://i.postimg.cc/gjL2p5Tv/1344105.jpg")`
            }}>
@@ -276,7 +277,7 @@ function Location() {
        }
         {/*Dolpe Villa Ella, Sri lanka */}
       {
-            width > 480 ? <div  className="homeImage" style={{
+            width > widthScreen ? <div  className="homeImage" style={{
                 backgroundImage: `url("https://i.postimg.cc/R0702S9z/OG12-31702f1ced68599661aa.jpg")`,}}>
            <div className="secondDiv">
               <br/><br/><br/>
@@ -366,7 +367,7 @@ function Location() {
       }
         {/*Blue Area */}
      {
-           width > 480 ? <div className="blueArea" style={{
+           width > widthScreen ? <div className="blueArea" style={{
                 backgroundImage: `url("https://i.postimg.cc/05FHfn94/mini-adams-peak-1-7.jpg")`
            }}>
               {
