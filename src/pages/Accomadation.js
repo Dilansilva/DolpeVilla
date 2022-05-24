@@ -10,6 +10,8 @@ import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 import {useNavigate} from "react-router-dom";
 import AccModal from "../components/AccModal";
 
+import {widthScreen} from "../constant/Constant";
+
 function getWindowDimensions() {
   const { innerWidth: width } = window;
   return {
@@ -838,7 +840,7 @@ const {height,width} = useWindowDimensions();
         <>
          {/* backgroundImage: `url(${"https://i.postimg.cc/x8Tr4cRw/1322226.jpg"})` */}
             {
-               width > 480 ? <div className="homeImage" style={{backgroundImage: `url(${"https://i.postimg.cc/x8Tr4cRw/1322226.jpg"})`
+               width > widthScreen ? <div className="homeImage" style={{backgroundImage: `url(${"https://i.postimg.cc/x8Tr4cRw/1322226.jpg"})`
 
               }}>
                 {
@@ -857,7 +859,7 @@ const {height,width} = useWindowDimensions();
             }
 
     {
-      width > 480 ?
+      width > widthScreen ?
       <div  className="homeImage" style={{
         backgroundImage: `url(${"https://i.postimg.cc/59C8tXWL/5-19-2022-10-57-41-PM.jpg"})`,
       }}>
