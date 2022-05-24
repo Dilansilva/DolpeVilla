@@ -9,6 +9,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 import MobileDesc from "../components/MobileDesc";
 import CardCarousel from "../components/CardCarousel";
+import {widthScreen} from "../constant/Constant";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -1032,7 +1033,7 @@ const ThingsToDo = () => {
     return (
     <>
       {
-            width > 480 ? <div className="homeImage" style={{
+            width > widthScreen ? <div className="homeImage" style={{
                 backgroundImage: `url("https://i.postimg.cc/8c9MVchw/1344104.jpg")`
            }}>
               {
@@ -1051,7 +1052,7 @@ const ThingsToDo = () => {
       }
         {/*Dolpe Villa Ella, Sri lanka */}
        {
-             width > 480 ? <> <div  className="homeImage" style={{
+             width > widthScreen ? <> <div  className="homeImage" style={{
                 backgroundImage: `url("https://i.postimg.cc/x1rT9SQP/5-17-2022-6-59-20-PM.jpg")`,
            }}>
            <div className="secondDiv">
