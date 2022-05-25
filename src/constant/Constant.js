@@ -1,1 +1,1 @@
-export const widthScreen = 480;
+export const widthScreen = 1050;
