@@ -3,12 +3,6 @@
   background-color: #1F211F;
 }
 
-.taransParent{
-  /*opacity: 0*/
-  background-color: #124017;
-  opacity: 0.5;
-}
-
 .gardientBtn{
   background: linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%);
   background-color: transparent;
