@@ -1,6 +1,7 @@
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 import {Modal} from 'react-bootstrap';
 import '../App.css';
+import {widthScreen} from "../constant/Constant"
 
 function getWindowDimensions() {
   const { innerWidth: width } = window;
@@ -12,9 +13,25 @@ function getWindowDimensions() {
 const MobilePopUp = () => {
     const [show, setShow] = useState(true);
     const handleClose = () => setShow(false);
+
+    function useWindowDimensions() {
+      const [windowDimensions, setWindowDimensions] = useState(getWindowDimensions());
+      
+      useEffect(() => {
+        function handleResize() {
+          setWindowDimensions(getWindowDimensions());
+        }
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+      }, []);
+      return windowDimensions;
+    }
+  
+    const {height,width} = useWindowDimensions();
   
     return (
       <>
+       {width < widthScreen ?
         <Modal
           show={show}
           onHide={handleClose}
@@ -39,7 +56,7 @@ const MobilePopUp = () => {
           </div>
           <div><br/></div>
           </Modal.Body>          
-        </Modal>
+        </Modal> : null}
       </>
     );
 }

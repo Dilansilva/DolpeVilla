@@ -27,7 +27,7 @@ function Footer() {
               <h6 className='text-uppercase fw-bold mb-4'>
                 <i className='fas fa-gem me-3'></i>Dolpe Villa
               </h6>
-                <img src="https://i.postimg.cc/w3YttVFG/68681472-114368466589511-8231771088728621056-n.jpg" className="footerLogo"/>
+                <img src="https://i.postimg.cc/P5gL6Mzy/277835036-3202617223360264-4709564501185670549-n-removebg-preview.png" className="footerLogo"/>
             </div>
 
           
