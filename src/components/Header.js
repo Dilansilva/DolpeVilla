@@ -43,7 +43,7 @@ function Header(){
          {width < widthScreen ? <MobilePopUp/> : null }
      {width > widthScreen ? <Navbar className='upperDiv hiddenUpperDiv' expand="lg"></Navbar> : null }
      {width > widthScreen ? <> {/*Computer navigation bar */}
-      <Navbar className="taransParent">
+      <Navbar>
         <Container>
           <Navbar.Brand onClick={() => {navigate("/")}}>
           <img src="https://i.postimg.cc/P5gL6Mzy/277835036-3202617223360264-4709564501185670549-n-removebg-preview.png" className="minorLogo"/>
@@ -62,7 +62,7 @@ function Header(){
      
       {
         width > widthScreen ? <> {/*Computer navigation bar */}
-        <Navbar className="taransParent">
+        <Navbar>
         <Container>
           <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
