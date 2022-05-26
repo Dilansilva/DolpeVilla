@@ -11,6 +11,7 @@ import {useNavigate} from "react-router-dom";
 import AccModal from "../components/AccModal";
 
 import {widthScreen} from "../constant/Constant";
+import Header from "../components/Header";
 
 function getWindowDimensions() {
   const { innerWidth: width } = window;
@@ -843,6 +844,7 @@ const {height,width} = useWindowDimensions();
                width > widthScreen ? <div className="homeImage" style={{backgroundImage: `url(${"https://i.postimg.cc/x8Tr4cRw/1322226.jpg"})`
 
               }}>
+                <Header/>
                 {
                   //Middle bar
               }
