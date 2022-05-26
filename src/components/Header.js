@@ -1,7 +1,7 @@
 import {useState,useEffect} from 'react';
 
 import '../App.css';
-import {Container,Navbar,ToggleButton,Nav,NavDropdown} from 'react-bootstrap';
+import {Container,Navbar,Nav,Button} from 'react-bootstrap';
 import {useNavigate} from "react-router-dom";
 import {FiAlignJustify} from "react-icons/fi";
 
@@ -50,10 +50,10 @@ function Header(){
           </Navbar.Brand>
           <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
-              <ToggleButton className="gardientBtn" onClick={covidPage}><b>COVID-19 UPDATE</b></ToggleButton>
-              <ToggleButton className="gardientBtn" onClick={() => {navigate("/gallery")}}>GALLERY</ToggleButton>
-              <ToggleButton className="gardientBtn" onClick={() => {navigate("/contact")}}>CONTACT US</ToggleButton>
-              <ToggleButton className="gardientBtn" onClick={() => {navigate("/promotion")}}>PROMOTIONS</ToggleButton>
+              <Button style={{fontWeight:'bold',borderColor:'white',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)' }} className="gardientBtn" onClick={covidPage}><b>COVID</b></Button>
+              <Button style={{fontWeight:'bold',borderColor:'white',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} className="gardientBtn" onClick={() => {navigate("/gallery")}}>GALLERY</Button>
+              <Button style={{fontWeight:'bold',borderColor:'white',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} className="gardientBtn" onClick={() => {navigate("/contact")}}>CONTACTS</Button>
+              <Button style={{fontWeight:'bold',borderColor:'white',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} className="gardientBtn" onClick={() => {navigate("/promotion")}}>PROMOTIONS</Button>
             </Navbar.Collapse>
         </Container>
       </Navbar>
@@ -66,12 +66,12 @@ function Header(){
         <Container>
           <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
-              <ToggleButton className="gardientBtn" onClick={() => {navigate("/")}}><b>HOME</b></ToggleButton>
-              <ToggleButton className="gardientBtn" onClick={() => {navigate("/location")}}>LOCATION</ToggleButton>
-              <ToggleButton className="gardientBtn" onClick={() => {navigate("/accomadation")}}>ACCOMMODATION</ToggleButton>
-              <ToggleButton className="gardientBtn" onClick={() => {navigate("/facilities")}}>FACILITIES</ToggleButton>
-              <ToggleButton className="gardientBtn" onClick={() => {navigate("/dinning")}}>DINNING</ToggleButton>
-              <ToggleButton className="gardientBtn" onClick={() => {navigate("/things")}}>THINGS TO DO</ToggleButton>              
+              <Button style={{fontWeight:'bold',borderColor:'white',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} className="gardientBtn" onClick={() => {navigate("/")}}><b>HOME</b></Button>
+              <Button style={{fontWeight:'bold',borderColor:'white',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} className="gardientBtn" onClick={() => {navigate("/location")}}>LOCATION</Button>
+              <Button style={{fontWeight:'bold',borderColor:'white',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} className="gardientBtn" onClick={() => {navigate("/accomadation")}}>ACCOMMODATION</Button>
+              <Button style={{fontWeight:'bold',borderColor:'white',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} className="gardientBtn" onClick={() => {navigate("/facilities")}}>FACILITIES</Button>
+              <Button style={{fontWeight:'bold',borderColor:'white',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} className="gardientBtn" onClick={() => {navigate("/dinning")}}>DINNING</Button>
+              <Button style={{fontWeight:'bold',borderColor:'white',color:'white',backgroundColor:'transparent',background:'linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%)'}} className="gardientBtn" onClick={() => {navigate("/things")}}>THINGS TO DO</Button>              
             </Navbar.Collapse>
         </Container>
       </Navbar>  

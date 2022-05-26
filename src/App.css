@@ -4,9 +4,9 @@
 }
 
 .taransParent{
-  /*opacity: 0.4;*/
-  background: rgba(0,0,0,0.4);
-  
+  /*opacity: 0*/
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0.7;
 }
 
 .gardientBtn{
