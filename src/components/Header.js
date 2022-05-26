@@ -77,10 +77,10 @@ function Header(){
       </Navbar>  
         </> : 
         <> {/*mobile view navigation bar */}
-      <Navbar style={{background:'transparent'}} expand="lg">
+      <Navbar expand="lg">
                 <Container>
                     <Navbar.Brand href="#home">
-                    <img src="https://i.postimg.cc/w3YttVFG/68681472-114368466589511-8231771088728621056-n.jpg" style={{height:'80px'}}/>
+                    <img src="https://i.postimg.cc/P5gL6Mzy/277835036-3202617223360264-4709564501185670549-n-removebg-preview.png" style={{height:'80px'}}/>
 
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav">
