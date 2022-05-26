@@ -5,6 +5,7 @@ import { Col, Container, Row } from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 import {widthScreen} from "../constant/Constant";
+import Header from "../components/Header";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -40,6 +41,7 @@ const Facilities = () => {
             <div className="homeImage" style={{
                 backgroundImage: `url("https://i.postimg.cc/V6HkZn0k/1322201.jpg")`
            }}>
+               <Header/>
               {
                   //Middle bar
               }
