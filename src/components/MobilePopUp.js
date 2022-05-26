@@ -33,7 +33,7 @@ const MobilePopUp = () => {
           >
           </Modal.Header>
           <Modal.Body className='textAlign'>
-            <img src="https://i.postimg.cc/zf4dLx88/277835036-3202617223360264-4709564501185670549-n.jpg" className="mainLogo"/><br/>
+            <img src="https://i.postimg.cc/P5gL6Mzy/277835036-3202617223360264-4709564501185670549-n-removebg-preview.png" className="mainLogo"/><br/>
           <div className='greenColor'><br/>
             <div style={{marginLeft:'5%',marginRight:'5%'}}><p>WELCOME TO DOLPE VILLA ELLA</p><br/></div>
           </div>
