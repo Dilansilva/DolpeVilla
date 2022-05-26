@@ -24,12 +24,13 @@ function getWindowDimensions() {
 const color = "white";
 
 function Bookings() {
-
-    const [attic,setAttic] = useState(false);
-    const [deluxe,setDeluxe] = useState(false);
-    const [standard,setStandard] = useState(false);
-    const [budgetOne,setBudgetOne] = useState(false);
-    const [budgetTwo,setBudgetTwo] = useState(false);
+   
+    const [rooms,setRooms] = useState([
+        {attic:false,adults:0,children:0},
+        {attic:false,adults:0,children:0}
+    ]);
+    console.log(rooms[0].attic = true);
+    console.log(rooms);
 
     const navigate = useNavigate();
 
@@ -54,6 +55,8 @@ function Bookings() {
     const handleChange = (newValue) => {
       setValue(newValue);
     };
+
+   
     return (
     <>
        {
@@ -239,7 +242,7 @@ function Bookings() {
                                             name="rooms"
                                             type="checkbox"
                                             className="dolpeText"
-                                            onChange={() => attic ? setAttic(false) : setAttic(true)}
+                                            onChange={(e) => console.log(e.target.name)}
                                         /><br/><br/>
                                         <Form.Check
                                             inline
@@ -247,7 +250,7 @@ function Bookings() {
                                             name="rooms"
                                             type="checkbox"
                                             className="dolpeText"
-                                            onChange={() => deluxe ? setDeluxe(false) : setDeluxe(true)}
+                                           // onChange={() => deluxe ? setDeluxe(false) : setDeluxe(true)}
                                         /><br/><br/>
                                         <Form.Check
                                             inline
@@ -255,7 +258,7 @@ function Bookings() {
                                             name="rooms"
                                             type="checkbox"
                                             className="dolpeText"
-                                            onChange={() => deluxe ? setStandard(false) : setStandard(true)}
+                                            //onChange={() => deluxe ? setStandard(false) : setStandard(true)}
                                         /><br/><br/>
                                         <Form.Check
                                             inline
@@ -263,7 +266,7 @@ function Bookings() {
                                             name="rooms"
                                             type="checkbox"
                                             className="dolpeText"
-                                            onChange={() => deluxe ? setBudgetOne(false) : setBudgetOne(true)}
+                                            //onChange={() => deluxe ? setBudgetOne(false) : setBudgetOne(true)}
                                         /><br/><br/>
                                         <Form.Check
                                             inline
@@ -271,7 +274,7 @@ function Bookings() {
                                             name="rooms"
                                             type="checkbox"
                                             className="dolpeText"
-                                            onChange={() => deluxe ? setBudgetTwo(false) : setBudgetTwo(true)}
+                                            //onChange={() => deluxe ? setBudgetTwo(false) : setBudgetTwo(true)}
                                         /><br/><br/>
                                         </div>
                                 </Form> 
@@ -282,7 +285,10 @@ function Bookings() {
                                     <Form>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><p className="dolpeText">Number of Adults(Age Above 6)</p></Form.Label>
-                                                <Form.Control />
+                                            <Form.Select >
+                                                <option>Disabled select</option>
+                                                <option>Disabled select</option>
+                                            </Form.Select>
                                         </Form.Group>
                                     </Form>
                                 </Col>
