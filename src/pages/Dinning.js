@@ -8,6 +8,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 import {useNavigate} from "react-router-dom";
 import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 import {widthScreen} from "../constant/Constant";
+import Header from "../components/Header";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -333,6 +334,7 @@ const Dinnning = () => {
             width > widthScreen ? <div className="homeImage" style={{
                 backgroundImage: `url("https://i.postimg.cc/kXVJzBVL/1333445.jpg")`
            }}>
+               <Header/>
               {
                   //Middle bar
               }
