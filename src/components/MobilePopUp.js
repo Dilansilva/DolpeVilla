@@ -31,10 +31,9 @@ const MobilePopUp = () => {
             style={{border:'none'}}
             closeButton
           >
-           <img src="https://i.postimg.cc/w3YttVFG/68681472-114368466589511-8231771088728621056-n.jpg" className="minorLogo"/>
           </Modal.Header>
           <Modal.Body className='textAlign'>
-            <img src="https://i.postimg.cc/w3YttVFG/68681472-114368466589511-8231771088728621056-n.jpg" className="mainLogo"/><br/>
+            <img src="https://i.postimg.cc/zf4dLx88/277835036-3202617223360264-4709564501185670549-n.jpg" className="mainLogo"/><br/>
           <div className='greenColor'><br/>
             <div style={{marginLeft:'5%',marginRight:'5%'}}><p>WELCOME TO DOLPE VILLA ELLA</p><br/></div>
           </div>

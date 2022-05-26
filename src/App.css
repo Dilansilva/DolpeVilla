@@ -3,12 +3,6 @@
   background-color: #1F211F;
 }
 
-.taransParent{
-  /*opacity: 0.4;*/
-  background-color: #ffffff;
-  
-}
-
 .gardientBtn{
   background: linear-gradient(180deg, #124016 11.46%, rgba(11, 20, 100, 0) 100%);
   background-color: transparent;
@@ -47,7 +41,7 @@
 }
 
 .minorLogo {
-  width: 40%;
+  width: 30%;
 }
 
 /*Home Page*/

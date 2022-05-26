@@ -10,6 +10,7 @@ import ImageListItem from '@mui/material/ImageListItem';
 import {useNavigate} from "react-router-dom";
 import GalleryCarousel from "../components/GalleryCarousel";
 import {widthScreen} from "../constant/Constant";
+import Header from "../components/Header";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -570,6 +571,7 @@ const Gallery = () => {
                     width > widthScreen ? <div className="homeImage" style={{
                         backgroundImage: `url("https://i.postimg.cc/0N7xsywn/1344220.jpg")`
                    }}>
+                       <Header/>
                       {
                           //Middle bar
                       }

@@ -10,6 +10,7 @@ import {useNavigate} from "react-router-dom";
 import MobileDesc from "../components/MobileDesc";
 import CardCarousel from "../components/CardCarousel";
 import {widthScreen} from "../constant/Constant";
+import Header from "../components/Header";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -1036,6 +1037,7 @@ const ThingsToDo = () => {
             width > widthScreen ? <div className="homeImage" style={{
                 backgroundImage: `url("https://i.postimg.cc/8c9MVchw/1344104.jpg")`
            }}>
+               <Header/>
               {
                   //Middle bar
               }

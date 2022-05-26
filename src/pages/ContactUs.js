@@ -5,6 +5,7 @@ import { Col, Container, Row, Card, Accordion } from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 import {widthScreen} from "../constant/Constant";
+import Header from "../components/Header";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -78,6 +79,7 @@ const ContactUs = () => {
                     width > widthScreen ? <div className="homeImage" style={{
                         backgroundImage: `url("https://i.postimg.cc/nzH8fYZV/ella-rock.jpg")`
                    }}>
+                       <Header/>
                       {
                           //Middle bar
                       }
