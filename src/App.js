@@ -14,11 +14,13 @@ import Promotions from './pages/Promotions';
 import Bookings from './pages/Bookings';
 
 import {Route,Routes,BrowserRouter as Router} from "react-router-dom";
+import MobilePopUp from './components/MobilePopUp';
 
 function App() {
   return (
     <Router>
       <div>
+        <MobilePopUp/>
           <Routes>
             <Route path='/' element={<Home/>}/>
             <Route path='location' element={<Location/>}/>
