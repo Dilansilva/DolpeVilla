@@ -40,7 +40,6 @@ function Header(){
 
  return(
   <>
-         {width < widthScreen ? <MobilePopUp/> : null }
      {width > widthScreen ? <Navbar className='upperDiv hiddenUpperDiv' expand="lg"></Navbar> : null }
      {width > widthScreen ? <> {/*Computer navigation bar */}
       <Navbar style={{border:0,boxShadow:'none',background: 'rgba(18, 64, 23, 0.5)'}}>
