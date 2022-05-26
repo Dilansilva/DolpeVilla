@@ -6,6 +6,7 @@ import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
 import {widthScreen} from "../constant/Constant";
+import Header from "../components/Header";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -41,6 +42,7 @@ function Promotions() {
             width > widthScreen ? <div className="homeImage" style={{
                 backgroundImage: `url("https://i.postimg.cc/GmS8cRtH/IMG-20220519-WA0011.jpg")`
            }}>
+               <Header/>
               {
                   //Middle bar
               }
