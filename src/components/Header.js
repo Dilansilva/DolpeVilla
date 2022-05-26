@@ -44,13 +44,13 @@ function Header(){
      {width > widthScreen ? <Navbar className='upperDiv hiddenUpperDiv' expand="lg"></Navbar> : null }
      {width > widthScreen ? <> {/*Computer navigation bar */}
       <Navbar className="taransParent">
-        <Container className="taransParent">
+        <Container>
           <Navbar.Brand onClick={() => {navigate("/")}}>
-          <img src="https://i.postimg.cc/w3YttVFG/68681472-114368466589511-8231771088728621056-n.jpg" className="minorLogo"/>
+          <img src="https://i.postimg.cc/P5gL6Mzy/277835036-3202617223360264-4709564501185670549-n-removebg-preview.png" className="minorLogo"/>
           </Navbar.Brand>
           <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
-              <ToggleButton className="gardientBtn" onClick={covidPage}><b>COVID-19 UPDATES</b></ToggleButton>
+              <ToggleButton className="gardientBtn" onClick={covidPage}><b>COVID-19 UPDATE</b></ToggleButton>
               <ToggleButton className="gardientBtn" onClick={() => {navigate("/gallery")}}>GALLERY</ToggleButton>
               <ToggleButton className="gardientBtn" onClick={() => {navigate("/contact")}}>CONTACT US</ToggleButton>
               <ToggleButton className="gardientBtn" onClick={() => {navigate("/promotion")}}>PROMOTIONS</ToggleButton>
@@ -63,7 +63,7 @@ function Header(){
       {
         width > widthScreen ? <> {/*Computer navigation bar */}
         <Navbar className="taransParent">
-        <Container className="taransParent">
+        <Container>
           <Navbar.Toggle />
             <Navbar.Collapse className="justify-content-end">
               <ToggleButton className="gardientBtn" onClick={() => {navigate("/")}}><b>HOME</b></ToggleButton>

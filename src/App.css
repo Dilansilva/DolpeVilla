@@ -5,7 +5,7 @@
 
 .taransParent{
   /*opacity: 0.4;*/
-  background-color: #ffffff;
+  background: rgba(0,0,0,0.4);
   
 }
 
@@ -47,7 +47,7 @@
 }
 
 .minorLogo {
-  width: 40%;
+  width: 20%;
 }
 
 /*Home Page*/
