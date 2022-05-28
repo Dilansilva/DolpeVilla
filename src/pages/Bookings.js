@@ -25,13 +25,6 @@ const color = "white";
 
 function Bookings() {
    
-    const [rooms,setRooms] = useState([
-        {attic:false,adults:0,children:0},
-        {attic:false,adults:0,children:0}
-    ]);
-    console.log(rooms[0].attic = true);
-    console.log(rooms);
-
     const navigate = useNavigate();
 
     function useWindowDimensions() {
@@ -242,7 +235,8 @@ function Bookings() {
                                             name="rooms"
                                             type="checkbox"
                                             className="dolpeText"
-                                            onChange={(e) => console.log(e.target.name)}
+                                            // onChange={(e) => {console.log(e.target)}}
+                                            defaultChecked={false}
                                         /><br/><br/>
                                         <Form.Check
                                             inline
@@ -250,7 +244,7 @@ function Bookings() {
                                             name="rooms"
                                             type="checkbox"
                                             className="dolpeText"
-                                           // onChange={() => deluxe ? setDeluxe(false) : setDeluxe(true)}
+                                            // onChange={() => deluxe ? setDeluxe(false) : setDeluxe(true)}
                                         /><br/><br/>
                                         <Form.Check
                                             inline
@@ -285,10 +279,7 @@ function Bookings() {
                                     <Form>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><p className="dolpeText">Number of Adults(Age Above 6)</p></Form.Label>
-                                            <Form.Select >
-                                                <option>Disabled select</option>
-                                                <option>Disabled select</option>
-                                            </Form.Select>
+                                            <Form.Control />
                                         </Form.Group>
                                     </Form>
                                 </Col>
