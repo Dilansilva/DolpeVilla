@@ -2,7 +2,7 @@ import React,{useState,useEffect} from "react";
 import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
 
-import { Col,Row, Form } from "react-bootstrap";
+import { Col,Row, Form,HelpBlock } from "react-bootstrap";
 import { MDBBtn } from 'mdb-react-ui-kit';
 import Stack from '@mui/material/Stack';
 import TextField from '@mui/material/TextField';
@@ -11,6 +11,8 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
 import {useNavigate} from "react-router-dom";
 import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
+
+import axios from 'axios';
 
 import {widthScreen} from "../constant/Constant";
 
@@ -49,6 +51,23 @@ function Bookings() {
       setValue(newValue);
     };
 
+    const [firstName,setFirstName] = useState("");
+    const [firstNameErr,setFirstNameErr] = useState("");
+
+    const firstNameChangeHandler = (event) => {
+        const value = event.target.value
+        value ? setFirstNameErr("") : setFirstNameErr("Please Enter The First Name")
+        value ? setFirstName(value) : setFirstName("")
+    }
+
+    const [lastName,setLastName] = useState("");
+    const [lastNameErr,setLastNameErr] = useState("");
+
+    const lastNameChangeHandler = (event) => {
+        const value = event.target.value
+        value ? setLastNameErr("") : setLastNameErr("Please Enter The Last Name")
+        value ? setLastName(value) : setLastName("")
+    }
    
     return (
     <>
@@ -85,99 +104,90 @@ function Bookings() {
                             {/*Full name section */}
                             <Row>
                                 <Col sm={6}>
-                                    <Form>
+                                
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
-                                                <Form.Control />
-                                                    <Form.Label><p className="dolpeText">First Name</p></Form.Label>
+                                                <Form.Control 
+                                                    type="text"
+                                                    placeholder="Enter First Name Here"
+                                                    onBlur={firstNameChangeHandler}
+                                                />
+                                                <Form.Label><p className="dolpeText">First Name <span style={{color:'red'}}>&nbsp;&nbsp;&nbsp;{firstNameErr}</span></p></Form.Label>
                                         </Form.Group>
-                                    </Form>
+                                    
                                 </Col>
                                 <Col sm={6}>
                                    
-                                <Form>
+                              
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
-                                                <Form.Control />
-                                                    <Form.Label><p className="dolpeText">Last Name</p></Form.Label>
+                                                <Form.Control
+                                                    type="text"
+                                                    placeholder="Enter Last Name Here"
+                                                    onBlur={lastNameChangeHandler} 
+                                                />
+                                                    <Form.Label><p className="dolpeText">Last Name <span style={{color:'red'}}>&nbsp;&nbsp;&nbsp;{lastNameErr}</span></p></Form.Label>
                                         </Form.Group>
-                                    </Form>
+                                  
                                 </Col>
                             </Row>
                             {/*Address*/}
                             <Row>
                                 <Col>
-                                    <Form>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><h5 className="dolpeText">Address</h5></Form.Label>
                                                     <Form.Control />
                                                         <Form.Label><p className="dolpeText">Street Address</p></Form.Label>
                                         </Form.Group>
-                                    </Form>
                                 </Col>
                             </Row>
                             {/*Street address*/}
                             <Row>
                                 <Col>
-                                    <Form>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                                 <Form.Control />
                                                     <Form.Label><p className="dolpeText">Street Address Line 02</p></Form.Label>
                                         </Form.Group>
-                                    </Form>
                                 </Col>
                             </Row>
                             {/*Street address line 02 */}
                             <Row>
                                 <Col sm={3}>
-                                    <Form>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                                 <Form.Control />
                                                     <Form.Label><p className="dolpeText">City</p></Form.Label>
                                         </Form.Group>
-                                    </Form>
                                 </Col>
                                 <Col sm={3}>
-                                    <Form>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                                 <Form.Control />
                                                     <Form.Label><p className="dolpeText">State / Province</p></Form.Label>
                                         </Form.Group>
-                                    </Form>
                                 </Col>
                                 <Col sm={3}>
-                                    <Form>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                                 <Form.Control />
                                                     <Form.Label><p className="dolpeText">Postal / Zip Code</p></Form.Label>
                                         </Form.Group>
-                                    </Form>
                                 </Col>
                                 <Col sm={3}>
-                                    <Form>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                                 <Form.Control />
                                                     <Form.Label><p className="dolpeText">Country</p></Form.Label>
                                         </Form.Group>
-                                    </Form>
                                 </Col>
                             </Row>
                             {/*Contact details */}
                             <Row>
                                 <Col sm={6}>
-                                    <Form>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><p className="dolpeText">Contact Number</p></Form.Label>
                                                 <Form.Control />
                                         </Form.Group>
-                                    </Form>
                                 </Col>
                                 <Col sm={6}>
-                                   
-                                <Form>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><p className="dolpeText">E-Mail</p></Form.Label>
                                                 <Form.Control />
                                         </Form.Group>
-                                    </Form>
                                 </Col>
                             </Row><br/>
                             {/*Dates */}
@@ -226,7 +236,6 @@ function Bookings() {
                             {/*Select your rooms */}
                             <hr style={{color:'#7CA844'}}/>
                             <Row>
-                                <Form>
                                     <Form.Label><p className="dolpeText">Select your rooms</p></Form.Label>
                                         <div className="mb-3">
                                         <Form.Check
@@ -271,32 +280,26 @@ function Bookings() {
                                             //onChange={() => deluxe ? setBudgetTwo(false) : setBudgetTwo(true)}
                                         /><br/><br/>
                                         </div>
-                                </Form> 
                             </Row>
                             {/*Number of persons */}
                             <Row>
                                 <Col sm={6}>
-                                    <Form>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><p className="dolpeText">Number of Adults(Age Above 6)</p></Form.Label>
                                             <Form.Control />
                                         </Form.Group>
-                                    </Form>
                                 </Col>
                                 <Col sm={6}>
                                    
-                                <Form>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><p className="dolpeText">Number of Kids (Age Under 6)</p></Form.Label>
                                                 <Form.Control />
                                         </Form.Group>
-                                    </Form>
                                 </Col>
                             </Row>
                             {/*Payment method */}
                             <hr style={{color:'#7CA844'}}/>
                             <Row>
-                                <Form>
                                     <Form.Label><p className="dolpeText">Payment Method</p></Form.Label>
                                         <div className="mb-3">
                                         <Form.Check
@@ -321,17 +324,14 @@ function Bookings() {
                                             className="dolpeText"
                                         />
                                         </div>
-                                </Form>
                             </Row>
                             {/*special statements*/}
                             <Row>
                                 <Col>
-                                    <Form>
                                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><p className="dolpeText">Do you have any special request? </p></Form.Label>
                                                 <Form.Control as="textarea" rows={3} />
                                         </Form.Group>
-                                    </Form>
                                 </Col>
                             </Row>
                             {/*Submit*/}
@@ -340,7 +340,8 @@ function Bookings() {
                                     <MDBBtn color='success'>SUBMIT</MDBBtn>
                                 </Col>
                             </Row>
-                            </Form><br/>
+                            </Form>
+                            <br/>
                 </div>
         </div>
     </>
