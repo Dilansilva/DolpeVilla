@@ -104,6 +104,13 @@ function Bookings() {
         const value = event.target.value
         setPostal(value);
     }
+
+    const [country,setCountry] = useState("");
+    const countryChangeHandler = (event) => {
+        const value = event.target.value
+        setCountry(value);
+    }
+    
    
     return (
     <>
@@ -226,7 +233,11 @@ function Bookings() {
                                 </Col>
                                 <Col sm={3}>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
-                                                <Form.Control />
+                                                <Form.Control
+                                                    type="text"
+                                                    placeholder="Enter Country Here"
+                                                    onBlur={countryChangeHandler}  
+                                                />
                                                     <Form.Label><p className="dolpeText">Country</p></Form.Label>
                                         </Form.Group>
                                 </Col>
