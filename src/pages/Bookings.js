@@ -98,6 +98,12 @@ function Bookings() {
         const value = event.target.value
         setState(value);
     }
+
+    const [postal,setPostal] = useState("");
+    const postalChangeHandler = (event) => {
+        const value = event.target.value
+        setPostal(value);
+    }
    
     return (
     <>
@@ -210,7 +216,11 @@ function Bookings() {
                                 </Col>
                                 <Col sm={3}>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
-                                                <Form.Control />
+                                                <Form.Control 
+                                                    type="text"
+                                                    placeholder="Enter Postal/Zip Code Here"
+                                                    onBlur={postalChangeHandler} 
+                                                />
                                                     <Form.Label><p className="dolpeText">Postal / Zip Code</p></Form.Label>
                                         </Form.Group>
                                 </Col>
