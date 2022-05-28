@@ -91,6 +91,13 @@ function Bookings() {
         const value = event.target.value
         setCity(value);
     }
+
+    const [state,setState] = useState("");
+
+    const stateChangeHandler = (event) => {
+        const value = event.target.value
+        setState(value);
+    }
    
     return (
     <>
@@ -193,7 +200,11 @@ function Bookings() {
                                 </Col>
                                 <Col sm={3}>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
-                                                <Form.Control />
+                                                <Form.Control
+                                                    type="text"
+                                                    placeholder="Enter State/Province Here"
+                                                    onBlur={stateChangeHandler} 
+                                                />
                                                     <Form.Label><p className="dolpeText">State / Province</p></Form.Label>
                                         </Form.Group>
                                 </Col>
