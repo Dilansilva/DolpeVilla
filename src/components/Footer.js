@@ -4,8 +4,8 @@ import {MDBFooter} from 'mdb-react-ui-kit';
 
 function Footer() {
     return (
-      <MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
-      <section className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
+      <MDBFooter className='text-center text-lg-start text-muted'>
+      <section  style={{backgroundColor:"#6C716C",color:'white'}} className='d-flex justify-content-center justify-content-lg-between p-4 border-bottom'>
         <div className='me-5 d-none d-lg-block'>
           <span>Get connected with us on social networks:</span>
         </div>
@@ -20,9 +20,9 @@ function Footer() {
         </div>
       </section>
 
-      <section className=''>
-        <div className='container text-center text-md-start mt-5'>
-          <div className='row mt-3'>
+      <section style={{backgroundColor:"#6C716C",color:'white'}}>
+        <div className='container text-center text-md-start'><br/>
+          <div className='row'>
             <div className='col-md-3 col-lg-4 col-xl-3 mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>
                 <i className='fas fa-gem me-3'></i>Dolpe Villa
@@ -64,7 +64,7 @@ function Footer() {
         </div>
       </section>
 
-      <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
+      <div className='text-center p-4' style={{ backgroundColor: '#6C716C',color:"white" }}>
         © 2022 Copyright:
         <a className='text-reset' style={{fontSize:'10px'}} href='https://dilan-silva-my-portfoli.herokuapp.com'>
         Website Designed & Developed by D&SDeveloer
