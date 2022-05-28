@@ -84,6 +84,13 @@ function Bookings() {
         const value = event.target.value
         setAddressTwo(value);
     }
+
+    const [city,setCity] = useState("");
+
+    const cityChangeHandler = (event) => {
+        const value = event.target.value
+        setCity(value);
+    }
    
     return (
     <>
@@ -179,7 +186,7 @@ function Bookings() {
                                                 <Form.Control 
                                                     type="text"
                                                     placeholder="Enter City Here"
-                                                    onBlur={addressTwoChangeHandler} 
+                                                    onBlur={cityChangeHandler} 
                                                 />
                                                     <Form.Label><p className="dolpeText">City</p></Form.Label>
                                         </Form.Group>
