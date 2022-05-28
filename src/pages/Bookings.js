@@ -117,6 +117,17 @@ function Bookings() {
         setPhone(value);
     }
     
+    const [email,setEmail] = useState("");
+    const [emailErr,setEmailErr] = useState("");
+    const emailChangeHandler = (event) => {
+        const value = event.target.value
+        const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
+        const emailTrue = emailRegex.test(value)
+        console.log(emailTrue);
+        emailTrue ? setEmailErr("") : setEmailErr("Please Enter a valid Email Address here")
+        emailTrue ? setEmail(value) : setEmail("")
+    }
+    
    
     return (
     <>
@@ -263,7 +274,12 @@ function Bookings() {
                                 <Col sm={6}>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><p className="dolpeText">E-Mail</p></Form.Label>
-                                                <Form.Control />
+                                                <Form.Control
+                                                    type="email"
+                                                    placeholder="Enter Email Here"
+                                                    onBlur={emailChangeHandler}  
+                                                />
+                                                 <Form.Label><span style={{color:'red'}}>{emailErr}</span></Form.Label>
                                         </Form.Group>
                                 </Col>
                             </Row><br/>
