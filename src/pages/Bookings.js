@@ -123,7 +123,6 @@ function Bookings() {
         const value = event.target.value
         const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/
         const emailTrue = emailRegex.test(value)
-        console.log(emailTrue);
         emailTrue ? setEmailErr("") : setEmailErr("Please Enter a valid Email Address here")
         emailTrue ? setEmail(value) : setEmail("")
     }
