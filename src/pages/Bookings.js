@@ -68,6 +68,15 @@ function Bookings() {
         value ? setLastNameErr("") : setLastNameErr("Please Enter The Last Name")
         value ? setLastName(value) : setLastName("")
     }
+
+    const [address,setAddress] = useState("");
+    const [addressErr,setAddressErr] = useState("");
+
+    const addressChangeHandler = (event) => {
+        const value = event.target.value
+        value ? setAddressErr("") : setAddressErr("Please Enter The Last Name")
+        value ? setAddress(value) : setAddress("")
+    }
    
     return (
     <>
