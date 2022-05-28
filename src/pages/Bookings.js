@@ -110,6 +110,12 @@ function Bookings() {
         const value = event.target.value
         setCountry(value);
     }
+
+    const [phone,setPhone] = useState("");
+    const phoneChangeHandler = (event) => {
+        const value = event.target.value
+        setPhone(value);
+    }
     
    
     return (
@@ -247,7 +253,11 @@ function Bookings() {
                                 <Col sm={6}>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><p className="dolpeText">Contact Number</p></Form.Label>
-                                                <Form.Control />
+                                                <Form.Control
+                                                    type="number"
+                                                    placeholder="Enter Phone Number Here"
+                                                    onBlur={phoneChangeHandler}  
+                                                />
                                         </Form.Group>
                                 </Col>
                                 <Col sm={6}>
