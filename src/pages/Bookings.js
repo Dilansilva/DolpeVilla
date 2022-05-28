@@ -74,8 +74,15 @@ function Bookings() {
 
     const addressChangeHandler = (event) => {
         const value = event.target.value
-        value ? setAddressErr("") : setAddressErr("Please Enter The Last Name")
+        value ? setAddressErr("") : setAddressErr("Please Enter The Street Address")
         value ? setAddress(value) : setAddress("")
+    }
+
+    const [addressTwo,setAddressTwo] = useState("");
+
+    const addressTwoChangeHandler = (event) => {
+        const value = event.target.value
+        setAddressTwo(value);
     }
    
     return (
@@ -143,8 +150,12 @@ function Bookings() {
                                 <Col>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><h5 className="dolpeText">Address</h5></Form.Label>
-                                                    <Form.Control />
-                                                        <Form.Label><p className="dolpeText">Street Address</p></Form.Label>
+                                                    <Form.Control 
+                                                        type="text"
+                                                        placeholder="Enter Address Here"
+                                                        onBlur={addressChangeHandler}
+                                                    />
+                                                        <Form.Label><p className="dolpeText">Street Address <span style={{color:'red'}}>&nbsp;&nbsp;&nbsp;{addressErr}</span></p></Form.Label>
                                         </Form.Group>
                                 </Col>
                             </Row>
@@ -152,7 +163,11 @@ function Bookings() {
                             <Row>
                                 <Col>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
-                                                <Form.Control />
+                                                <Form.Control
+                                                    type="text"
+                                                    placeholder="Enter Address Line 02 Here"
+                                                    onBlur={addressTwoChangeHandler} 
+                                                />
                                                     <Form.Label><p className="dolpeText">Street Address Line 02</p></Form.Label>
                                         </Form.Group>
                                 </Col>
@@ -161,7 +176,11 @@ function Bookings() {
                             <Row>
                                 <Col sm={3}>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
-                                                <Form.Control />
+                                                <Form.Control 
+                                                    type="text"
+                                                    placeholder="Enter City Here"
+                                                    onBlur={addressTwoChangeHandler} 
+                                                />
                                                     <Form.Label><p className="dolpeText">City</p></Form.Label>
                                         </Form.Group>
                                 </Col>
