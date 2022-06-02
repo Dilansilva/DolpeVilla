@@ -11,6 +11,7 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
 import {useNavigate} from "react-router-dom";
 import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
+import Header from "../components/Header";
 
 import axios from 'axios';
 
@@ -24,6 +25,12 @@ function getWindowDimensions() {
   }
 
 const color = "white";
+
+const disableWeekends = () => {
+        console.log(Math.random() > 0.7 ? Math.random() : null,"Helobjb");
+        return Math.random() > 0.7;
+  };
+  
 
 function Bookings() {
    
@@ -45,10 +52,13 @@ function Bookings() {
 
   const {height,width} = useWindowDimensions();
 
+  const dateInterditesRaw = new Date().toLocaleDateString();
+
     const [value, setValue] = React.useState(new Date().toLocaleDateString());
 
     const handleChange = (newValue) => {
       setValue(newValue);
+      console.log(newValue);
     };
 
     const [firstName,setFirstName] = useState("");
@@ -112,9 +122,11 @@ function Bookings() {
     }
 
     const [phone,setPhone] = useState("");
+    const [phoneErr,setPhonrErr] = useState("");
     const phoneChangeHandler = (event) => {
         const value = event.target.value
         setPhone(value);
+        value ? setPhonrErr("") : setPhonrErr("Please Enter The Phone Number")
     }
     
     const [email,setEmail] = useState("");
@@ -135,6 +147,7 @@ function Bookings() {
            <div className="homeImage" style={{
                 backgroundImage: `url("https://i.postimg.cc/J05cnNnQ/bookings-Back.jpg")`
            }}>
+                <Header/>
               {
                   //Middle bar
               }
@@ -269,6 +282,7 @@ function Bookings() {
                                                     onBlur={phoneChangeHandler}  
                                                 />
                                         </Form.Group>
+                                            <Form.Label><p className="dolpeText"><span style={{color:'red'}}>&nbsp;&nbsp;&nbsp;{phoneErr}</span></p></Form.Label>
                                 </Col>
                                 <Col sm={6}>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
@@ -292,6 +306,7 @@ function Bookings() {
                                             label="Check-In Date"
                                             inputFormat="MM/dd/yyyy"
                                             value={value}
+                                            shouldDisableDate={disableWeekends}
                                             onChange={handleChange}
                                             renderInput={(params) => <TextField {...params} 
                                             sx={{
@@ -311,6 +326,7 @@ function Bookings() {
                                             label="Check-Out Date"
                                             inputFormat="MM/dd/yyyy"
                                             value={value}
+                                
                                             onChange={handleChange}
                                             renderInput={(params) => 
                                                 <TextField {...params}
