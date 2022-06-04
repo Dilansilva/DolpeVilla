@@ -645,7 +645,7 @@ const Gallery = () => {
     const imageListRefRestaurant = ref(storage,"images/restaurant/");
     const [restaurantImg,setRestaurantImg] = useState([]);
     useEffect(() => {
-        listAll(imageListRefBudget).then((res) => {
+        listAll(imageListRefRestaurant).then((res) => {
             res.items.forEach((item) => {
                 getDownloadURL(item).then((url) => {
                     setRestaurantImg((prev) => [...prev, url])
@@ -693,7 +693,7 @@ const Gallery = () => {
     const imageListRefBird = ref(storage,"images/birdsAndAnimals/");
     const [birdsImg,setBirdsImg] = useState([]);
     useEffect(() => {
-        listAll(imageListRefRifle).then((res) => {
+        listAll(imageListRefBird).then((res) => {
             res.items.forEach((item) => {
                 getDownloadURL(item).then((url) => {
                     setBirdsImg((prev) => [...prev, url])
@@ -702,13 +702,25 @@ const Gallery = () => {
         });
     },[]);
 
-    const imageListRefCycle = ref(storage,"images/cyclingAndSafar/");
+    const imageListRefCycle = ref(storage,"images/cyclingAndSafari/");
     const [cycleImg,setCycleImg] = useState([]);
     useEffect(() => {
-        listAll(imageListRefRifle).then((res) => {
+        listAll(imageListRefCycle).then((res) => {
             res.items.forEach((item) => {
                 getDownloadURL(item).then((url) => {
                     setCycleImg((prev) => [...prev, url])
+                })
+            })
+        });
+    },[]);
+
+    const imageListRefCulture = ref(storage,"images/culture/");
+    const [cultureImg,setCultureImg] = useState([]);
+    useEffect(() => {
+        listAll(imageListRefCulture).then((res) => {
+            res.items.forEach((item) => {
+                getDownloadURL(item).then((url) => {
+                    setCultureImg((prev) => [...prev, url])
                 })
             })
         });
@@ -919,12 +931,12 @@ const Gallery = () => {
                         <Col sm={6}>
                         <div><h4 className="dolpeText">Cultural Events</h4></div><br/>
                             <ImageList sx={{ width: '100%', height: 450 }} cols={4} rowHeight={164}>
-                            {itemDataCulture.map((item) => (
-                                <ImageListItem key={item.img}>
+                            {cultureImg.map((item) => (
+                                <ImageListItem key={item}>
                                     <img
-                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                    alt={item.title}
+                                    src={`${item}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item}
                                     loading="lazy"
                                     />
                                 </ImageListItem>
@@ -983,7 +995,7 @@ const Gallery = () => {
                                     title="Cycling and Safari"
                                 /><br/>
                                 <GalleryCarousel
-                                    items={itemDataCulture}
+                                    items={cultureImg}
                                     title="Cultural Events"
                                 />
                             </div>
