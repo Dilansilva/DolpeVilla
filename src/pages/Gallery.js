@@ -690,6 +690,18 @@ const Gallery = () => {
         });
     },[]);
 
+    const imageListRefBird = ref(storage,"images/birdsAndAnimals/");
+    const [birdsImg,setBirdsImg] = useState([]);
+    useEffect(() => {
+        listAll(imageListRefRifle).then((res) => {
+            res.items.forEach((item) => {
+                getDownloadURL(item).then((url) => {
+                    setBirdsImg((prev) => [...prev, url])
+                })
+            })
+        });
+    },[]);
+
     const {height,width} = useWindowDimensions();
 
     return(
@@ -862,12 +874,12 @@ const Gallery = () => {
                         <Col>
                         <div><h4 className="dolpeText">Bird and Animal Watching</h4></div><br/>
                             <ImageList sx={{ width: '80%', height: 450 }} cols={4} rowHeight={164}>
-                            {itemDataBird.map((item) => (
-                                <ImageListItem key={item.img}>
+                            {birdsImg.map((item) => (
+                                <ImageListItem key={item}>
                                     <img
-                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                    alt={item.title}
+                                    src={`${item}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item}
                                     loading="lazy"
                                     />
                                 </ImageListItem>
@@ -951,7 +963,7 @@ const Gallery = () => {
                                     title="Air Rifle And Archery"
                                 /><br/>
                                  <GalleryCarousel
-                                    items={itemDataBird}
+                                    items={birdsImg}
                                     title="Bird and Animal Watching"
                                 /><br/>
                                 <GalleryCarousel
