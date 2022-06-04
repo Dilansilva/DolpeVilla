@@ -594,13 +594,25 @@ const Gallery = () => {
     return windowDimensions;
     }
 
-    const imageListRef = ref(storage,"images/atticRooms/");
+    const imageListRefAttic = ref(storage,"images/atticRooms/");
     const [atticImg,setAtticImg] = useState([]);
     useEffect(() => {
-        listAll(imageListRef).then((res) => {
+        listAll(imageListRefAttic).then((res) => {
             res.items.forEach((item) => {
                 getDownloadURL(item).then((url) => {
                     setAtticImg((prev) => [...prev, url])
+                })
+            })
+        });
+    },[]);
+
+    const imageListRefDeluxe = ref(storage,"images/deluxeRooms/");
+    const [deluxeImg,setDeluxeImg] = useState([]);
+    useEffect(() => {
+        listAll(imageListRefDeluxe).then((res) => {
+            res.items.forEach((item) => {
+                getDownloadURL(item).then((url) => {
+                    setDeluxeImg((prev) => [...prev, url])
                 })
             })
         });
@@ -646,7 +658,7 @@ const Gallery = () => {
                                     <img
                                     src={`${item}?w=164&h=164&fit=crop&auto=format`}
                                     srcSet={`${item}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                    alt={item.title}
+                                    alt={item}
                                     loading="lazy"
                                     />
                                 </ImageListItem>
@@ -657,12 +669,12 @@ const Gallery = () => {
                         <Col sm={6}>
                         <div><h4 className="dolpeText">Deluxe Room</h4></div><br/>
                             <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                            {itemDataDeluxe.map((item) => (
-                                <ImageListItem key={item.img}>
+                            {deluxeImg.map((item) => (
+                                <ImageListItem key={item}>
                                     <img
-                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                    alt={item.title}
+                                    src={`${item}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item}
                                     loading="lazy"
                                     />
                                 </ImageListItem>
@@ -835,11 +847,11 @@ const Gallery = () => {
                         <h1 className="dolpeText">Gallery</h1>
                             <div style={{padding:'5%'}}>
                                 <GalleryCarousel
-                                    items={itemDataAttic}
+                                    items={atticImg}
                                     title="Attic Suite Room"
                                 /><br/>
                                 <GalleryCarousel
-                                    items={itemDataDeluxe}
+                                    items={deluxeImg}
                                     title="Deluxe Room"
                                 /><br/>
                                 <GalleryCarousel
