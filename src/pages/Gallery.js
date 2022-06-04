@@ -595,16 +595,15 @@ const Gallery = () => {
     }
 
     const imageListRef = ref(storage,"images/atticRooms/");
-    const [imageList,setImageList] = useState([]);
+    const [atticImg,setAtticImg] = useState([]);
     useEffect(() => {
         listAll(imageListRef).then((res) => {
             res.items.forEach((item) => {
                 getDownloadURL(item).then((url) => {
-                    setImageList((prev) => [...prev, url])
+                    setAtticImg((prev) => [...prev, url])
                 })
             })
         });
-        console.log(imageList);
     },[]);
 
     const {height,width} = useWindowDimensions();
@@ -642,7 +641,7 @@ const Gallery = () => {
                         <Col sm={6}>
                         <div><h4 className="dolpeText">Attic Suite Room</h4></div><br/>
                             <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
-                            {imageList.map((item) => (
+                            {atticImg.map((item) => (
                                 <ImageListItem key={item}>
                                     <img
                                     src={`${item}?w=164&h=164&fit=crop&auto=format`}
