@@ -7,11 +7,11 @@ const GalleryCarousel = (props) => {
         <div>
             <Carousel>
             {props.items.map((item) => (
-                <Carousel.Item key={item.img}>
+                <Carousel.Item key={item}>
                     <img
                     className="d-block w-100"
-                    src={`${item.img}`}
-                    alt={item.title}
+                    src={`${item}`}
+                    alt={item}
                     />
                 </Carousel.Item>
             ))}
