@@ -678,6 +678,18 @@ const Gallery = () => {
         });
     },[]);
 
+    const imageListRefRifle = ref(storage,"images/airRifle/");
+    const [rifleImg,setRifleImg] = useState([]);
+    useEffect(() => {
+        listAll(imageListRefRifle).then((res) => {
+            res.items.forEach((item) => {
+                getDownloadURL(item).then((url) => {
+                    setRifleImg((prev) => [...prev, url])
+                })
+            })
+        });
+    },[]);
+
     const {height,width} = useWindowDimensions();
 
     return(
@@ -832,12 +844,12 @@ const Gallery = () => {
                         <Col sm={6}>
                         <div><h4 className="dolpeText">Air Rifle And Archery</h4></div><br/>
                             <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                            {itemDataRifle.map((item) => (
-                                <ImageListItem key={item.img}>
+                            {rifleImg.map((item) => (
+                                <ImageListItem key={item}>
                                     <img
-                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                    alt={item.title}
+                                    src={`${item}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item}
                                     loading="lazy"
                                     />
                                 </ImageListItem>
@@ -935,7 +947,7 @@ const Gallery = () => {
                                     title="Natural Pool"
                                 /><br/>
                                 <GalleryCarousel
-                                    items={itemDataRifle}
+                                    items={rifleImg}
                                     title="Air Rifle And Archery"
                                 /><br/>
                                  <GalleryCarousel
