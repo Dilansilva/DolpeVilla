@@ -12,6 +12,9 @@ import GalleryCarousel from "../components/GalleryCarousel";
 import {widthScreen} from "../constant/Constant";
 import Header from "../components/Header";
 
+import {storage} from "../firebase/firebase"; 
+import {deleteObject, getDownloadURL, listAll, ref,uploadBytes} from "firebase/storage";
+
 function getWindowDimensions() {
     const { innerWidth: width } = window;
     return {
@@ -591,6 +594,19 @@ const Gallery = () => {
     return windowDimensions;
     }
 
+    const imageListRef = ref(storage,"images/atticRooms/");
+    const [imageList,setImageList] = useState([]);
+    useEffect(() => {
+        listAll(imageListRef).then((res) => {
+            res.items.forEach((item) => {
+                getDownloadURL(item).then((url) => {
+                    setImageList((prev) => [...prev, url])
+                })
+            })
+        });
+        console.log(imageList);
+    },[]);
+
     const {height,width} = useWindowDimensions();
 
     return(
@@ -626,11 +642,11 @@ const Gallery = () => {
                         <Col sm={6}>
                         <div><h4 className="dolpeText">Attic Suite Room</h4></div><br/>
                             <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
-                            {itemDataAttic.map((item) => (
-                                <ImageListItem key={item.img}>
+                            {imageList.map((item) => (
+                                <ImageListItem key={item}>
                                     <img
-                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    src={`${item}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                                     alt={item.title}
                                     loading="lazy"
                                     />
