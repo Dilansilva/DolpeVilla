@@ -630,6 +630,54 @@ const Gallery = () => {
         });
     },[]);
 
+    const imageListRefBudget = ref(storage,"images/budgetdRooms/");
+    const [budgetImg,setBudgetImg] = useState([]);
+    useEffect(() => {
+        listAll(imageListRefBudget).then((res) => {
+            res.items.forEach((item) => {
+                getDownloadURL(item).then((url) => {
+                    setBudgetImg((prev) => [...prev, url])
+                })
+            })
+        });
+    },[]);
+
+    const imageListRefRestaurant = ref(storage,"images/restaurant/");
+    const [restaurantImg,setRestaurantImg] = useState([]);
+    useEffect(() => {
+        listAll(imageListRefBudget).then((res) => {
+            res.items.forEach((item) => {
+                getDownloadURL(item).then((url) => {
+                    setRestaurantImg((prev) => [...prev, url])
+                })
+            })
+        });
+    },[]);
+
+    const imageListRefGarden = ref(storage,"images/gardenDinning/");
+    const [gardenImg,setGardenImg] = useState([]);
+    useEffect(() => {
+        listAll(imageListRefGarden).then((res) => {
+            res.items.forEach((item) => {
+                getDownloadURL(item).then((url) => {
+                    setGardenImg((prev) => [...prev, url])
+                })
+            })
+        });
+    },[]);
+
+    const imageListRefPool = ref(storage,"images/naturalPool/");
+    const [poolImg,setPoolImg] = useState([]);
+    useEffect(() => {
+        listAll(imageListRefPool).then((res) => {
+            res.items.forEach((item) => {
+                getDownloadURL(item).then((url) => {
+                    setPoolImg((prev) => [...prev, url])
+                })
+            })
+        });
+    },[]);
+
     const {height,width} = useWindowDimensions();
 
     return(
@@ -715,12 +763,12 @@ const Gallery = () => {
                         <Col sm={6}>
                         <div><h4 className="dolpeText">Budget Room</h4></div><br/>
                             <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                            {itemDataBudget.map((item) => (
-                                <ImageListItem key={item.img}>
+                            {budgetImg.map((item) => (
+                                <ImageListItem key={item}>
                                     <img
-                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                    alt={item.title}
+                                    src={`${item}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item}
                                     loading="lazy"
                                     />
                                 </ImageListItem>
@@ -733,12 +781,12 @@ const Gallery = () => {
                         <Col sm={6}>
                         <div><h4 className="dolpeText">Dolape Rill Restaurant</h4></div><br/>
                             <ImageList sx={{ width: 500, height: 450 }} cols={4} rowHeight={164}>
-                            {itemDataRill.map((item) => (
-                                <ImageListItem key={item.img}>
+                            {restaurantImg.map((item) => (
+                                <ImageListItem key={item}>
                                     <img
-                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                    alt={item.title}
+                                    src={`${item}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item}
                                     loading="lazy"
                                     />
                                 </ImageListItem>
@@ -749,11 +797,11 @@ const Gallery = () => {
                         <Col sm={6}>
                         <div><h4 className="dolpeText">Garden Dinning</h4></div><br/>
                             <ImageList sx={{ width: 500, height: 450 }} cols={3} rowHeight={164}>
-                            {itemDataGarden.map((item) => (
-                                <ImageListItem key={item.img}>
+                            {gardenImg.map((item) => (
+                                <ImageListItem key={item}>
                                     <img
-                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    src={`${item}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
                                     alt={item.title}
                                     loading="lazy"
                                     />
@@ -768,12 +816,12 @@ const Gallery = () => {
                         <Col sm={6}>
                         <div><h4 className="dolpeText">Natural Pool</h4></div><br/>
                             <ImageList sx={{ width: 500, height: 450 }} cols={2} rowHeight={164}>
-                            {itemDataPool.map((item) => (
-                                <ImageListItem key={item.img}>
+                            {poolImg.map((item) => (
+                                <ImageListItem key={item}>
                                     <img
-                                    src={`${item.img}?w=164&h=164&fit=crop&auto=format`}
-                                    srcSet={`${item.img}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
-                                    alt={item.title}
+                                    src={`${item}?w=164&h=164&fit=crop&auto=format`}
+                                    srcSet={`${item}?w=164&h=164&fit=crop&auto=format&dpr=2 2x`}
+                                    alt={item}
                                     loading="lazy"
                                     />
                                 </ImageListItem>
@@ -871,19 +919,19 @@ const Gallery = () => {
                                     title="Standard Room"
                                 /><br/>
                                 <GalleryCarousel
-                                    items={itemDataBudget}
+                                    items={budgetImg}
                                     title="Budget Room"
                                 /><br/>
                                 <GalleryCarousel
-                                    items={itemDataRill}
+                                    items={restaurantImg}
                                     title="Dolape Rill Restaurant"
                                 /><br/>
                                 <GalleryCarousel
-                                    items={itemDataGarden}
+                                    items={gardenImg}
                                     title="Garden Dinning"
                                 /><br/>
                                 <GalleryCarousel
-                                    items={itemDataPool}
+                                    items={poolImg}
                                     title="Natural Pool"
                                 /><br/>
                                 <GalleryCarousel
