@@ -43,7 +43,7 @@ function MiddleBarPhoneView() {
                         ,padding:'15%',
                         backgroundImage:`url("https://i.postimg.cc/gc7DNV6B/48800644637-e09e7ecc6b-b.jpg")`,
                         backgroundPosition:'bottom 30% right 1%'}} className="d-grid gap-2">
-                <h1 className="dolpeMainText">DOLPE VILLA <br/>ELLA</h1>
+                <h1 className="dolpeMainText">DOLAPE VILLA <br/>ELLA</h1>
                 <Button size="lg" style={{margin:'1%',backgroundColor:'transparent',background:'rgba(45, 45, 45, 0.5)'}} onClick={() => {navigate("/bookings")}}>
                     MAKE A RESERVATION
                 </Button>

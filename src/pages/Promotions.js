@@ -61,7 +61,7 @@ function Promotions() {
         <div style={{backgroundColor:'#1F211F'}}>
         <div className="secondDiv">
            <br/><br/><br/>
-           <h4 className="dolpeText">Dolpe Villa Ella, Sri lanka</h4>
+           <h4 className="dolpeText">Dolape Villa Ella, Sri lanka</h4>
            <br/><br/>
            <p>Located 8 km from Demodara Nine Arch Bridge, 
            Dolape Villa has accommodations with a restaurant, 
