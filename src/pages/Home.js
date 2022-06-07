@@ -65,7 +65,7 @@ function Home() {
         <div style={{backgroundColor:'#1F211F'}}>
         <div className="secondDiv secondDivmobile">
            <br/><br/><br/>
-           <h4 className="dolpeText">Dolpe Villa Ella, Sri lanka</h4>
+           <h4 className="dolpeText">Dolape Villa Ella, Sri lanka</h4>
            <br/><br/>
            <p>Dolape Villa Ella is a SLTDA registered and well recognized villa
             located 8 km from Demodara Nine Arch Bridge, Dolape Villa has accommodations
