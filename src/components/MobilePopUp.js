@@ -39,7 +39,7 @@ const MobilePopUp = () => {
           keyboard={false}
           className="taransParentMobile"
           style={{
-            backgroundImage:`url("https://i.postimg.cc/Y9GRv6Hc/Mobile-Pop-Up-Back-Ground.jpg")`,
+            backgroundImage:`url("https://i.postimg.cc/T3nvLw29/IMG-20220525-WA0008.jpg")`,
             backgroundSize: 'cover',
             backgroundPosition: 'center',
           }}
