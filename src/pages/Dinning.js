@@ -176,7 +176,7 @@ const Dinnning = () => {
                     <Col sm={4} className="facilList"> 
                         <div className="d-grid gap-2">
                             <a className="button" onClick={() => {setText('dinning')}}>DINNING</a>
-                            <a className="button" onClick={() => {setText('restaurant')}}>DOLPE RILL RESTAURANT</a>
+                            <a className="button" onClick={() => {setText('restaurant')}}>DOLAPE RILL RESTAURANT</a>
                             <a className="button" onClick={() => {setText('garden')}}>GARDEN DINNING</a>
                         </div>
                     </Col>
