@@ -5,9 +5,15 @@ import {useNavigate} from "react-router-dom";
 import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 import CardCarousel from "../components/CardCarousel";
 
-import { Col, Container, Row, Card, Button } from "react-bootstrap";
+import { Col, Container, Row, Card, Button,Carousel } from "react-bootstrap";
 import {widthScreen} from "../constant/Constant";
 import Header from "../components/Header";
+
+import { storage, db } from '../firebase/firebase';
+import {deleteObject, getDownloadURL, list, listAll, ref,uploadBytes} from "firebase/storage";
+import { addDoc, collection,getDocs,doc, updateDoc, deleteDoc } from "firebase/firestore";
+import { v4 } from "uuid";
+import { async } from '@firebase/util';
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -18,6 +24,18 @@ function getWindowDimensions() {
 
 
 function Promotions() {
+
+
+    const [imageList,setImageList] = useState([]);
+
+    const userCollectionRef = collection(db,"promotions");
+    useEffect(() => {
+        const getData = async () => {
+        const data = await getDocs(userCollectionRef)
+        setImageList(data.docs.map((doc) => ({...doc.data(), id: doc.id})));
+    }
+        getData();
+    },[]);
 
     const navigate = useNavigate();
 
@@ -66,12 +84,34 @@ function Promotions() {
         <div className="blueArea" style={{
              backgroundImage: `url("https://i.postimg.cc/hPn2yPDg/118286133-312616393307498-3660786380803978693-n.jpg")`
         }}>
-            <p>knbmn</p>
            {
                //Middle bar
            }
-      
+            
+              <Carousel style={{padding:'10%'}}>
+                {
+                 
+                        imageList.map((list) => {
+                            return(
+                                <Carousel.Item key={list.id}>
+                                <img
+                                  className="d-block w-100"
+                                  src={list.pro_img}
+                                  alt="First slide"
+                                />
+                                <Carousel.Caption style={{textAlign:'center'}}>
+                                  <h3>{list.pro_heading}</h3>
+                                  <p>{list.pro_body}</p>
+                                </Carousel.Caption>
+                              </Carousel.Item>
+                            );
+                        })
+                   
+                }
+              </Carousel>
            {
+
+          
             //     <Container style={{textAlign:'center'}}>
             //     <br/>
             //    <Row className="blueAreaRow">
