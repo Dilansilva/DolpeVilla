@@ -3,6 +3,7 @@ import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
 import {useNavigate} from "react-router-dom";
 import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
+import CardCarousel from "../components/CardCarousel";
 
 import { Col, Container, Row, Card, Button } from "react-bootstrap";
 import {widthScreen} from "../constant/Constant";
@@ -65,6 +66,7 @@ function Promotions() {
         <div className="blueArea" style={{
              backgroundImage: `url("https://i.postimg.cc/hPn2yPDg/118286133-312616393307498-3660786380803978693-n.jpg")`
         }}>
+            <p>knbmn</p>
            {
                //Middle bar
            }
