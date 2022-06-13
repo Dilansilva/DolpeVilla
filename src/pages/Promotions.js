@@ -3,17 +3,13 @@ import '../../src/App.css';
 import MiddleBar from "../components/MiddleBar";
 import {useNavigate} from "react-router-dom";
 import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
-import CardCarousel from "../components/CardCarousel";
 
-import { Col, Container, Row, Card, Button,Carousel } from "react-bootstrap";
+import { Carousel } from "react-bootstrap";
 import {widthScreen} from "../constant/Constant";
 import Header from "../components/Header";
 
-import { storage, db } from '../firebase/firebase';
-import {deleteObject, getDownloadURL, list, listAll, ref,uploadBytes} from "firebase/storage";
-import { addDoc, collection,getDocs,doc, updateDoc, deleteDoc } from "firebase/firestore";
-import { v4 } from "uuid";
-import { async } from '@firebase/util';
+import { db } from '../firebase/firebase';
+import {collection,getDocs } from "firebase/firestore";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -109,53 +105,6 @@ function Promotions() {
                    
                 }
               </Carousel>
-           {
-
-          
-            //     <Container style={{textAlign:'center'}}>
-            //     <br/>
-            //    <Row className="blueAreaRow">
-            //         <Col>
-            //             <Card style={{ width: '18rem',background:'none' }}>
-            //                 <Card.Img variant="top" src="https://i.postimg.cc/nrbwmrvW/1344168.jpg" />
-            //                     <Card.Body>
-            //                         <Button variant="primary">ACCOMODATION</Button>
-            //                             <Card.Text className="textSizeAndCOlor">
-            //                             The resort is made up of several beautifully crafted chalets tucked within the leveled landscape of the plantation.
-            //                             </Card.Text>
-            
-            //                     </Card.Body>
-            //             </Card>
-            //         </Col>
-        
-            //         <Col>
-            //             <Card style={{ width: '18rem',background:'none' }}>
-            //                 <Card.Img variant="top" src="https://i.postimg.cc/cLBgyb9t/1322232.jpg" />
-            //                     <Card.Body>
-            //                         <Button variant="primary">THINGS TO DO</Button>
-            //                             <Card.Text className="textSizeAndCOlor">
-            //                             Ella is probably one of Sri Lanka’s best kept secrets that offers plenty to keep you fascinated during a few nights’ stay. Apart from simply unwinding in cool climes with hypnotic views;                                 </Card.Text>
-            
-            //                     </Card.Body>
-            //             </Card>
-            //         </Col>
-        
-            //         <Col>
-            //             <Card style={{ width: '18rem',background:'none' }}>
-            //                 <Card.Img variant="top" src="https://i.postimg.cc/d1hQNHZC/sdfdfsdf.jpg" />
-            //                     <Card.Body>
-            //                         <Button variant="primary">DINNING</Button>
-            //                             <Card.Text className="textSizeAndCOlor">
-            //                             Dining at Dolape Villa Ella is a stimulating experience. A truly unique open area restaurant Ella, the ‘Restaurant Dolape Villa’, built on a hillock that overlooks breathtaking scenery, engulfs the guests in a tantalizing dining experience.
-            //                             </Card.Text>
-            
-            //                     </Card.Body>
-            //             </Card>
-            //         </Col>
-        
-            //     </Row>
-            //    </Container>
-           }
            
         </div>
     </>
