@@ -1,14 +1,13 @@
 import React,{useState,useEffect} from "react";
 import '../../src/App.css';
+import "react-datepicker/dist/react-datepicker.css";
 import MiddleBar from "../components/MiddleBar";
 
 import { Col,Row, Form,HelpBlock } from "react-bootstrap";
 import { MDBBtn } from 'mdb-react-ui-kit';
 import Stack from '@mui/material/Stack';
-import TextField from '@mui/material/TextField';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
-import { MobileDatePicker } from '@mui/x-date-pickers/MobileDatePicker';
 import {useNavigate} from "react-router-dom";
 import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 import Header from "../components/Header";
@@ -16,6 +15,7 @@ import Header from "../components/Header";
 import axios from 'axios';
 
 import {widthScreen} from "../constant/Constant";
+import DatePicker from "react-datepicker";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -46,6 +46,8 @@ function Bookings() {
   
       window.addEventListener('resize', handleResize);
       return () => window.removeEventListener('resize', handleResize);
+      console.log(new Date(),"Hello WORLS");
+     
     }, []);
     return windowDimensions;
   }
@@ -138,7 +140,24 @@ function Bookings() {
         emailTrue ? setEmailErr("") : setEmailErr("Please Enter a valid Email Address here")
         emailTrue ? setEmail(value) : setEmail("")
     }
+
+    //const [checkInDate,setCheckInDate] = useState(new Date());
+    const [checkInDate,setCheckInDate] = useState(null);
+    const [checkOutDate,setCheckOutDate] = useState(null);
+    const [disableDate,setDisableDate] = useState(true);
     
+    useEffect(() => {
+        const getDates = () => {
+            if(checkInDate && checkOutDate){
+                console.log("checkib data}}}}}}}}}}}");
+            }
+        }
+        
+    },[checkInDate,checkOutDate]);
+
+    const handleSubmit = () => {
+        console.log(checkInDate,"ljlm");
+    }
    
     return (
     <>
@@ -300,44 +319,33 @@ function Bookings() {
                             <Row>
                                <Col sm={6}>
                                     <LocalizationProvider dateAdapter={AdapterDateFns}>
-                                        <Stack spacing={3}>
-                                            <MobileDatePicker
-                                            style={{color:'white'}}
-                                            label="Check-In Date"
-                                            inputFormat="MM/dd/yyyy"
-                                            value={value}
-                                            shouldDisableDate={disableWeekends}
-                                            onChange={handleChange}
-                                            renderInput={(params) => <TextField {...params} 
-                                            sx={{
-                                                svg: { color },
-                                                input: { color },
-                                                label: { color }
-                                              }} 
-                                            />}
-                                            />
-                                        </Stack>
+                                       
+                                        <Form.Label><p className="dolpeText">Check-In Date</p></Form.Label>
+                                           <DatePicker
+                                             selected={checkInDate}
+                                             onChange={date => {setCheckInDate(new Date(date))}}
+                                             dateFormat="dd/MM/yyyy"
+                                             minDate={new Date()}
+                                             excludeDates={[new Date('6/30/2022')]}
+                                             isClearable
+                                             
+                                           />
+                                            
+                                        
                                     </LocalizationProvider>
                                </Col>
-                               <Col sm={6}>
+                               <Col sm={6}><br/>
                                     <LocalizationProvider dateAdapter={AdapterDateFns}>
-                                        <Stack spacing={3}>
-                                            <MobileDatePicker
-                                            label="Check-Out Date"
-                                            inputFormat="MM/dd/yyyy"
-                                            value={value}
-                                
-                                            onChange={handleChange}
-                                            renderInput={(params) => 
-                                                <TextField {...params}
-                                                sx={{
-                                                    svg: { color },
-                                                    input: { color },
-                                                    label: { color }
-                                                  }} 
-                                                />}
-                                            />
-                                        </Stack>
+                                        <Form.Label><p className="dolpeText">Check-Out Date</p></Form.Label>
+                                        <DatePicker
+                                             selected={checkOutDate}
+                                             onChange={date => {setCheckOutDate(new Date(date))}}
+                                             dateFormat="dd/MM/yyyy"
+                                             minDate={new Date()}
+                                             //excludeDates={}
+                                             isClearable
+                                             readOnly={checkInDate ? false : true}
+                                           />
                                     </LocalizationProvider>
                                </Col>
                             </Row>
@@ -445,7 +453,7 @@ function Bookings() {
                             {/*Submit*/}
                             <Row style={{textAlign:'center'}}>
                                 <Col>
-                                    <MDBBtn color='success'>SUBMIT</MDBBtn>
+                                    <MDBBtn color='success' onClick={() => {handleSubmit()}}>SUBMIT</MDBBtn>
                                 </Col>
                             </Row>
                             </Form>
