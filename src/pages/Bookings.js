@@ -320,7 +320,7 @@ function Bookings() {
                                <Col sm={6}>
                                     <LocalizationProvider dateAdapter={AdapterDateFns}>
                                        
-                                        <Form.Label><p className="dolpeText">Check-In Date</p></Form.Label>
+                                        <Form.Label><p className="dolpeText">Check-In Date <small>(please add the check-in date first)</small></p></Form.Label>
                                            <DatePicker
                                              selected={checkInDate}
                                              onChange={date => {setCheckInDate(new Date(date))}}
