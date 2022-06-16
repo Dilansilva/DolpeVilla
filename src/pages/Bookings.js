@@ -341,7 +341,7 @@ function Bookings() {
                                              selected={checkOutDate}
                                              onChange={date => {setCheckOutDate(new Date(date))}}
                                              dateFormat="dd/MM/yyyy"
-                                             minDate={new Date()}
+                                             minDate={checkInDate}
                                              //excludeDates={}
                                              isClearable
                                              readOnly={checkInDate ? false : true}
