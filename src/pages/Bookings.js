@@ -141,10 +141,29 @@ function Bookings() {
         emailTrue ? setEmail(value) : setEmail("")
     }
 
-    //const [checkInDate,setCheckInDate] = useState(new Date());
     const [checkInDate,setCheckInDate] = useState(null);
     const [checkOutDate,setCheckOutDate] = useState(null);
-    const [disableDate,setDisableDate] = useState(true);
+    const [bookingDays,setbookingDays] = useState(null);
+
+    const numOfDays = (e) => {
+        setCheckOutDate(e);
+        const d1 = checkInDate,
+      d2 = e,
+      diff = (d2-d1)/864e5,
+      dateFormat = {weekday:'long',month:'short',day:'numeric'},
+      dates = Array.from(
+        {length: diff+1},
+        (_,i) => {
+          const date = new Date() 
+          date.setDate(d1.getDate()+i) 
+          const [weekdayStr, dateStr] = date.toLocaleDateString('en-US',dateFormat).split(', ')
+          return `${dateStr} ${weekdayStr}`
+        }
+      )
+      
+console.log(dates.length)
+setbookingDays("Number Of Days : "+dates.length);
+    }
     
     useEffect(() => {
         const getDates = () => {
@@ -339,7 +358,7 @@ function Bookings() {
                                         <Form.Label><p className="dolpeText">Check-Out Date</p></Form.Label>
                                         <DatePicker
                                              selected={checkOutDate}
-                                             onChange={date => {setCheckOutDate(new Date(date))}}
+                                             onChange={date => {numOfDays(new Date(date))}}
                                              dateFormat="dd/MM/yyyy"
                                              minDate={checkInDate}
                                              //excludeDates={}
@@ -348,6 +367,7 @@ function Bookings() {
                                            />
                                     </LocalizationProvider>
                                </Col>
+                               <Form.Label><p className="dolpeText">{bookingDays}</p></Form.Label>
                             </Row>
                             {/*Select your rooms */}
                             <hr style={{color:'#7CA844'}}/>
