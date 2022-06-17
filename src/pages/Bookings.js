@@ -465,7 +465,7 @@ function Bookings() {
                                            />
                                     </LocalizationProvider>
                                </Col>
-                               <Form.Label><p className="dolpeText">{bookingDays}</p></Form.Label>
+                               <Form.Label><p className="dolpeText">Days : {bookingDays}</p></Form.Label>
                             </Row>
                             {/*Select your rooms */}
                             <hr style={{color:'#7CA844'}}/>
