@@ -133,6 +133,8 @@ function Bookings() {
     const [checkInDate,setCheckInDate] = useState(null);
     const [checkOutDate,setCheckOutDate] = useState(null);
     const [bookingDays,setbookingDays] = useState(null);
+    const [numAdults,setNumAdults] = useState();
+    const [numChild,setNumChild] = useState();
 
     const numOfDays = (e) => {
         setCheckOutDate(e);
@@ -528,6 +530,7 @@ function Bookings() {
                                             <Form.Label><p className="dolpeText">Number of Adults(Age Above 6)(maximum:{adult})</p></Form.Label>
                                             <Form.Control 
                                                 type="number"
+                                                onChange={(e) => {setNumAdults(e.target.value)}}
                                                 disabled={bookingDays > 0 ? false : true}/>
                                         </Form.Group>
                                 </Col>
@@ -536,6 +539,7 @@ function Bookings() {
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><p className="dolpeText">Number of Kids (Age Under 6)(maximum:{children})</p></Form.Label>
                                             <Form.Control 
+                                                onChange={(e) => {setNumChild(e.target.value)}}
                                                 type="number"
                                                 disabled={bookingDays > 0 ? false : true}/>
                                         </Form.Group>
