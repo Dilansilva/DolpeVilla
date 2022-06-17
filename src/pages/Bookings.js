@@ -160,19 +160,46 @@ function Bookings() {
           return `${dateStr} ${weekdayStr}`
         }
       )
-      
-console.log(dates.length)
-setbookingDays("Number Of Days : "+dates.length);
+    setbookingDays(dates.length);
     }
     
+    const [attic,setAttic] = useState();
+    const [deluxe,setDeluxe] = useState();
+    const [standard,setStandard] = useState(false);
+    const [budgetOne,setBudgetOne] = useState(false);
+    const [budgetTwo,setBudgetTwo] = useState(false);  
+    const [price,setPrice] = useState(0);  
+
+    var priceSet = 0;
     useEffect(() => {
-        const getDates = () => {
-            if(checkInDate && checkOutDate){
-                console.log("checkib data}}}}}}}}}}}");
-            }
+        if(attic === true){
+            priceSet = price;
+            priceSet = priceSet + 100;
+            console.log(priceSet,"+ 100");
+            setPrice(priceSet*bookingDays);
+        } else if(attic === false){
+            priceSet = price;
+            priceSet = priceSet - 100;
+            console.log(priceSet,"- 100");
+            setPrice(priceSet*bookingDays);
         }
-        
-    },[checkInDate,checkOutDate]);
+        console.log(price,"price");
+    },[attic]);
+
+    useEffect(() => {
+        if(deluxe === true){
+            priceSet = price;
+            priceSet = priceSet + 200;
+            console.log(priceSet,"+ 100");
+            setPrice(priceSet*bookingDays);
+        } else if(deluxe === false){
+            priceSet = price;
+            priceSet = priceSet - 200;
+            console.log(priceSet,"- 100");
+            setPrice(priceSet*bookingDays);
+        }
+        console.log(price,"price");
+    },[deluxe]);
 
     const handleSubmit = () => {
         console.log(checkInDate,"ljlm");
@@ -380,8 +407,9 @@ setbookingDays("Number Of Days : "+dates.length);
                                             name="rooms"
                                             type="checkbox"
                                             className="dolpeText"
-                                            // onChange={(e) => {console.log(e.target)}}
+                                            onChange={(e) => {setAttic(e.target.checked)}}
                                             defaultChecked={false}
+                                            disabled={bookingDays > 0 ? false : true}
                                         /><br/><br/>
                                         <Form.Check
                                             inline
@@ -389,7 +417,8 @@ setbookingDays("Number Of Days : "+dates.length);
                                             name="rooms"
                                             type="checkbox"
                                             className="dolpeText"
-                                            // onChange={() => deluxe ? setDeluxe(false) : setDeluxe(true)}
+                                            disabled={bookingDays > 0 ? false : true}
+                                            onChange={(e) => setDeluxe(e.target.checked)}
                                         /><br/><br/>
                                         <Form.Check
                                             inline
@@ -397,7 +426,8 @@ setbookingDays("Number Of Days : "+dates.length);
                                             name="rooms"
                                             type="checkbox"
                                             className="dolpeText"
-                                            //onChange={() => deluxe ? setStandard(false) : setStandard(true)}
+                                            disabled={bookingDays > 0 ? false : true}
+                                            onChange={(e) => setStandard(e.target.checked)}
                                         /><br/><br/>
                                         <Form.Check
                                             inline
@@ -405,7 +435,8 @@ setbookingDays("Number Of Days : "+dates.length);
                                             name="rooms"
                                             type="checkbox"
                                             className="dolpeText"
-                                            //onChange={() => deluxe ? setBudgetOne(false) : setBudgetOne(true)}
+                                            disabled={bookingDays > 0 ? false : true}
+                                            onChange={(e) => setBudgetOne(e.target.checked)}
                                         /><br/><br/>
                                         <Form.Check
                                             inline
@@ -413,23 +444,24 @@ setbookingDays("Number Of Days : "+dates.length);
                                             name="rooms"
                                             type="checkbox"
                                             className="dolpeText"
-                                            //onChange={() => deluxe ? setBudgetTwo(false) : setBudgetTwo(true)}
+                                            disabled={bookingDays > 0 ? false : true}
+                                            onChange={(e) => setBudgetTwo(e.target.checked)}
                                         /><br/><br/>
                                         </div>
-                            </Row>
+                            </Row><p>{price}</p>
                             {/*Number of persons */}
                             <Row>
                                 <Col sm={6}>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><p className="dolpeText">Number of Adults(Age Above 6)</p></Form.Label>
-                                            <Form.Control />
+                                            <Form.Control disabled={bookingDays > 0 ? false : true}/>
                                         </Form.Group>
                                 </Col>
                                 <Col sm={6}>
                                    
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><p className="dolpeText">Number of Kids (Age Under 6)</p></Form.Label>
-                                                <Form.Control />
+                                            <Form.Control disabled={bookingDays > 0 ? false : true}/>
                                         </Form.Group>
                                 </Col>
                             </Row>
