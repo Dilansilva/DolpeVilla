@@ -5,14 +5,11 @@ import MiddleBar from "../components/MiddleBar";
 
 import { Col,Row, Form,HelpBlock } from "react-bootstrap";
 import { MDBBtn } from 'mdb-react-ui-kit';
-import Stack from '@mui/material/Stack';
 import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import {useNavigate} from "react-router-dom";
 import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 import Header from "../components/Header";
-
-import axios from 'axios';
 
 import {widthScreen} from "../constant/Constant";
 import DatePicker from "react-datepicker";
@@ -529,14 +526,18 @@ function Bookings() {
                                 <Col sm={6}>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><p className="dolpeText">Number of Adults(Age Above 6)(maximum:{adult})</p></Form.Label>
-                                            <Form.Control max="10" disabled={bookingDays > 0 ? false : true}/>
+                                            <Form.Control 
+                                                type="number"
+                                                disabled={bookingDays > 0 ? false : true}/>
                                         </Form.Group>
                                 </Col>
                                 <Col sm={6}>
                                    
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><p className="dolpeText">Number of Kids (Age Under 6)(maximum:{children})</p></Form.Label>
-                                            <Form.Control disabled={bookingDays > 0 ? false : true}/>
+                                            <Form.Control 
+                                                type="number"
+                                                disabled={bookingDays > 0 ? false : true}/>
                                         </Form.Group>
                                 </Col>
                             </Row>
