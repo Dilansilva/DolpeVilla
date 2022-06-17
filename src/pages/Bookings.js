@@ -169,19 +169,23 @@ function Bookings() {
     const [budgetOne,setBudgetOne] = useState(false);
     const [budgetTwo,setBudgetTwo] = useState(false);  
     const [price,setPrice] = useState(0);  
+    const [children,setChildren] = useState(0);
 
     var priceSet = 0;
+    var childreSet = 0;
     useEffect(() => {
         if(attic === true){
             priceSet = price;
-            priceSet = priceSet + 100;
-            console.log(priceSet,"+ 100");
-            setPrice(priceSet*bookingDays);
+            priceSet = priceSet + (100*bookingDays);
+            childreSet = children;
+            childreSet = childreSet + 3;
+            console.log(childreSet,"+ 100");
+            setPrice(priceSet);
         } else if(attic === false){
             priceSet = price;
-            priceSet = priceSet - 100;
+            priceSet = priceSet - (100*bookingDays);
             console.log(priceSet,"- 100");
-            setPrice(priceSet*bookingDays);
+            setPrice(priceSet);
         }
         console.log(price,"price");
     },[attic]);
@@ -189,17 +193,32 @@ function Bookings() {
     useEffect(() => {
         if(deluxe === true){
             priceSet = price;
-            priceSet = priceSet + 200;
+            priceSet = priceSet + (200*bookingDays);
             console.log(priceSet,"+ 100");
-            setPrice(priceSet*bookingDays);
+            setPrice(priceSet);
         } else if(deluxe === false){
             priceSet = price;
-            priceSet = priceSet - 200;
+            priceSet = priceSet - (200*bookingDays);
             console.log(priceSet,"- 100");
-            setPrice(priceSet*bookingDays);
+            setPrice(priceSet);
         }
         console.log(price,"price");
     },[deluxe]);
+
+    useEffect(() => {
+        if(standard === true){
+            priceSet = price;
+            priceSet = priceSet + (300*bookingDays);
+            console.log(priceSet,"+ 100");
+            setPrice(priceSet);
+        } else if(standard === false){
+            priceSet = price;
+            priceSet = priceSet - (300*bookingDays);
+            console.log(priceSet,"- 100");
+            setPrice(priceSet);
+        }
+        console.log(price,"price");
+    },[standard]);
 
     const handleSubmit = () => {
         console.log(checkInDate,"ljlm");
@@ -454,7 +473,7 @@ function Bookings() {
                                 <Col sm={6}>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><p className="dolpeText">Number of Adults(Age Above 6)</p></Form.Label>
-                                            <Form.Control disabled={bookingDays > 0 ? false : true}/>
+                                            <Form.Control max="10" disabled={bookingDays > 0 ? false : true}/>
                                         </Form.Group>
                                 </Col>
                                 <Col sm={6}>
