@@ -25,11 +25,6 @@ function getWindowDimensions() {
   }
 
 const color = "white";
-
-const disableWeekends = () => {
-        console.log(Math.random() > 0.7 ? Math.random() : null,"Helobjb");
-        return Math.random() > 0.7;
-  };
   
 
 function Bookings() {
@@ -46,8 +41,6 @@ function Bookings() {
   
       window.addEventListener('resize', handleResize);
       return () => window.removeEventListener('resize', handleResize);
-      console.log(new Date(),"Hello WORLS");
-     
     }, []);
     return windowDimensions;
   }
@@ -60,7 +53,6 @@ function Bookings() {
 
     const handleChange = (newValue) => {
       setValue(newValue);
-      console.log(newValue);
     };
 
     const [firstName,setFirstName] = useState("");
@@ -165,60 +157,123 @@ function Bookings() {
     
     const [attic,setAttic] = useState();
     const [deluxe,setDeluxe] = useState();
-    const [standard,setStandard] = useState(false);
-    const [budgetOne,setBudgetOne] = useState(false);
-    const [budgetTwo,setBudgetTwo] = useState(false);  
+    const [standard,setStandard] = useState();
+    const [budgetOne,setBudgetOne] = useState();
+    const [budgetTwo,setBudgetTwo] = useState();  
     const [price,setPrice] = useState(0);  
     const [children,setChildren] = useState(0);
+    const [adult,setAdult] = useState(0);
 
     var priceSet = 0;
     var childreSet = 0;
+    var adultSet = 0;
     useEffect(() => {
         if(attic === true){
             priceSet = price;
             priceSet = priceSet + (100*bookingDays);
             childreSet = children;
-            childreSet = childreSet + 3;
-            console.log(childreSet,"+ 100");
+            childreSet = childreSet + 2;
+            setChildren(childreSet)
+            adultSet = adult;
+            adultSet = adultSet + 3;
+            setAdult(adultSet);
             setPrice(priceSet);
         } else if(attic === false){
             priceSet = price;
             priceSet = priceSet - (100*bookingDays);
-            console.log(priceSet,"- 100");
+            childreSet = children;
+            childreSet = childreSet - 2;
+            setChildren(childreSet)
+            adultSet = adult;
+            adultSet = adultSet - 3;
+            setAdult(adultSet);
             setPrice(priceSet);
         }
-        console.log(price,"price");
     },[attic]);
 
     useEffect(() => {
         if(deluxe === true){
             priceSet = price;
             priceSet = priceSet + (200*bookingDays);
-            console.log(priceSet,"+ 100");
+            childreSet = children;
+            childreSet = childreSet + 3;
+            setChildren(childreSet)
+            adultSet = adult;
+            adultSet = adultSet + 4;
+            setAdult(adultSet);
             setPrice(priceSet);
         } else if(deluxe === false){
             priceSet = price;
             priceSet = priceSet - (200*bookingDays);
-            console.log(priceSet,"- 100");
+            childreSet = children;
+            childreSet = childreSet - 3;
+            setChildren(childreSet)
+            adultSet = adult;
+            adultSet = adultSet - 4;
+            setAdult(adultSet);
             setPrice(priceSet);
         }
-        console.log(price,"price");
     },[deluxe]);
 
     useEffect(() => {
         if(standard === true){
             priceSet = price;
             priceSet = priceSet + (300*bookingDays);
-            console.log(priceSet,"+ 100");
+            childreSet = children;
+            childreSet = childreSet + 2;
+            setChildren(childreSet)
+            adultSet = adult;
+            adultSet = adultSet + 3;
+            setAdult(adultSet);
             setPrice(priceSet);
         } else if(standard === false){
             priceSet = price;
             priceSet = priceSet - (300*bookingDays);
-            console.log(priceSet,"- 100");
+            childreSet = children;
+            childreSet = childreSet - 2;
+            setChildren(childreSet)
+            adultSet = adult;
+            adultSet = adultSet - 3;
+            setAdult(adultSet);
             setPrice(priceSet);
         }
-        console.log(price,"price");
     },[standard]);
+
+    useEffect(() => {
+        if(budgetOne === true){
+            priceSet = price;
+            priceSet = priceSet + (300*bookingDays);
+            adultSet = adult;
+            adultSet = adultSet + 3;
+            setAdult(adultSet);
+            setPrice(priceSet);
+        } else if(budgetOne === false){
+            priceSet = price;
+            priceSet = priceSet - (300*bookingDays);
+            adultSet = adult;
+            adultSet = adultSet - 3;
+            setAdult(adultSet);
+            setPrice(priceSet);
+        }
+    },[budgetOne]);
+
+    useEffect(() => {
+        if(budgetTwo === true){
+            priceSet = price;
+            priceSet = priceSet + (300*bookingDays);
+            adultSet = adult;
+            adultSet = adultSet + 3;
+            setAdult(adultSet);
+            setPrice(priceSet);
+        } else if(budgetTwo === false){
+            priceSet = price;
+            priceSet = priceSet - (300*bookingDays);
+            adultSet = adult;
+            adultSet = adultSet - 3;
+            setAdult(adultSet);
+            setPrice(priceSet);
+        }
+    },[budgetTwo]);
 
     const handleSubmit = () => {
         console.log(checkInDate,"ljlm");
@@ -467,19 +522,20 @@ function Bookings() {
                                             onChange={(e) => setBudgetTwo(e.target.checked)}
                                         /><br/><br/>
                                         </div>
-                            </Row><p>{price}</p>
+                            </Row>
+                            <h6 className="dolpeText">Price : ${price}</h6><br/>
                             {/*Number of persons */}
                             <Row>
                                 <Col sm={6}>
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
-                                            <Form.Label><p className="dolpeText">Number of Adults(Age Above 6)</p></Form.Label>
+                                            <Form.Label><p className="dolpeText">Number of Adults(Age Above 6)(maximum:{adult})</p></Form.Label>
                                             <Form.Control max="10" disabled={bookingDays > 0 ? false : true}/>
                                         </Form.Group>
                                 </Col>
                                 <Col sm={6}>
                                    
                                         <Form.Group className="mb-1" controlId="exampleForm.ControlTextarea1">
-                                            <Form.Label><p className="dolpeText">Number of Kids (Age Under 6)</p></Form.Label>
+                                            <Form.Label><p className="dolpeText">Number of Kids (Age Under 6)(maximum:{children})</p></Form.Label>
                                             <Form.Control disabled={bookingDays > 0 ? false : true}/>
                                         </Form.Group>
                                 </Col>
