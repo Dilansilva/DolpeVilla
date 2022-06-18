@@ -14,7 +14,7 @@ import {db} from "../firebase/firebase";
 
 import {widthScreen} from "../constant/Constant";
 import DatePicker from "react-datepicker";
-import { collection, getDocs } from "firebase/firestore";
+import { addDoc, collection, getDocs } from "firebase/firestore";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -151,9 +151,27 @@ function Bookings() {
       
     },[]);
 
-    useEffect(() => {
-        console.warn(prices);
-    },[prices]);
+    const submitUsers = async () => {
+        await addDoc(pricesCollectionRef,{
+            firstName : firstName,
+            lastName : lastName,
+            address : address,
+            addressTwo : addressTwo,
+            city : city,
+            state : state,
+            postal : postal,
+            country : country,
+            phone : phone,
+            email : email,
+            checkInDate : checkInDate,
+            checkOutDate : checkOutDate,
+            days : bookingDays,
+            room : rooms,
+            price : price,
+            adults : numAdults,
+            kids : numChild
+        });
+    }
 
     const numOfDays = (e) => {
         setCheckOutDate(e);
@@ -181,7 +199,7 @@ function Bookings() {
     const [price,setPrice] = useState(0);  
     const [children,setChildren] = useState(0);
     const [adult,setAdult] = useState(0);
-
+    const [rooms,setRooms] = useState([]);
     var priceSet = 0;
     var childreSet = 0;
     var adultSet = 0;
