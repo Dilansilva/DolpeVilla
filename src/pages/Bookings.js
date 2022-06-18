@@ -10,9 +10,11 @@ import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import {useNavigate} from "react-router-dom";
 import MiddleBarPhoneView from "../components/MiddleBarPhoneView";
 import Header from "../components/Header";
+import {db} from "../firebase/firebase";
 
 import {widthScreen} from "../constant/Constant";
 import DatePicker from "react-datepicker";
+import { collection, getDocs } from "firebase/firestore";
 
 function getWindowDimensions() {
     const { innerWidth: width } = window;
@@ -136,6 +138,23 @@ function Bookings() {
     const [numAdults,setNumAdults] = useState();
     const [numChild,setNumChild] = useState();
 
+    const [prices,setPrices] = useState([]);
+    const pricesCollectionRef = collection(db,"pricing");
+
+    useEffect(() => {
+        const getUsers = async () => {
+            const data = await getDocs(pricesCollectionRef);
+            setPrices(data.docs.map((doc) => ({...doc.data(), id : doc.id}))); 
+        
+        }
+        getUsers();
+      
+    },[]);
+
+    useEffect(() => {
+        console.warn(prices);
+    },[prices]);
+
     const numOfDays = (e) => {
         setCheckOutDate(e);
         const d1 = checkInDate,
@@ -169,7 +188,7 @@ function Bookings() {
     useEffect(() => {
         if(attic === true){
             priceSet = price;
-            priceSet = priceSet + (100*bookingDays);
+            priceSet = priceSet + ((prices[0].price)*bookingDays);
             childreSet = children;
             childreSet = childreSet + 2;
             setChildren(childreSet)
@@ -179,7 +198,7 @@ function Bookings() {
             setPrice(priceSet);
         } else if(attic === false){
             priceSet = price;
-            priceSet = priceSet - (100*bookingDays);
+            priceSet = priceSet - ((prices[0].price)*bookingDays);
             childreSet = children;
             childreSet = childreSet - 2;
             setChildren(childreSet)
@@ -193,7 +212,7 @@ function Bookings() {
     useEffect(() => {
         if(deluxe === true){
             priceSet = price;
-            priceSet = priceSet + (200*bookingDays);
+            priceSet = priceSet + ((prices[4].price)*bookingDays);
             childreSet = children;
             childreSet = childreSet + 3;
             setChildren(childreSet)
@@ -203,7 +222,7 @@ function Bookings() {
             setPrice(priceSet);
         } else if(deluxe === false){
             priceSet = price;
-            priceSet = priceSet - (200*bookingDays);
+            priceSet = priceSet - ((prices[4].price)*bookingDays);
             childreSet = children;
             childreSet = childreSet - 3;
             setChildren(childreSet)
@@ -217,7 +236,7 @@ function Bookings() {
     useEffect(() => {
         if(standard === true){
             priceSet = price;
-            priceSet = priceSet + (300*bookingDays);
+            priceSet = priceSet + ((prices[2].price)*bookingDays);
             childreSet = children;
             childreSet = childreSet + 2;
             setChildren(childreSet)
@@ -227,7 +246,7 @@ function Bookings() {
             setPrice(priceSet);
         } else if(standard === false){
             priceSet = price;
-            priceSet = priceSet - (300*bookingDays);
+            priceSet = priceSet - ((prices[2].price)*bookingDays);
             childreSet = children;
             childreSet = childreSet - 2;
             setChildren(childreSet)
@@ -241,14 +260,14 @@ function Bookings() {
     useEffect(() => {
         if(budgetOne === true){
             priceSet = price;
-            priceSet = priceSet + (300*bookingDays);
+            priceSet = priceSet + ((prices[1].price)*bookingDays);
             adultSet = adult;
             adultSet = adultSet + 3;
             setAdult(adultSet);
             setPrice(priceSet);
         } else if(budgetOne === false){
             priceSet = price;
-            priceSet = priceSet - (300*bookingDays);
+            priceSet = priceSet - ((prices[1].price)*bookingDays);
             adultSet = adult;
             adultSet = adultSet - 3;
             setAdult(adultSet);
@@ -259,14 +278,14 @@ function Bookings() {
     useEffect(() => {
         if(budgetTwo === true){
             priceSet = price;
-            priceSet = priceSet + (300*bookingDays);
+            priceSet = priceSet + ((prices[3].price)*bookingDays);
             adultSet = adult;
             adultSet = adultSet + 3;
             setAdult(adultSet);
             setPrice(priceSet);
         } else if(budgetTwo === false){
             priceSet = price;
-            priceSet = priceSet - (300*bookingDays);
+            priceSet = priceSet - ((prices[3].price)*bookingDays);
             adultSet = adult;
             adultSet = adultSet - 3;
             setAdult(adultSet);
