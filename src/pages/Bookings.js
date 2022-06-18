@@ -170,7 +170,7 @@ function Bookings() {
           return `${dateStr} ${weekdayStr}`
         }
       )
-    setbookingDays(dates.length);
+    setbookingDays(dates.length - 1);
     }
     
     const [attic,setAttic] = useState();
