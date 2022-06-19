@@ -207,6 +207,7 @@ function Bookings() {
     var priceSet = 0;
     var childreSet = 0;
     var adultSet = 0;
+    var arr = [];
     useEffect(() => {
         if(attic === true){
             priceSet = price;
@@ -218,6 +219,9 @@ function Bookings() {
             adultSet = adultSet + 3;
             setAdult(adultSet);
             setPrice(priceSet);
+            arr = rooms;
+            arr.push("attic");
+            setRooms(arr);
         } else if(attic === false){
             priceSet = price;
             priceSet = priceSet - ((prices[0].price)*bookingDays);
@@ -228,6 +232,9 @@ function Bookings() {
             adultSet = adultSet - 3;
             setAdult(adultSet);
             setPrice(priceSet);
+            arr = rooms;
+            arr.pop("attic");
+            setRooms(arr);
         }
     },[attic]);
 
@@ -242,6 +249,9 @@ function Bookings() {
             adultSet = adultSet + 4;
             setAdult(adultSet);
             setPrice(priceSet);
+            arr = rooms;
+            arr.push("deluxe");
+            setRooms(arr);
         } else if(deluxe === false){
             priceSet = price;
             priceSet = priceSet - ((prices[4].price)*bookingDays);
@@ -252,6 +262,9 @@ function Bookings() {
             adultSet = adultSet - 4;
             setAdult(adultSet);
             setPrice(priceSet);
+            arr = rooms;
+            arr.pop("deluxe");
+            setRooms(arr);
         }
     },[deluxe]);
 
@@ -266,6 +279,9 @@ function Bookings() {
             adultSet = adultSet + 3;
             setAdult(adultSet);
             setPrice(priceSet);
+            arr = rooms;
+            arr.push("standard");
+            setRooms(arr);
         } else if(standard === false){
             priceSet = price;
             priceSet = priceSet - ((prices[2].price)*bookingDays);
@@ -276,6 +292,9 @@ function Bookings() {
             adultSet = adultSet - 3;
             setAdult(adultSet);
             setPrice(priceSet);
+            arr = rooms;
+            arr.pop("standard");
+            setRooms(arr);
         }
     },[standard]);
 
@@ -287,6 +306,9 @@ function Bookings() {
             adultSet = adultSet + 3;
             setAdult(adultSet);
             setPrice(priceSet);
+            arr = rooms;
+            arr.push("budgetOne");
+            setRooms(arr);
         } else if(budgetOne === false){
             priceSet = price;
             priceSet = priceSet - ((prices[1].price)*bookingDays);
@@ -294,6 +316,9 @@ function Bookings() {
             adultSet = adultSet - 3;
             setAdult(adultSet);
             setPrice(priceSet);
+            arr = rooms;
+            arr.pop("budgetOne");
+            setRooms(arr);
         }
     },[budgetOne]);
 
@@ -305,6 +330,9 @@ function Bookings() {
             adultSet = adultSet + 3;
             setAdult(adultSet);
             setPrice(priceSet);
+            arr = rooms;
+            arr.push("budgetTwo");
+            setRooms(arr);
         } else if(budgetTwo === false){
             priceSet = price;
             priceSet = priceSet - ((prices[3].price)*bookingDays);
@@ -312,12 +340,20 @@ function Bookings() {
             adultSet = adultSet - 3;
             setAdult(adultSet);
             setPrice(priceSet);
+            arr = rooms;
+            arr.pop("budgetTwo");
+            setRooms(arr);
         }
     },[budgetTwo]);
 
     const handleSubmit = () => {
-        console.log(checkInDate,"ljlm");
+        console.warn(rooms);
     }
+
+    useEffect(() => {
+        console.log(rooms);
+        console.log("nkn");
+    },[rooms]);
    
     return (
     <>
@@ -629,7 +665,10 @@ function Bookings() {
                             {/*Submit*/}
                             <Row style={{textAlign:'center'}}>
                                 <Col>
-                                    <MDBBtn color='success' onClick={() => {handleSubmit()}}>SUBMIT</MDBBtn>
+                                    <MDBBtn 
+                                        color='success' 
+                                        onClick={() => {handleSubmit()}}
+                                    >SUBMIT</MDBBtn>
                                 </Col>
                             </Row>
                             </Form>
