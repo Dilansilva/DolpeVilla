@@ -151,8 +151,11 @@ function Bookings() {
       
     },[]);
 
+    const [request,setRequest] = useState();
+
+    const reservationCollectionRef = collection(db,"reservation");
     const submitUsers = async () => {
-        await addDoc(pricesCollectionRef,{
+        await addDoc(reservationCollectionRef,{
             firstName : firstName,
             lastName : lastName,
             address : address,
@@ -169,7 +172,8 @@ function Bookings() {
             room : rooms,
             price : price,
             adults : numAdults,
-            kids : numChild
+            kids : numChild,
+            request : request
         });
     }
 
@@ -615,7 +619,10 @@ function Bookings() {
                                 <Col>
                                         <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                             <Form.Label><p className="dolpeText">Do you have any special request? </p></Form.Label>
-                                                <Form.Control as="textarea" rows={3} />
+                                                <Form.Control as="textarea" 
+                                                    rows={3}
+                                                    onChange={(e) => {setRequest(e.target.value)}} 
+                                                />
                                         </Form.Group>
                                 </Col>
                             </Row>
