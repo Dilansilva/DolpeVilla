@@ -154,7 +154,8 @@ function Bookings() {
     const [request,setRequest] = useState();
 
     const reservationCollectionRef = collection(db,"reservation");
-    const submitUsers = async () => {
+    const submitUsers = async (e) => {
+        e.preventDefault();
         await addDoc(reservationCollectionRef,{
             firstName : firstName,
             lastName : lastName,
@@ -175,6 +176,8 @@ function Bookings() {
             kids : numChild,
             request : request
         });
+        alert("Sucess!");
+        window.location.reload();
     }
 
     const numOfDays = (e) => {
@@ -667,7 +670,7 @@ function Bookings() {
                                 <Col>
                                     <MDBBtn 
                                         color='success' 
-                                        onClick={() => {handleSubmit()}}
+                                        onClick={(e) => {submitUsers(e)}}
                                     >SUBMIT</MDBBtn>
                                 </Col>
                             </Row>
