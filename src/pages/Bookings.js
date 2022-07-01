@@ -177,7 +177,10 @@ function Bookings() {
             request : request
         });
         alert("Sucess!");
-        window.location.reload();
+        
+        setTimeout(function(){
+            window.location.reload();
+          });
     }
 
     const numOfDays = (e) => {
